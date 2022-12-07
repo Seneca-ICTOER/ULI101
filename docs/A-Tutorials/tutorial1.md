@@ -5,9 +5,11 @@ sidebar_position: 2
 description: TBD
 ---
 
-# USING YOUR MATRIX SERVER ACCOUNT
+# Tutorial 1: Using Your Matrix Server Account
 
-## Main Objectives of this Practice Tutorial
+## USING YOUR MATRIX SERVER ACCOUNT
+
+### Main Objectives of this Practice Tutorial
 
 * Learn how to access your **Matrix** server account (from home and/or from Seneca computer lab).
 
@@ -21,9 +23,9 @@ description: TBD
 
 * Perform **LINUX PRACTICE QUESTIONS** for additional practice  
 
-# KEY CONCEPTS
+## KEY CONCEPTS
 
-## Purpose of Having a Matrix Linux Server Account
+### Purpose of Having a Matrix Linux Server Account
 
 While attending Seneca College, you will be using many different computer systems. Some of these servers include:
 
@@ -38,7 +40,7 @@ Although you need to study concepts throughout this course (slides, etc.), you w
 
 In Unix/Linux, a **shell** is simply an **interface** to allow a user to communicate with the Linux computer system (server). Linux shells have evolved (improved) over a period of time. You will be using the **Bash Shell** which is considered to be *user-friendly*. By understanding how to issue Linux commands, you can create a file that contains Linux commands (called a **shell script**) later in this course to automate tasks to make you a more **productive** Linux user and system administrator.
 
-## Layout of the Matrix Linux Server
+### Layout of the Matrix Linux Server
 
 The **Matrix server** consists of **several computers connected together** to form a **cluster**.  
 
@@ -54,7 +56,7 @@ You will be using this account for the following reasons:
 * Performing **Linux Practice Questions**
 * Performing **Review Tutorial** (**8 Sections x 1% = 8% of your final grade**)
 
-## Connecting to the Seneca Student VPN
+### Connecting to the Seneca Student VPN
 
 Seneca College is "rolling-out" additional measures to improve **network security**. One of these measures is to implement **multi-factored authentication**. All Seneca College students are required to connect to the **Seneca Student VPN** in order to be able to connect to their **Matrix** Linux account.  
   
@@ -64,17 +66,15 @@ Seneca College is "rolling-out" additional measures to improve **network securit
 You should have received an email message (also available in course announcements) regarding how to setup your Smart Phone to connect and valid via the Seneca Student VPN. **NOTE:** If you haven't done this yet, please perform the steps provided in the following link: <https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn>  
   
 In the next investigation, you will learn how to **connect** to and **login** to your Matrix server account from a remote computer such as your **home desktop computer**, **laptop** or **tablet** computer.  
-  
 
-## Connecting to Your Matrix Account
+### Connecting to Your Matrix Account
 
 There are two basic methods to connecting to your Matrix account:
   
 **Method 1: Run ssh Command from command prompt:**
 
 After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command: ```bash
-ssh senecauserid@matrix.senecacollege.ca
-```  
+ssh senecauserid@matrix.senecacollege.ca```  
 
 **Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
 
@@ -82,7 +82,7 @@ If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH
   
 **NOTE:** You instructor may show you how to run a graphic Linux VM in order to connect to your Matrix account (if interested, refer to the optional tutorial at the end of this semester).
   
-# INVESTIGATION 1: ACCESSING YOUR MATRIX LINUX ACCOUNT
+## INVESTIGATION 1: ACCESSING YOUR MATRIX LINUX ACCOUNT
 
 **ATTENTION**: This online tutorial will be required to be completed by **Friday in week 2 by midnight** to obtain a grade of **2%** towards this course
   
@@ -91,7 +91,7 @@ In this section, you will learn how to access your Matrix Linux account by two d
 * From your **home computer**  
 * From a **workstation in a Seneca College** lab via **MyApps**
 
-## METHOD 1: CONNECTING TO YOUR MATRIX ACCOUNT FROM YOUR HOME COMPUTER
+### METHOD 1: CONNECTING TO YOUR MATRIX ACCOUNT FROM YOUR HOME COMPUTER
   
 **Perform the Following Steps:**
 
@@ -146,7 +146,7 @@ Try accessing your Matrix account, and then exiting your Matrix account several 
   
 You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine) by downloading and running a graphical SSH application. 
 
-## METHOD 2: CONNECTING TO YOUR MATRIX ACCOUNT FROM SENECA COMPUTER LAB
+### METHOD 2: CONNECTING TO YOUR MATRIX ACCOUNT FROM SENECA COMPUTER LAB
 
 NOTE: This section requires you have access to a Seneca computer lab on campus. If you don't have access to a Seneca computer lab this semester, then you can skip this section.
   
@@ -247,8 +247,7 @@ exit
 
 In the next investigation, you will learn how to issue Linux commands from the command prompt (referred to as the "shell"), learn how to get help with Linux commands, use command-line editing short cut keys, and run a program to confirm that you connected to your Matrix account in order to get marks for this online tutorial.  
 
-
-# INVESTIGATION 2: USING THE LINUX SHELL
+## INVESTIGATION 2: USING THE LINUX SHELL
 
 In this investigation, you will learn how to use the Linux Shell. Topics in the section include:
 
@@ -559,7 +558,7 @@ cd
       
     Keep those confirmation email messages for the duration of this semester as proof that you have completed those checking scripts in case there is a discrepancy in tutorial grades.      
 
-# LINUX PRACTICE QUESTIONS
+## LINUX PRACTICE QUESTIONS
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
