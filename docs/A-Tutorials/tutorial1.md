@@ -6,24 +6,25 @@ description: TBD
 ---
 
 # USING YOUR MATRIX SERVER ACCOUNT
-  
-## Main Objectives of this Practice Tutorial
 
-* Learn how to access your **Matrix** server account (from home and/or
+  
+===Main Objectives of this Practice Tutorial===
+
+:\* Learn how to access your **Matrix** server account (from home and/or
 from Seneca computer lab).
 
-* Learn several ways to **exit** your Matrix Linux Account session.
+:\* Learn several ways to **exit** your Matrix Linux Account session.
 
-* Understand the **Linux command structure** and how to get **help**
+:\* Understand the **Linux command structure** and how to get **help**
 with Linux command usage.
 
-* Become efficient with **Linux command line editing** by using
+:\* Become efficient with **Linux command line editing** by using
 **short-cut keys**.
 
-* Issue a **checking program** (i.e. *Shell Script*) to **confirm**
+:\* Issue a **checking program** (i.e. *Shell Script*) to **confirm**
 that you accessed your Matrix account.
 
-* Perform **LINUX PRACTICE QUESTIONS** for additional practice  
+:\* Perform **LINUX PRACTICE QUESTIONS** for additional practice  
   
 
 ### Tutorial Reference Material
@@ -132,8 +133,10 @@ computer systems. Some of these servers include:
 | **wiki.cdot.senecacollege.ca**                               | *Student Notes* / *Tutorials* (weekly, review) / *Practice Questions* / *Resources*            |
 | **<span style="color:blue;">matrix.senecacollege.ca</span>** | Linux Account for "*hands-on Practice*"                                                        |
 
-<figure><img src="https://github.com/ULI101/tutorials/blob/main/images/Cli-prompt.png" width="150"><figcaption>A shell is an interface / interpreter to allow a user to communicate with the Linux computer system.</figcaption></figure>
-
+<img src="cli-prompt.png"
+title="A shell is an interface / interpreter to allow a user to communicate with the Linux computer system. "
+width="120"
+alt="A shell is an interface / interpreter to allow a user to communicate with the Linux computer system. " />
 Although you need to study concepts throughout this course (slides,
 etc.), you will also need to get **hands-on practice running Linux
 commands as well as performing and submitting online tutorials**.  
@@ -171,16 +174,16 @@ All registered students in this course should have an account on the
 Matrix server.  
 You will be using this account for the following reasons:
 
-* Issuing **Linux commands**
+:\* Issuing **Linux commands**
 
-* Becoming productive using the Linux **command prompt** (**shell**)
+:\* Becoming productive using the Linux **command prompt** (**shell**)
 
-* Performing **Linux Tutorials** (**11 Weekly Tutorials x 2% = 22% of
+:\* Performing **Linux Tutorials** (**11 Weekly Tutorials x 2% = 22% of
 your final grade**)
 
-* Performing **Linux Practice Questions**
+:\* Performing **Linux Practice Questions**
 
-* Performing **Review Tutorial** (**8 Sections x 1% = 8% of your final
+:\* Performing **Review Tutorial** (**8 Sections x 1% = 8% of your final
 grade**)
 
 ### Connecting to the Seneca Student VPN
@@ -276,8 +279,8 @@ grade of **2%** towards this course</span>
 In this section, you will learn how to access your Matrix Linux account
 by two different methods:
 
-* From your **home computer**  
-* From a **workstation in a Seneca College** lab via **MyApps**
+:\* From your **home computer**  
+:\* From a **workstation in a Seneca College** lab via **MyApps**
 
 ### METHOD 1: CONNECTING TO YOUR MATRIX ACCOUNT FROM YOUR HOME COMPUTER
 
@@ -661,15 +664,15 @@ order to get marks for this online tutorial.
 In this investigation, you will learn how to use the Linux Shell. Topics
 in the section include:
 
-* Learn the basic **Linux command structure** (*arguments* and
+:\* Learn the basic **Linux command structure** (*arguments* and
 *options*)
 
-* Learn how to get **help** for Linux commands via the **online
+:\* Learn how to get **help** for Linux commands via the **online
 manual** (i.e. **man** command).
 
-* Perform **Basic Shell Editing**
+:\* Perform **Basic Shell Editing**
 
-* Issue a **program** to confirm that you connected to your Matrix
+:\* Issue a **program** to confirm that you connected to your Matrix
 account  
   
 The Bash shell in Matrix allows you to interact with your Matrix account
@@ -688,11 +691,11 @@ but many Linux commands can be issued with arguments (e.g. **cal 2002**,
 
 An **argument** can respresent:
 
-* a **file pathname**
+:\* a **file pathname**
 
-* a command **option**
+:\* a command **option**
 
-* a series of characters (i.e. **text**) that the command can use
+:\* a series of characters (i.e. **text**) that the command can use
 
 An **argument** is <u>separated</u> from a command (or from other
 arguments) by a **SPACE**, **MULTIPLE SPACES** or a **TAB**.  
