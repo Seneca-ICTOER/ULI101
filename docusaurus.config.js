@@ -5,19 +5,19 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'OER Course Title',
-  tagline: 'OER Tag/Keyword',
+  title: 'ULI101 - Introduction to UNIX/Linux and the Internet',
+  tagline: 'ULI101',
   url: 'https://Seneca-ICTOER.github.io/',
-  baseUrl: '/OERTemplate/',
+  baseUrl: '/ULI101/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Seneca-ICTOER',
-  projectName: 'OERTemplate',
+  projectName: 'ULI101',
   themeConfig: {
     navbar: {
-      title: 'OER Course Title',
+      title: 'ULI101 - Introduction to UNIX/Linux and the Internet',
       logo: {
         alt: 'Seneca College',
         src: 'img/logo.svg',
@@ -31,7 +31,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'OER Course Title',
+          title: 'ULI101 - Introduction to UNIX/Linux and the Internet',
           items: [
             {
               label: 'Contents',
@@ -57,7 +57,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/Seneca-ICTOER/OERTemplate/tree/main',
+          editUrl: 'https://github.com/Seneca-ICTOER/ULI101/tree/main',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
