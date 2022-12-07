@@ -1,0 +1,70 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/**
+ * Overrides for the default Infima variables using the Seneca primary
+ * text color from https://senecacollege.ca.  Secondary colours generated
+ * using the tool at https://docusaurus.io/docs/styling-layout.
+ */
+:root {
+  --ifm-color-primary: #da291c;
+  --ifm-color-primary-dark: #c42519;
+  --ifm-color-primary-darker: #b92318;
+  --ifm-color-primary-darkest: #991d14;
+  --ifm-color-primary-light: #e4372b;
+  --ifm-color-primary-lighter: #e54236;
+  --ifm-color-primary-lightest: #e96056;
+  --ifm-code-font-size: 95%;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #f69993;
+  --ifm-color-primary-dark: #f3776f;
+  --ifm-color-primary-darker: #f1665d;
+  --ifm-color-primary-darkest: #ed3226;
+  --ifm-color-primary-light: #f9bbb7;
+  --ifm-color-primary-lighter: #fbccc9;
+  --ifm-color-primary-lightest: #ffffff;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+td {
+  text-align: center;
+}
+
+.highlight {
+  background-color: rgb(255, 255, 224) !important;
+}
+
+html[data-theme='dark'] .highlight {
+  background-color: rgb(72, 77, 91) !important;
+}
+
+html[data-theme='dark'] p img {
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.theme-edit-this-page {
+  visibility: hidden;
+}
