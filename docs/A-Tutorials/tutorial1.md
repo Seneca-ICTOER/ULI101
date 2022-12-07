@@ -1,7 +1,7 @@
 ---
 id: tutorial1
 title: Tutorial 1 - Using Your Matrix Server Account
-sidebar_position: 2
+sidebar_position: 1
 description: TBD
 ---
 
