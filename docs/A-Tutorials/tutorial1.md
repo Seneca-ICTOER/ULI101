@@ -32,7 +32,7 @@ While attending Seneca College, you will be using many different computer system
 | **my.senecacollege.ca**                                      | Learning Content Management System (*Link to Resources* / *Student Grades* / *Online Quizzes*) |
 | **ict.senecacollege.ca**                                     | Online access to slides, documents via webpage links                                           |
 | **wiki.cdot.senecacollege.ca**                               | *Student Notes* / *Tutorials* (weekly, review) / *Practice Questions* / *Resources*            |
-| **<span style="color:blue;">matrix.senecacollege.ca</span>** | Linux Account for "*hands-on Practice*"                                                        |
+| **matrix.senecacollege.ca** | Linux Account for "*hands-on Practice*"                                                        |
 
 Although you need to study concepts throughout this course (slides, etc.), you will also need to get **hands-on practice running Linux commands as well as performing and submitting online tutorials**. This requires that you **connect to a Linux server** and become comfortable with **issuing Linux commands**.
 
@@ -72,9 +72,9 @@ There are two basic methods to connecting to your Matrix account:
   
 **Method 1: Run ssh Command from command prompt:**
 
-After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command:  
-  
-<span style="color:blue;font-weight:bold;">ssh senecauserid@matrix.senecacollege.ca</span>  
+After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command: ```shell
+ssh senecauserid@matrix.senecacollege.ca
+```  
 
 **Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
 
@@ -84,7 +84,7 @@ If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH
   
 # INVESTIGATION 1: ACCESSING YOUR MATRIX LINUX ACCOUNT
 
-<span style="color:red;">**ATTENTION**: This online tutorial will be required to be completed by **Friday in week 2 by midnight** to obtain a grade of **2%** towards this course</span>  
+**ATTENTION**: This online tutorial will be required to be completed by **Friday in week 2 by midnight** to obtain a grade of **2%** towards this course
   
 In this section, you will learn how to access your Matrix Linux account by two different methods:
 
@@ -130,11 +130,15 @@ If you entered your password correctly, the **Matrix Linux shell** should appear
   
 The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands**. The main reason for this is to **force students to learn how to issue Linux commands**.  
   
-To **exit** your Matrix session, type the command <span style="color:blue;font-weight:bold">exit</span> followed by **ENTER**  
+To **exit** your Matrix session, type the command ```shell
+exit
+``` followed by **ENTER**  
   
 **NOTE:** You should notice that you are returned to the original command prompt where you issued the *ssh* command.  
   
-Type the same command at the **command terminal prompt**: <span style="color:blue;font-weight:bold">exit</span> followed by **ENTER**  
+Type the same command at the **command terminal prompt**: ```shell
+exit
+``` followed by **ENTER**  
   
 **NOTE:** You should notice that the you are disconnected and that the original terminal window has **automatically closed**.  
   
@@ -144,7 +148,7 @@ You will now learn an **alternative method** to access your Matrix account (if y
 
 ## METHOD 2: CONNECTING TO YOUR MATRIX ACCOUNT FROM SENECA COMPUTER LAB
 
-<span style="color:red;font-weight:bold;">NOTE: This section requires you have access to a Seneca computer lab on campus. If you don't have access to a Seneca computer lab this semester, then you can skip this section.</span>  
+NOTE: This section requires you have access to a Seneca computer lab on campus. If you don't have access to a Seneca computer lab this semester, then you can skip this section.
   
 You can also connect to your Matrix server account in the **Seneca Computer lab via MyApps**.  
   
@@ -162,9 +166,11 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
       
 2.  Make certain that the **MyApps** window is open. This window should have opened shortly after you logged into your Windows workstation. If the application windows is not open, click on the **MyApps** icon on the desktop to launch).  
       
-    <span style="color:red;font-weight:bold;">NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.</span>  
+    NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate. 
       
-3.  Click on the **Search Apps** area located in the top right corner of the MyApps window and type the word: <span style="color:blue;font-weight:bold">ssh</span>  
+3.  Click on the **Search Apps** area located in the top right corner of the MyApps window and type the word: ```shell
+ssh
+```  
       
 4.  Several SSH applications will appear.  
       
@@ -178,9 +184,11 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
       
     **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name** to allow you to connect to the server.  
       
-7.  Click on the textbox labelled Hostnanme and enter the text: <span style="color:blue;font-weight:bold">matrix</span>  
+7.  Click on the textbox labelled Hostnanme and enter the text: ```shell
+matrix
+```  
       
-    **NOTE:** You can use the hostname **matrix** since you are located <u>inside</u> Seneca's network. If you where located <u>outside</u> Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**  
+    **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network. If you where located outside Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**  
 
 8.  When connecting securely for the **first time**, a dialog box will appear to share a "public key" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users).
       
@@ -226,8 +234,10 @@ You can **configure** the SSH application to adjust elements such as the **windo
       
 6.  You now should notice that you have customized your SSH shell terminal. You can use the settings screen to also change your background and text colours if you are interested in doing so.  
       
-7.  To exit your Matrix session, type the following command and press ENTER: <span style="color:blue;font-weight:bold">exit</span>  
-      
+7.  To exit your Matrix session, type the following command and press ENTER: ```shell
+exit
+```
+  
     **NOTE:** You should notice that the colour of the text changes slightly when disconnected and you are unable to issue Linux commands from that window.  
       
 8.  After you have disconnected from your account, close the SSH Secure Shell Client application window.  
@@ -236,7 +246,7 @@ You can **configure** the SSH application to adjust elements such as the **windo
       
 
 In the next investigation, you will learn how to issue Linux commands from the command prompt (referred to as the "shell"), learn how to get help with Linux commands, use command-line editing short cut keys, and run a program to confirm that you connected to your Matrix account in order to get marks for this online tutorial.  
-  
+
 
 # INVESTIGATION 2: USING THE LINUX SHELL
 
@@ -252,7 +262,9 @@ In this investigation, you will learn how to use the Linux Shell. Topics in the 
   
 The Bash shell in Matrix allows you to interact with your Matrix account by issuing commands.
 
-**The General Linux Command Structure is as follows:** <span style="font-family:courier;color:blue;font-weight:bold">command argument1 argument2 ... </span>
+**The General Linux Command Structure is as follows:** ```shell
+command argument1 argument2 ... 
+```
 
 Some Linux commands can be issued by entering the Linux command line without arguments (e.g. **pwd**, **date**, **ls**, **cal**), but many Linux commands can be issued with arguments (e.g. **cal 2002**, **cd /bin**, **ls -l -a /bin** ).  
   
@@ -272,37 +284,57 @@ An **argument** is <u>separated</u> from a command (or from other arguments) by 
 
 1.  Make certain that you are logged into your Matrix account.  
       
-2.  Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">pwd</span>  
+2.  Issue the following Linux command: ```shell
+pwd
+```  
       
     The output from this Linux command basically shows your **current location** in the Matrix server. This represents a **directory pathname** to your home directory. We will discuss *pathnames* later in this course.  
       
-3.  Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">ls</span>  
+3.  Issue the following Linux command: ```shell
+ls
+```  
       
     What do you notice?  
       
     If there were any files in your home directory, just their file names would be displayed.  
       
-4.  Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">cd /bin</span>  
+4.  Issue the following Linux command: ```shell
+cd /bin
+```  
       
-5.  Issue the following Linux command to confirm your current location: <span style="font-family:courier;color:blue;font-weight:bold">pwd</span>  
+5.  Issue the following Linux command to confirm your current location: ```shell
+pwd
+```  
       
-6.  Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">ls</span>  
+6.  Issue the following Linux command: ```shell
+ls
+```  
       
     What do you notice?  
       
-7.  Issue the following Linux command using an **option**: <span style="font-family:courier;color:blue;font-weight:bold">ls -l</span>  
+7.  Issue the following Linux command using an **option**: ```shell
+ls -l
+```  
       
     What do you notice?  
       
     The **-l** option with the **ls** command provides a **detailed** ("*long*") listing of files providing more information on a separate line for each file.  
       
-8.  Issue the following Linux command to return to your home directory: <span style="font-family:courier;color:blue;font-weight:bold">cd</span>  
+8.  Issue the following Linux command to return to your home directory: ```shell
+cd
+```  
       
-9.  Issue the following Linux command to confirm your current location: <span style="font-family:courier;color:blue;font-weight:bold">pwd</span>  
+9.  Issue the following Linux command to confirm your current location: ```shell
+pwd
+```  
       
-10. Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">ls /bin</span>  
+10. Issue the following Linux command: ```shell
+ls /bin
+```  
       
-11. Issue the following Linux command to confirm your current location: <span style="font-family:courier;color:blue;font-weight:bold">pwd</span>  
+11. Issue the following Linux command to confirm your current location: ```shell
+pwd
+```  
       
     What do you notice?  
       
@@ -310,13 +342,19 @@ An **argument** is <u>separated</u> from a command (or from other arguments) by 
       
 12. Issue a Linux command that you have already learned to change to your **home** directory and to **confirm** that you have returned to your home directory.  
       
-13. Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">clear</span>  
+13. Issue the following Linux command: ```shell
+clear
+```  
       
     What do you notice? How would this command be helpful?  
     
-    **FYI:** The short-cut keys to clear the screen for the Bash shell is: <span style="font-family:courier;color:font-weight:bold">ctrl-l</span>  
+    **FYI:** The short-cut keys to clear the screen for the Bash shell is: ```shell
+ctrl-l
+```  
       
-14. Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">who</span>  
+14. Issue the following Linux command: ```shell
+who
+```  
       
     What information does this command show?  
       
@@ -325,19 +363,27 @@ An **argument** is <u>separated</u> from a command (or from other arguments) by 
     **NOTE:** Remember that the Matrix Linux cluster contains several servers, so it does not display all users that are logged onto those other machines within that
     cluster!  
       
-15. Issue the following Linux command: <span style="color:blue;font-weight:bold">whoami</span>  
+15. Issue the following Linux command: ```shell
+whoami
+```  
       
     What does this command display? What do you think is the purpose of this command?  
       
-16. Issue the following Linux command: <span style="font-family:courier;color:blue;font-weight:bold">cal</span>  
+16. Issue the following Linux command: ```shell
+cal
+```  
       
     What is the purpose of this command?  
       
-17. Issue the following Linux command <span style="font-family:courier;color:blue;font-weight:bold">cal 2021</span>  
+17. Issue the following Linux command ```shell
+cal 2021
+```  
       
     What is the purpose of this command using this argument?  
       
-18. Issue the following Linux command <span style="font-family:courier;color:blue;font-weight:bold">cal 2 2021</span>  
+18. Issue the following Linux command ```shell
+cal 2 2021
+```  
       
     What is the purpose of this command using those two **numbers** as arguments?  
       
@@ -348,7 +394,9 @@ With the Linux OS containing over **2500** commands and utilities, it is good fo
   
 The **man** command can provide information on how to use a command (i.e. **command usage**, **acceptable command arguments**, **command options**, **examples**).  
   
-1. Issue the following command: <span style="font-family:courier;color:blue;font-weight:bold">man man</span>  
+1. Issue the following command: ```shell
+man man
+```  
   
 You may notice that the online manual categories commands into sections or **numbered volumes**.  
   
@@ -366,9 +414,13 @@ How many **volume numbers** are contained in the man pages (like **executable co
 | /pattern/ | Search for Pattern |
 | q | Quit the man utility |
   
-3. Press the letter <span style="font-family:courier;color:blue;font-weight:bold">q</span> to exit the man command.  
+3. Press the letter ```shell
+q
+``` to exit the man command.  
   
-4. Issue the following Linux command to get help with the ls command: <span style="font-family:courier;color:blue;font-weight:bold">man ls</span>  
+4. Issue the following Linux command to get help with the ls command: ```shell
+man ls
+```  
   
 5. Navigate through the man utility for the **ls** Linux command and note the **option letters** that correspond to the following descriptions:  
 -   "**use a long listing format**"
@@ -387,17 +439,23 @@ How many **volume numbers** are contained in the man pages (like **executable co
   
 We will learn more about pipeline commands later in this course.  
   
-9. Issue the following Linux pipeline command: <span style="font-family:courier;color:blue;font-weight:bold">man -k user \| grep 8</span>  
+9. Issue the following Linux pipeline command: ```shell
+man -k user \| grep 8
+```  
   
 How does this *pipeline command* make it easier to obtain information regarding man command?  
   
-10. If you wish to change your password, you can change it by issuing the command: <span style="font-family:courier;color:blue;font-weight:bold">passwd</span>  
+10. If you wish to change your password, you can change it by issuing the command: ```shell
+passwd
+```  
 
 What option for the passwd command can be used to change user info (such as name)?  **Hint:** use the **man** command for **passwd**.  
   
 **NOTE:** Do **NOT** run the *passwd* command. Unique for this college, your Matrix password is changed automatically when you change your **myseneca** password.  
   
-11. Press the letter <span style="font-family:courier;color:blue;font-weight:bold">q</span> to exit the man command.  
+11. Press the letter ```shell
+q
+``` to exit the man command.  
   
 You will now learn how to perform **command line editing** to correct syntax errors while typing Linux commands PRIOR to pressing the ENTER key.  
   
@@ -409,33 +467,65 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
 **Perform the Following Steps:**
 
-1.  Type the following Linux command, but DON’T press the *ENTER* key: <span style="font-family:courier;color:blue;font-weight:bold">cd /bin</span>  
+1.  Type the following Linux command, but DON’T press the *ENTER* key: ```shell
+cd /bin
+```  
       
-2.  Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-a</span> key combination. What happens?  
+2.  Press the ```shell
+ctrl-a
+``` key combination. What happens?  
       
     **NOTE:** To make **alt-f** key work when use the **GRAPHICAL Windows SSH Client application**, select **Edit** -\> **Settings** -\> **Keyboard**, and select the checkbox **Use ALT as Meta key (and Escape)**.  
       
-3.  Press the <span style="font-family:courier;color:blue;font-weight:bold">alt-f</span> key combination **two times** (OPTION+right-arrow for Mac OSx).  
+3.  Press the ```shell
+alt-f
+``` key combination **two times** (OPTION+right-arrow for Mac OSx).  
       
-4.  Press the <span style="font-family:courier;color:blue;font-weight:bold">alt-b</span> key combination **one time**. (OPTION+left-arrow for Mac OSx).  
+4.  Press the ```shell
+alt-b
+``` key combination **one time**. (OPTION+left-arrow for Mac OSx).  
 
-5.  Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-w</span> shortcut key. What happens?  
+5.  Press the ```shell
+ctrl-w
+``` shortcut key. What happens?  
       
-6.  Type the following command <span style="font-family:courier;color:blue;font-weight:bold">ls</span> 
+6.  Type the following command ```shell
+ls
+``` 
       
-7.  Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-e</span> key combination. What happens?  
+7.  Press the ```shell
+ctrl-e
+``` key combination. What happens?  
       
-8.  Press the <span style="font-family:courier;color:blue;font-weight:bold">ENTER</span> key to execute the command.  
+8.  Press the ```shell
+ENTER
+``` key to execute the command.  
       
-9.  Press the <span style="font-family:courier;color:blue;font-weight:bold">up arrow</span> key. What happens?  
+9.  Press the ```shell
+up arrow
+``` key. What happens?  
       
-10. Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-u</span> key combination. What happens?  
+10. Press the ```shell
+ctrl-u
+``` key combination. What happens?  
       
-11. Press the <span style="font-family:courier;color:blue;font-weight:bold">up arrow</span> key combination, and see what happens when you press <span style="font-family:courier;color:blue;font-weight:bold">BACKSPACE</span>, <span style="font-family:courier;color:blue;font-weight:bold">\<ctrl\>\<BACKSPACE\></span> and <span style="font-family:courier;color:blue;font-weight:bold">\<ctrl\>\<h\></span>. Why is it important to know those series of key combinations?  
+11. Press the ```shell
+up arrow
+``` key combination, and see what happens when you press ```shell
+BACKSPACE
+```, ```shell
+\<ctrl\>\<BACKSPACE\>
+``` and ```shell
+\<ctrl\>\<h\>
+```. Why is it important to know those series of key combinations?  
       
-12. Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-u</span> key combination to clear the line.  
+12. Press the ```shell
+ctrl-u
+``` key combination to clear the line.  
       
-13. Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-l</span> key combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?  
+13. Press the ```shell
+ctrl-l
+``` key combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?  
       
     The Bash shortcut keys that you just learned are sufficient to perform Bash Shell editing. Although you are NOT required to learn other short-cut keys, here is
     a link to a listing in case you are interested: <https://ostechnix.com/list-useful-bash-keyboard-shortcuts/> 
@@ -453,9 +543,13 @@ If you have correctly completed the required tasks, the user can proceed. If the
 
 **Perform the Following Steps:**
 
-1.  Make certain that your current directory is **your home directory** by entering the following Linux command: <span style="color:blue;font-weight:bold;font-family:courier;">cd</span>
+1.  Make certain that your current directory is **your home directory** by entering the following Linux command: ```shell
+cd
+```
 
-2.  Issue the following command to run a checking script: <span style="font-family:courier;color:blue;font-weight:bold">\~uli101/week1-check</span>  
+2.  Issue the following command to run a checking script: ```shell
+\~uli101/week1-check
+```  
       
     The beginning character "**\~**" is called **tilde**. You get this character by pressing **SHIFT** + **\`** (which is the key to the left of the number 1 on your keyboard).  
       
