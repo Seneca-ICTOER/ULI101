@@ -72,7 +72,7 @@ There are two basic methods to connecting to your Matrix account:
   
 **Method 1: Run ssh Command from command prompt:**
 
-After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command: ```shell
+After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command: ```bash
 ssh senecauserid@matrix.senecacollege.ca
 ```  
 
@@ -130,13 +130,13 @@ If you entered your password correctly, the **Matrix Linux shell** should appear
   
 The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands**. The main reason for this is to **force students to learn how to issue Linux commands**.  
   
-To **exit** your Matrix session, type the command ```shell
+To **exit** your Matrix session, type the command ```bash
 exit
 ``` followed by **ENTER**  
   
 **NOTE:** You should notice that you are returned to the original command prompt where you issued the *ssh* command.  
   
-Type the same command at the **command terminal prompt**: ```shell
+Type the same command at the **command terminal prompt**: ```bash
 exit
 ``` followed by **ENTER**  
   
@@ -168,7 +168,7 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
       
     NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate. 
       
-3.  Click on the **Search Apps** area located in the top right corner of the MyApps window and type the word: ```shell
+3.  Click on the **Search Apps** area located in the top right corner of the MyApps window and type the word: ```bash
 ssh
 ```  
       
@@ -184,7 +184,7 @@ ssh
       
     **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name** to allow you to connect to the server.  
       
-7.  Click on the textbox labelled Hostnanme and enter the text: ```shell
+7.  Click on the textbox labelled Hostnanme and enter the text: ```bash
 matrix
 ```  
       
@@ -234,7 +234,7 @@ You can **configure** the SSH application to adjust elements such as the **windo
       
 6.  You now should notice that you have customized your SSH shell terminal. You can use the settings screen to also change your background and text colours if you are interested in doing so.  
       
-7.  To exit your Matrix session, type the following command and press ENTER: ```shell
+7.  To exit your Matrix session, type the following command and press ENTER: ```bash
 exit
 ```
   
@@ -262,7 +262,7 @@ In this investigation, you will learn how to use the Linux Shell. Topics in the 
   
 The Bash shell in Matrix allows you to interact with your Matrix account by issuing commands.
 
-**The General Linux Command Structure is as follows:** ```shell
+**The General Linux Command Structure is as follows:** ```bash
 command argument1 argument2 ... 
 ```
 
@@ -284,13 +284,13 @@ An **argument** is <u>separated</u> from a command (or from other arguments) by 
 
 1.  Make certain that you are logged into your Matrix account.  
       
-2.  Issue the following Linux command: ```shell
+2.  Issue the following Linux command: ```bash
 pwd
 ```  
       
     The output from this Linux command basically shows your **current location** in the Matrix server. This represents a **directory pathname** to your home directory. We will discuss *pathnames* later in this course.  
       
-3.  Issue the following Linux command: ```shell
+3.  Issue the following Linux command: ```bash
 ls
 ```  
       
@@ -298,21 +298,21 @@ ls
       
     If there were any files in your home directory, just their file names would be displayed.  
       
-4.  Issue the following Linux command: ```shell
+4.  Issue the following Linux command: ```bash
 cd /bin
 ```  
       
-5.  Issue the following Linux command to confirm your current location: ```shell
+5.  Issue the following Linux command to confirm your current location: ```bash
 pwd
 ```  
       
-6.  Issue the following Linux command: ```shell
+6.  Issue the following Linux command: ```bash
 ls
 ```  
       
     What do you notice?  
       
-7.  Issue the following Linux command using an **option**: ```shell
+7.  Issue the following Linux command using an **option**: ```bash
 ls -l
 ```  
       
@@ -320,19 +320,19 @@ ls -l
       
     The **-l** option with the **ls** command provides a **detailed** ("*long*") listing of files providing more information on a separate line for each file.  
       
-8.  Issue the following Linux command to return to your home directory: ```shell
+8.  Issue the following Linux command to return to your home directory: ```bash
 cd
 ```  
       
-9.  Issue the following Linux command to confirm your current location: ```shell
+9.  Issue the following Linux command to confirm your current location: ```bash
 pwd
 ```  
       
-10. Issue the following Linux command: ```shell
+10. Issue the following Linux command: ```bash
 ls /bin
 ```  
       
-11. Issue the following Linux command to confirm your current location: ```shell
+11. Issue the following Linux command to confirm your current location: ```bash
 pwd
 ```  
       
@@ -342,17 +342,17 @@ pwd
       
 12. Issue a Linux command that you have already learned to change to your **home** directory and to **confirm** that you have returned to your home directory.  
       
-13. Issue the following Linux command: ```shell
+13. Issue the following Linux command: ```bash
 clear
 ```  
       
     What do you notice? How would this command be helpful?  
     
-    **FYI:** The short-cut keys to clear the screen for the Bash shell is: ```shell
+    **FYI:** The short-cut keys to clear the screen for the Bash shell is: ```bash
 ctrl-l
 ```  
       
-14. Issue the following Linux command: ```shell
+14. Issue the following Linux command: ```bash
 who
 ```  
       
@@ -363,25 +363,25 @@ who
     **NOTE:** Remember that the Matrix Linux cluster contains several servers, so it does not display all users that are logged onto those other machines within that
     cluster!  
       
-15. Issue the following Linux command: ```shell
+15. Issue the following Linux command: ```bash
 whoami
 ```  
       
     What does this command display? What do you think is the purpose of this command?  
       
-16. Issue the following Linux command: ```shell
+16. Issue the following Linux command: ```bash
 cal
 ```  
       
     What is the purpose of this command?  
       
-17. Issue the following Linux command ```shell
+17. Issue the following Linux command ```bash
 cal 2021
 ```  
       
     What is the purpose of this command using this argument?  
       
-18. Issue the following Linux command ```shell
+18. Issue the following Linux command ```bash
 cal 2 2021
 ```  
       
@@ -394,7 +394,7 @@ With the Linux OS containing over **2500** commands and utilities, it is good fo
   
 The **man** command can provide information on how to use a command (i.e. **command usage**, **acceptable command arguments**, **command options**, **examples**).  
   
-1. Issue the following command: ```shell
+1. Issue the following command: ```bash
 man man
 ```  
   
@@ -414,11 +414,11 @@ How many **volume numbers** are contained in the man pages (like **executable co
 | /pattern/ | Search for Pattern |
 | q | Quit the man utility |
   
-3. Press the letter ```shell
+3. Press the letter ```bash
 q
 ``` to exit the man command.  
   
-4. Issue the following Linux command to get help with the ls command: ```shell
+4. Issue the following Linux command to get help with the ls command: ```bash
 man ls
 ```  
   
@@ -439,13 +439,13 @@ man ls
   
 We will learn more about pipeline commands later in this course.  
   
-9. Issue the following Linux pipeline command: ```shell
+9. Issue the following Linux pipeline command: ```bash
 man -k user \| grep 8
 ```  
   
 How does this *pipeline command* make it easier to obtain information regarding man command?  
   
-10. If you wish to change your password, you can change it by issuing the command: ```shell
+10. If you wish to change your password, you can change it by issuing the command: ```bash
 passwd
 ```  
 
@@ -453,7 +453,7 @@ What option for the passwd command can be used to change user info (such as name
   
 **NOTE:** Do **NOT** run the *passwd* command. Unique for this college, your Matrix password is changed automatically when you change your **myseneca** password.  
   
-11. Press the letter ```shell
+11. Press the letter ```bash
 q
 ``` to exit the man command.  
   
@@ -467,63 +467,63 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
 **Perform the Following Steps:**
 
-1.  Type the following Linux command, but DON’T press the *ENTER* key: ```shell
+1.  Type the following Linux command, but DON’T press the *ENTER* key: ```bash
 cd /bin
 ```  
       
-2.  Press the ```shell
+2.  Press the ```bash
 ctrl-a
 ``` key combination. What happens?  
       
     **NOTE:** To make **alt-f** key work when use the **GRAPHICAL Windows SSH Client application**, select **Edit** -\> **Settings** -\> **Keyboard**, and select the checkbox **Use ALT as Meta key (and Escape)**.  
       
-3.  Press the ```shell
+3.  Press the ```bash
 alt-f
 ``` key combination **two times** (OPTION+right-arrow for Mac OSx).  
       
-4.  Press the ```shell
+4.  Press the ```bash
 alt-b
 ``` key combination **one time**. (OPTION+left-arrow for Mac OSx).  
 
-5.  Press the ```shell
+5.  Press the ```bash
 ctrl-w
 ``` shortcut key. What happens?  
       
-6.  Type the following command ```shell
+6.  Type the following command ```bash
 ls
 ``` 
       
-7.  Press the ```shell
+7.  Press the ```bash
 ctrl-e
 ``` key combination. What happens?  
       
-8.  Press the ```shell
+8.  Press the ```bash
 ENTER
 ``` key to execute the command.  
       
-9.  Press the ```shell
+9.  Press the ```bash
 up arrow
 ``` key. What happens?  
       
-10. Press the ```shell
+10. Press the ```bash
 ctrl-u
 ``` key combination. What happens?  
       
-11. Press the ```shell
+11. Press the ```bash
 up arrow
-``` key combination, and see what happens when you press ```shell
+``` key combination, and see what happens when you press ```bash
 BACKSPACE
-```, ```shell
+```, ```bash
 \<ctrl\>\<BACKSPACE\>
-``` and ```shell
+``` and ```bash
 \<ctrl\>\<h\>
 ```. Why is it important to know those series of key combinations?  
       
-12. Press the ```shell
+12. Press the ```bash
 ctrl-u
 ``` key combination to clear the line.  
       
-13. Press the ```shell
+13. Press the ```bash
 ctrl-l
 ``` key combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?  
       
@@ -543,11 +543,11 @@ If you have correctly completed the required tasks, the user can proceed. If the
 
 **Perform the Following Steps:**
 
-1.  Make certain that your current directory is **your home directory** by entering the following Linux command: ```shell
+1.  Make certain that your current directory is **your home directory** by entering the following Linux command: ```bash
 cd
 ```
 
-2.  Issue the following command to run a checking script: ```shell
+2.  Issue the following command to run a checking script: ```bash
 \~uli101/week1-check
 ```  
       
