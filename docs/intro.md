@@ -11,7 +11,7 @@ description: Contents of (course notes title here)
 ## Tutorials <a id="part-a-tutorials"></a>
 
 - [Test Page](A-Tutorials/testfile.md)
-- [Topic 2](A-Tutorials/topic-file-2.md)
+- [Topic 3](A-Tutorials/topic-file-3.md)
 - [Tutorial 1](A-Tutorials/tutorial1.md)
 
 ## SubSection2
