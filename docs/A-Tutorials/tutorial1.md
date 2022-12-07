@@ -449,7 +449,6 @@ account (if you have an MS Windows machine)
 by downloading and running a graphical SSH application.
 
 </li>
-</ol>
 
   
 
