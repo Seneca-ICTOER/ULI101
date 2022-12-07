@@ -7,8 +7,7 @@ description: TBD
 
 # USING YOUR MATRIX SERVER ACCOUNT
 
-  
-===Main Objectives of this Practice Tutorial===
+## Main Objectives of this Practice Tutorial
 
 * Learn how to access your **Matrix** server account (from home and/or from Seneca computer lab).
 
@@ -35,26 +34,11 @@ While attending Seneca College, you will be using many different computer system
 | **wiki.cdot.senecacollege.ca**                               | *Student Notes* / *Tutorials* (weekly, review) / *Practice Questions* / *Resources*            |
 | **<span style="color:blue;">matrix.senecacollege.ca</span>** | Linux Account for "*hands-on Practice*"                                                        |
 
-<img src="cli-prompt.png"
-title="A shell is an interface / interpreter to allow a user to communicate with the Linux computer system. "
-width="120"
-alt="A shell is an interface / interpreter to allow a user to communicate with the Linux computer system. " />
 Although you need to study concepts throughout this course (slides, etc.), you will also need to get **hands-on practice running Linux commands as well as performing and submitting online tutorials**. This requires that you **connect to a Linux server** and become comfortable with **issuing Linux commands**.
 
 In Unix/Linux, a **shell** is simply an **interface** to allow a user to communicate with the Linux computer system (server). Linux shells have evolved (improved) over a period of time. You will be using the **Bash Shell** which is considered to be *user-friendly*. By understanding how to issue Linux commands, you can create a file that contains Linux commands (called a **shell script**) later in this course to automate tasks to make you a more **productive** Linux user and system administrator.
 
 ## Layout of the Matrix Linux Server
-
-<figure>
-<img src="matrix-layout.png"
-title="The Matrix server consists of several Computers connected together to form a cluster. A Linux Cluster is a cost effective alternative to larger servers. "
-width="250"
-alt="The Matrix server consists of several Computers connected together to form a cluster. A Linux Cluster is a cost effective alternative to larger servers. " />
-<figcaption aria-hidden="true">The Matrix server consists of several
-Computers connected together to form a <strong>cluster</strong>. A
-<strong>Linux Cluster</strong> is a <strong>cost effective</strong>
-alternative to larger servers. </figcaption>
-</figure>
 
 The **Matrix server** consists of **several computers connected together** to form a **cluster**.  
 
@@ -72,16 +56,9 @@ You will be using this account for the following reasons:
 
 ## Connecting to the Seneca Student VPN
 
-<figure>
-<img src="gp1.png" title="Seneca Student VPN " width="130"
-alt="Seneca Student VPN " />
-<figcaption aria-hidden="true"><strong>Seneca Student VPN</strong>
-</figcaption>
-</figure>
-
 Seneca College is "rolling-out" additional measures to improve **network security**. One of these measures is to implement **multi-factored authentication**. All Seneca College students are required to connect to the **Seneca Student VPN** in order to be able to connect to their **Matrix** Linux account.  
   
-*<b>Multi-factor authentication</b> is an electronic authentication method in which a computer user is granted access to a website or application only after successfully presenting two or more pieces of evidence (or factors) to an authentication mechanism: knowledge (something the user and only the user knows).* Reference:
+* **Multi-factor authentication** is an electronic authentication method in which a computer user is granted access to a website or application only after successfully presenting two or more pieces of evidence (or factors) to an authentication mechanism: knowledge (something the user and only the user knows).* Reference:
 <https://en.wikipedia.org/wiki/Multi-factor_authentication>  
   
 You should have received an email message (also available in course announcements) regarding how to setup your Smart Phone to connect and valid via the Seneca Student VPN. **NOTE:** If you haven't done this yet, please perform the steps provided in the following link: <https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn>  
@@ -92,31 +69,13 @@ In the next investigation, you will learn how to **connect** to and **login** to
 ## Connecting to Your Matrix Account
 
 There are two basic methods to connecting to your Matrix account:
-
-<figure>
-<img src="cls-shell.png" title="Connect to Matrix viassh command"
-width="100" alt="Connect to Matrix viassh command" />
-<figcaption aria-hidden="true">Connect to Matrix via<strong>ssh</strong>
-command</figcaption>
-</figure>
-
   
 **Method 1: Run ssh Command from command prompt:**
 
 After connecting to the **Seneca Student VPN**, you can open a **command terminal** in your **Newer Windows 10**, **Mac** or **Linux** computer and issue the following command:  
   
 <span style="color:blue;font-weight:bold;">ssh senecauserid@matrix.senecacollege.ca</span>  
-  
 
-<figure>
-<img src="ssh-main-window.png"
-title="Connect to Matrix via graphical SSH Program " width="100"
-alt="Connect to Matrix via graphical SSH Program " />
-<figcaption aria-hidden="true">Connect to Matrix via
-<strong>graphical</strong> SSH Program </figcaption>
-</figure>
-
-  
 **Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
 
 If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH application** for your Windows machine. One advantage of using this method is that you are already at Seneca and are NOT required to connect to the student VPN.
@@ -133,17 +92,10 @@ In this section, you will learn how to access your Matrix Linux account by two d
 * From a **workstation in a Seneca College** lab via **MyApps**
 
 ## METHOD 1: CONNECTING TO YOUR MATRIX ACCOUNT FROM YOUR HOME COMPUTER
-
-<img src="gp1.png"
-title="The Seneca Student VPN service must be connected." width="130"
-alt="The Seneca Student VPN service must be connected." /> You will now
-learn a quick and simple method of connecting to your Matrix account by
-opening  
-a text-based **terminal** (in any OS) and issuing the **ssh command**.  
   
 **Perform the Following Steps:**
 
-1.  If you want to connect to your Matrix account from home, you MUST first connect to the Seneca Student VPN. Make certain that your **Seneca Student VPN is connected**.  
+1.  If you want to connect to your Matrix account from home, you MUST first connect to the Seneca Student VPN. Make certain that your **Seneca Student VPN is connected**. 
       
     **NOTE:** If you haven't set this up, refer to the following link for instructions: <https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn>  
       
@@ -152,63 +104,14 @@ a text-based **terminal** (in any OS) and issuing the **ssh command**.
 2.  Determine which **operating system** that your computer is using.  
       
 3.  Try connecting to your Matrix account using the instructions in the **table** below based on <u>your</u> **current operating system**.  
-      
-
-<table style="margin-left:50px;">
-<tr valign="top" style="text-align:center;">
-<th>
-
-**Newer Version of Windows 10:**
-
-</th>
-<th>
-
-**MacOSX:**
-
-</th>
-<th>
-
-**Linux:**
-
-</th>
-</tr>
-<tr>
-<td>
-
--   From the start menu, type **cmd** and launch program
--   In the command terminal, enter the following command:  
-    <span style="color:blue;font-weight:bold;font-size:.75em;">ssh
-    senecausername@matrix.senecacollege.ca</span>
-
-</td>
-<td>
-
--   Click *Launchpad* icon, type **terminal**  
-    and press **ENTER**
--   In the terminal, enter the following command:  
-    <span style="color:blue;font-weight:bold;font-size:.75em;">ssh
-    senecausername@matrix.senecacollege.ca</span>
-
-</td>
-<td>
-
--   From the menu, choose:  
-    **Applications** \> **System Tools** \> **Terminal**
--   In the terminal, enter the following command:  
-    <span style="color:blue;font-weight:bold;font-size:.75em;">ssh
-    senecausername@matrix.senecacollege.ca</span>
-
-</td>
-</tr>
-</table>
 
 1. When connecting securely for the **first time**, a **dialog box** will appear to share a "**public key**" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users)  
       
-    *<b>FYI:</b> To make communications over a network **secure**, a computer generates **two keys**: a **private key** that is kept on the computer, and a **public key**, which can be shared with other computers. Transmissions from your computer uses the private key to encrypt (**scramble**) transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt (**unscramble**) those transmissions.*  
+    * **FYI:** To make communications over a network **secure**, a computer generates **two keys**: a **private key** that is kept on the computer, and a **public key**, which can be shared with other computers. Transmissions from your computer uses the private key to encrypt (**scramble**) transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt (**unscramble**) those transmissions.*  
       
 2. Type **yes** and press **ENTER** to share your public key.  
       
-3. Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account. Your Matrix password is <u>identical</u> to your Seneca password.  
+3. Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password.  
       
     **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password.
       
@@ -245,9 +148,7 @@ You will now learn an **alternative method** to access your Matrix account (if y
   
 You can also connect to your Matrix server account in the **Seneca Computer lab via MyApps**.  
   
-One advantage of this method is that your are at the college; therefore, **you do NOT have to worry about connecting to the Seneca VPN**. Another advantage of using this method is to introduce you to a **graphical program** to allow you connect to your Matrix account as opposed to using the **ssh** command (shown in the previous section).  
-
-<img src="apps-anywhere-main-window.png" title="MyApps (AppsAnywhere) Main Window " width="250" alt="MyApps (AppsAnywhere) Main Window " /> This method would also be useful if you do **not** have a home (notebook) computer and have access to a Seneca computer lab workstation.  
+One advantage of this method is that your are at the college; therefore, **you do NOT have to worry about connecting to the Seneca VPN**. Another advantage of using this method is to introduce you to a **graphical program** to allow you connect to your Matrix account as opposed to using the **ssh** command (shown in the previous section). 
   
 **MyApps** (**AppsAnywhere**) is an application streaming service that lets you install software on any Seneca PC on demand. Any software application on the MyApps menu can be used on computers in classrooms, labs, and the Computing Commons.
 
@@ -255,15 +156,13 @@ Reference: <https://inside.senecacollege.ca/its/software/myapps/>
 
 You will now use **MyApps** on your Windows workstation in your Seneca lab room to launch an application to allow you to connect and login to your Matrix server account.
 
-<img src="apps-anywhere.png" title="Several SSH applications will appear. We will use the application called SSH Client for this practice tutorial. " width="250" alt="Several SSH applications will appear. We will use the application called SSH Client for this practice tutorial. " />
-
 **Perform the Following Steps:**
 
 1.  Start your workstation in your lab and login to your Seneca Windows account.  
       
 2.  Make certain that the **MyApps** window is open. This window should have opened shortly after you logged into your Windows workstation. If the application windows is not open, click on the **MyApps** icon on the desktop to launch).  
       
-    <img src="ssh-main-window.png" title="SSH Client Application Window " width="150" alt="SSH Client Application Window " /><span style="color:red;font-weight:bold;">NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.</span>  
+    <span style="color:red;font-weight:bold;">NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.</span>  
       
 3.  Click on the **Search Apps** area located in the top right corner of the MyApps window and type the word: <span style="color:blue;font-weight:bold">ssh</span>  
       
@@ -273,7 +172,7 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
       
 5.  Launch the **SSH Secure Shell Client** application icon to launch this program.  
       
-    <img src="quick-connect-window.png" title="Quick Connect Dialog Box " width="150" alt="Quick Connect Dialog Box " />**NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster to access this application in the future.  
+    **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster to access this application in the future.  
       
 6.  The main SSH Client window will appear. Click on the **Quick Connect** button.  
       
@@ -282,23 +181,17 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
 7.  Click on the textbox labelled Hostnanme and enter the text: <span style="color:blue;font-weight:bold">matrix</span>  
       
     **NOTE:** You can use the hostname **matrix** since you are located <u>inside</u> Seneca's network. If you where located <u>outside</u> Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**  
-      
-    <img src="share-public-key.png" title="Dialog Box to Share Public Key on Remote Server " width="150"  alt="Dialog Box to Share Public Key on Remote Server " />
 
 8.  When connecting securely for the **first time**, a dialog box will appear to share a "public key" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users).
       
     **FYI:** To make communications over a network secure, a computer generates **two keys**: a **private key** that is kept on the computer, and a **public key**, which can be shared with other computers. Transmissions from your computer uses the private key to encrypt (scramble) transmission to the remote computer, which in
     turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt (unscramble) those transmissions.  
-      
-    <img src="ssh-password-prompt.png" title="Password Dialog Box " width="150" alt="Password Dialog Box " />
 
 9.  Click the **Yes** button to share your public key.  
       
-10. Next, a dialog box will appear prompting you for your Matrix account password in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password. As you type the password, the text will be blocked-out or hidden to prevent others from viewing the screen to obtain your password. <img src="ssh-authentication-response.png" title="Authentication Response Dialog Box " width="150" alt="Authentication Response Dialog Box " />  
+10. Next, a dialog box will appear prompting you for your Matrix account password in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password. As you type the password, the text will be blocked-out or hidden to prevent others from viewing the screen to obtain your password.
       
 11. Enter your password and click **OK** or press **ENTER**  
-      
-    <img src="ssh-login-error.png" title="SSH Login Error " width="150" alt="SSH Login Error " />
 
 12. Click **OK** or press **ENTER** at the **Authentication Response** dialog box.  
       
@@ -311,13 +204,11 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
 
     If you continue to experience the same problems, click on the following link for IT service desk contact info: [**IT service desk**](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its).  
       
-    <img src="ssh-shell-window.png" title="Matrix Shell Command Line Interface " width="150" alt="Matrix Shell Command Line Interface " />
 
 13. If you entered your password correctly, the main SSH Linux shell should appear where you enter Linux commands.  
       
     The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands**. There are various reasons for this, but the main 2 reasons are to **force students to learn how to issue Linux commands** as well as **limitations to remote access to a graphical Linux server** due to large number of users (students).  
       
-    <img src="ssh-settings-window.png" title="SSH Settings Dialog Box " width="150" alt="SSH Settings Dialog Box " />
 
 You can **configure** the SSH application to adjust elements such as the **window size** and **text font type** and text **font size**. We will be showing you how to configure your SSH Secure Shell Client, but the other applications can allow you to configure their settings.  
   
@@ -510,13 +401,13 @@ What option for the passwd command can be used to change user info (such as name
   
 You will now learn how to perform **command line editing** to correct syntax errors while typing Linux commands PRIOR to pressing the ENTER key.  
   
-**Command Line Editing** <img src="command-line-editing.png" title="Command Line Editing Shortcut Keys. " width="520" alt="Command Line Editing Shortcut Keys. " />
+**Command Line Editing**
 
 Learning **shortcut keys** in any OS terminal will allow you to be more productive as a *Linux user* or *Linux System Administrator* (commonly referred to as: **Linux sysadmin**).  
 
 Let's learn a few common Bash Shell keyboard shortcut keys and find out where you can access online help for additional shortcuts (if required).
 
-**Perform the Following Steps:** <img src="meta-key.png" title="To make alt-f key work, select Edit -&gt; Settings -&gt; Keyboard, and select the checkbox Use ALT as Meta key (and Escape)." width="370" alt="To make alt-f key work, select Edit -&gt; Settings -&gt; Keyboard, and select the checkbox Use ALT as Meta key (and Escape)." />
+**Perform the Following Steps:**
 
 1.  Type the following Linux command, but DON’T press the *ENTER* key: <span style="font-family:courier;color:blue;font-weight:bold">cd /bin</span>  
       
@@ -547,7 +438,7 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 13. Press the <span style="font-family:courier;color:blue;font-weight:bold">ctrl-l</span> key combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?  
       
     The Bash shortcut keys that you just learned are sufficient to perform Bash Shell editing. Although you are NOT required to learn other short-cut keys, here is
-    a link to a listing in case you are interested: [ostechnix.com/list-useful-bash-keyboard-shortcuts/ Useful BashShell Keyboard Shortcuts](https://)  
+    a link to a listing in case you are interested: <https://ostechnix.com/list-useful-bash-keyboard-shortcuts/> 
       
 
 **Running a Shell Script to Check Student Online Tutorial Participation**
