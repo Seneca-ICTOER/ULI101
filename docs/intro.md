@@ -8,11 +8,11 @@ description: Contents of (course notes title here)
 
 # Table of contents
 
-## Introduction <a id="part-a-introduction"></a>
+## Tutorials <a id="part-a-tutorials"></a>
 
-- [Test Page](A-Introduction/testfile.md)
-- [Topic 2](A-Introduction/topic-file-2.md)
-- [Topic 3](A-Introduction/topic-file-3.md)
+- [Test Page](A-Tutorials/testfile.md)
+- [Topic 2](A-Tutorials/topic-file-2.md)
+- [Tutorial 1](A-Tutorials/tutorial1.md)
 
 ## SubSection2
 
