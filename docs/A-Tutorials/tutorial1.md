@@ -92,7 +92,9 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 While attending Seneca College, you will be using many different computer systems. Some of these servers include:
 
 **learn.senecacollege.ca**	Learning Content Management System (Link to Resources / Student Grades / Online Quizzes)
+
 **wiki.cdot.senecacollege.ca**	Lecture Notes / Tutorials (weekly, review) / Practice Questions / Additional Learning Resources
+
 **matrix.senecacollege.ca**	Matrix is our Linux server environment used for "hands-on practice". Each ULI101 student has an account on this server.
 
 Although you need to study concepts throughout this course (slides, etc.), you will also need to get **hands-on practice running Linux commands as well as performing and submitting online tutorials.**
@@ -548,7 +550,7 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
 **NOTE:** To make **alt-f** key work when use the **GRAPHICAL Windows SSH Client application**, select **Edit -> Settings -> Keyboard**, and select the checkbox **Use ALT as Meta key (and Escape).**
 
-<!-- ![To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).](/img/Meta-key.png "To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).") -->
+![To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).](/img/Meta-key.png "To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).")
 
   3. Press the `alt-f` key combination two times
 
