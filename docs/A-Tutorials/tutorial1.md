@@ -31,9 +31,9 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 ### Tutorial Reference Material
 
-#### Course Notes / Software
+**Course Notes / Software**
 
-##### Slides:
+**Slides:**
 
 - Week 1 Lecture 1 Notes:
 
@@ -44,30 +44,30 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 [PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pdf) \| [PPTX](https://github.com/ULI101/slides/blob/main/ULI101-1.2.pptx)
 
 
-##### Tutorials:
+**Tutorials:**
 
 [HOWTO: Access Your Matrix Account](#investigation-1-accessing-your-matrix-linux-account)
 
-##### Windows SSH client Software:
+**Windows SSH client Software:**
 
 - [SSH/SFTP](http://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe)
 - [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download)
 - [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 
-#### Linux Command/Shortcut Reference
+**Linux Command/Shortcut Reference**
 
-##### Matrix Account Access:
+**Matrix Account Access:**
 
 - [logout, exit](https://ss64.com/bash/logout.html)
 - [\<ctrl\>\<d\>](https://www.quora.com/What-is-the-difference-between-typing-Ctrl+C-and-Ctrl+D-in-the-Linux-terminal)
 - [passwd](http://man7.org/linux/man-pages/man1/passwd.1.html)
 
-##### Command Line Editing:
+**Command Line Editing:**
 
 - [Bash Shell Shortcut Keys](https://www.ostechnix.com/list-useful-bash-keyboard-shortcuts/)
 
-##### General Linux Commands:
+**General Linux Commands:**
 
 - [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html)
 - [cd](http://man7.org/linux/man-pages/man1/cd.1p.html)
@@ -78,9 +78,9 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 - [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html)
 - [clear, \<ctrl\>\<l\>](http://man7.org/linux/man-pages/man1/clear.1.html)
 
-#### YouTube Videos
+**YouTube Videos**
 
-##### Brauer Instructional Videos:
+**Brauer Instructional Videos:**
 
 - [Connecting to Matrix Using SSH Client, and Running UBUNTU Within Windows 10](https://www.youtube.com/watch?v=L5RcOngDV_o)
 - [Linux File System, Basic Navigation (ls, cd, pwd, tree), Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2)
