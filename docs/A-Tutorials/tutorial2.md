@@ -26,9 +26,9 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 ### Tutorial Reference Material
 
-#### Course Notes
+**Course Notes**
 
-##### Slides:
+**Slides:**
 
 - Week 2 Lecture 1 Notes:
 
@@ -39,14 +39,14 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 [PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pptx)
 
 
-##### Tutorials:
+**Tutorials:**
 
 - [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf)
 - [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf)
 
-#### Linux Command/Shortcut Reference
+**Linux Command/Shortcut Reference**
 
-##### File Management:
+**File Management:**
 
 - [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html)
 - [cd](http://man7.org/linux/man-pages/man1/cd.1p.html)
@@ -58,7 +58,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 - [mv](http://man7.org/linux/man-pages/man1/mv.1p.html)
 - [rm , rm -r](http://man7.org/linux/man-pages/man1/rm.1.html)
 
-##### Text Editors / File Content:
+**Text Editors / File Content:**
 
 - [vi](http://man7.org/linux/man-pages/man1/vi.1p.html) , [nano](https://linux.die.net/man/1/nano)
 - [cat](http://man7.org/linux/man-pages/man1/cat.1.html)
@@ -72,9 +72,9 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 - [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html)
 - [grep](http://linuxcommand.org/lc3_man_pages/grep1.html)
 
-#### YouTube Videos
+**YouTube Videos**
 
-##### Brauer Instructional Videos:
+**Brauer Instructional Videos:**
 
 - [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r)](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3)
 
