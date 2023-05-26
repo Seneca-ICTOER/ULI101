@@ -163,10 +163,10 @@ You will be creating the following **directory structure** within your home dire
 
 For example, if your Seneca user ID was **mkhan** then you would display the pathname _/home/your-seneca-id_ as: **/home/mkhan**
 
-  1. Login to your matrix account (you should know how to do this from performing [Tutorial 1 INVESTIGATION 1.](/tutorial1.md#tutorial-1-using-your-matrix-server-account)
+  1. Login to your matrix account (you should know how to do this from performing [Tutorial 1 INVESTIGATION 1.](./tutorial1.md#investigation-1-accessing-your-matrix-linux-account)
 
   2. Issue a command to confirm that you are located in your home directory
-(you should know how to do this from performing [Tutorial 1 INVESTIGATION 2](/tutorial1.md#investigation-2-using-the-linux-shell)
+(you should know how to do this from performing [Tutorial 1 INVESTIGATION 2](./tutorial1.md#investigation-2-using-the-linux-shell)
 
   3. Issue the following Linux command: `mkdir /home/your-seneca-id/uli101xx` (remember: use your Seneca username instead of "your-seneca-id")
 
