@@ -1,8 +1,8 @@
 ---
-id: week3
-title: Week3
+id: tutorial3
+title: Tutorial 3 - Advanced File Management / Quoting Special Characters
 sidebar_position: 3
-description: Week 3's Course Notes for Students to Learn Pathnames, Filename Expansion, and Quoting Special Characters
+description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and Quoting Special Characters
 ---
 
 # Objectives
@@ -640,7 +640,7 @@ Your instructor may take-up these questions during class. It is up to the studen
 
 When answering Linux command questions on this side or the back side of this page, refer to the following Inverted Tree diagram. The week3 directory is contained in your home directory. Assume that you just logged into your Matrix account. Directories are underlined.
 
-![Week 3 Practice Question](img/Week3-practice-question.png)
+![Week 3 Practice Question](/img/Week3-practice-question.png)
 
   1. Write a single Linux command using relative pathnames to create the directory structure displayed in the diagram above.
   2. Write a single Linux command to create the empty files “.answers.txt” and “questions.txt” shown in the diagram above using absolute pathnames.
