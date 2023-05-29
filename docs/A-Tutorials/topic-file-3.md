@@ -1,7 +1,7 @@
 ---
 id: topic-file-3
 title: Topic File 3
-sidebar_position: 7
+sidebar_position: 9
 description: TBD
 ---
 
