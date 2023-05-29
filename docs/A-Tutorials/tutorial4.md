@@ -215,7 +215,7 @@ Setting **umask** for newly-created **regular files** ^
 
 **ATTENTION:**
 
-**This online tutorial will be required to be completed by Friday in week 5 by midnight to obtain a grade of 2% towards this cours**
+**This online tutorial will be required to be completed by Friday in week 5 by midnight to obtain a grade of 2% towards this course**
 
 
 For this investigation, we will NOT be logged into our Matrix account, but it is recommended to have an **MS Word document** open to manually perform numbering conversions.
