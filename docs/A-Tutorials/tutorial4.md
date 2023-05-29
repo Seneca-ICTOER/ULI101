@@ -27,7 +27,7 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Numbering Conversion / File Permissions Reference** | **YouTube Videos** | | |
+| **Course Notes** | **Numbering Conversion / File Permissions Reference** | | | **YouTube Videos** |
 | :--- | :--- | :--- | :--- | :--- |
 | **Slides:** | **Data Representation Definitions:** | **File Permission Concepts:** | **File Permission Commands:** | **Instructional Videos:** |
 | - Week 4 Lecture 1 Notes: | - [Data Representation](https://home.adelphi.edu/~siegfried/cs170/170l1.pdf) | - [Introduction to File Permissions](https://www.booleanworld.com/introduction-linux-file-permissions/) | - [chmod](https://ss64.com/bash/chmod.html) | - [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U) |
