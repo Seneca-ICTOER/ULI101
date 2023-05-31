@@ -47,8 +47,8 @@ description: Contents of (course notes title here)
 | - Linux GUI and the terminal | - [Tutorial 1](/A-Tutorials/tutorial1.md) |  |
 | - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
 | - Accessing your Matrix Account | - [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
-| - Using your Matrix Account | - [HOWTO: Access Your Matrix Account]() (Platforms: Windows, Linux, Mac OSX) |  |
-| | - [Using a Linux Desktop]() | |
+| - Using your Matrix Account | - [HOWTO: Access Your Matrix Account](brokenlink) (Platforms: Windows, Linux, Mac OSX) |  |
+| | - [Using a Linux Desktop](brokenlink) | |
 | | **Links to Windows SSH clients** | |
 | | (Access Matrix from home): [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) | |
 | | | |
