@@ -251,7 +251,7 @@ This is very useful for backing up your files without using the **cp** command!
 
 `cat ~/links/data-file.txt`
 
-What happened to this **original** file?</u> file?
+What happened to this **original** file?
 What does this mean in terms of creating hard-linked files for back-ups?
 
   17. Issue the following Linux command to create a hard-linked file in your **home** directory:
