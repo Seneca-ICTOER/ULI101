@@ -31,7 +31,7 @@ description: Contents of (course notes title here)
 | Important Quick Link |
 | :---: |
 | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) |
-| [Course Policies for ULI101]() |
+| [Course Policies for ULI101](brokenlink) |
 | [Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |
 
 | Week | | |
@@ -44,7 +44,7 @@ description: Contents of (course notes title here)
 | - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** | - INVESTIGATION 2: Using The Linux Shell |
 | - Unix/Linux Background | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pptx) |  |
 | - Open source philosophy | **Tutorials:** |  |
-| - Linux GUI and the terminal | - [Tutorial 1](./tutorial1.md) |  |
+| - Linux GUI and the terminal | - [Tutorial 1](/A-Tutorials/tutorial1.md) |  |
 | - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
 | - Accessing your Matrix Account | - [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
 | - Using your Matrix Account | - [HOWTO: Access Your Matrix Account]() (Platforms: Windows, Linux, Mac OSX) |  |
@@ -58,7 +58,7 @@ description: Contents of (course notes title here)
 | - File types and file naming | **Week 2 Lecture 2 Notes:** | - INVESTIGATION 1: Creating & Managing Directories |
 | - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pptx) | - INVESTIGATION 2: Managing Text Files |
 | - Text editing | **Tutorials:** |  |
-| - Common file utilities: (cat,more,less,touch,file,find) | - [Tutorial 2: Unix / Linux File Management](./tutorial2.md)|  |
+| - Common file utilities: (cat,more,less,touch,file,find) | - [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md)|  |
 | | **Reference Sheets:** | |
 | | - [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | |
 | | - [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf/) | |
@@ -74,7 +74,7 @@ description: Contents of (course notes title here)
 | - File name expansion | **Week 3 Lecture 2 Notes:** | - INVESTIGATION 1: Absolute / Relative / Relative-To-Home Pathnames |
 | - Shell basics | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pptx) | - INVESTIGATION 2: Filename Expansion |
 | - Command execution in detail | **Tutorials:** | - INVESTIGATION 3: Quoting Special Characters |
-| - Command History | - [Tutorial 3: Advanced File Management / Quoting Special Characters](./tutorial3.md)|  |
+| - Command History | - [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md)|  |
 | - Recalling and editing previous commands | **YouTube Videos** | |
 | - Quoting | - [Filename Expansions](https://youtu.be/5FQnehwzwSM) | |
 | | - [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
@@ -86,7 +86,7 @@ description: Contents of (course notes title here)
 | - Number conversions | **Week 4 Lecture 2 Notes:** | - INVESTIGATION 1: Numbering Conversions |
 | - Unix file permissions | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-4.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-4.2.pptx) | - INVESTIGATION 2: File Permissions |
 | | **Tutorials:** | |
-| | - [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](./tutorial4.md)|  |
+| | - [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md)|  |
 | | **YouTube Videos** | |
 | | - [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | |
 | | | |
@@ -96,7 +96,7 @@ description: Contents of (course notes title here)
 | - Simple filter commands: (head,tail,cut,sort,tr,wc) | **Week 5 Lecture 2 Notes:** | - INVESTIGATION 1: Basics Of Redirections |
 | - grep utility Redirection and piping | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pptx) | - INVESTIGATION 2: Redirection Using Pipeline Commands |
 | - /dev/null file | **Tutorials:** | - INVESTIGATION 3: Issuing Multiple Unix/Linux Commands |
-| | - [Tutorial 5: Redirection](./tutorial5.md)|  |
+| | - [Tutorial 5: Redirection](/A-Tutorials/tutorial5.md)|  |
 | | **YouTube Videos** | |
 | | - [Reading/Writing to Files (stdin, stdout, stderr, >, >>, 2>)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | |
 | | | |
@@ -104,7 +104,7 @@ description: Contents of (course notes title here)
 | **Objectives:** | **Week 6 Lecture 1 Notes:** | **Tutorial 5 Due Friday @ Midnight** |
 | - scp and sftp utilities | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pptx) | **Tutorial 6: Worth 2% (Due Week 8: Friday @ midnight)** |
 | - Sending email from command line | **Tutorials:** | - INVESTIGATION 1: File Transfer (Secure Copy) |
-| - Command History | - [Tutorial 6: File Transfer / Sending Email](./tutorial6.md) | - INVESTIGATION 2: File Transfer (Secure FTP) |
+| - Command History | - [Tutorial 6: File Transfer / Sending Email](/A-Tutorials/tutorial6.md) | - INVESTIGATION 2: File Transfer (Secure FTP) |
 | | **YouTube Videos** | - INVESTIGATION 3: File Transfer (Email) |
 | | - [SSH, SCP and Other Network Tools](https://youtu.be/-Le-7U8tEOA) |  |
 | | | |
@@ -124,7 +124,7 @@ description: Contents of (course notes title here)
 | - Hard and symbolic links | **Week 8 Lecture 2 Notes:** | - INVESTIGATION 1: Linking Files |
 | - Process management | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pptx) | - INVESTIGATION 2: Managing Processes |
 | - Aliases | **Tutorials:** | - INVESTIGATION 3: Aliases / Command History |
-| - Command History | - [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](./tutorial8.md)|  |
+| - Command History | - [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](/A-Tutorials/tutorial8.md)|  |
 | | **YouTube Videos** | |
 | | - [Changing Resolution in Knoppix](https://www.youtube.com/watch?v=aNKMOyRYWfM&feature=youtu.be) | |
 | | - [Processes and Jobs](https://youtu.be/q93POTgH-aQ) | |
