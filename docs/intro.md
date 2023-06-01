@@ -181,3 +181,13 @@ description: Contents of (course notes title here)
 | - export Command | | |
 | - Start-up Files | | |
 | - Further Study | | |
+| | | |
+| **Week 13** | | |
+| **Objectives:** | **Interest Topic:** | **Tutorial 12 Due Friday @ Midnight** |
+| - Interest Topic | - Interest Topic: Graphical Linux via a Virtual Machine (VM) **CHANGE TO LINK** | **Review Tutorial Due Friday @ Midnight** |
+| - Take up Review Questions | **Review Questions:** | |
+| | - [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | |
+| | | |
+| **Week 14** | | |
+| **Evaluation Week:** | | **Final Test (20%)** |
+| - Final Test (20%) | | |
