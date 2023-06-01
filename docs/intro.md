@@ -169,3 +169,15 @@ description: Contents of (course notes title here)
 | - test statements | - [Bash Shell Scripting I](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | |
 | - if / elif-else statements | | |
 | - for loop statements | | |
+| | | |
+| **Week 12** | | |
+| **Objectives:** | **Week 12 Lecture 1 Notes:** | **Tutorial 11 Due Friday @ Midnight** |
+| Additional Shell Scripting: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pptx) | **Tutorial 12: Worth 2% (Due Week 13: Friday @ midnight)** |
+| - if - elif - else statement | **Tutorials:**| - INVESTIGATION 1: Additional Logic Statements |
+| - for loop revisited | - [Tutorial12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) | - INVESTIGATION 2: Additional Looping Statements |
+| - while loop statement | **YouTube Videos** | - INVESTIGATION 3: exit AND break Statements |
+| - Error-Checking with Loops | - [Bash Shell Scripting II](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6) | - INVESTIGATION 4: Using Start-Up Files  |
+| - exit and break Statements |  | |
+| - export Command | | |
+| - Start-up Files | | |
+| - Further Study | | |
