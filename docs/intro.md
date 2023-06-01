@@ -46,7 +46,7 @@ description: Contents of (course notes title here)
 | - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** | - INVESTIGATION 2: Using The Linux Shell |
 | - Unix/Linux Background | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pptx) |  |
 | - Open source philosophy | **Tutorials:** |  |
-| - Linux GUI and the terminal | - [Tutorial 1](/A-Tutorials/tutorial1.md) |  |
+| - Linux GUI and the terminal | - [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |  |
 | - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
 | - Accessing your Matrix Account | - [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
 | - Using your Matrix Account | - [HOWTO: Access Your Matrix Account](/B-SubSection2/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
