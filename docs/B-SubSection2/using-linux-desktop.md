@@ -134,6 +134,6 @@ Instructions to connect to `matrix.senecacollege.ca` using this method will be p
 
 ## Attribution
 
-These instructions were authored by [Mark Fernandes](mark.fernandes@senecacollege.ca) and fetched from the ICT webserver on 12 May 2022.
+These instructions were authored by [Mark Fernandes](mailto:mark.fernandes@senecacollege.ca) and fetched from the ICT webserver on 12 May 2022.
 
 They were refactored for this wiki by Chris Johnson.
