@@ -132,3 +132,40 @@ description: Contents of (course notes title here)
 | | - [Processes and Jobs](https://youtu.be/q93POTgH-aQ) | |
 | | - [Aliases](https://youtu.be/PVnELIbilrg) | |
 | | - [Links](https://youtu.be/tZ94-qH9unM) | |
+| | | |
+| **Week 9** | | |
+| **Objectives:** | **Week 9 Lecture 1 Notes:** | **Tutorial 8 Due Friday @ Midnight** |
+| Regular expressions basics: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pptx) | **Tutorial 9: Worth 2% (Due Week 10: Friday @ midnight)** |
+| - Literal matching | **Week 9 Lecture 2 Notes:** | - INVESTIGATION 1: Simple & Complex Regular Expressions |
+| - Character classes | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pptx) | - INVESTIGATION 2: Extended Regular Expressions |
+| - . wildcard | **Tutorials:** | - INVESTIGATION 3: Other Commands Using Regular Expressions |
+| - \* repetition symbol | - [Tutorial9: Regular Expressions](/A-Tutorials/tutorial9.md)|  |
+| - Anchoring | - [Linux Practice 1 - Regular Expressions](https://github.com/ULI101/labs/raw/main/uli101_command_practice_9a.docx) | |
+| | - [Linux Practice 2 - Regular Expressions](https://github.com/ULI101/labs/raw/main/uli101_command_practice_9b.docx) | |
+| | **YouTube Videos** | |
+| | - [Grep](https://youtu.be/-2pwLHcvCsU) | |
+| | - [Regex](https://youtu.be/5uRM8bh0ipU) | |
+| | - [Using df/du](https://youtu.be/fJmilSaB5Fs) | |
+| | | |
+| **Week 10** | | |
+| **Objectives:** | **Week 10 Lecture 1 Notes:** | **Tutorial 9 Due Friday @ Midnight** |
+| Text Manipulation: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pptx) | **Tutorial 10: Worth 2% (Due Week 11: Friday @ midnight)** |
+| - Using the sed Utility | **Week 10 Lecture 2 Notes:** | - INVESTIGATION 1: Using The SED Utility |
+| - Using the awk Utility | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pptx) | - INVESTIGATION 2: Using The AWK Utility |
+| | **Tutorials:** | |
+| | - [Tutorial10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md)|  |
+| | **YouTube Videos** | |
+| | - [Sed](https://youtu.be/npU6S61AIko) | |
+| | - [Awk](https://youtu.be/OV3XzjDYgJo) | |
+| | | |
+| **Week 11** | | |
+| **Objectives:** | **Week 11 Lecture 1 Notes:** | **Tutorial 10 Due Friday @ Midnight** |
+| Introduction to Shell Scripting: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pptx) | **Tutorial 11: Worth 2% (Due Week 12: Friday @ midnight)** |
+| - Introduction to Shell Scripting | **Week 11 Lecture 2 Notes:** | - INVESTIGATION 1: Creating A Shell Script |
+| - echo and read commands | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pptx) | - INVESTIGATION 2: She-Bang Line / Variable / Parameters |
+| - Shell Variables | **Tutorials:** | - INVESTIGATION 3: Command Substitution / Math Operations |
+| - Positional Parameters | - [Tutorial11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md)| - INVESTIGATION 4: Control Flow Statements  |
+| - Command Substitution / Math Operations | **YouTube Videos** | |
+| - test statements | - [Bash Shell Scripting I](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | |
+| - if / elif-else statements | | |
+| - for loop statements | | |
