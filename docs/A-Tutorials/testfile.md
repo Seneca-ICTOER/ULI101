@@ -1,7 +1,7 @@
 ---
 id: test-file
 title: Test File
-sidebar_position: 10
+sidebar_position: 12
 description: TBD
 ---
 
