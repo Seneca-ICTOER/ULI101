@@ -5,14 +5,6 @@ sidebar_position: 7
 description: Tutorial 8 for Students to Learn Links and Process Management
 ---
 
-# Objectives
-
-- Filesystem links
-- Hard and symbolic links
-- Process management
-- Aliases
-- Command History
-
 # Tutorial 8: Links / Process Management
 
 ## LINKING FILES / MANAGING PROCESSES
