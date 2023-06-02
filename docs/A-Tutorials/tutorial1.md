@@ -26,11 +26,11 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 - Week 1 Lecture 1 Notes:
 
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-1.1.pptx)
+[PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
 
 - Week 1 Lecture 2 Notes:
 
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pdf) \| [PPTX](https://github.com/ULI101/slides/blob/main/ULI101-1.2.pptx)
+[PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx)
 
 
 **Tutorials:**
@@ -621,7 +621,7 @@ If the checking shell script detects an **error**, then it will provide feedback
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to a Word document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: https://github.com/ULI101/labs/raw/main/uli101_week1_practice.docx
+Here is a link to a Word document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 1 Practice](/files/uli101_week1_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
