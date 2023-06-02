@@ -1,7 +1,7 @@
 ---
 id: intro
 title: Table of contents
-sidebar_position: 2
+sidebar_position: 3
 description: Contents of (course notes title here)
 ---
 
