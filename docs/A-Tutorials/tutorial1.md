@@ -7,7 +7,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 # Tutorial 1: Using Your Matrix Server Account
 
-## USING YOUR MATRIX SERVER ACCOUNT
+## Using Your Matrix Server Account
 
 ### Main Objectives of this Tutorial
 
@@ -24,14 +24,9 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 **Slides:**
 
-- Week 1 Lecture 1 Notes:
+- Week 1 Lecture 1 Notes: [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
 
-[PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
-
-- Week 1 Lecture 2 Notes:
-
-[PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx)
-
+- Week 1 Lecture 2 Notes: [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx)
 
 **Tutorials:**
 
@@ -58,14 +53,8 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 **General Linux Commands:**
 
-- [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html)
-- [cd](http://man7.org/linux/man-pages/man1/cd.1p.html)
-- [ls](http://man7.org/linux/man-pages/man1/ls.1p.html)
-- [cal](http://man7.org/linux/man-pages/man1/cal.1.html)
-- [date](http://man7.org/linux/man-pages/man1/date.1.html)
-- [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html)
-- [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html)
-- [clear, \<ctrl\>\<l\>](http://man7.org/linux/man-pages/man1/clear.1.html)
+| [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [cal](http://man7.org/linux/man-pages/man1/cal.1.html) | [date](http://man7.org/linux/man-pages/man1/date.1.html) | [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html) | [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html) | [clear, \<ctrl\>\<l\>](http://man7.org/linux/man-pages/man1/clear.1.html) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 **YouTube Videos**
 
@@ -74,7 +63,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 - [Connecting to Matrix Using SSH Client, and Running UBUNTU Within Windows 10](https://www.youtube.com/watch?v=L5RcOngDV_o)
 - [Linux File System, Basic Navigation (ls, cd, pwd, tree), Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2)
 
-## KEY CONCEPTS
+## Key Concepts
 
 ### Purpose of Your Student Account on Matrix
 
@@ -146,7 +135,7 @@ Connect to Matrix via**ssh** command
 
 Connect to Matrix via **graphical** SSH Program
 
-## INVESTIGATION 1: ACCESSING YOUR MATRIX LINUX ACCOUNT
+## Investigation 1: Accessing Your Matrix Linux Account
 
 In this section, you will learn how to access your Matrix Linux account by two different methods:
 
@@ -160,7 +149,7 @@ In this section, you will learn how to access your Matrix Linux account by two d
 It is essential that you complete these Weekly Tutorials fully and on time. These are your major learning tool in the course. There are no late marks.
 
 
-### METHOD 1: CONNECTING TO YOUR MATRIX ACCOUNT FROM YOUR HOME COMPUTER
+### METHOD 1: Connecting To Your Matrix Account From Your Home Computer
 
 You will now learn a quick and simple method of connecting to your Matrix account by opening a text-based **terminal** (in any OS) and issuing the **ssh command.**
 
@@ -236,7 +225,7 @@ You will now learn an **alternative method** to access your Matrix account (if y
 by downloading and running a graphical SSH application.
 
 
-### METHOD 2: CONNECTING TO YOUR MATRIX ACCOUNT FROM SENECA COMPUTER LAB
+### METHOD 2: Connecting To Your Matrix Account From Seneca Computer Lab
 
 **NOTE: This section requires you have access to a Seneca computer lab on campus.
 If you don't have access to a Seneca computer lab this semester, then you can skip this section**
@@ -370,7 +359,7 @@ You can **configure** the SSH application to adjust elements such as the **windo
 
 In the next investigation, you will learn how to issue Linux commands from the command prompt (referred to as the "shell"), learn how to get help with Linux commands, use command-line editing short cut keys, and run a program to confirm that you connected to your Matrix account in order to get marks for this online tutorial.
 
-## INVESTIGATION 2: USING THE LINUX SHELL
+## Investigation 2: Using The Linux Shell
 
 In this investigation, you will learn how to use the Linux Shell. Topics in the section include:
   - Learn the basic **Linux command structure** (arguments and options)
@@ -617,7 +606,7 @@ If the checking shell script detects an **error**, then it will provide feedback
       - Keep those confirmation email messages for the duration of this semester as proof that you have completed those checking scripts in case there is a discrepancy in tutorial grades.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
