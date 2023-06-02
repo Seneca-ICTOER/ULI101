@@ -1,7 +1,7 @@
 ---
 id: usinglinuxdesktop
 title: Using Linux Desktop
-sidebar_position: 5
+sidebar_position: 3
 description: Tutorial For Students to Run a Linux Desktop
 ---
 
