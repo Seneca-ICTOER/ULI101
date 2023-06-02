@@ -5,9 +5,9 @@ sidebar_position: 5
 description: Tutorial 5 for Students to Learn Redirection
 ---
 
-# Tutorial5: Redirection
+# Tutorial 5: Redirection
 
-## REDIRECTION: STANDARD INPUT / STANDARD OUTPUT / STANDARD ERROR
+## Redirection: Standard Input / Standard Output / Standard Error
 
 ### Main Objectives of this Tutorial
 
@@ -22,21 +22,38 @@ description: Tutorial 5 for Students to Learn Redirection
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Linux Command / Shortcut Reference** | | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Slides:** | **Redirection:** | **Multiple Commands:** | **Redirection Filters:** | **Brauer Instructional Videos:** |
-| - Week 5 Lecture 1 Notes: | - [Standard Input (stdin)](http://www.linfo.org/standard_input.html) | - [Semicolon](https://www.javatpoint.com/linux-semicolon) | - [more](http://man7.org/linux/man-pages/man1/more.1.html), [less](http://man7.org/linux/man-pages/man1/less.1.html) | - [Reading/Writing to Files (echo, stdin, stdout, stderr, >, >>, 2>, cat, more, less, man, date, diff, diff -y, find, wc](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) |
-| [PDF](https://github.com/ULI101/slides/raw/main/ULI101-5.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-5.1.pptx) | - [Standard Output (stdout)](http://www.linfo.org/standard_output.html) | - [Grouping ( )](https://www.gnu.org/software/bash/manual/html_node/Command-Grouping.html) | - [head](http://man7.org/linux/man-pages/man1/head.1.html), [tail](http://man7.org/linux/man-pages/man1/tail.1.html) |  |
-| - Week 5 Lecture 2 Notes: | - [Standard Error (stderr)](http://www.linfo.org/standard_error.html) | | - [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | |
-| [PDF](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pptx) | - [Pipeline Commands](http://www.linfo.org/pipe.html) | | - [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | |
-| | | | - [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) | |
-| | | | - [cut](http://man7.org/linux/man-pages/man1/cut.1.html) | |
-| | | | - [tr](http://linuxcommand.org/lc3_man_pages/tr1.html) | |
-| | | | - [wc](http://man7.org/linux/man-pages/man1/wc.1.html) | |
-| | | | - [tee](http://man7.org/linux/man-pages/man1/tee.1.html) | |
+**Course Notes**
+
+**Slides:**
+
+- Week 5 Lecture 1 Notes: [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx)
+- Week 5 Lecture 2 Notes: [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx)
+
+**Linux Command / Shortcut Reference**
+
+**Redirection:**
+
+| [Standard Input (stdin)](http://www.linfo.org/standard_input.html) | [Standard Output (stdout)](http://www.linfo.org/standard_output.html) | [Standard Error (stderr)](http://www.linfo.org/standard_error.html) | [Pipeline Commands](http://www.linfo.org/pipe.html) |
+| :--- | :--- | :--- | :--- |
+
+**Multiple Commands:**
+
+- [Semicolon](https://www.javatpoint.com/linux-semicolon)
+- [Grouping ( )](https://www.gnu.org/software/bash/manual/html_node/Command-Grouping.html)
+
+**Redirection Filters:**
+
+| [more](http://man7.org/linux/man-pages/man1/more.1.html), [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html), [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) | [cut](http://man7.org/linux/man-pages/man1/cut.1.html) | [tr](http://linuxcommand.org/lc3_man_pages/tr1.html) | [wc](http://man7.org/linux/man-pages/man1/wc.1.html) | [tee](http://man7.org/linux/man-pages/man1/tee.1.html) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+**YouTube Videos**
+
+**Brauer Instructional Videos:**
+
+- [Reading/Writing to Files (echo, stdin, stdout, stderr, >, >>, 2>, cat, more, less, man, date, diff, diff -y, find, wc](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
 **Additional File Manipulation Commands**
 
@@ -237,7 +254,7 @@ _Example:_
 `it will automatically go to the next line" |tr '[a-z]' '[A-Z]'`
 
 
-## INVESTIGATION 1: BASICS OF REDIRECTION
+## INVESTIGATION 1: Basics Of Redirection
 
 **ATTENTION:**
 
@@ -432,7 +449,7 @@ The problem with using these redirection symbols is that you create **temporary 
 In the next investigation, you will be learning how to issue **pipeline Linux commands** which can
 accomplish tasks without creating temporary files.
 
-## INVESTIGATION 2: REDIRECTION USING PIPELINE COMMANDS
+## INVESTIGATION 2: Redirection Using Pipeline Commands
 
 In this investigation, you will learn to issue **pipeline commands** to to accomplish tasks without having to generate temporary files.
 
@@ -528,7 +545,7 @@ In the next investigation, you will learn various techniques to issue **multiple
 on the same line, or issue a **single Linux command over multiple lines.**
 
 
-## INVESTIGATION 3: ISSUING MULTIPLE UNIX/LINUX COMMANDS
+## INVESTIGATION 3: Issuing Multiple Unix/Linux Commands
 
 In this investigation, you will learn how to issue multiple Unix / Linux commands in a single line or over multiple lines.
 
@@ -581,13 +598,11 @@ Did the command work? What is the purpose of issuing a Linux command in this way
 
   9. Complete the Review Questions sections to get additional practice.
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/blob/main/uli101_week5_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 5 Practice](/files/uli101_week5_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
