@@ -5,11 +5,6 @@ sidebar_position: 4
 description: Interest Topic for Students who want extra practice with Linux and Knoppix
 ---
 
-# Objectives
-
-  - Interest Topic
-  - Take up Review Questions
-
 # Interest Topic: Graphical Linux via a Virtual Machine (VM)
 
 ## INSTALLING LINUX / LIVE LINUX / VIRTUALIZATION
