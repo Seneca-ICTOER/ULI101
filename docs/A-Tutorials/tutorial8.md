@@ -7,7 +7,7 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 
 # Tutorial 8: Links / Process Management
 
-## LINKING FILES / MANAGING PROCESSES
+## Linking Files / Managing Processes
 
 ### Main Objectives of this Practice Tutorial
 
@@ -22,22 +22,40 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Concepts / Commands** | | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Slides:** | **Links:** | **Managing Processes:** | **Linux Commands:** | **Brauer Instructional Videos:** |
-| - Week 8 Lecture 1 Notes: | - [Hard Links](http://www.linfo.org/hard_link.html#:~:text=A%20hard%20link%20is%20merely,created%20to%20other%20hard%20links.) | - [inode](https://en.wikipedia.org/wiki/Inode) | - [ln](http://man7.org/linux/man-pages/man1/ln.1.html) | - [Inodes and Links](https://www.youtube.com/watch?v=tZ94-qH9unM&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=9) |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-8.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-8.1.pptx) | - [Symbolic Links](https://www.computerhope.com/jargon/s/symblink.htm#:~:text=Alternatively%20referred%20to%20as%20a,or%20directory%20using%20its%20path.&text=In%20Linux%20and%20Unix%20symbolic,created%20using%20the%20mklink%20command.) | - [Manipulating Processes](https://opensource.com/article/18/9/linux-commands-process-management) | - [ps](http://man7.org/linux/man-pages/man1/ps.1.html) | - [Processes and Jobs](https://www.youtube.com/watch?v=q93POTgH-aQ&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=7) |
-| - Week 8 Lecture 2 Notes: | | | - [top](http://man7.org/linux/man-pages/man1/top.1.html) | |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pptx) | | | - [fg](http://man7.org/linux/man-pages/man1/fg.1p.html) | |
-| | | | - [bg](http://man7.org/linux/man-pages/man1/bg.1p.html) | |
-| | | | - [jobs](http://man7.org/linux/man-pages/man1/jobs.1p.html) | |
-| | | | - [kill](http://man7.org/linux/man-pages/man1/kill.1.html) | |
-| | | | - [sleep](https://man7.org/linux/man-pages/man1/sleep.1.html) | |
-| | | | - [alias](http://linuxcommand.org/lc3_man_pages/aliash.html) , [unalias](https://man.linuxreviews.org/man1p/unalias.1p.html) | |
-| | | | - [history](https://mediatemple.net/community/products/dv/204404624/using-the-history-command) | |
+**Course Notes**
+
+**Slides:**
+
+- Week 8 Lecture 1 Notes: [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx)
+- Week 8 Lecture 2 Notes: [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx)
 
 
-## KEY CONCEPTS
+**Concepts / Commands**
+
+**Links:**
+
+- [Hard Links](http://www.linfo.org/hard_link.html#:~:text=A%20hard%20link%20is%20merely,created%20to%20other%20hard%20links.)
+- [Symbolic Links](https://www.computerhope.com/jargon/s/symblink.htm#:~:text=Alternatively%20referred%20to%20as%20a,or%20directory%20using%20its%20path.&text=In%20Linux%20and%20Unix%20symbolic,created%20using%20the%20mklink%20command.)
+
+**Managing Processes:**
+
+- [inode](https://en.wikipedia.org/wiki/Inode)
+- [Manipulating Processes](https://opensource.com/article/18/9/linux-commands-process-management)
+
+**Linux Commands:**
+
+| [ln](http://man7.org/linux/man-pages/man1/ln.1.html) | [ps](http://man7.org/linux/man-pages/man1/ps.1.html) | [top](http://man7.org/linux/man-pages/man1/top.1.html) | [fg](http://man7.org/linux/man-pages/man1/fg.1p.html) | [bg](http://man7.org/linux/man-pages/man1/bg.1p.html) | [jobs](http://man7.org/linux/man-pages/man1/jobs.1p.html) | [kill](http://man7.org/linux/man-pages/man1/kill.1.html) | [sleep](https://man7.org/linux/man-pages/man1/sleep.1.html) | [alias](http://linuxcommand.org/lc3_man_pages/aliash.html) , [unalias](https://man.linuxreviews.org/man1p/unalias.1p.html) | [history](https://mediatemple.net/community/products/dv/204404624/using-the-history-command) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+**YouTube Videos**
+
+**Brauer Instructional Videos:**
+
+- [Inodes and Links](https://www.youtube.com/watch?v=tZ94-qH9unM&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=9)
+- [Processes and Jobs](https://www.youtube.com/watch?v=q93POTgH-aQ&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=7)
+
+
+## Key Concepts
 
 **i-node (index) ID Number of a File**
 
@@ -160,7 +178,7 @@ _Examples of commands that use command history:_
 | **!xxx** |	**re-run** a most recent previously-issued command beginning with string "xxx" |
 
 
-## INVESTIGATION 1: LINKING FILES
+## INVESTIGATION 1: Linking Files
 
 **ATTENTION:**
 
@@ -401,7 +419,7 @@ What do you notice? Symbolic links are good for creating "short-cuts" to both **
 In the next investigation, you will learn how to **manage processes** on your Matrix server.
 
 
-## INVESTIGATION 2: MANAGING PROCESSES
+## INVESTIGATION 2: Managing Processes
 
 In this investigation, you will learn how to **manage processes** on a Unix / Linux server.
 
@@ -569,7 +587,7 @@ What did you notice?
 In the next investigation, you will learn how to **create aliases** and **view command history** on your Matrix server.
 
 
-## INVESTIGATION 3: ALIASES / COMMAND HISTORY
+## INVESTIGATION 3: Aliases / Command History
 
 In this investigation, you will learn how to **manage aliases** and **Linux command history** on your Matrix account.
 
@@ -671,13 +689,11 @@ What happened?
 What happened?
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/raw/main/uli101_week8_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 8 Practice](/files/uli101_week8_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
