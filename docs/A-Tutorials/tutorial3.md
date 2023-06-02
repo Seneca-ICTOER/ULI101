@@ -7,7 +7,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 # Tutorial 3: Advanced File Management / Quoting Special Characters
 
-## ADVANCED UNIX / LINUX FILE MANAGEMENT
+## Advanced Unix / Linux File Management
 
 ### Main Objectives of this Tutorial
 
@@ -23,13 +23,9 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 ##### Slides:
 
-- Week 3 Lecture 1 Notes:
+- Week 3 Lecture 1 Notes: [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx)
 
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-3.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-3.1.pptx)
-
-- Week 3 Lecture 2 Notes:
-
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pptx)
+- Week 3 Lecture 2 Notes: [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx)
 
 #### Pathname Type / Filename Expansion / Quoting
 
@@ -57,7 +53,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 - [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo)
 - [Quoting Special Characters](https://www.youtube.com/watch?v=mzgfE6-ZtUY)
 
-## KEY CONCEPTS
+## Key Concepts
 
 ### Pathname Types
 
@@ -206,7 +202,7 @@ There are **3 methods** to make those special characters **act only like text ch
 | Contain Special character within **single quotes** (Quotes out ALL special characters)	 | **echo '\* hello \*'** |
 
 
-## INVESTIGATION 1: ABSOLUTE / RELATIVE / RELATIVE-TO-HOME PATHNAMES
+## INVESTIGATION 1: Absolute / Relative / Relative-To-Home Pathnames
 
 **ATTENTION:**
 
@@ -344,7 +340,7 @@ Let's run a checking script to make certain you performed the a few of the recen
 and proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 2: FILENAME EXPANSION
+## INVESTIGATION 2: Filename Expansion
 
 You will now get practice issuing Linux file management commands using filename expansion symbols.
 We will be using the directory structure that was created in the previous INVESTIGATION.
@@ -535,7 +531,7 @@ View the contents of the contents directory. What did this command do? Does the 
 Proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 3: QUOTING SPECIAL CHARACTERS
+## INVESTIGATION 3: Quoting Special Characters
 
 As discussed in the above investigation, there are some special characters that the shell uses to perform an operation
 including the filename expansion symbol: \* 
@@ -616,13 +612,11 @@ Why is it dangerous to use special characters when creating filenames?
   20. Complete the Review Questions sections to get additional practice.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain extra practice to help with your quizzes, your midterm, and your final exam.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/raw/main/uli101_week3_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 3 Practice](/files/uli101_week3_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
