@@ -26,8 +26,8 @@ description: Contents of (course notes title here)
 | - Linux GUI and the terminal | - [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |  |
 | - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
 | - Accessing your Matrix Account | - [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
-| - Using your Matrix Account | - [HOWTO: Access Your Matrix Account](/B-SubSection2/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
-| | - [Using a Linux Desktop](/B-SubSection2/using-linux-desktop.md) | |
+| - Using your Matrix Account | - [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
+| | - [Using a Linux Desktop](/B-ExtraResources/using-linux-desktop.md) | |
 | | **Links to Windows SSH clients** | |
 | | (Access Matrix from home): [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) | |
 | | | |
@@ -161,7 +161,7 @@ description: Contents of (course notes title here)
 | | | |
 | **Week 13** | | |
 | **Objectives:** | **Interest Topic:** | **Tutorial 12 Due Friday @ Midnight** |
-| - Interest Topic | - [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-SubSection2/interest-topic.md) | **Review Tutorial Due Friday @ Midnight** |
+| - Interest Topic | - [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-ExtraResources/interest-topic.md) | **Review Tutorial Due Friday @ Midnight** |
 | - Take up Review Questions | **Review Questions:** | |
 | | - [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | |
 | | | |
