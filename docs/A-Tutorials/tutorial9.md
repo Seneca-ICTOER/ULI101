@@ -5,15 +5,6 @@ sidebar_position: 8
 description: Tutorial 9 for Students to Learn Regular Expressions
 ---
 
-# Objectives
-
-Regular expressions basics:
-  - Literal matching
-  - Character classes
-  - \. wildcard
-  - \* repetition symbol
-  - Anchoring
-
 # Tutorial 9: Regular Expressions
 
 ## USING REGULAR EXPRESSIONS
