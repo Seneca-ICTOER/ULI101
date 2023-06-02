@@ -7,7 +7,7 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 
 # Tutorial 11: Shell Scripting - Part 1
 
-## INTRODUCTION TO SHELL SCRIPTING
+## Introduction To Shell Scripting
 
 ### Main Objectives of this Practice Tutorial
 
@@ -22,18 +22,45 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Linux Command/Shortcut Reference** | | | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Slides:** | **Shell Scripting:** | **Variables:** | **Commands / Techniques:** | **Control Flow Statements:** | **Instructional Videos:** |
-| - Week 11 Lecture 1 Notes: | - [Purpose](https://searchdatacenter.techtarget.com/definition/shell-script) | - [Environment](https://opensource.com/article/19/8/what-are-environment-variables) | - [read](http://linuxcommand.org/lc3_man_pages/readh.html) | - [Purpose](https://en.wikipedia.org/wiki/Control_flow) | - [Bash Shell Scripting - Part 1](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | |
-| [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pptx) | | - [User Defined](https://www.linuxtechi.com/variables-in-shell-scripting/#:~:text=User%20Defined%20Variables%3A,like%20a%20real%20computer%20program.) | - [readonly](https://man7.org/linux/man-pages/man1/readonly.1p.html) | - [test command](https://www.computerhope.com/unix/test.htm) | - [Creating and Running a Shell Script](https://www.youtube.com/watch?v=cQepf9fY6cE) |
-| - Week 11 Lecture 2 Notes: | | - [Positional Parameters](http://osr600doc.xinuos.com/en/SDK_tools/_Positional_Parameters.html#:~:text=A%20positional%20parameter%20is%20a,up%20to%20nine%20positional%20parameters.) | - [Command Substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html) | - [if statement](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#:~:text=If%20statements%20(and%2C%20closely%20related,conditions%20that%20we%20may%20set.)) | |
-| [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pptx) | | | | - [if-else statement](https://www.tutorialspoint.com/unix/if-else-statement.htm) | |
-| | | | | - [for loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.) | |
+**Course Notes**
+
+**Slides:**
+
+- Week 11 Lecture 1 Notes: [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx)
+- Week 11 Lecture 2 Notes: [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx)
+
+**Linux Command/Shortcut Reference**
+
+**Shell Scripting:**
+
+- [Purpose](https://searchdatacenter.techtarget.com/definition/shell-script)
+
+**Variables:**
+
+- [Environment](https://opensource.com/article/19/8/what-are-environment-variables)
+- [User Defined](https://www.linuxtechi.com/variables-in-shell-scripting/#:~:text=User%20Defined%20Variables%3A,like%20a%20real%20computer%20program.)
+- [Positional Parameters](http://osr600doc.xinuos.com/en/SDK_tools/_Positional_Parameters.html#:~:text=A%20positional%20parameter%20is%20a,up%20to%20nine%20positional%20parameters.)
+
+**Commands / Techniques:**
+
+- [read](http://linuxcommand.org/lc3_man_pages/readh.html)
+- [readonly](https://man7.org/linux/man-pages/man1/readonly.1p.html)
+- [Command Substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html)
+
+**Control Flow Statements:**
+
+| [Purpose](https://en.wikipedia.org/wiki/Control_flow) | [test command](https://www.computerhope.com/unix/test.htm) | [if statement](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#:~:text=If%20statements%20(and%2C%20closely%20related,conditions%20that%20we%20may%20set.)) | [if-else statement](https://www.tutorialspoint.com/unix/if-else-statement.htm) | [for loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.) |
+| :--- | :--- | :--- | :--- | :--- |
+
+**YouTube Videos**
+
+**Instructional Videos:**
+
+- [Bash Shell Scripting - Part 1](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5)
+- [Creating and Running a Shell Script](https://www.youtube.com/watch?v=cQepf9fY6cE)
 
 
-
-## KEY CONCEPTS
+## Key Concepts
 
 A shell script is a **file** that contains **Unix/Linux commands** and **reserved words** to help **automatic** common tasks.
 
@@ -219,7 +246,7 @@ A **logic statement** is used to determine which Linux commands are executed bas
 
 There are several logic statements, but we will just concentrate on the if statement.
 
-```text
+```bash
 if test condition
   then
      command(s) 
@@ -240,7 +267,7 @@ based on the results of the test condition.
 
 _Example:_
 
-```text
+```bash
 if test condition
   then
      command(s)
@@ -262,7 +289,7 @@ Reference: https://www.chegg.com/homework-help/definitions/loop-statement-3
 
 There are several loops, but we will look at the **for loop** using a **list**.
 
-```text
+```bash
 for item in list 
 do
     command(s) 
@@ -276,7 +303,7 @@ Refer to the diagram below for an example using the for loop with a list.
 Example of using the **for** looping control-flow statement.
 
 
-## INVESTIGATION 1: CREATING A SHELL SCRIPT
+## INVESTIGATION 1: Creating A Shell Script
 
 **ATTENTION:**
 
@@ -357,7 +384,7 @@ add a **she-bang line** at the top of a shell script to force it to run in a spe
 Proceed to the next investigation.
 
 
-## INVESTIGATION 2: SHE-BANG LINE / VARIABLES / PARAMETERS
+## INVESTIGATION 2: She-Bang Line / Variables / Parameters
 
 In this investigation, you will add a **she-bang line** at the top of your shell script to force the shell script to run in a specified shell when executed. You will also learn how to use **variables**, **positional** and **special parameters** to make your shell scripts more adaptable.
 
@@ -443,7 +470,7 @@ Let's include some **ENVIRONMENT variables** in our Bash Shell script.
 
   14. Add the following lines to the bottom of the _hello.bash_ file:
 
-```text
+```bash
 echo
 echo "The current directory location is: $PWD"
 echo "The current user home directory is: $HOME"
@@ -506,7 +533,7 @@ Let's create a Bash shell script that contain **user-created variables.**
 
   24. Add the following lines to the beginning of the _user-variables.bash_ file:
 
-```text
+```bash
 #!/bin/bash
 read -p "Enter your Full Name: " name
 read -p "Enter your age (in years): " age
@@ -531,7 +558,7 @@ What did you notice?
 
   29. **Insert** the following lines immediately **below** the **she-bang** line:
 
-```text
+```bash
 age=25
 readonly age
 ```
@@ -552,7 +579,7 @@ A **positional parameter** is a special variable within a shell program; its val
 
   33. Add the following lines to the beginning of this file:
 
-```text
+```bash
 #!/bin/bash
 echo \$0: $0
 echo \$2: $2
@@ -596,7 +623,7 @@ Take some time to view the results and how the _parameters_ have changed when us
 In the next investigation, you will learn to use **command substitution** and **math operations** in your shell scripts.
 
 
-## INVESTIGATION 3: COMMAND SUBSTITUTION / MATH OPERATIONS
+## INVESTIGATION 3: Command Substitution / Math Operations
 
 In this investigation, you will learn how to use **command substitution** and **math operations** in your shell scripts.
 
@@ -621,7 +648,7 @@ Let's create a Bash shell script that uses command substitution that displays
 
   3. Add the following lines to the beginning of this file:
 
-```text
+```bash
 #!/bin/bash
 echo
 echo "MY ACCOUNT INFORMATION:"
@@ -715,7 +742,7 @@ You can create variables and assign them values in the _math construct_ as well.
 
   8. Add the following lines to the beginning of this file:
 
-```text
+```bash
 #!/bin/bash
 echo
 dogFactor=7
@@ -749,7 +776,7 @@ In the next investigation, you will use **control-flow statements** to allow you
 to perform differently under different situations.
 
 
-## INVESTIGATION 4: CONTROL FLOW STATEMENTS
+## INVESTIGATION 4: Control Flow Statements
 
 In this investigation, you will learn how to use **control-flow statements**
 to make your shell script behave _differently_ under _different situations or conditions_.
@@ -861,7 +888,7 @@ based on the result of the **test condition**. In this tutorial,we will only foc
 
   19. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 num1=5
 num2=10
@@ -934,7 +961,7 @@ if the first number is less than or equal to the second number.
 
   30. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 read -p "Enter the first number: " num1
 read -p "Enter the second number: " num2
@@ -974,7 +1001,7 @@ _There are several loops, but we will look at a **for** loop using a **list**._
 
   35. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 echo
 for x in 5 4 3 2 1
@@ -1004,7 +1031,7 @@ echo
 
   40. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 echo
 for x
@@ -1042,20 +1069,18 @@ If you encounter errors, make corrections and **re-run** the checking script unt
 receive a congratulations message, then you can proceed.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/blob/main/uli101_week10_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 11 Practice](/files/uli101_week10_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
 
 **Review Questions:**
 
-**PART A: WRITE BASH SHELL SCRIPT CODE**
+**PART A: Write Bash Shell Script Code**
 
 **Write the answer to each question below the question in the space provided.**
 
@@ -1078,7 +1103,7 @@ The script will then clear the screen a second time and then display the age of 
   4. Write a Bash shell script that will clear the screen and then display all **arguments** that were entered after your Bash shell script when it was run. Also have the Bash shell script display the **number of arguments** that were entered after your Bash shell script.
 
 
-**PART B: WALK-THRUS**
+**PART B: Walk-Thrus**
 
 **Write the expected output from running each of the following Bash shell scripts You can assume that these Bash shell script files have execute permissions. Show your work.**
 
@@ -1086,7 +1111,7 @@ The script will then clear the screen a second time and then display the age of 
 
 **cat walkthru1.bash**
 
-```text
+```bash
 #!/usr/bin/bash
 word1=”counter”
 word2=”clockwise”
@@ -1106,7 +1131,7 @@ OUTPUT:
 
 **cat walkthru2.bash**
 
-```text
+```bash
 #!/usr/bin/bash
 echo “result1: $1”
 echo “result2: $2”
@@ -1128,7 +1153,7 @@ OUTPUT:
 
 **cat walkthru2.bash**
 
-```text
+```bash
 #!/usr/bin/bash
 
 for x in 1 2 3 4 5
