@@ -7,7 +7,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 # Tutorial 2: Unix / Linux File Management
 
-## UNIX / LINUX FILE MANAGEMENT CONCEPTS
+## Unix / Linux File Management Concepts
 
 ### Main Objectives of this Practice Tutorial
 
@@ -22,14 +22,9 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 **Slides:**
 
-- Week 2 Lecture 1 Notes:
+- Week 2 Lecture 1 Notes: [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx)
 
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.1.pptx)
-
-- Week 2 Lecture 2 Notes:
-
-[PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pptx)
-
+- Week 2 Lecture 2 Notes: [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx)
 
 **Tutorials:**
 
@@ -40,29 +35,14 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 **File Management:**
 
-- [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html)
-- [cd](http://man7.org/linux/man-pages/man1/cd.1p.html)
-- [ls](http://man7.org/linux/man-pages/man1/ls.1p.html)
-- [tree](https://www.systutorials.com/docs/linux/man/1-tree/)
-- [mkdir](http://man7.org/linux/man-pages/man1/mkdir.1.html)
-- [rmdir](http://man7.org/linux/man-pages/man1/rmdir.1.html)
-- [cp](http://man7.org/linux/man-pages/man1/cp.1.html)
-- [mv](http://man7.org/linux/man-pages/man1/mv.1p.html)
-- [rm , rm -r](http://man7.org/linux/man-pages/man1/rm.1.html)
+| [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [tree](https://www.systutorials.com/docs/linux/man/1-tree/) | [mkdir](http://man7.org/linux/man-pages/man1/mkdir.1.html) | [rmdir](http://man7.org/linux/man-pages/man1/rmdir.1.html) | [cp](http://man7.org/linux/man-pages/man1/cp.1.html) | [mv](http://man7.org/linux/man-pages/man1/mv.1p.html) | [rm , rm -r](http://man7.org/linux/man-pages/man1/rm.1.html) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 **Text Editors / File Content:**
 
-- [vi](http://man7.org/linux/man-pages/man1/vi.1p.html) , [nano](https://linux.die.net/man/1/nano)
-- [cat](http://man7.org/linux/man-pages/man1/cat.1.html)
-- [more](http://man7.org/linux/man-pages/man1/more.1.html) , [less](http://man7.org/linux/man-pages/man1/less.1.html)
-- [head](http://man7.org/linux/man-pages/man1/head.1.html) , [tail](http://man7.org/linux/man-pages/man1/tail.1.html)
-- [touch](http://man7.org/linux/man-pages/man1/touch.1.html)
-- [file](http://man7.org/linux/man-pages/man1/file.1.html)
-- [find](http://man7.org/linux/man-pages/man1/find.1.html)
-- [diff](http://man7.org/linux/man-pages/man1/diff.1.html)
-- [sort](http://man7.org/linux/man-pages/man1/sort.1.html)
-- [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html)
-- [grep](http://linuxcommand.org/lc3_man_pages/grep1.html)
+| [vi](http://man7.org/linux/man-pages/man1/vi.1p.html) , [nano](https://linux.die.net/man/1/nano) | [cat](http://man7.org/linux/man-pages/man1/cat.1.html) | [more](http://man7.org/linux/man-pages/man1/more.1.html) , [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html) , [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [touch](http://man7.org/linux/man-pages/man1/touch.1.html) | [file](http://man7.org/linux/man-pages/man1/file.1.html) | [find](http://man7.org/linux/man-pages/man1/find.1.html) | [diff](http://man7.org/linux/man-pages/man1/diff.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | :--- |
+
 
 **YouTube Videos**
 
@@ -71,7 +51,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 - [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r)](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
 ### Unix / Linux Directories
 
@@ -118,7 +98,7 @@ The following table displays and defines commonly used directories (listed by di
 When you log into your Matrix account, you are automatically directed to your home directory. This directory is where the user can store files, and create subdirectories to organize their files.
 
 
-## INVESTIGATION 1: CREATING & MANAGING DIRECTORIES
+## INVESTIGATION 1: Creating & Managing Directories
 
 ### ATTENTION:
 
@@ -377,7 +357,7 @@ Let's run a checking script to confirm that you have correctly removed all of th
 
   10. If you encounter errors, make corrections and re-run the checking script until you receive a congratulations message, and proceed to the next INVESTIGATION.
 
-## INVESTIGATION 2: MANAGING TEXT FILES
+## INVESTIGATION 2: Managing Text Files
 
 Since IT students will be working in the Unix / Linux command line environment, it is useful to learn a least two common command-line **text editors.**
 
@@ -704,11 +684,11 @@ What is the output of this command?
   30. Complete the **LINUX PRACTICE QUESTIONS** to get additional practice.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: https://wiki.cdot.senecacollege.ca/uli101/files/uli101_week2_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 2 Practice](/files/uli101_week2_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
