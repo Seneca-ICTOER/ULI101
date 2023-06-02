@@ -6,16 +6,13 @@ slug: /
 description: Landing Page for the ULI101 Course
 ---
 
-# ULI101
+# Welcome to ULI101 - Introduction to UNIX/Linux and the Internet
 
-| **Quick Links** |
-| :--- |
-| [Weekly Schedule](./intro.md) |
-| [MySeneca (Blackboard)](https://my.senecacollege.ca/) |
-| [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) |
-| [Course Policies](/B-SubSection2/course-policies.md) |
+## Quick Links
 
-## Welcome to ULI101 - Introduction to UNIX/Linux and the Internet
+| [Weekly Schedule](./intro.md) | [MySeneca (Blackboard)](https://my.senecacollege.ca/) | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) | [Course Policies](/B-SubSection2/course-policies.md) |
+| :--- | :--- | :--- | :--- |
+
 
 ### What This Course is About
 
