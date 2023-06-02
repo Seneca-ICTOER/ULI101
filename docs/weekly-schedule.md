@@ -17,9 +17,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 1 Lecture 1 Notes:** | **Tutorial 1: Worth 2% (Due Week 2: Friday @ midnight)** |
-| - Course introduction | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-1.1.pptx) | - INVESTIGATION 1: Accessing Your Matrix Linux Account |
+| - Course introduction | [PDF](/files/ULI101-1.1.pdf) \| [PPTX](/files/ULI101-1.1.pptx) | - INVESTIGATION 1: Accessing Your Matrix Linux Account |
 | - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** | - INVESTIGATION 2: Using The Linux Shell |
-| - Unix/Linux Background | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-1.2.pptx) |  |
+| - Unix/Linux Background | [PDF](/files/ULI101-1.2.pdf) \| [PPTX](/files/ULI101-1.2.pptx) |  |
 | - Open source philosophy | **Tutorials:** |  |
 | - Linux GUI and the terminal | - [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |  |
 | - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
