@@ -5,18 +5,6 @@ sidebar_position: 11
 description: Tutorial 12 for Students to Learn Shell Scripting
 ---
 
-# Objectives
-
-Additional Shell Scripting:
-  - if - elif - else statement
-  - for loop revisited
-  - while loop statement
-  - Error-Checking with Loops
-  - exit and break Statements
-  - export Command
-  - Start-up Files
-  - Further Study
-
 # Tutorial 12: Shell Scripting - Part 2
 
 ## ADDITIONAL SHELL SCRIPTING
