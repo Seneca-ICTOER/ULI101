@@ -5,12 +5,6 @@ sidebar_position: 4
 description: Tutorial 4 for Students to Learn Data Representation, Numbering Conversion, and File Permissions
 ---
 
-# Objectives
-
-- Data Representation: (Binary, octal, decimal, and hexadecimal number systems)
-- Number conversions
-- Unix file permissions
-
 # Tutorial 4: Data Representation / Numbering Conversion / File Permissions
 
 ## Data Representation / Numbering Conversion / File Permissions
