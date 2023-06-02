@@ -7,7 +7,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 
 # Tutorial 9: Regular Expressions
 
-## USING REGULAR EXPRESSIONS
+## Using Regular Expressions
 
 ### Main Objectives of this Practice Tutorial
 
@@ -20,20 +20,33 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Linux Command/Shortcut Reference** | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- |
-| **Slides:** | **Regular Expressions:** | **Linux Commands:** | **Brauer Instructional Videos:** |
-| - Week 9 Lecture 1 Notes: | - [Definition](https://techterms.com/definition/regular_expression#:~:text=A%20regular%20expression%20(or%20%22regex,wildcards%2C%20and%20ranges%20of%20characters.&text=A%20regular%20expression%20can%20be,%2C%20such%20as%20%22app%22.)) | - [egrep](https://ss64.com/bash/egrep.html) | - [Using grep Command with Regular Expressions](https://www.youtube.com/watch?v=-2pwLHcvCsU&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=12) |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pptx) | - [Purpose (WIKI)](https://en.wikipedia.org/wiki/Regular_expression#:~:text=Regular%20expressions%20are%20used%20in,built%2Din%20or%20via%20libraries.) | - [man](https://www.man7.org/linux/man-pages/man1/man.1.html) | |
-| - Week 9 Lecture 2 Notes: | | - [more](https://man7.org/linux/man-pages/man1/more.1.html) / [less](https://www.man7.org/linux/man-pages/man1/less.1.html) | |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pptx) | | - [vi](https://man7.org/linux/man-pages/man1/vi.1p.html) / [vim](http://linuxcommand.org/lc3_man_pages/vim1.html) | |
-| | | - [sed](https://man7.org/linux/man-pages/man1/sed.1p.html) | |
-| | | - [awk](https://man7.org/linux/man-pages/man1/awk.1p.html) | |
-| | | - [wget](https://linux.die.net/man/1/wget) | |
+**Course Notes**
+
+**Slides:**
+
+- Week 9 Lecture 1 Notes: [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx)
+- Week 9 Lecture 2 Notes: [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx)
+
+**Linux Command/Shortcut Reference**
+
+**Regular Expressions:**
+
+- [Definition](https://techterms.com/definition/regular_expression#:~:text=A%20regular%20expression%20(or%20%22regex,wildcards%2C%20and%20ranges%20of%20characters.&text=A%20regular%20expression%20can%20be,%2C%20such%20as%20%22app%22.))
+- [Purpose (WIKI)](https://en.wikipedia.org/wiki/Regular_expression#:~:text=Regular%20expressions%20are%20used%20in,built%2Din%20or%20via%20libraries.)
+
+**Linux Commands:**
+
+| [egrep](https://ss64.com/bash/egrep.html) | [man](https://www.man7.org/linux/man-pages/man1/man.1.html) | [more](https://man7.org/linux/man-pages/man1/more.1.html) / [less](https://www.man7.org/linux/man-pages/man1/less.1.html) | [vi](https://man7.org/linux/man-pages/man1/vi.1p.html) / [vim](http://linuxcommand.org/lc3_man_pages/vim1.html) | [sed](https://man7.org/linux/man-pages/man1/sed.1p.html) | [awk](https://man7.org/linux/man-pages/man1/awk.1p.html) | [wget](https://linux.die.net/man/1/wget) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+**YouTube Videos**
+
+**Brauer Instructional Videos:**
+
+- [Using grep Command with Regular Expressions](https://www.youtube.com/watch?v=-2pwLHcvCsU&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=12)
 
 
-
-## KEY CONCEPTS
+## Key Concepts
 
 **Regular Expressions**
 
@@ -134,7 +147,7 @@ Example of using **groups**. ^
 Example of using **or** condition with **groups**. ^
 
 
-## INVESTIGATION 1: SIMPLE & COMPLEX REGULAR EXPRESSIONS
+## INVESTIGATION 1: Simple & Complex Regular Expressions
 
 **ATTENTION:**
 
@@ -371,7 +384,7 @@ In the next investigation, you will learn how to use **extended** regular expres
 You can proceed to INVESTIGATION 2.
 
 
-## INVESTIGATION 2: EXTENDED REGULAR EXPRESSIONS
+## INVESTIGATION 2: Extended Regular Expressions
 
 In this investigation, you will learn how to use **extended regular expressions** with the **egrep** command
 to further refine your search patterns.
@@ -506,7 +519,7 @@ that you already learned in this course.
 You can proceed to INVESTIGATION 3
 
 
-## INVESTIGATION 3: OTHER COMMANDS USING REGULAR EXPRESSIONS
+## INVESTIGATION 3: Other Commands Using Regular Expressions
 
 In this investigation, you will see commands other than **grep** or **egrep** that can use regular expressions.
 
@@ -612,15 +625,13 @@ In **last line** MODE in the **vi** text editor, issuing a command using regular
 `:x`
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
 ### REVIEW QUESTIONS: SIMPLE & COMPLEX REGULAR EXPRESSIONS
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/blob/main/uli101_command_practice_9a.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 9 - Command Practice 9a](/files/uli101_command_practice_9a.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
@@ -667,9 +678,7 @@ Write a single Linux command to perform the specified tasks for each of the foll
 
 ### REVIEW QUESTIONS: REGULAR EXPRESSIONS (INCLUDING EXTENDED REGULAR EXPRESSIONS)
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/blob/main/uli101_command_practice_9b.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 9 - Command Practice 9b](/files/uli101_command_practice_9b.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
