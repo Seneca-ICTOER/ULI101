@@ -5,12 +5,6 @@ sidebar_position: 9
 description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 ---
 
-# Objectives
-
-Text Manipulation:
-  - Using the sed Utility
-  - Using the awk Utility
-
 # Tutorial 10: Sed & Awk Utilities
 
 ## USING SED & AWK UTILTIES
