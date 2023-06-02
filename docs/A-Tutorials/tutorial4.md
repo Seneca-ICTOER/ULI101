@@ -21,17 +21,39 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Numbering Conversion / File Permissions Reference** | | | **YouTube Videos** |
+**Course Notes**
+
+**Slides:**
+
+- Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
+
+- Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
+
+**Numbering Conversion / File Permissions Reference**
+
+**Data Representation Definitions:**
+
+| [Data Representation](https://home.adelphi.edu/~siegfried/cs170/170l1.pdf) | [Decimal Numbers](https://en.wikipedia.org/wiki/Decimal) | [Binary Numbers](https://en.wikipedia.org/wiki/Binary_number) | [Octal Numbers](https://en.wikipedia.org/wiki/Octal) | [Hexadecimal Numbers](https://en.wikipedia.org/wiki/Hexadecimal) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Slides:** | **Data Representation Definitions:** | **File Permission Concepts:** | **File Permission Commands:** | **Instructional Videos:** |
-| - Week 4 Lecture 1 Notes: | - [Data Representation](https://home.adelphi.edu/~siegfried/cs170/170l1.pdf) | - [Introduction to File Permissions](https://www.booleanworld.com/introduction-linux-file-permissions/) | - [chmod](https://ss64.com/bash/chmod.html) | - [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U) |
-| [PDF](https://wiki.cdot.senecacollege.ca/uli101/slides/ULI101-4.1.pdf) \| [PPTX](https://wiki.cdot.senecacollege.ca/uli101/slides/ULI101-4.1.pptx) | - [Decimal Numbers](https://en.wikipedia.org/wiki/Decimal) | | - [umask](https://ss64.com/bash/umask.html) | - [File Permissions](https://www.youtube.com/watch?v=SdgiYoOi0CY) |
-| - Week 4 Lecture 2 Notes: | - [Binary Numbers](https://en.wikipedia.org/wiki/Binary_number) | | | |
-| [PDF](https://wiki.cdot.senecacollege.ca/uli101/slides/ULI101-4.2.pdf) \| [PPTX](https://wiki.cdot.senecacollege.ca/uli101/slides/ULI101-4.2.pptx) | - [Octal Numbers](https://en.wikipedia.org/wiki/Octal) | | | |
-| | - [Hexadecimal Numbers](https://en.wikipedia.org/wiki/Hexadecimal) | | | |
+
+**File Permission Concepts:**
+
+- [Introduction to File Permissions](https://www.booleanworld.com/introduction-linux-file-permissions/)
+
+**File Permission Commands:**
+
+- [chmod](https://ss64.com/bash/chmod.html)
+- [umask](https://ss64.com/bash/umask.html)
+
+**YouTube Videos**
+
+**Instructional Videos:**
+
+- [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U)
+- [File Permissions](https://www.youtube.com/watch?v=SdgiYoOi0CY)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
 **Data Representation**
 
@@ -205,7 +227,7 @@ Setting **umask** for newly-created **directories** ^.
 Setting **umask** for newly-created **regular files** ^
 
 
-## INVESTIGATION 1: NUMBERING CONVERSIONS
+## INVESTIGATION 1: Numbering Conversions
 
 **ATTENTION:**
 
@@ -269,7 +291,7 @@ What method (displayed above) will you use? Use a calculator to check your work.
   12. When you have performed all of the numbering conversions above, then you can proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 2: FILE PERMISSIONS
+## INVESTIGATION 2: File Permissions
 
 In this investigation, you will get experience using the **chmod** command to **change permissions** for existing files and the using **umask** command to automatically set permissions for newly-created files.
 
@@ -443,13 +465,13 @@ You should NOT set permissions to share your work with **same group** or **other
 
 Complete the Review Questions sections to get additional practice.
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain extra practice to help with your quizzes, your midterm, and your final exam.
 
 Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
 
-https://github.com/ULI101/labs/raw/main/uli101_week4_practice.docx
+[Week 4 Practice](/files/uli101_week4_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
