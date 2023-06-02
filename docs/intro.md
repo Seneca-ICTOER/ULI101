@@ -10,7 +10,7 @@ description: Contents of (course notes title here)
 | Important Quick Link |
 | :---: |
 | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) |
-| [Course Policies for ULI101](/B-SubSection2/course-policies.md) |
+| [Course Policies for ULI101](/B-ExtraResources/course-policies.md) |
 | [Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |
 
 | Week | | |
