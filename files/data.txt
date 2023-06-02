@@ -1,0 +1,161 @@
+### Introductory Linux (Unix) course OPS224. The structure of the          ###
+### The author of this script is using this tutorial to send students'     ###
+*  These tutorials may be used for:                                         *
+*    ALL TUTORIALS HAVE THE FOLLOWING STRUCTURE:                            *
+*  TIPS FOR GETTING THE MOST OUT OF TUTORIALS:                              *
+*      in case you need to use them while performing the tutorial           *
+*    · Complete the entire tutorial                                         *   
+*    · Repeat the tutorial on a regular basis for review                    *
+*    · Try to use skills you have developed to accomplish other tasks       *
+*  A FEEDBACK section has been added to the end of each tutorial to         *
+*  allow ALL USERS to provide comments to improve the quality of the        *
+### Exit Process which prompts the User for Feedback ###
+### modification and further implementation          ###
+		then
+                        then
+*  You are about to send feedback about this tutorial to the author     *
+*  Take the time to list what you liked about the tutorial, and list    *
+*  improvements for the tutorial. This will be the primary method       *
+*  for the author to make improvements.                                 *
+*  When you type the message, please make sure that you make            *
+*  corrections to the line BEFORE pressing ENTER, since you cannot      *
+*  go back to the previous line to make corections.                     *
+			printf "            and then press <ENTER> twice\n\n"
+Regular Expressions allow the user to search
+We will explore the use of regular expressions
+involving the awk and sed utilities in lab9
+We will now demonstrate the use of simple regular
+expressions using the grep utility.
+As you recall, the grep command has the following
+The grep utility does not use delimiters "//" as
+opposed to the awk, sed and vi utilities. Although
+You should also recall that the grep command can
+be used to modify standard output from other commands
+with the use of the pipe-to symbol "|"
+The grep utility reads each line from a file
+match the pattern.
+In addition, the entire line is displayed as
+opposed to just the pattern itself.
+To demonstrate this, enter the following command:
+The lines displayed above should contain
+at least one occurance of the string "tutorial".
+The only character that is not recognized as a
+regular expression is the new line character.
+perhaps the line has "wrapped around" to the next
+line until the "new line" character appears.
+Let's try searching for lines with another
+Enter the following command below:
+the file "lab8" containing the pattern "expression"
+Now enter the same command, but for "Expression"
+The standard output of this command should differ
+from the standard output of the previous command: 
+therefore, you have to be careful with case sensitivity.
+You can avoid the case sensitivity problem by using the -i
+(ignore case sensitivity) option with the grep command.
+Enter the following command below:
+You should now see all the occurences of lines
+Another useful option with the grep utility is
+the occurance of the pattern (i.e. the opposite)
+For example, enter the following command below:
+The following standard output displayed
+did NOT contain the pattern "expression"
+Finally, the -c option for the grep utility provides
+Enter the following command below:
+Please note that if you want to count the
+Let's now use the grep utility as a filter.
+Issue the following command below:
+This completes the topic SIMPLE REGULAR EXPRESSIONS
+In the previous section, we only used grep
+Although some of the special characters
+Proceed slowly and please note the differences.
+The caret ^ symbol is used to force a match at
+the beginning of the line.
+The caret symbol also has a different meaning
+Let's use the grep utility to provide a sorted list
+Enter the following command below:
+Now, we will modify the previous command to
+match lines that begin with "the"
+Issue the modified command displayed below:
+Notice that lines that begin with "the", "The"
+or "THE" are displayed.
+Likewise, we use the dollar sign $ symbol to force
+a match at the end of the line.
+Please note that the character or characters must
+appear before the dollar sign symbol.
+Issue the following command displayed below:
+Now issue the command displayed below to
+It is important to note the differences in
+similar to the question mark "?" in ambiguous file
+Issue the following command displayed below:
+# Example of another string containing abxc
+An asterisk "*", on the other hand, is used
+THE PRECEEDING CHARACTER.
+In other words, the search could match a line
+that DOES NOT INCLUDE the character appearing
+BEFORE the asterisk!
+Issue the following command below:
+that EITHER begins with "c" or "C" and ends with
+USING THE "*" WILDCARD WITH REGULAR EXPRESSIONS!
+searches, the period "." immediately followed
+To demonstrate, enter the following command below:
+WITH "x" or "X" as displayed in the previous
+The character class symbol [] is used to
+Enter the command displayed below to display
+"turn-off" the shell's interpretation of
+The symbol that you use is backslash \ and
+each occurance of the special character.
+Issue the command displayed below to display
+Now, issue the command displayed below to
+that are embedded in other words)
+These symbols can be used together to force
+Let's display all lines that contain the
+Enter the command displayed below:
+There is one occurence of work "feedbacking"
+There are two types of characters that CANNOT
+be quoted using \ to represent itself: parenthesis
+expressions, you do not have to quote the
+parenthesis (brackets). We will discuss
+Extended or Full Regular Expressions in the
+This completes the topic COMPLEX REGULAR EXPRESSIONS
+Please proceed with the EXTENDED REGULAR EXPRESSIONS TUTORIAL
+There are additional searching symbols that
+symbols may be used, and parenthesis does NOT
+In order to take advantage of these
+"extended regular expressions", the grep
+command must use the option -E
+The question mark "?" symbol is used to match
+To demonstrate, enter the command displayed below:
+In this case, the question mark matched ONE
+The asterisk "*" is used to match zero or more
+Remember, that could include or exclude the
+The plus sign "+" is used to match ONE OR MORE
+OCCURENCES of the charcters before this symbol.
+The pipe "|" symbol is used to represent the
+For example, issue the command displayed below:
+represent the "and" condition. Instead
+& represents the matched string, and is
+and replace in the vi editor.
+This completes the topic EXTENDED REGULAR EXPRESSIONS
+Please proceed with the REVIEW TUTORIAL
+If you are not able to provide the Linux command
+to accomplish the task after 3 tries, a "hint" with
+the actual command will appear. 
+contain the pattern "class" (upper or lower case):
+Display from file "lab8" the total number of lines
+that do NOT match the pattern "feedback"
+Display from file "lab8" the total number of lines
+that contain the actual word "word" (upper or lowercase):
+Display from file "lab8" the sorted and uniq contents
+that begin with the pattern "therefore" 
+You have completed the REGULAR EXPRESSIONS PRACTICAL APPLICATION
+Proceed to the REVIEW QUESTION
+Press <ENTER> to return to the REVIEW TUTORIAL MENU
+Display the total number of lines from file "srep7"
+contain the pattern "truck" (upper or lowercase):
+between the letters "m" and "s" 
+Display all lines from ALL files in the current
+You have completed the COMPLEX REGULAR EXPRESSIONS REVIEW
+You can Send Feedback and exit the tutorial
+Press <ENTER> to return to the REVIEW TUTORIAL MENU
+"A line totally contained within double quotes"
+

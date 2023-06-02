@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# week7-demo-1
+
+# Author:  Murray Saul
+# Date:    Feb 13, 2021
+#
+# Purpose: Demonstration to user that you can run shell scripts that
+#          will run operations in graphical mode since Live Knoppix
+#          OS runs in a graphical desktop environment.
+#
+# License: LGPL version 3
+# Link:    https://www.gnu.org/licenses/lgpl.html
+#
+
+
+selection=$(zenity --list --radiolist --text "<b>Please</b> select a directory:" --hide-header --column "Select" --column "Directory" FALSE "/home/$USER" FALSE "/bin" FALSE "/dev" FALSE "/etc" 2> /dev/null)
+
+ls $selection | zenity --text-info 2> /dev/null
+
+
+zenity --info --text " \
+Well Done!\n\nYou have completed running this demonstration script.\nClick OK and proceed with this tutorial.\n" 2>/dev/null
+
