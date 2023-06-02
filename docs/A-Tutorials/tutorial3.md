@@ -5,16 +5,6 @@ sidebar_position: 3
 description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and Quoting Special Characters
 ---
 
-# Objectives
-
-- Absolute and relative pathnames
-- File name expansion
-- Shell basics
-- Command execution in detail
-- Command History
-- Recalling and editing previous commands
-- Quoting
-
 # Tutorial 3: Advanced File Management / Quoting Special Characters
 
 ## ADVANCED UNIX / LINUX FILE MANAGEMENT
