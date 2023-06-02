@@ -5,13 +5,6 @@ sidebar_position: 5
 description: Tutorial 5 for Students to Learn Redirection
 ---
 
-# Objectives
-
-- stdin, stdout, stderr
-- Simple filter commands: (head,tail,cut,sort,tr,wc)
-- grep utility Redirection and piping
-- /dev/null file
-
 # Tutorial5: Redirection
 
 ## REDIRECTION: STANDARD INPUT / STANDARD OUTPUT / STANDARD ERROR
