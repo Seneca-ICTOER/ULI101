@@ -1,7 +1,7 @@
 ---
 id: howtoaccessmatrix
 title: How To Access Matrix
-sidebar_position: 4
+sidebar_position: 2
 description: Tutorial For Students to Access the Seneca Matrix
 ---
 
