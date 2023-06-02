@@ -5,7 +5,7 @@ sidebar_position: 3
 description: Contents of (course notes title here)
 ---
 
-# ULI101 Weekly Schedule
+# ULI101 Weekly Schedule OLD
 
 | Important Quick Link |
 | :---: |
