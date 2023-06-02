@@ -5,12 +5,6 @@ sidebar_position: 6
 description: Tutorial 6 for Students to Learn File Transfer and Sending Email Messages
 ---
 
-# Objectives
-
-- scp and sftp utilities
-- Sending email from command line
-- Command History
-
 # Tutorial 6: File Transfer / Sending Email Messages
 
 ## TRANSFERRING FILES BETWEEN COMPUTERS
