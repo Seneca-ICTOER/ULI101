@@ -5,14 +5,6 @@ sidebar_position: 2
 description: Tutorial 2 for Students to learn Unix/Linux File Management
 ---
 
-# Objectives
-
-- Unix file system
-- File types and file naming
-- Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man)
-- Text editing
-- Common file utilities: (cat,more,less,touch,file,find)
-
 # Tutorial 2: Unix / Linux File Management
 
 ## UNIX / LINUX FILE MANAGEMENT CONCEPTS
