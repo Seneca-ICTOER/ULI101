@@ -184,7 +184,7 @@ description: Contents of (course notes title here)
 | | | |
 | **Week 13** | | |
 | **Objectives:** | **Interest Topic:** | **Tutorial 12 Due Friday @ Midnight** |
-| - Interest Topic | - Interest Topic: Graphical Linux via a Virtual Machine (VM) **CHANGE TO LINK** | **Review Tutorial Due Friday @ Midnight** |
+| - Interest Topic | - [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-SubSection2/interest-topic.md) | **Review Tutorial Due Friday @ Midnight** |
 | - Take up Review Questions | **Review Questions:** | |
 | | - [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | |
 | | | |
