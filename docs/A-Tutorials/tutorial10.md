@@ -7,7 +7,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 # Tutorial 10: Sed & Awk Utilities
 
-## USING SED & AWK UTILTIES
+## Using SED & AWK Utilities
 
 ### Main Objectives of this Practice Tutorial
 
@@ -20,17 +20,34 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Linux Command/Shortcut Reference** | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- |
-| **Slides:** | **Text Manipulation:** | **Commands:** | **Brauer Instructional Videos:** |
-| - Week 10 Lecture 1 Notes: | - [Purpose of using the sed utility](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux) | - [sed](https://man7.org/linux/man-pages/man1/sed.1p.html) | - [Using the sed Utility](https://www.youtube.com/watch?v=npU6S61AIko&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=14) |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pptx) | - [Purpose of using the awk utility](https://www.digitalocean.com/community/tutorials/how-to-use-the-awk-language-to-manipulate-text-in-linux) | - [awk](https://man7.org/linux/man-pages/man1/awk.1p.html) | - [Using the awk Utility](https://www.youtube.com/watch?v=OV3XzjDYgJo&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=13) |
-| - Week 10 Lecture 2 Notes: | | | |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pptx) | | | |
+**Course Notes**
+
+**Slides:**
+
+- Week 10 Lecture 1 Notes: [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx)
+- Week 10 Lecture 2 Notes: [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx)
+
+**Linux Command/Shortcut Reference**
+
+**Text Manipulation:**
+
+- [Purpose of using the sed utility](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
+- [Purpose of using the awk utility](https://www.digitalocean.com/community/tutorials/how-to-use-the-awk-language-to-manipulate-text-in-linux)
+
+**Commands:**
+
+- [sed](https://man7.org/linux/man-pages/man1/sed.1p.html)
+- [awk](https://man7.org/linux/man-pages/man1/awk.1p.html)
+
+**YouTube Videos**
+
+**Brauer Instructional Videos:**
+
+- [Using the sed Utility](https://www.youtube.com/watch?v=npU6S61AIko&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=14)
+- [Using the awk Utility](https://www.youtube.com/watch?v=OV3XzjDYgJo&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=13)
 
 
-
-## KEY CONCEPTS
+## Key Concepts
 
 **Using the sed Utility**
 
@@ -99,7 +116,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
   - Parameters greater than nine requires the value of the parameter to be placed within braces (for example: **${10}**,**${11}**,**${12}**, etc.)
   - You can use built-in **variables** (such as **NR** or "record number" representing line number) eg. **{print NR,$0}** (will print record number, then entire record).
 
-## INVESTIGATION 1: USING THE SED UTILITY
+## INVESTIGATION 1: Using The SED Utility
 
 **ATTENTION:**
 
@@ -239,7 +256,7 @@ until you receive a congratulations message, then you can proceed.
 
 In the next investigation, you will learn how to manipulate text using the **awk** utility.
 
-## INVESTIGATION 2: USING THE AWK UTILITY
+## INVESTIGATION 2: Using The AWK Utility
 
 In this investigation, you will learn how to use the awk utility to manipulate text and generate reports.
 
@@ -385,13 +402,11 @@ If you encounter errors, make corrections and **re-run** the checking script unt
 receive a congratulations message, then you can proceed.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-https://github.com/ULI101/labs/blob/main/uli101_week11_practice.docx
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 10 Practice](/files/uli101_week11_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
