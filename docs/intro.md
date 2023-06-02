@@ -5,38 +5,6 @@ sidebar_position: 3
 description: Contents of (course notes title here)
 ---
 
-# Table of contents
-
-## Tutorials <a id="part-a-tutorials"></a>
-
-- [Tutorial 1 - Using Your Matrix Server Account](A-Tutorials/tutorial1.md)
-- [Tutorial 2 - Using Your Matrix Server Account](A-Tutorials/tutorial2.md)
-- [Tutorial 3 - Using Your Matrix Server Account](A-Tutorials/tutorial3.md)
-- [Tutorial 4 - Using Your Matrix Server Account](A-Tutorials/tutorial4.md)
-- [Tutorial 5 - Using Your Matrix Server Account](A-Tutorials/tutorial5.md)
-- [Tutorial 6 - Using Your Matrix Server Account](A-Tutorials/tutorial6.md)
-- [Tutorial 8 - Using Your Matrix Server Account](A-Tutorials/tutorial8.md)
-- [Tutorial 9 - Using Your Matrix Server Account](A-Tutorials/tutorial9.md)
-- [Tutorial 10 - Using Your Matrix Server Account](A-Tutorials/tutorial10.md)
-- [Tutorial 11 - Using Your Matrix Server Account](A-Tutorials/tutorial11.md)
-- [Tutorial 12 - Using Your Matrix Server Account](A-Tutorials/tutorial12.md)
-- [Test Page](A-Tutorials/testfile.md)
-- [Topic 3](A-Tutorials/topic-file-3.md)
-
-## SubSection2
-
-- [Topic 1](B-SubSection2/topic-file-1.md)
-- [Topic 2](B-SubSection2/topic-file-2.md)
-- [Topic 3](B-SubSection2/topic-file-3.md)
-
-## SubSection3
-
-- [Topic 1](C-SubSection3/topic-file-1.md)
-- [Topic 2](C-SubSection3/topic-file-2.md)
-- [Topic 3](C-SubSection3/topic-file-3.md)
-
-
-
 # ULI101 Weekly Schedule
 
 | Important Quick Link |
