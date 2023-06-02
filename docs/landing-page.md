@@ -9,7 +9,7 @@ description: Landing Page for the ULI101 Course
 # ULI101
 
 | **Quick Links** |
-| --- |
+| :--- |
 | [Weekly Schedule](./intro.md) |
 | [MySeneca (Blackboard)](https://my.senecacollege.ca/) |
 | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) |
