@@ -7,7 +7,7 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
 
 # Tutorial 6: File Transfer / Sending Email Messages
 
-## TRANSFERRING FILES BETWEEN COMPUTERS
+## Transferring Files Between Computers
 
 ### Main Objectives of this Practice Tutorial
 
@@ -19,15 +19,36 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Definitions / Commands** | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- |
-| **Slides:** | **Definitions:** | **File Transfer Commands:** | **Instructional Videos:** |
-| - Week 6 Lecture 1 Notes: | - [Secure Copy](https://en.wikipedia.org/wiki/Secure_copy) | - [scp](http://man7.org/linux/man-pages/man1/scp.1.html) | - [Using scp Command](https://www.youtube.com/watch?v=EBvxbuhDKBw) |
-| [PDF](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pptx) | - [Secure File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) | - [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html) | - [Using sftp Command](https://www.youtube.com/watch?v=QcKYFEgfV-I) |
-| | - [Email](https://en.wikipedia.org/wiki/Mail_(Unix)) | - [mail](https://man.openbsd.org/mail) | - [Using the mail Command](https://www.youtube.com/watch?v=Iuf_mLrvh2o) |
+**Course Notes**
+
+**Slides:**
+
+- Week 6 Lecture 1 Notes: [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx)
+
+**Definitions / Commands**
+
+**Definitions:**
+
+- [Secure Copy](https://en.wikipedia.org/wiki/Secure_copy)
+- [Secure File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol)
+- [Email](https://en.wikipedia.org/wiki/Mail_(Unix))
+
+**File Transfer Commands:**
+
+- [scp](http://man7.org/linux/man-pages/man1/scp.1.html)
+- [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html)
+- [mail](https://man.openbsd.org/mail)
+
+**YouTube Videos**
+
+**Instructional Videos:**
+
+- [Using scp Command](https://www.youtube.com/watch?v=EBvxbuhDKBw)
+- [Using sftp Command](https://www.youtube.com/watch?v=QcKYFEgfV-I)
+- [Using the mail Command](https://www.youtube.com/watch?v=Iuf_mLrvh2o)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
 The ssh Linux command is a suite of tools to allow the user to issue Linux commands securely between
 Unix / Linux servers, as well as securely copy and transfer files among Unix/Linux servers.
@@ -129,7 +150,7 @@ You can use the **mail** command in Matrix to send email messages to other email
 Viewing email with file attachment in **Seneca email account**.
 
 
-## INVESTIGATION 1: FILE TRANSFER (SECURE COPY)
+## INVESTIGATION 1: File Transfer (Secure Copy)
 
 **ATTENTION**
 
@@ -301,7 +322,7 @@ If you encounter errors, re-run the scp commands to correct and re-run the above
 In the next investigation, you will use the **sftp** Linux command to transfer (i.e. copy) files between your local computer and the Matrix server.
 
 
-## INVESTIGATION 2: FILE TRANSFER (SECURE FTP)
+## INVESTIGATION 2: File Transfer (Secure FTP)
 
 The **SSH** package on your _home computer_ and on the _Matrix Linux server_
 contain a **suite** (i.e. collection)of secure utilities including **ssh** and **sftp**.
@@ -427,7 +448,7 @@ In the next investigation, you will learn an alternative way to transfer a file 
 by sending an **e-mail message with an attached file**.
 
 
-## INVESTIGATION 3: FILE TRANSFER (EMAIL)
+## INVESTIGATION 3: File Transfer (Email)
 
 The **Matrix** server is also an **email server** that can allow you to **send** emails messages to other email accounts.
 
@@ -501,13 +522,13 @@ You can use the **-s** option, followed by text (in quotes) to specify a **subje
   16. After completing this INVESTIGATION, perform the LINUX PRACTICE QUESTIONS at the end of the tutorial.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
 Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
 
-https://github.com/ULI101/labs/blob/main/uli101_week6_practice.docx
+[Week 6 Practice](/files/uli101_week6_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
