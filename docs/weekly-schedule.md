@@ -65,13 +65,11 @@ description: Weekly Schedule for ULI101
 
 ### Week 4
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | **Tutorial 3 Due Friday @ Midnight** |
-| - Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | **Tutorial 4: Worth 2% (Due Week 5: Friday @ midnight)** |
-| - Number conversions | **YouTube Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md) |
-| - Unix file permissions | | - INVESTIGATION 1: Numbering Conversions |
-| | | - INVESTIGATION 2: File Permissions |
+| - Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md) |
+| - Number conversions | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | Tutorial 3 Due Friday @ Midnight |
+| - Unix file permissions | **YouTube Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | Tutorial 4: Worth 2% (Due Week 5: Friday @ midnight) |
 
 ### Week 5
 
