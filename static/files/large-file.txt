@@ -1,0 +1,203 @@
+
+INVESTIGATION 3: OTHER COMMANDS THAT USE REGULAR EXPRESSIONS
+In this section, you will see how regular expressions can be used with other Linux utilities other than grep or egrep.
+
+
+Perform the Following Steps:
+
+Make certain that you are located in your home directory on your Matrix account.
+
+Let's look at using regular expressions with the man command.
+Issue the following linux command :
+man ls
+
+We want to search for an option that can sort the file listing.
+Type the following regular expression below and press ENTER:
+/sort
+
+FYI: The grep and egrep linux commands contain the regular expressions within quotes,
+but most other Linux commands specify regular expressions using forward slashes
+(e.g. /regular expression   or   /regular expression).
+
+Scroll throughout the man pages for the ls command to view matches for the pattern "sort"
+(You can press SPACE or key combination alt-b to move forward and backwards one screen respectively).
+
+Press the letter q to exit the man pages for ls.
+
+Let's use regular expressions with the more command.
+Issue the following linux command to view the contents of the textfile1.txt (downloaded in a previous section):
+more textfile1.txt
+
+We want to search for a pattern uli101 within this text file.
+Type the following regular expression and press ENTER:
+/uli101
+
+What did you notice?
+
+Search for the next occurrence of the pattern uli101 by re-typing
+the following regular expression and pressing ENTER:
+/uli101
+
+you should now see the second occurrence of this pattern within the text file.
+
+Press the letter q to exit the more command.
+
+Try the same search techniques with the less command.
+
+Does it work the same for the less command as it did for the more command?
+
+Let's learn how to perform a simple search and replace within the vi utility by using regular expressions.
+Issue the following linux command to edit the textfile1.txt file:
+vi textfile1.txt
+
+Let's first perform a simple search within this text file.
+
+Type the following and press ENTER:
+/uli101
+
+You should move to the first occurrence of the pattern: uli101.
+
+Let's search for the uli101 pattern, but replace it in capitals (i.e ULI101).
+
+In vi, in order to perform and command, you need to go into last line mode, and then issue a command to apply to the entire text file, followed by a regular expression to search for and a regular expression to replace (i.e. /search/replace/).
+
+Type the following and press ENTER:
+:%s/uli101/ULI101
+
+You should have noticed that the first occurrence of uli101 has been changed to ULI101.
+
+Navigate throughout the text file to see if the other occurrences have been replaced.
+
+You should notice they haven't for the other two occurrences. In order to replace for ALL occurrences,
+you need to add the letter g (meaning "global") at the end of the last forward slash (e.g /search/replace/g).
+
+Making certain that you are command mode in vi, type the following and press ENTER:
+:%s/uli101/ULI101/g
+
+Navigate throughout the text file to confirm that ALL occurrences of uli101 have been replaced with ULI101.
+
+Save changes to your vi editing session and exit by typing the following and pressing ENTER:
+:x
+
+After you complete the Review Questions sections to get additional practice, then work on your
+online assignment 3.
+INVESTIGATION 3: OTHER COMMANDS THAT USE REGULAR EXPRESSIONS
+In this section, you will see how regular expressions can be used with other Linux utilities other than grep or egrep.
+
+
+Perform the Following Steps:
+
+Make certain that you are located in your home directory on your Matrix account.
+
+Let's look at using regular expressions with the man command.
+Issue the following linux command :
+man ls
+
+We want to search for an option that can sort the file listing.
+Type the following regular expression below and press ENTER:
+/sort
+
+FYI: The grep and egrep linux commands contain the regular expressions within quotes,
+but most other Linux commands specify regular expressions using forward slashes
+(e.g. /regular expression   or   /regular expression).
+
+Scroll throughout the man pages for the ls command to view matches for the pattern "sort"
+(You can press SPACE or key combination alt-b to move forward and backwards one screen respectively).
+
+Press the letter q to exit the man pages for ls.
+
+Let's use regular expressions with the more command.
+Issue the following linux command to view the contents of the textfile1.txt (downloaded in a previous section):
+more textfile1.txt
+
+We want to search for a pattern uli101 within this text file.
+Type the following regular expression and press ENTER:
+/uli101
+
+What did you notice?
+
+Search for the next occurrence of the pattern uli101 by re-typing
+the following regular expression and pressing ENTER:
+/uli101
+
+you should now see the second occurrence of this pattern within the text file.
+
+Press the letter q to exit the more command.
+
+Try the same search techniques with the less command.
+
+Does it work the same for the less command as it did for the more command?
+
+Let's learn how to perform a simple search and replace within the vi utility by using regular expressions.
+Issue the following linux command to edit the textfile1.txt file:
+vi textfile1.txt
+
+Let's first perform a simple search within this text file.
+
+Type the following and press ENTER:
+/uli101
+
+You should move to the first occurrence of the pattern: uli101.
+
+Let's search for the uli101 pattern, but replace it in capitals (i.e ULI101).
+
+INVESTIGATION 3: OTHER COMMANDS THAT USE REGULAR EXPRESSIONS
+In this section, you will see how regular expressions can be used with other Linux utilities other than grep or egrep.
+
+
+Perform the Following Steps:
+
+Make certain that you are located in your home directory on your Matrix account.
+
+Let's look at using regular expressions with the man command.
+Issue the following linux command :
+man ls
+
+We want to search for an option that can sort the file listing.
+Type the following regular expression below and press ENTER:
+/sort
+
+FYI: The grep and egrep linux commands contain the regular expressions within quotes,
+but most other Linux commands specify regular expressions using forward slashes
+(e.g. /regular expression   or   /regular expression).
+
+Scroll throughout the man pages for the ls command to view matches for the pattern "sort"
+(You can press SPACE or key combination alt-b to move forward and backwards one screen respectively).
+
+Press the letter q to exit the man pages for ls.
+
+Let's use regular expressions with the more command.
+Issue the following linux command to view the contents of the textfile1.txt (downloaded in a previous section):
+more textfile1.txt
+
+We want to search for a pattern uli101 within this text file.
+Type the following regular expression and press ENTER:
+/uli101
+
+What did you notice?
+
+Search for the next occurrence of the pattern uli101 by re-typing
+the following regular expression and pressing ENTER:
+/uli101
+
+you should now see the second occurrence of this pattern within the text file.
+
+Press the letter q to exit the more command.
+
+Try the same search techniques with the less command.
+
+Does it work the same for the less command as it did for the more command?
+
+Let's learn how to perform a simple search and replace within the vi utility by using regular expressions.
+Issue the following linux command to edit the textfile1.txt file:
+vi textfile1.txt
+
+Let's first perform a simple search within this text file.
+
+Type the following and press ENTER:
+/uli101
+
+You should move to the first occurrence of the pattern: uli101.
+
+Let's search for the uli101 pattern, but replace it in capitals (i.e ULI101).
+
