@@ -1,7 +1,7 @@
 ---
 id: interest-topic
 title: Interest Topic - Graphical Linux via a Virtual Machine (VM)
-sidebar_position: 7
+sidebar_position: 4
 description: Interest Topic for Students who want extra practice with Linux and Knoppix
 ---
 
