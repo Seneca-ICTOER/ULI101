@@ -34,9 +34,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 2 Lecture 1 Notes:** | **Tutorial 1 Due Friday @ Midnight** |
-| - Unix file system | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.1.pptx) | **Tutorial 2: Worth 2% (Due Week 3: Friday @ midnight)** |
+| - Unix file system | [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx) | **Tutorial 2: Worth 2% (Due Week 3: Friday @ midnight)** |
 | - File types and file naming | **Week 2 Lecture 2 Notes:** | - INVESTIGATION 1: Creating & Managing Directories |
-| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-2.2.pptx) | - INVESTIGATION 2: Managing Text Files |
+| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | - INVESTIGATION 2: Managing Text Files |
 | - Text editing | **Tutorials:** |  |
 | - Common file utilities: (cat,more,less,touch,file,find) | - [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md)|  |
 | | **Reference Sheets:** | |
@@ -53,9 +53,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 3 Lecture 1 Notes:** | **Tutorial 2 Due Friday @ Midnight** |
-| - Absolute and relative pathnames | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-3.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-3.1.pptx) | **Tutorial 3: Worth 2% (Due Week 4: Friday @ midnight)** |
+| - Absolute and relative pathnames | [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | **Tutorial 3: Worth 2% (Due Week 4: Friday @ midnight)** |
 | - File name expansion | **Week 3 Lecture 2 Notes:** | - INVESTIGATION 1: Absolute / Relative / Relative-To-Home Pathnames |
-| - Shell basics | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-3.2.pptx) | - INVESTIGATION 2: Filename Expansion |
+| - Shell basics | [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | - INVESTIGATION 2: Filename Expansion |
 | - Command execution in detail | **Tutorials:** | - INVESTIGATION 3: Quoting Special Characters |
 | - Command History | - [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md)|  |
 | - Recalling and editing previous commands | **YouTube Videos** | |
@@ -67,8 +67,8 @@ description: Weekly Schedule for ULI101
 
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 4 Lecture 1 Notes:** [PDF](https://github.com/ULI101/slides/raw/main/ULI101-4.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-4.1.pptx) | **Tutorial 3 Due Friday @ Midnight** |
-| - Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 2 Notes:** [PDF](https://github.com/ULI101/slides/raw/main/ULI101-4.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-4.2.pptx) | **Tutorial 4: Worth 2% (Due Week 5: Friday @ midnight)** |
+| **Objectives:** | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | **Tutorial 3 Due Friday @ Midnight** |
+| - Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | **Tutorial 4: Worth 2% (Due Week 5: Friday @ midnight)** |
 | - Number conversions | **YouTube Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md) |
 | - Unix file permissions | | - INVESTIGATION 1: Numbering Conversions |
 | | | - INVESTIGATION 2: File Permissions |
@@ -78,9 +78,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 5 Lecture 1 Notes:** | **Tutorial 4 Due Friday @ Midnight** |
-| - stdin, stdout, stderr | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-5.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-5.1.pptx) | **Tutorial 5: Worth 2% (Due Week 6: Friday @ midnight)** |
+| - stdin, stdout, stderr | [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx) | **Tutorial 5: Worth 2% (Due Week 6: Friday @ midnight)** |
 | - Simple filter commands: (head,tail,cut,sort,tr,wc) | **Week 5 Lecture 2 Notes:** | - INVESTIGATION 1: Basics Of Redirections |
-| - grep utility Redirection and piping | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-5.2.pptx) | - INVESTIGATION 2: Redirection Using Pipeline Commands |
+| - grep utility Redirection and piping | [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx) | - INVESTIGATION 2: Redirection Using Pipeline Commands |
 | - /dev/null file | **Tutorials:** | - INVESTIGATION 3: Issuing Multiple Unix/Linux Commands |
 | | - [Tutorial 5: Redirection](/A-Tutorials/tutorial5.md)|  |
 | | **YouTube Videos** | |
@@ -91,7 +91,7 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 6 Lecture 1 Notes:** | **Tutorial 5 Due Friday @ Midnight** |
-| - scp and sftp utilities | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-6.1.pptx) | **Tutorial 6: Worth 2% (Due Week 8: Friday @ midnight)** |
+| - scp and sftp utilities | [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx) | **Tutorial 6: Worth 2% (Due Week 8: Friday @ midnight)** |
 | - Sending email from command line | **Tutorials:** | - INVESTIGATION 1: File Transfer (Secure Copy) |
 | - Command History | - [Tutorial 6: File Transfer / Sending Email](/A-Tutorials/tutorial6.md) | - INVESTIGATION 2: File Transfer (Secure FTP) |
 | | **YouTube Videos** | - INVESTIGATION 3: File Transfer (Email) |
@@ -118,9 +118,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 8 Lecture 1 Notes:** | **Tutorial 6 Due Friday @ Midnight** |
-| - Filesystem links | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-8.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-8.1.pptx) | **Tutorial 8: Worth 2% (Due Week 9: Friday @ midnight)** |
+| - Filesystem links | [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx) | **Tutorial 8: Worth 2% (Due Week 9: Friday @ midnight)** |
 | - Hard and symbolic links | **Week 8 Lecture 2 Notes:** | - INVESTIGATION 1: Linking Files |
-| - Process management | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-8.2.pptx) | - INVESTIGATION 2: Managing Processes |
+| - Process management | [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx) | - INVESTIGATION 2: Managing Processes |
 | - Aliases | **Tutorials:** | - INVESTIGATION 3: Aliases / Command History |
 | - Command History | - [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](/A-Tutorials/tutorial8.md)|  |
 | | **YouTube Videos** | |
@@ -134,9 +134,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 9 Lecture 1 Notes:** | **Tutorial 8 Due Friday @ Midnight** |
-| Regular expressions basics: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.1.pptx) | **Tutorial 9: Worth 2% (Due Week 10: Friday @ midnight)** |
+| Regular expressions basics: | [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx) | **Tutorial 9: Worth 2% (Due Week 10: Friday @ midnight)** |
 | - Literal matching | **Week 9 Lecture 2 Notes:** | - INVESTIGATION 1: Simple & Complex Regular Expressions |
-| - Character classes | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-9.2.pptx) | - INVESTIGATION 2: Extended Regular Expressions |
+| - Character classes | [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx) | - INVESTIGATION 2: Extended Regular Expressions |
 | - . wildcard | **Tutorials:** | - INVESTIGATION 3: Other Commands Using Regular Expressions |
 | - \* repetition symbol | - [Tutorial9: Regular Expressions](/A-Tutorials/tutorial9.md)|  |
 | - Anchoring | - [Linux Practice 1 - Regular Expressions](https://github.com/ULI101/labs/raw/main/uli101_command_practice_9a.docx) | |
@@ -151,9 +151,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 10 Lecture 1 Notes:** | **Tutorial 9 Due Friday @ Midnight** |
-| Text Manipulation: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.1.pptx) | **Tutorial 10: Worth 2% (Due Week 11: Friday @ midnight)** |
+| Text Manipulation: | [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx) | **Tutorial 10: Worth 2% (Due Week 11: Friday @ midnight)** |
 | - Using the sed Utility | **Week 10 Lecture 2 Notes:** | - INVESTIGATION 1: Using The SED Utility |
-| - Using the awk Utility | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-10.2.pptx) | - INVESTIGATION 2: Using The AWK Utility |
+| - Using the awk Utility | [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx) | - INVESTIGATION 2: Using The AWK Utility |
 | | **Tutorials:** | |
 | | - [Tutorial10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md)|  |
 | | **YouTube Videos** | |
@@ -165,9 +165,9 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 11 Lecture 1 Notes:** | **Tutorial 10 Due Friday @ Midnight** |
-| Introduction to Shell Scripting: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.1.pptx) | **Tutorial 11: Worth 2% (Due Week 12: Friday @ midnight)** |
+| Introduction to Shell Scripting: | [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx) | **Tutorial 11: Worth 2% (Due Week 12: Friday @ midnight)** |
 | - Introduction to Shell Scripting | **Week 11 Lecture 2 Notes:** | - INVESTIGATION 1: Creating A Shell Script |
-| - echo and read commands | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-11.2.pptx) | - INVESTIGATION 2: She-Bang Line / Variable / Parameters |
+| - echo and read commands | [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx) | - INVESTIGATION 2: She-Bang Line / Variable / Parameters |
 | - Shell Variables | **Tutorials:** | - INVESTIGATION 3: Command Substitution / Math Operations |
 | - Positional Parameters | - [Tutorial11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md)| - INVESTIGATION 4: Control Flow Statements  |
 | - Command Substitution / Math Operations | **YouTube Videos** | |
@@ -180,7 +180,7 @@ description: Weekly Schedule for ULI101
 | **Objectives and Tasks** | **Reference** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Objectives:** | **Week 12 Lecture 1 Notes:** | **Tutorial 11 Due Friday @ Midnight** |
-| Additional Shell Scripting: | [PDF](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pptx) | **Tutorial 12: Worth 2% (Due Week 13: Friday @ midnight)** |
+| Additional Shell Scripting: | [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx) | **Tutorial 12: Worth 2% (Due Week 13: Friday @ midnight)** |
 | - if - elif - else statement | **Tutorials:**| - INVESTIGATION 1: Additional Logic Statements |
 | - for loop revisited | - [Tutorial12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) | - INVESTIGATION 2: Additional Looping Statements |
 | - while loop statement | **YouTube Videos** | - INVESTIGATION 3: exit AND break Statements |
