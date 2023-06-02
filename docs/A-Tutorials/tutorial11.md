@@ -5,18 +5,6 @@ sidebar_position: 10
 description: Tutorial 11 for Students to Learn Shell Scripting
 ---
 
-# Objectives
-
-Introduction to Shell Scripting:
-  - Introduction to Shell Scripting
-  - echo and read commands
-  - Shell Variables
-  - Positional Parameters
-  - Command Substitution / Math Operations
-  - test statements
-  - if / elif-else statements
-  - for loop statements
-
 # Tutorial 11: Shell Scripting - Part 1
 
 ## INTRODUCTION TO SHELL SCRIPTING
