@@ -5,17 +5,6 @@ sidebar_position: 1
 description: Tutorial 1 for Students to Access their Matrix accounts and setup a Linux environment
 ---
 
-# Objectives
-
-- Course introduction
-- Course Resources/Evaluation/Policies
-- Unix/Linux Background
-- Open source philosophy
-- Linux GUI and the terminal
-- The Matrix server
-- Accessing your Matrix Account
-- Using your Matrix Account
-
 # Tutorial 1: Using Your Matrix Server Account
 
 ## USING YOUR MATRIX SERVER ACCOUNT
