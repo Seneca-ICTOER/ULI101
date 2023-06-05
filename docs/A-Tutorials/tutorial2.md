@@ -53,7 +53,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 ## Key Concepts
 
-### Unix / Linux Directories
+**Unix / Linux Directories**
 
 To better **organize** files (eg. text, images, documents, spreadsheets, programs) within your Matrix account, they should be stored in **directories.** To further organize many files, directories
 may contain **sub-directories.**
@@ -70,7 +70,7 @@ In the Linux (Unix) OS, the "**root directory**" / is the starting directory, an
 
 There is actually a command called tree that displays a "**directory tree diagram**"!
 
-### Directory Pathnames
+**Directory Pathnames**
 
 A pathname is used to specify a route to a file within the file system.
 
@@ -100,12 +100,12 @@ When you log into your Matrix account, you are automatically directed to your ho
 
 ## INVESTIGATION 1: Creating & Managing Directories
 
-### ATTENTION:
+**ATTENTION:**
 
 **This weekly tutorial must be completed by Friday at 11:59pm in Week 3 to obtain a grade of 2% towards this course.**
 
 
-### Directory File Naming Rules
+**Directory File Naming Rules**
 
 Before you learn how to create directories, it is important to understand what represents an appropriate **directory filename.**
 
@@ -117,7 +117,7 @@ Listed below are some common **file-naming rules:**
   - **Avoid non-alphanumeric characters**, as they may have a special meaning to the system that will make your work more difficult when changing to directories, etc.
   - **Avoid using spaces** for directory names (consider periods, hyphens, and underscores instead)
 
-### Part 1: Creating Directories
+**Part 1: Creating Directories**
 
 Creating subdirectories within your home directory makes it more **efficient** to save and access files on your Linux server.
 
@@ -251,7 +251,7 @@ If there is a warning, then feedback is provided to user to correct and re-run c
   3. If you encounter errors, then view the feedback to make corrections, and then re-run the checking script. If you receive a congratulation message that there are no errors, then proceed to the next part.
 
 
-### Part 2: Viewing Directory Contents / Copying & Moving Directories
+**Part 2: Viewing Directory Contents / Copying & Moving Directories**
 
 Now that you have learned how to efficiently create your directory structure, you will now learn how to issue Linux commands
 to **view directory contents** as well as **copy** and **move** directories.
@@ -316,7 +316,7 @@ Let's run a checking script to see if you moved and copied the directories corre
 
   10. If you encounter errors. make corrections and re-run the checking script until you receive a congratulations message, and proceed to the next investigation.
 
-### Part 3: Removing Directories
+**Part 3: Removing Directories**
 
 In this investigation, we will learn how to **safely remove** directories and their contents.
 
@@ -376,7 +376,7 @@ The **Nano Text Editor** is Easy to Operate for Novice Users.
 The **vi Text Editor**, although taking longer to master, has outstanding features and allow the user to be more productive with editing text files.
 
 
-### Part 1: Creating Text Files Using The Nano Text Editor
+**Part 1: Creating Text Files Using The Nano Text Editor**
 
 You will now learn basic editing skills using the **Nano** text editor including **creating, editing,** and **saving** text files.
 
@@ -428,7 +428,7 @@ By pressing **ENTER**, it will accept the default filename.
   11. **Save** your editing session and **exit** your text editor.
 
 
-### Part 2: Creating Text Files Using The vi Text Editor
+**Part 2: Creating Text Files Using The vi Text Editor**
 
 You will now learn basic editing skills using the **vi (vim)** text editor including **creating, editing,** and **saving** text files.
 
@@ -552,7 +552,7 @@ If you want to get extra practice, you can select the menu item labelled "**REVI
 It is recommended to try both text editors, and choose the text editor that you feel that is easier to use.
 
 
-### Part 3: Manage & Manipulate Text File Content
+**Part 3: Manage & Manipulate Text File Content**
 
 We conclude this tutorial by learning to **manage**, **view** or **manipulate the display** of text files. This is HIGHLY ADVISED in case you only want to view contents and **NOT** edit text file contents which can cause accidental erasure of data.
 
