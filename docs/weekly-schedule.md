@@ -14,54 +14,41 @@ description: Weekly Schedule for ULI101
 
 ### Week 1
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 1 Lecture 1 Notes:** | **Tutorial 1: Worth 2% (Due Week 2: Friday @ midnight)** |
-| - Course introduction | [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx) | - INVESTIGATION 1: Accessing Your Matrix Linux Account |
-| - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** | - INVESTIGATION 2: Using The Linux Shell |
-| - Unix/Linux Background | [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) |  |
-| - Open source philosophy | **Tutorials:** |  |
-| - Linux GUI and the terminal | - [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |  |
-| - The Matrix server | - [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) |  |
-| - Accessing your Matrix Account | - [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
-| - Using your Matrix Account | - [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
-| | - [Using a Linux Desktop](/B-ExtraResources/using-linux-desktop.md) | |
-| | **Links to Windows SSH clients** | |
-| | (Access Matrix from home): [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) | |
+| - Course introduction | **Week 1 Lecture 1 Notes:** [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx) | [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |
+| - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) | **Tutorial 1: Worth 2% (Due Week 2: Friday @ 11:59pm)** |
+| - Unix/Linux Background | **Tutorial:** [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) | |
+| - Open source philosophy | **Tutorial:** [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
+| - Linux GUI and the terminal | **Tutorial:** [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
+| - The Matrix server | **Tutorial:** [Using a Linux Desktop](/B-ExtraResources/using-linux-desktop.md) |  |
+| - Accessing your Matrix Account | **Links to Windows SSH clients:** (Access Matrix from home): [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) |  |
+| - Using your Matrix Account |  |  |
 
 ### Week 2
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 2 Lecture 1 Notes:** | **Tutorial 1 Due Friday @ Midnight** |
-| - Unix file system | [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx) | **Tutorial 2: Worth 2% (Due Week 3: Friday @ midnight)** |
-| - File types and file naming | **Week 2 Lecture 2 Notes:** | - INVESTIGATION 1: Creating & Managing Directories |
-| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | - INVESTIGATION 2: Managing Text Files |
-| - Text editing | **Tutorials:** |  |
-| - Common file utilities: (cat,more,less,touch,file,find) | - [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md)|  |
-| | **Reference Sheets:** | |
-| | - [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | |
-| | - [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf/) | |
-| | **YouTube Videos:** | |
-| | - [Linux File System, Basic Navigation: (ls, cd, pwd, tree),Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2) | |
-| | - [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r), Relative-to-home Paths](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3) | |
-| | - [Reading/Writing to Files: (cat, more, less, man, date, diff, diff -y, find, wc)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | |
-| | - [Introduction to Vi](https://youtu.be/munrDI_gm4w) | |
+| - Unix file system | **Week 2 Lecture 1 Notes:** [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx) | [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md) |
+| - File types and file naming | **Week 2 Lecture 2 Notes:** [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | **Tutorial 1 Due Friday @ 11:59pm** |
+| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | **Reference Sheet:** [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | **Tutorial 2: Worth 2% (Due Week 3: Friday @ 11:59pm)** |
+| - Text editing | **Reference Sheet:** [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf/) |  |
+| - Common file utilities: (cat,more,less,touch,file,find) | **YouTube Video:** [Linux File System, Basic Navigation: (ls, cd, pwd, tree),Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2) |  |
+|  | **YouTube Video:** [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r), Relative-to-home Paths](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3) |  |
+| | **YouTube Video:** [Reading/Writing to Files: (cat, more, less, man, date, diff, diff -y, find, wc)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | |
+| | **YouTube Video:** [Introduction to Vi](https://youtu.be/munrDI_gm4w) | |
 
 ### Week 3
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 3 Lecture 1 Notes:** | **Tutorial 2 Due Friday @ Midnight** |
-| - Absolute and relative pathnames | [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | **Tutorial 3: Worth 2% (Due Week 4: Friday @ midnight)** |
-| - File name expansion | **Week 3 Lecture 2 Notes:** | - INVESTIGATION 1: Absolute / Relative / Relative-To-Home Pathnames |
-| - Shell basics | [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | - INVESTIGATION 2: Filename Expansion |
-| - Command execution in detail | **Tutorials:** | - INVESTIGATION 3: Quoting Special Characters |
-| - Command History | - [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md)|  |
-| - Recalling and editing previous commands | **YouTube Videos** | |
-| - Quoting | - [Filename Expansions](https://youtu.be/5FQnehwzwSM) | |
-| | - [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
-| | - [Quoting Special Characters](https://www.youtube.com/watch?v=mzgfE6-ZtUY) | |
+| - Absolute and relative pathnames | **Week 3 Lecture 1 Notes:** [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md) |
+| - File name expansion | **Week 3 Lecture 2 Notes:** [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | **Tutorial 2 Due Friday @ 11:59pm** |
+| - Shell basics | **YouTube Video:** [Filename Expansions](https://youtu.be/5FQnehwzwSM) | **Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm)** |
+| - Command execution in detail | **YouTube Video:** [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
+| - Command History | **YouTube Video:** [Quoting Special Characters](https://www.youtube.com/watch?v=mzgfE6-ZtUY) | |
+| - Recalling and editing previous commands | |  |
+| - Quoting |  | |
 
 ### Week 4
 
