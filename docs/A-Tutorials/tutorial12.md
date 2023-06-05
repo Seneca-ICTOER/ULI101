@@ -7,7 +7,7 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 
 # Tutorial 12: Shell Scripting - Part 2
 
-## ADDITIONAL SHELL SCRIPTING
+## Additional Shell Scripting
 
 ### Main Objectives of this Practice Tutorial
 
@@ -19,17 +19,40 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Linux Command/Shortcut Reference** | | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Slides:** | **Control Flow Statements:** | **Additional Statements:** | **Startup Files:** | **Instructional Videos:** |
-| - Week 12 Lecture 1 Notes: | - [if-elif-else](https://www.tutorialspoint.com/unix/if-else-statement.htm) | - [exit](https://www.geeksforgeeks.org/exit-command-in-linux-with-examples/#:~:text=exit%20command%20in%20linux%20is,last%20command%20that%20is%20executed.&text=After%20pressing%20enter%2C%20the%20terminal%20will%20simply%20close.) | - [Purpose](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html) | - [Bash Shell Scripting - Part 2](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6) |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-12.1.pptx) | - [for Loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.) | - [break](https://www.geeksforgeeks.org/break-command-in-linux-with-examples/#:~:text=break%20command%20is%20used%20to,The%20default%20number%20is%201.) | - [Examples](http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html) | |
-| | - [while Loop](https://bash.cyberciti.biz/guide/While_loop) | | | |
+**Course Notes**
+
+**Slides:**
+
+- Week 12 Lecture 1 Notes: [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx)
+
+**Linux Command/Shortcut Reference**
+
+**Control Flow Statements:**
+
+- [if-elif-else](https://www.tutorialspoint.com/unix/if-else-statement.htm)
+- [for Loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.)
+- [while Loop](https://bash.cyberciti.biz/guide/While_loop)
+
+**Additional Statements:**
+
+- [exit](https://www.geeksforgeeks.org/exit-command-in-linux-with-examples/#:~:text=exit%20command%20in%20linux%20is,last%20command%20that%20is%20executed.&text=After%20pressing%20enter%2C%20the%20terminal%20will%20simply%20close.)
+- [break](https://www.geeksforgeeks.org/break-command-in-linux-with-examples/#:~:text=break%20command%20is%20used%20to,The%20default%20number%20is%201.)
+
+**Startup Files:**
+
+- [Purpose](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
+- [Examples](http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html)
+
+**YouTube Videos**
+
+**Instructional Videos:**
+
+- [Bash Shell Scripting - Part 2](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
-**IF-ELIF-ELSE STATEMENT**
+**if-elif-else Statement**
 
 The **elif** statement can be used to perform additional conditional tests of the previous test condition tests **FALSE**. This statement is used to make your logic control-flow statement to be more adaptable.
 
@@ -48,7 +71,7 @@ Example of how an **if-elif-else** statement works. (Image licensed under [cc](h
 
 _Example:_
 
-```text
+```bash
 num1=5
 num2=10
 if test $num1 –lt $num2
@@ -61,7 +84,7 @@ else    echo “Equal to”
 fi
 ```
 
-**FOR LOOP USING COMMAND SUBSTITUTION**
+**For Loop Using Command Substitution**
 
 Let’s issue the **for** loop with a **list** using **command substitution**.
 In the example below, we will use command substitution to issue the ls command and
@@ -69,19 +92,20 @@ have that output (filenames) become arguments for the for loop.
 
 _Example:_
 
-```text
+```bash
 for x in $(ls)
 do
    echo “The item is: $x”
 done
 ```
 
-**WHILE LOOP**
+**While Loop**
 
 The **while** loop is useful to loop based on the result from a test condition or command result.
 This type of loop is very useful for **error-checking**.
 
 _How it Works:_
+
 _The condition/expression is evaluated, and if the condition/expression is **TRUE**,
 the code within … the block is executed. This repeats until the condition/expression becomes **FALSE**._
 Reference: https://en.wikipedia.org/wiki/While_loop
@@ -92,7 +116,7 @@ Example of how a while loop works. (Image licensed under [cc](https://creativeco
 
 _Example 1:_
 
-```text
+```bash
 answer=10
 read –p “pick a number between 1 and 10: “ guess
 while test $guess –eq 10
@@ -103,7 +127,7 @@ echo “You are correct”
 
 _Example 2:_
 
-```text
+```bash
 value=1
 while [ $value -le 5 ]
 do
@@ -117,7 +141,7 @@ done
 5
 ```
 
-**EXIT & BREAK STATEMENTS**
+**Exit & Break Statements**
 
 **exit Statement**
 
@@ -127,7 +151,7 @@ The exit command can contain an argument to provide the exit status of your shel
 
 _Example:_
 
-```text
+```bash
 if [ $# -ne 1 ]
 then
   echo "USAGE: $0 [arg]"
@@ -142,7 +166,7 @@ Although the loop terminates, the shell script will continue running.
 
 _Example:_
 
-```text
+```bash
 read -p "Enter a number: " number
 while [ $number -ne 5 ]
 do
@@ -155,7 +179,7 @@ done
 ```
 
 
-**START-UP FILES**
+**Start-Up Files**
 
 **Shell configuration (start-up) files** are **scripts** that are run when you log in, log out, or start a new shell.
 The start-up files can be used, for example, to **set the prompt and screen display**, **create local variables**,
@@ -172,7 +196,7 @@ User-specific config start-up files are in the user's home directory:
 There is a file that **resets or restores the shell environment** (including shut-down of programs running in the shell) when the user logs out of their shell. User-specific logout start-up files are in the user's home directory: **~/.bash_logout**
 
 
-## INVESTIGATION 1: ADDITIONAL LOGIC STATEMENTS
+## Investigation 1: Additional Logic Statements
 
 **ATTENTION:**
 
@@ -196,7 +220,7 @@ to take two different actions based on if the condition tests either TRUE or FAL
 
   7. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 clear
 read -p "Enter the first number: " num1
@@ -216,21 +240,25 @@ fi
 
   9. Issue the following linux command to add execute permissions for your shell script:
 
-`chmod u+x if-4.bash`
+```bash
+chmod u+x if-4.bash
+```
 
-  10. Run your shell script by issuing: `./if-4.bash`
+  10. Run your shell script by issuing: 
 
-Try running the script several times with numbers different and equal to each other
-to confirm that the shell script works correctly.
+```bash
+./if-4.bash
+```
 
-A classic shell script to demonstrate many different paths or actions to take depending of multiple testing
-using an **if-elif-else** statement would be a **mark to letter grade converter**.
+   - Try running the script several times with numbers different and equal to each other to confirm that the shell script works correctly.
+
+   - A classic shell script to demonstrate many different paths or actions to take depending of multiple testing using an **if-elif-else** statement would be a **mark to letter grade converter**.
 
   11. Use a text editor like vi or nano to create the text file called **if-5.bash** (eg. `vi if-5.bash`)
 
   12. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 clear
 read -p "Enter a mark (0-100): " mark
@@ -255,15 +283,23 @@ fi
 
   14. Issue the following linux command to add execute permissions for your shell script:
 
-`chmod u+x if-5.bash`
+```bash
+chmod u+x if-5.bash
+```
 
-  15. Run your shell script by issuing: `./if-5.bash`
+  15. Run your shell script by issuing: 
 
-What do you notice? Run several times to confirm that the shell script runs correctly for all mark (grade) categories.
+```bash
+./if-5.bash
+```
+
+   - What do you notice? Run several times to confirm that the shell script runs correctly for all mark (grade) categories.
 
   16. Issue the following to run a checking script:
 
-`~uli101/week12-check-1`
+```bash
+~uli101/week12-check-1
+```
 
   17. If you encounter errors, make corrections and **re-run** the checking script until you
 receive a congratulations message, then you can proceed.
@@ -272,7 +308,7 @@ receive a congratulations message, then you can proceed.
 In the next investigation, you will learn more about the **for** loop and learn how to use the **while** loop for **error-checking.**
 
 
-## INVESTIGATION 2: ADDITIONAL LOOPING STATEMENTS
+## Investigation 2: Additional Looping Statements
 
 In this investigation, you will learn more about the **for** loop and learn how to use the **while** loop for **error-checking**.
 
@@ -283,41 +319,46 @@ In this investigation, you will learn more about the **for** loop and learn how 
 
   2. Issue the following Linux command to view the **~/for-1.bash** file:
 
-`more ~/for-1.bash`
+```bash
+more ~/for-1.bash
+```
 
-As you should have noticed from **tutorial 10** that the **for** loop can use a **list**.
-You can also use the for loop with positional parameters stored as **arguments**
-from an executed shell script.
+   - As you should have noticed from **tutorial 10** that the **for** loop can use a **list**.
+   - You can also use the for loop with positional parameters stored as **arguments** from an executed shell script.
 
-You can also use the **for** loop with a list using **command substitution**.
-Using command sustitution is an effective method to loop within a shell script.
+   - You can also use the **for** loop with a list using **command substitution**.
+   - Using command sustitution is an effective method to loop within a shell script.
 
-Before creating a new shell script, let's learn to use command substitution from the Bash Shell
-to store arguments as positional parameters and use them for practice.
+   - Before creating a new shell script, let's learn to use command substitution from the Bash Shell to store arguments as positional parameters and use them for practice.
 
   3. Issue the following linux command to set positional parameters in your current shell:
 
-`set apples oranges bananas pears`
+```bash
+set apples oranges bananas pears
+```
 
   4. Issue the following linux command:
 
-`echo $#`
+```bash
+echo $#
+```
 
-What do you notice? What does this value represent?
+   - What do you notice? What does this value represent?
 
   5. Issue the following linux command:
 
-`echo $*`
+```bash
+echo $*
+```
 
-What do you notice?
+   - What do you notice?
 
-These positional parameters can be used with a for loop. To simplify things,
-let's create another shell script that uses **command substitution** within a **for** loop.
+   - These positional parameters can be used with a for loop. To simplify things, let's create another shell script that uses **command substitution** within a **for** loop.
 
   6. Use a text editor like vi or nano to create the text file called **for-3.bash** (eg. `vi for-3.bash`)
   7. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 clear
 set 10 9 8 7 6 5 4 3 2 1
@@ -332,15 +373,15 @@ echo "blast-off!"
 
   9. **Add execute permissions** for the owner of this script and **run this Bash shell script**.
 
-What do you notice?
+      - What do you notice?
 
-Let's create another shell script to **run a loop for each file** that is contained in your current directory using **command substitution**.
+      - Let's create another shell script to **run a loop for each file** that is contained in your current directory using **command substitution**.
 
   10. Use a text editor like vi or nano to create the text file called **for-4.bash** (eg. `vi for-4.bash`)
 
   11. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 clear
 set $(ls)
@@ -356,16 +397,15 @@ done
 
   13. **Add execute permissions** and **run** this Bash shell script.
 
-What do you notice?
+      - What do you notice?
 
-We can reduce a line in our shell script by using **command substitution** in the for loop instead of using
-the **set** command. Let's demonstrate this in another shell script.
+      - We can reduce a line in our shell script by using **command substitution** in the for loop instead of using the **set** command. Let's demonstrate this in another shell script.
 
   14. Use a text editor like vi or nano to create the text file called **for-5.bash** (eg. `vi for-5.bash`)
 
   15. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 clear
 echo "Here are files in my current directory:"
@@ -379,27 +419,31 @@ done
   16. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
 
   17. **Add execute permissions** for this shell script and **run Bash shell script**
-What do you notice? Does the output for this shell script differ from **for-4.bash**? Why?
 
-We now want to introduce you to the use of **error-checking.**
+      - What do you notice? Does the output for this shell script differ from **for-4.bash**? Why?
+      - We now want to introduce you to the use of **error-checking.**
 
   18. Use the **more** command to view the previously-created Bash shell script **~/if-5.bash** (eg. `more ~/if-5.bash`)
 
-Take a few moments to re-familiarize yourself with this shell script
+      - Take a few moments to re-familiarize yourself with this shell script
 
-  19. Run your shell script by issuing: `~/if-5.bash`
+  19. Run your shell script by issuing: 
 
-When prompted, enter a **letter** instead of a _number_. What happens?
+```bash
+~/if-5.bash
+```
 
-Let's edit the **for-5.bash** shell script to perform **error-checking** to force the user to enter a numeric value between **0** and **100**.
+   - When prompted, enter a **letter** instead of a _number_. What happens?
 
-**NOTE:** The **while** statement can be used with the **test** command (or a simple linux command or a linux pipeline command) for error checking. In our case, we will use a pipeline command with extended regular expressions. In order to loop while the result is TRUE (not FALSE), you can use the negation symbol (!) to set the test condition to the opposite.
+   - Let's edit the **for-5.bash** shell script to perform **error-checking** to force the user to enter a numeric value between **0** and **100**.
+
+   - **NOTE:** The **while** statement can be used with the **test** command (or a simple linux command or a linux pipeline command) for error checking. In our case, we will use a pipeline command with extended regular expressions. In order to loop while the result is TRUE (not FALSE), you can use the negation symbol (!) to set the test condition to the opposite.
 
   20. Use a text editor like vi or nano to edit the text file called **~/if-5.bash** (eg. `vi ~/if-5.bash`)
 
   21. Add the following lines in your shell script IMMEDIATELY AFTER the read statement to prompt the user for a mark:
 
-```text
+```bash
 while ! echo $mark | egrep "^[0-9]{1,}$" > /dev/null 2> /dev/null
 do
    read -p "Not a valid number. Enter a mark (0-100): " mark
@@ -410,23 +454,23 @@ done
 
   23. Run your shell script by issuing:
 
-`./if-5.bash`**
-letter**
+```bash
+./if-5.bash
+```
 
   24. When prompted, enter a **letter** instead of a number. What happens?
 
-Does the shell script allow you to enter an invalid grade like **200** or **-6**?
+      - Does the shell script allow you to enter an invalid grade like **200** or **-6**?
+      - Let's add an **additional error-checking loop** to force the user to enter a number between **0** and **100**.
 
-Let's add an **additional error-checking loop** to force the user to enter a number between **0** and **100**.
-
-Compound operators like **&&** and **\|\|** can be used with the test command.
-Let's use the **\|\|** compound criteria to to NOT accept numbers **outside** of the range **0** to **100**.
+      - Compound operators like **&&** and **\|\|** can be used with the test command.
+      - Let's use the **\|\|** compound criteria to to NOT accept numbers **outside** of the range **0** to **100**.
 
   25. Use a text editor like vi or nano to edit the text file called **~/if-5.bash** (eg. `vi ~/if-5.bash`)
 
   26. Add the following lines in your shell script IMMEDIATELY AFTER the PREVIOUSLY ADDED error-checking **while** loop statement to **force** the user to enter a valid number (between 1 and 100):
 
-```text
+```bash
 while [ $mark -lt 0 ] || [ $mark -gt 100 ]
 do
    read -p "Invalid number range. Enter a mark (0-100): " mark
@@ -437,18 +481,21 @@ done
 
   28. Run your shell script by issuing:
 
-`~/if-5.bash`
+```bash
+~/if-5.bash
+```
 
   29. When prompted, enter a **letter** instead of a number. What happens?
-Does the shell script allow you to enter an **invalid grade** like **200** or **-6**?
 
-Let's reinforce **math operations** in a shell script (that you created in **tutorial 10**) and then incorporate math operations within a loop.
+      - Does the shell script allow you to enter an **invalid grade** like **200** or **-6**?
+
+      - Let's reinforce **math operations** in a shell script (that you created in **tutorial 10**) and then incorporate math operations within a loop.
 
   30. Use a text editor like vi or nano to create the text file called **for-6.bash** (eg. `vi for-6.bash`)
 
   31. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 value=1
 while [ $value -le 5 ]
@@ -460,72 +507,91 @@ done
 
   32. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
 
-  33. Set execute permissions for this shell script and run your shell script by issuing: `./for-6.bash`
+  33. Set execute permissions for this shell script and run your shell script by issuing: 
 
-**You should have noticed an error message.**
+```bash
+./for-6.bash
+```
+
+   - **You should have noticed an error message.**
 
   34. To demonstrate what went wrong, issue the following **commands**:
 
-`num1=5;num2=10`
+```bash
+num1=5;num2=10
+```
 
-`result=$num1+$num2`
+```bash
+result=$num1+$num2
+```
 
-`echo $result`
+```bash
+echo $result
+```
 
-Notice that the user-defined variable stores the text "**10+5**" which is NOT the expected result of adding the number **10** and **5**.
+   - Notice that the user-defined variable stores the text "**10+5**" which is NOT the expected result of adding the number **10** and **5**.
 
-As you may recall in **tutorial 10**, we need to convert a number stored as text into a **binary number**
-for calculations (in this case, advance the value by 1 for each loop).
-We can accomplish this by using the math construct **(( ))**
+   - As you may recall in **tutorial 10**, we need to convert a number stored as text into a **binary number** for calculations (in this case, advance the value by 1 for each loop). We can accomplish this by using the math construct **(( ))**
 
   35. To demonstrate, issue the following set of **commands**:
 
-`num1=5;num2=10`
+```bash
+num1=5;num2=10
+```
 
-`sum=$(($num1+$num2))`
+```bash
+sum=$(($num1+$num2))
+```
 
-`echo $sum`
+```bash
+echo $sum
+```
 
-`((product=$num1*$num2))`
+```bash
+((product=$num1*$num2))
+```
 
-`echo $product`
+```bash
+echo $product
+```
 
-Let's correct our **for-6.bash** shell script to correctly use math operations.
+   - Let's correct our **for-6.bash** shell script to correctly use math operations.
 
   36. Use a text editor like vi or nano to edit the text file called **for-6.bash** (eg. `vi for-6.bash`)
 
   37. Edit **line 6** and replace with the following:
 
-```text
+```bash
 ((value=value+1))
 ```
 
-**Note:** For those familiar with other programming languages, you can achieve the same results by using: **((value++))**
+   - **Note:** For those familiar with other programming languages, you can achieve the same results by using: **((value++))**
 
   38. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
 
   39. **Run** this Bash shell script again.
 
-What do you notice this time?
+      - What do you notice this time?
 
   40. Issue the following to run a checking script:
 
-`~uli101/week12-check-2`
+```bash
+~uli101/week12-check-2
+```
 
-  41. If you encounter errors, make corrections and **re-run** the checking script until you
-receive a congratulations message, then you can proceed.
+  41. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
 In the next investigation, you will learn to use the **exit** statement to **terminate the execution of a shell script**
 if not run with the properly number of arguments and use the **break** statement that will **terminate a loop**
 but NOT terminate the running of the shell script.
 
 
-## INVESTIGATION 3: exit AND break STATEMENTS
+## Investigation 3: exit and break Statements
 
 In this investigation, you will learn to use the **exit** and **break** statements in your shell scripts.
 
 
-**THE EXIT STATEMENT**
+**The exit Statement**
 
 The **exit** statement is used to terminate a shell script.
 This statement is very useful when combined with logic in a shell script to display an **error message**
@@ -544,7 +610,7 @@ of your shell script (i.e. TRUE or FALSE value).
 
   4. Enter the following lines in the exit.bash shell script:
 
-```text
+```bash
 #!/bin/bash
 
 if [ $# -ne 1 ]
@@ -562,55 +628,65 @@ echo "The argument is: $1"
 
   7. Issue the following command (without arguments):
 
-`./exit.bash`
+```bash
+./exit.bash
+```
 
-What did you notice?
+   - What did you notice?
 
-Since there are no arguments, the test within the running shell script returns FALSE,
-then an **error message** with feedback of how to properly issue the shell script with an argument
-and then **terminates** the Bash shell script.
+   - Since there are no arguments, the test within the running shell script returns FALSE, then an **error message** with feedback of how to properly issue the shell script with an argument and then **terminates** the Bash shell script.
 
-Notice that the **$0** positional parameter displays the **name** of the currently running shell script
-in the USAGE message. This is useful in case you decide to **change** the _name_ of the shell script at a later time.
+   - Notice that the **$0** positional parameter displays the **name** of the currently running shell script in the USAGE message. This is useful in case you decide to **change** the _name_ of the shell script at a later time.
 
-The symbol **\>&2** redirects **standard output** from the USAGE message
-to **standard error** making like a real error message.
-This "_neat redirection trick_" will NOT be considered for evaluation for this coverage.
+   - The symbol **\>&2** redirects **standard output** from the USAGE message to **standard error** making like a real error message.
+   - This "_neat redirection trick_" will NOT be considered for evaluation for this coverage.
 
   8. Issue the following Linux command:
 
-`echo $?`
+```bash
+echo $?
+```
 
-What does this **exit status** from the previously issued command indicate?
+   - What does this **exit status** from the previously issued command indicate?
 
   9. Issue the following command (with an argument):
 
-`./exit.bash uli101`
+```bash
+./exit.bash uli101
+```
 
-What did you notice this time?
+   - What did you notice this time?
 
   10. Issue the following Linux command:
 
-`echo $?`
+```bash
+echo $?
+```
 
-What does this **exit status** from the previously issued command indicate?
+   - What does this **exit status** from the previously issued command indicate?
 
   11. Issue the following command (with two arguments and redirecting stderr to a file):
 
-`./exit.bash uli101 Linux 2> error.txt`
+```bash
+./exit.bash uli101 Linux 2> error.txt
+```
 
-What did you notice this time?
+   - What did you notice this time?
 
   12. Issue the following Linux command:
 
-`echo $?`
+```bash
+echo $?
+```
 
   13. Issue the following Linux command to confirm that stderr was redirected to a file:
 
-`cat error.txt`
+```bash
+cat error.txt
+```
 
 
-**THE BREAK STATEMENT**
+**The break Statement**
 
 The **break** statement is used to **terminate** a **loop** without
 terminating the running shell script.
@@ -625,7 +701,7 @@ terminating the running shell script.
 
   4. Enter the following lines in the **break-1.bash** shell script:
 
-```text
+```bash
 #!/bin/bash
 
 read -p "Enter an integer: " number
@@ -648,20 +724,21 @@ echo "The number is: $number"
 
   7. Issue the following command (without arguments):
 
-`./break-1.bash`
+```bash
+./break-1.bash
+```
 
-When prompted, enter several **invalid** and **valid** integers. Then enter **valid integers** NOT containing the value of **5**.
-Finally, enter the integer with the value of **5**.
+   - When prompted, enter several **invalid** and **valid** integers. Then enter **valid integers** NOT containing the value of **5**. Finally, enter the integer with the value of **5**.
 
-What happens?
+   - What happens?
 
-Let's use the **break** statement with the **for** loop.
+   - Let's use the **break** statement with the **for** loop.
 
   8. Use a text editor like vi or nano to create the text file called **break-2.bash** (eg. `vi break-2.bash`)
 
   9. Enter the following lines in the **break-2.bash** shell script:
 
-```text
+```bash
 #!/bin/bash
 
 for x
@@ -684,14 +761,17 @@ echo "Shell script has been completed"
 
   12. Issue the following command (with arguments):
 
-`./break-2.bash hwd101 ipc144 uli101 apc100`
+```bash
+./break-2.bash hwd101 ipc144 uli101 apc100
+```
 
-What do you notice? How come **uli101** and **apc100** are NOT displayed
-but a message appeared at the end of the script that the script completed?
+   - What do you notice? How come **uli101** and **apc100** are NOT displayed but a message appeared at the end of the script that the script completed?
 
   13. Issue the following to run a checking script:
 
-`~uli101/week12-check-3`
+```bash
+~uli101/week12-check-3
+```
 
   14. If you encounter errors, make corrections and **re-run** the checking script until you
 receive a congratulations message, then you can proceed.
@@ -701,7 +781,7 @@ In the next investigation, we will learn to create / modify **startup files**
 to customize your Linux shell environment.
 
 
-## INVESTIGATION 4: USING START-UP FILES
+## Investigation 4: Using Start-Up Files
 
 In this investigation, you will learn how to **customize** your **Bash Linux shell environment**
 by creating and testing a **start-up** file.
@@ -715,31 +795,32 @@ by creating and testing a **start-up** file.
 
   3. Use the **more** command to view the contents of the **default start-up** file called **/etc/profile**
 
-This file contains the **default settings** when you open your Bourne shell (eg. if issuing the command **sh**).
+      - This file contains the **default settings** when you open your Bourne shell (eg. if issuing the command **sh**).
 
   4. Use the **more** command to view the contents of the start-up file called **/etc/bashrc**
 
-This file contains the **default settings** when you **open your Bash shell** (eg. if issuing the command **bash**).
+      - This file contains the **default settings** when you **open your Bash shell** (eg. if issuing the command **bash**).
 
-Since we are using the **Bash shell** by default, let's create a **customized Bash start-up file**.
-This startup file is located in your **home** directory using the name "**.bash_profile**"
+      - Since we are using the **Bash shell** by default, let's create a **customized Bash start-up file**.
+      - This startup file is located in your **home** directory using the name "**.bash_profile**"
 
-Let's move your **.bash_profile** file to prevent **accidental overwrite**.
+      - Let's move your **.bash_profile** file to prevent **accidental overwrite**.
 
   5. Issue the following linux command:
 
-`mv ~/.bash_profile ~/.bash_profile.bk`
+```bash
+mv ~/.bash_profile ~/.bash_profile.bk
+```
 
-If you experience an error message "_No such file or directory_",
-just ignore this command since there is no **~/.bash_profile** file in your home directory.
+   - If you experience an error message "_No such file or directory_", just ignore this command since there is no **~/.bash_profile** file in your home directory.
 
   6. Use a text editor like vi or nano to create the text file called **~/.bash_profile** (eg. `vi ~/.bash_profile`)
 
-If you are using the nano text editor, refer to notes on text editing in a previous week in the course schedule.
+      - If you are using the nano text editor, refer to notes on text editing in a previous week in the course schedule.
 
   7. Enter the following lines in your shell script (the symbol "\[" is the open square bracket symbol):
 
-```text
+```bash
 clear
 echo -e -n "\e[0;34m"
 echo "Last Time Logged in (for security):"
@@ -749,39 +830,42 @@ echo
 echo -e -n "\e[m"
 ```
 
-**NOTE:** You will notice there is **NO she-bang line** since this is a **start-up** file.
+   - **NOTE:** You will notice there is **NO she-bang line** since this is a **start-up** file.
 
   8. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
 
-You can test run the startup file without exiting and re-entering your Bash shell environment. Issue the following:
+      - You can test run the startup file without exiting and re-entering your Bash shell environment. Issue the following:
 
-`. ~/.bash_profile`
+```bash
+. ~/.bash_profile
+```
 
-What do you notice?
+   - What do you notice?
 
   10. **Exit** your current Bash shell session.
 
   11. **Login** again to your matrix account.
 
-Did you start-up file customize your Bash shell environment with colours?
+   - Did you start-up file customize your Bash shell environment with colours?
 
-**NOTE:** This is where you can make your Linux shell environment values **persistent**
-(i.e. saved regardless of exit and login to your Bash Shell such as **aliases**, **umask**, etc.).
+   - **NOTE:** This is where you can make your Linux shell environment values **persistent** (i.e. saved regardless of exit and login to your Bash Shell such as **aliases**, **umask**, etc.).
 
   12. Issue the following linux command to **restore** your previous settings for your bashrc startup file:
 
-`mv ~/.bash_profile.bk ~/.bash_profile`
+```bash
+mv ~/.bash_profile.bk ~/.bash_profile
+```
 
-If you experience an error message "_No such file or directory_", just ignore.
+   - If you experience an error message "_No such file or directory_", just ignore.
 
   13. **Exit** your current Bash shell session.
 
   14. **Login** again to your matrix account.
 
-What did you notice this time?
+      - What did you notice this time?
 
 
-## FURTHER STUDY
+## Further Study
 
 I hope this series of tutorials have been helpful in teaching you basic Linux OS skills.
 
@@ -801,13 +885,13 @@ Take care and good luck in your future endeavours **:)**
 _Murray Saul_
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
 Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
 
-https://github.com/ULI101/labs/blob/main/uli101_week12_practice.docx
+[Week 12 Practice](/files/uli101_week12_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
@@ -820,25 +904,18 @@ Your instructor may take-up these questions during class. It is up to the studen
 
   3. Write code for a Bash shell script that will prompt the user for a **valid POSTAL CODE**.
 
-A valid postal code consists of the following format: **x\#x #x\#**
-
-where **x** represents an upper or lowercase letter
-
-and **#** represents a number from 0-9
-
-Also VALID postal codes can consist of no spaces or one or more spaces in the format shown above.
-
-If the user enters an **INVALID postal code**, indicate an error and allow the user to enter the VALID postal code. When the user enters a VALID postal code, then clear the screen and display the VALID postal code.
+      - A valid postal code consists of the following format: **x\#x #x\#**
+      - where **x** represents an upper or lowercase letter
+      - and **#** represents a number from 0-9
+      - Also VALID postal codes can consist of no spaces or one or more spaces in the format shown above.
+      - If the user enters an **INVALID postal code**, indicate an error and allow the user to enter the VALID postal code. When the user enters a VALID postal code, then clear the screen and display the VALID postal code.
 
   4. Write code that works similar to the previous question, but have it read an input file called **unchecked-postalcodes.txt** and only save VALID postal codes to a file called:
 
-**valid-postalcodes.txt**
-
-Design your Bash Shell script to only run if the user enters TWO ARGUMENTS:
-
-**unchecked-postalcodes.txt** and **valid-postalcodes.txt**
-
-Otherwise, display an error message and immediately exit your Bash Shell script with a false exit value.
+      - **valid-postalcodes.txt**
+      - Design your Bash Shell script to only run if the user enters TWO ARGUMENTS:
+      - **unchecked-postalcodes.txt** and **valid-postalcodes.txt**
+      - Otherwise, display an error message and immediately exit your Bash Shell script with a false exit value.
 
   5. What is the purpose of the **/etc/profile** startup file?
 
