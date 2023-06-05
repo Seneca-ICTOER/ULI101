@@ -232,7 +232,7 @@ Setting **umask** for newly-created **directories** ^.
 Setting **umask** for newly-created **regular files** ^
 
 
-## INVESTIGATION 1: Numbering Conversions
+## Investigation 1: Numbering Conversions
 
 **ATTENTION:**
 
@@ -249,8 +249,7 @@ You will now get practice performing numbering conversions.
 
   1. Let's convert the following binary number **10111110** to a **decimal number**.
 
-**NOTE:** It is important to learn and **memorize** the **correct methods** to perform the
-proper numbering conversion method (i.e. view **method 1** above (drawing the L's).
+      - **NOTE:** It is important to learn and **memorize** the **correct methods** to perform the proper numbering conversion method (i.e. view **method 1** above (drawing the L's).
 
   2. Write the manual conversion either in your MS Word document.
 
@@ -259,44 +258,44 @@ by making the selection to **binary**, enter the binary number **10111110** and 
 
 ![Calc Check](/img/Calc-check.png)
 
-Did you get the correct answer? If not, retry the method and check to see what you did wrong.
+   - Did you get the correct answer? If not, retry the method and check to see what you did wrong.
 
   4. Perform a manual conversion of the **decimal number 55** to a **binary number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   5. Perform a manual conversion of the **octal number 461** to a **binary number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   6. Perform a manual conversion of the **binary number** **11110001** to a **hexadecimal number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   7. Perform a manual conversion of the **hexadecimal number ABC** to a **binary number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   8. Perform a manual conversion of the **binary number** **10101111** to an **octal number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   9. Perform a manual conversion of the same **binary number** **10101111** to a **hexadecimal number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   10. Perform a manual conversion of the **octal number 5636** to a **hexadecimal number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   11. Perform a manual conversion of the **hexadecimal number D68** to an **octal number**.
 
-What method (displayed above) will you use? Use a calculator to check your work.
+      - What method (displayed above) will you use? Use a calculator to check your work.
 
   12. When you have performed all of the numbering conversions above, then you can proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 2: File Permissions
+## Investigation 2: File Permissions
 
 In this investigation, you will get experience using the **chmod** command to **change permissions** for existing files and the using **umask** command to automatically set permissions for newly-created files.
 
@@ -309,11 +308,13 @@ In this investigation, you will get experience using the **chmod** command to **
 
 ![File Permission Practice 1](/img/File-permission-practice-1.png)
 
-**NOTE:** You will now run a shell script to confirm that you properly created that directory structure in your _Matrix_ account.
+   - **NOTE:** You will now run a shell script to confirm that you properly created that directory structure in your _Matrix_ account.
 
   3. Issue the following Linux command to run a checking script:
 
-`~uli101/week4-check-1`
+```bash
+~uli101/week4-check-1
+```
 
   4. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
@@ -321,102 +322,144 @@ In this investigation, you will get experience using the **chmod** command to **
 
 ![File Permission Practice 2](/img/File-permission-practice-2.png)
 
-**NOTE:** You will now run another shell script to confirm that you properly created those empty files within those specified directories.
+   - **NOTE:** You will now run another shell script to confirm that you properly created those empty files within those specified directories.
 
   6. Issue the following Linux command to run a checking script:
 
-`~uli101/week4-check-2`
+```bash
+~uli101/week4-check-2
+```
 
-  7. If you encounter errors, make corrections and **re-run** the checking script until you
-receive a congratulations message, then continue the remaining steps.
+  7. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then continue the remaining steps.
 
-Let's get practice **viewing permissions**, **changing permissions**, and automatically **setting permissions for newly created files.**
+      - Let's get practice **viewing permissions**, **changing permissions**, and automatically **setting permissions for newly created files.**
 
   8. Issue the following Linux commands:
 
-`ls -ld ~/documents ~/clients ~/vendors`
+```bash
+ls -ld ~/documents ~/clients ~/vendors
+```
 
-`ls -lR ~/documents ~/clients ~/vendors`
+```bash
+ls -lR ~/documents ~/clients ~/vendors
+```
 
-**NOTE:** You should see permissions already set for those newly created directories and regular files. What do these permissions mean for **same group member** and **other group member** access to those directory and regular files?
+   - **NOTE:** You should see permissions already set for those newly created directories and regular files. What do these permissions mean for **same group member** and **other group member** access to those directory and regular files?
 
   9. Let's limit access to the **clients** and **vendors** directories to only yourself and same group members. Issue the following Linux command:
 
-`chmod 750 ~/clients ~/vendors`
+```bash
+chmod 750 ~/clients ~/vendors
+```
 
   10. Issue the **ls -ld** and **ls -lR** commands (as you did in step _\#8_) to confirm that the permissions for those directories have been changed.
 
-**NOTE:** The **-R** option for the **chmod** command can change the file permissions recursively within a directory structure.
+      - **NOTE:** The **-R** option for the **chmod** command can change the file permissions recursively within a directory structure.
 
-  11. Issue the following Linux command: `chmod 750 -R ~/documents`
+  11. Issue the following Linux command: 
+
+```bash
+chmod 750 -R ~/documents
+```
 
   12. Issue the **ls -ld** command to confirm the permissions for the **~/documents**, **~/document/memos** , **~/documents/reports**, and **~/documents/contracts** directories.
 
-  13. Issue the following Linux command: `ls -lR ~/documents`
+  13. Issue the following Linux command: 
 
-What do you noticed happened to the permissions for the regular files contained in those directories. Did those regular file permissions change?
+```bash
+ls -lR ~/documents
+```
 
-We will now change permissions for regular text file contained in subdirectories of the **documents** directory to: **r w - r - - - - -**
+   - What do you noticed happened to the permissions for the regular files contained in those directories. Did those regular file permissions change?
+   - We will now change permissions for regular text file contained in subdirectories of the **documents** directory to: **r w - r - - - - -**
 
   14. Issue the following Linux commands:
 
-`chmod 640 ~/documents/memos/memo*.txt`
+```bash
+chmod 640 ~/documents/memos/memo*.txt
+```
 
-`chmod 640 ~/documents/reports/report*.txt`
+```bash
+chmod 640 ~/documents/reports/report*.txt
+```
 
-`chmod 640 ~/documents/contracts/contract*.txt`
+```bash
+chmod 640 ~/documents/contracts/contract*.txt
+```
 
   15. Issue the **ls -lR** command for the **~/documents** directory to confirm that those regular file permission have changed.
 
-Let's run a checking script to make certain you correctly set permissions for those directories and files.
+      - Let's run a checking script to make certain you correctly set permissions for those directories and files.
 
-  16. Issue the following: `~uli101/week4-check-3`
+  16. Issue the following: 
 
-  17. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message
-and then continue with this tutorial.
+```bash
+~uli101/week4-check-3
+```
 
-Let's get some practice setting permissions to allow users to make editing changes to regular files.
+  17. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
 
-  18. Issue the following Linux command: `chmod ugo-w ~/documents/memos/memo*.txt`
+      - Let's get some practice setting permissions to allow users to make editing changes to regular files.
+
+  18. Issue the following Linux command: 
+
+```bash
+chmod ugo-w ~/documents/memos/memo*.txt
+```
 
   19. Use the **ls** command to verify that those regular file's permissions have changed.
 
   20. Using the nano or vi text editor, open the regular file **~/documents/memos/memo1.txt** and type in some text and try to save your editing changes.
 
-What happened?
+      - What happened?
 
   21. To **abort** your editing session in **vi**: type `:q!` and press **ENTER**.
 
-To **abort** your editing changes in **nano**: type `ctrl-x`
-
-type `n` and then press **ENTER** when prompted to save editing changes.
+      - To **abort** your editing changes in **nano**: type `ctrl-x`
+      - type `n` and then press **ENTER** when prompted to save editing changes.
 
   22. Issue the following Linux command to add write permissions for all files in the **memos** directory for yourself (i.e. user): 
 
-`chmod u+w ~/documents/memos/*`
+```bash
+chmod u+w ~/documents/memos/*
+```
 
   23. Repeat steps to edit the file **~/documents/memos/memo1.txt** (as you did in _step \#20_).
 
-Were you able to edit the file and save your editing changes?
+      - Were you able to edit the file and save your editing changes?
 
   24. Issue a Linux command to view the contents of the **~/documents/memos/memo1.txt** text file that you were able to edit.
 
-  25. Issue the following Linux command to view permissions for your **home** directory: `ls -ld ~`
+  25. Issue the following Linux command to view permissions for your **home** directory: 
 
-What does execute permissions mean for same group members and other group members
-in terms of your **home** directory?
+```bash
+ls -ld ~
+```
 
-  26. Issue the following Linux command to create a new subdirectory: `mkdir ~/shared`
+   - What does execute permissions mean for same group members and other group members in terms of your **home** directory?
 
-  27. Issue the following Linux command: `ls -ld ~/shared`
+  26. Issue the following Linux command to create a new subdirectory: 
 
-What are the permissions for this newly-created directory?
+```bash
+mkdir ~/shared
+```
 
-Can other users access the directory pathname **~youruserid/shared** ?
+  27. Issue the following Linux command: 
 
-  28. Issue the following Linux command (without an argument): `umask`
+```bash
+ls -ld ~/shared
+```
 
-**NOTE:** You should see a **four-digit octal** number. Drop the leading zero on the left to obtain the **default umask value**.
+   - What are the permissions for this newly-created directory?
+   - Can other users access the directory pathname **~youruserid/shared** ?
+
+  28. Issue the following Linux command (without an argument): 
+
+```bash
+umask
+```
+
+   - **NOTE:** You should see a **four-digit octal** number. Drop the leading zero on the left to obtain the **default umask value**.
 
   29. Perform a **mathematical calculation** by taking the **octal number 777** and **subtracting** the default umask value you determined in the previous step. What is the result?
 
@@ -426,39 +469,62 @@ Does that correspond to the permissions for the newly created **~/shared** direc
   31. Repeat the calculation (like in step \#28) but with a umask setting of **077** to see how this new umask setting would
 affect permissions of newly-created directories.
 
-  32. Issue the following Linux command: `umask 077`
+  32. Issue the following Linux command: 
 
-  33. Issue the following Linux command (without arguments): `umask`
+```bash
+umask 077
+```
 
-**NOTE:** You should notice the value **0077**. By dropping the leading zero to the left,
-that would provide the default **umask value of 077**.
+  33. Issue the following Linux command (without arguments): 
 
-  34. Issue the following Linux command: `mkdir ~/shared2`
+```bash
+umask
+```
 
-  35. Issue the following Linux command: `ls -ld ~/shared2`
+   - **NOTE:** You should notice the value **0077**. By dropping the leading zero to the left, that would provide the default **umask value of 077**.
 
-Do the permissions for this newly created directory match the predicted permissions that you calculated in **step \#30**?
+  34. Issue the following Linux command: 
+
+```bash
+mkdir ~/shared2
+```
+
+  35. Issue the following Linux command: 
+
+```bash
+ls -ld ~/shared2
+```
+
+   - Do the permissions for this newly created directory match the predicted permissions that you calculated in **step \#30**?
 
   36. Issue the following Linux command to create an empty regular file called **myfile.txt** in the **~/shared2** directory:
 
-`touch ~/shared2/myfile.txt`
+```bash
+touch ~/shared2/myfile.txt
+```
 
   37. Use the **ls -l** command to view the permissions for this newly created regular file.
 
-What do you notice about those permissions?
+      - What do you notice about those permissions?
+      - Let's run a checking script to make certain you correctly set permissions for those recently-created directories and files.
 
-Let's run a checking script to make certain you correctly set permissions for those recently-created directories and files.
+  38. Issue the following: 
 
-  38. Issue the following: `~uli101/week4-check-4`
+```bash
+~uli101/week4-check-4
+```
 
-If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message
-and then continue with this tutorial.
+   - If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
 
   39. Logout of your Matrix account, and then log-back into your Matrix account.
 
-  40. Issue the following Linux command (without arguments): `umask`
+  40. Issue the following Linux command (without arguments): 
 
-What happened? Referring to your notes, what do you need to do to make that umask value persistent?
+```bash
+umask
+```
+
+   - What happened? Referring to your notes, what do you need to do to make that umask value persistent?
 
 **WARNING:**
 
@@ -496,39 +562,45 @@ Your instructor may take-up these questions during class. It is up to the studen
 
 ![Number conversion chart](/img/Number-conversion-chart.png)
 
-  6. Write the **chmod** command (using the symbolic method) to set “**pass-through**” permissions
-(eg. **r w x - - x - - x**) for your **home** directory using an **absolute pathname**.
+  6. Write the **chmod** command (using the symbolic method) to set “**pass-through**” permissions (eg. **r w x - - x - - x**) for your **home** directory using an **absolute pathname**.
 
-Write a Linux command to verify that permissions where set.
+      - Write a Linux command to verify that permissions where set.
 
   7. Perform a binary to octal numbering conversion for the permissions: **r w x - - x - - x**
 
-Write single Linux command to set “**pass-through**” permissions for your **home** directory, using the **absolute method** (i.e. octal numbers).
+      - Write single Linux command to set “**pass-through**” permissions for your **home** directory, using the **absolute method** (i.e. octal numbers).
 
   8. Write a single Linux command to **add read permissions** for **same group members** for the **~/tests** directory.
 
-  9. Write a single Linux command to **remove write permissions** for **same group members**
-and **other group members** for the **~/projects** directory. Use the _symbolic_ method.
+  9. Write a single Linux command to **remove write permissions** for **same group members** and **other group members** for the **~/projects** directory. Use the _symbolic_ method.
 
   10. Write a single Linux command to set the permissions for the **~/assignments** directory to the following using the **absolute** method (i.e. octal numbers): **r w x r - x - - x** Show your work to perform a **binary** to **octal** conversion.
 
-Write the command below using octal numbers and using a relative-to-home pathname.
+      - Write the command below using octal numbers and using a relative-to-home pathname.
 
   11. Assume that you just issued the command:
 
-`chmod u=rwx,go=x ~/linux/content`
+```bash
+chmod u=rwx,go=x ~/linux/content
+```
 
-What would be the new permissions for the “**content**” directory?
+   - What would be the new permissions for the “**content**” directory?
 
   12. Assume that you just issued the commands:
 
-`umask 077`
+```bash
+umask 077
+```
 
-`mkdir mydir`
+```bash
+mkdir mydir
+```
 
-`touch mydir/myfile.txt`
+```bash
+touch mydir/myfile.txt
+```
 
-What would be the permissions for the newly created **directory** and **regular file**? (show your work)
+   - What would be the permissions for the newly created **directory** and **regular file**? (show your work)
 
 
 ---
