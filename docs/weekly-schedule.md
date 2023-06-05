@@ -43,8 +43,8 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | - Absolute and relative pathnames | **Week 3 Lecture 1 Notes:** [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md) |
-| - File name expansion | **Week 3 Lecture 2 Notes:** [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | **Tutorial 2 Due Friday @ 11:59pm** |
-| - Shell basics | **YouTube Video:** [Filename Expansions](https://youtu.be/5FQnehwzwSM) | **Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm)** |
+| - File name expansion | **Week 3 Lecture 2 Notes:** [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | Tutorial 2 Due Friday @ 11:59pm |
+| - Shell basics | **YouTube Video:** [Filename Expansions](https://youtu.be/5FQnehwzwSM) | Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm) |
 | - Command execution in detail | **YouTube Video:** [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
 | - Command History | **YouTube Video:** [Quoting Special Characters](https://www.youtube.com/watch?v=mzgfE6-ZtUY) | |
 | - Recalling and editing previous commands | |  |
@@ -55,138 +55,107 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | - Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md) |
-| - Number conversions | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | Tutorial 3 Due Friday @ Midnight |
-| - Unix file permissions | **YouTube Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | Tutorial 4: Worth 2% (Due Week 5: Friday @ midnight) |
+| - Number conversions | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | Tutorial 3 Due Friday @ 11:59pm |
+| - Unix file permissions | **YouTube Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | Tutorial 4: Worth 2% (Due Week 5: Friday @ 11:59pm) |
 
 ### Week 5
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 5 Lecture 1 Notes:** | **Tutorial 4 Due Friday @ Midnight** |
-| - stdin, stdout, stderr | [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx) | **Tutorial 5: Worth 2% (Due Week 6: Friday @ midnight)** |
-| - Simple filter commands: (head,tail,cut,sort,tr,wc) | **Week 5 Lecture 2 Notes:** | - INVESTIGATION 1: Basics Of Redirections |
-| - grep utility Redirection and piping | [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx) | - INVESTIGATION 2: Redirection Using Pipeline Commands |
-| - /dev/null file | **Tutorials:** | - INVESTIGATION 3: Issuing Multiple Unix/Linux Commands |
-| | - [Tutorial 5: Redirection](/A-Tutorials/tutorial5.md)|  |
-| | **YouTube Videos** | |
-| | - [Reading/Writing to Files (stdin, stdout, stderr, >, >>, 2>)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | |
+| - stdin, stdout, stderr | **Week 5 Lecture 1 Notes:** [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx) | [Tutorial 5: Redirection](/A-Tutorials/tutorial5.md) |
+| - Simple filter commands: (head,tail,cut,sort,tr,wc) | **Week 5 Lecture 2 Notes:** [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx) | Tutorial 4 Due Friday @ 11:59pm |
+| - grep utility Redirection and piping | **YouTube Video:** [Reading/Writing to Files (stdin, stdout, stderr, >, >>, 2>)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | Tutorial 5: Worth 2% (Due Week 6: Friday @ 11:59pm) |
+| - /dev/null file |  | |
 
 ### Week 6
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 6 Lecture 1 Notes:** | **Tutorial 5 Due Friday @ Midnight** |
-| - scp and sftp utilities | [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx) | **Tutorial 6: Worth 2% (Due Week 8: Friday @ midnight)** |
-| - Sending email from command line | **Tutorials:** | - INVESTIGATION 1: File Transfer (Secure Copy) |
-| - Command History | - [Tutorial 6: File Transfer / Sending Email](/A-Tutorials/tutorial6.md) | - INVESTIGATION 2: File Transfer (Secure FTP) |
-| | **YouTube Videos** | - INVESTIGATION 3: File Transfer (Email) |
-| | - [SSH, SCP and Other Network Tools](https://youtu.be/-Le-7U8tEOA) |  |
+| - scp and sftp utilities | **Week 6 Lecture 1 Notes:** [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx) | [Tutorial 6: File Transfer / Sending Email](/A-Tutorials/tutorial6.md) |
+| - Sending email from command line | **YouTube Video:** [SSH, SCP and Other Network Tools](https://youtu.be/-Le-7U8tEOA) | Tutorial 5 Due Friday @ 11:59pm |
+| - Command History | | Tutorial 6: Worth 2% (Due Week 8: Friday @ 11:59pm) |
 
 ### Week 7
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | | **Midterm Test (20%)** |
-| - Course Review | | |
-| **Evaluation:** | | |
-| - Midterm Test (20%) | | |
+| - Course Review | | **Midterm Test (20%)** |
 
 ### Study Week
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | | |
 | - No scheduled classes | | |
 
 ### Week 8
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 8 Lecture 1 Notes:** | **Tutorial 6 Due Friday @ Midnight** |
-| - Filesystem links | [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx) | **Tutorial 8: Worth 2% (Due Week 9: Friday @ midnight)** |
-| - Hard and symbolic links | **Week 8 Lecture 2 Notes:** | - INVESTIGATION 1: Linking Files |
-| - Process management | [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx) | - INVESTIGATION 2: Managing Processes |
-| - Aliases | **Tutorials:** | - INVESTIGATION 3: Aliases / Command History |
-| - Command History | - [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](/A-Tutorials/tutorial8.md)|  |
-| | **YouTube Videos** | |
-| | - [Changing Resolution in Knoppix](https://www.youtube.com/watch?v=aNKMOyRYWfM&feature=youtu.be) | |
-| | - [Processes and Jobs](https://youtu.be/q93POTgH-aQ) | |
-| | - [Aliases](https://youtu.be/PVnELIbilrg) | |
-| | - [Links](https://youtu.be/tZ94-qH9unM) | |
+| - Filesystem links | **Week 8 Lecture 1 Notes:** [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx) | [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](/A-Tutorials/tutorial8.md) |
+| - Hard and symbolic links | **Week 8 Lecture 2 Notes:** [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx) | Tutorial 6 Due Friday @ 11:59pm |
+| - Process management | **YouTube Video:** [Changing Resolution in Knoppix](https://www.youtube.com/watch?v=aNKMOyRYWfM&feature=youtu.be) | Tutorial 8: Worth 2% (Due Week 9: Friday @ 11:59pm) |
+| - Aliases | **YouTube Video:** [Processes and Jobs](https://youtu.be/q93POTgH-aQ) |  |
+| - Command History | **YouTube Video:** [Aliases](https://youtu.be/PVnELIbilrg) | |
+|  | **YouTube Video:** [Links](https://youtu.be/tZ94-qH9unM) |  |
 
 ### Week 9
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 9 Lecture 1 Notes:** | **Tutorial 8 Due Friday @ Midnight** |
-| Regular expressions basics: | [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx) | **Tutorial 9: Worth 2% (Due Week 10: Friday @ midnight)** |
-| - Literal matching | **Week 9 Lecture 2 Notes:** | - INVESTIGATION 1: Simple & Complex Regular Expressions |
-| - Character classes | [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx) | - INVESTIGATION 2: Extended Regular Expressions |
-| - . wildcard | **Tutorials:** | - INVESTIGATION 3: Other Commands Using Regular Expressions |
-| - \* repetition symbol | - [Tutorial9: Regular Expressions](/A-Tutorials/tutorial9.md)|  |
-| - Anchoring | - [Linux Practice 1 - Regular Expressions](https://github.com/ULI101/labs/raw/main/uli101_command_practice_9a.docx) | |
-| | - [Linux Practice 2 - Regular Expressions](https://github.com/ULI101/labs/raw/main/uli101_command_practice_9b.docx) | |
-| | **YouTube Videos** | |
-| | - [Grep](https://youtu.be/-2pwLHcvCsU) | |
-| | - [Regex](https://youtu.be/5uRM8bh0ipU) | |
-| | - [Using df/du](https://youtu.be/fJmilSaB5Fs) | |
+| Regular expressions basics: | **Week 9 Lecture 1 Notes:** [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx) | [Tutorial9: Regular Expressions](/A-Tutorials/tutorial9.md) |
+| - Literal matching | **Week 9 Lecture 2 Notes:** [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx) | Tutorial 8 Due Friday @ 11:59pm |
+| - Character classes | **Tutorial:** [Linux Practice 1 - Regular Expressions](/files/uli101_command_practice_9a.docx) | Tutorial 9: Worth 2% (Due Week 10: Friday @ 11:59pm) |
+| - . wildcard | **Tutorial:** [Linux Practice 2 - Regular Expressions](/files/uli101_command_practice_9b.docx) | |
+| - \* repetition symbol | **YouTube Video:** [Grep](https://youtu.be/-2pwLHcvCsU) | |
+| - Anchoring | **YouTube Video:** [Regex](https://youtu.be/5uRM8bh0ipU) |  |
+|  | **YouTube Video:** [Using df/du](https://youtu.be/fJmilSaB5Fs) | |
 
 ### Week 10
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 10 Lecture 1 Notes:** | **Tutorial 9 Due Friday @ Midnight** |
-| Text Manipulation: | [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx) | **Tutorial 10: Worth 2% (Due Week 11: Friday @ midnight)** |
-| - Using the sed Utility | **Week 10 Lecture 2 Notes:** | - INVESTIGATION 1: Using The SED Utility |
-| - Using the awk Utility | [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx) | - INVESTIGATION 2: Using The AWK Utility |
-| | **Tutorials:** | |
-| | - [Tutorial10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md)|  |
-| | **YouTube Videos** | |
-| | - [Sed](https://youtu.be/npU6S61AIko) | |
-| | - [Awk](https://youtu.be/OV3XzjDYgJo) | |
+| Text Manipulation: | **Week 10 Lecture 1 Notes:** [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx) | [Tutorial10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md) |
+| - Using the sed Utility | **Week 10 Lecture 2 Notes:** [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx) | Tutorial 9 Due Friday @ 11:59pm |
+| - Using the awk Utility | **YouTube Video:** [Sed](https://youtu.be/npU6S61AIko) | Tutorial 10: Worth 2% (Due Week 11: Friday @ 11:59pm)|
+|  | **YouTube Video:** [Awk](https://youtu.be/OV3XzjDYgJo) | |
 
 ### Week 11
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 11 Lecture 1 Notes:** | **Tutorial 10 Due Friday @ Midnight** |
-| Introduction to Shell Scripting: | [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx) | **Tutorial 11: Worth 2% (Due Week 12: Friday @ midnight)** |
-| - Introduction to Shell Scripting | **Week 11 Lecture 2 Notes:** | - INVESTIGATION 1: Creating A Shell Script |
-| - echo and read commands | [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx) | - INVESTIGATION 2: She-Bang Line / Variable / Parameters |
-| - Shell Variables | **Tutorials:** | - INVESTIGATION 3: Command Substitution / Math Operations |
-| - Positional Parameters | - [Tutorial11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md)| - INVESTIGATION 4: Control Flow Statements  |
-| - Command Substitution / Math Operations | **YouTube Videos** | |
-| - test statements | - [Bash Shell Scripting I](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | |
-| - if / elif-else statements | | |
+| Introduction to Shell Scripting: | **Week 11 Lecture 1 Notes:** [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx) | [Tutorial11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md) |
+| - Introduction to Shell Scripting | **Week 11 Lecture 2 Notes:** [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx) | Tutorial 10 Due Friday @ 11:59pm |
+| - echo and read commands | **YouTube Video:** [Bash Shell Scripting I](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | Tutorial 11: Worth 2% (Due Week 12: Friday @ 11:59pm) |
+| - Shell Variables |  |  |
+| - Positional Parameters |  | |
+| - Command Substitution / Math Operations | |  |
+| - test statements |  | |
+| - if / elif-else statements |  | |
 | - for loop statements | | |
 
 ### Week 12
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Week 12 Lecture 1 Notes:** | **Tutorial 11 Due Friday @ Midnight** |
-| Additional Shell Scripting: | [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx) | **Tutorial 12: Worth 2% (Due Week 13: Friday @ midnight)** |
-| - if - elif - else statement | **Tutorials:**| - INVESTIGATION 1: Additional Logic Statements |
-| - for loop revisited | - [Tutorial12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) | - INVESTIGATION 2: Additional Looping Statements |
-| - while loop statement | **YouTube Videos** | - INVESTIGATION 3: exit AND break Statements |
-| - Error-Checking with Loops | - [Bash Shell Scripting II](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6) | - INVESTIGATION 4: Using Start-Up Files  |
-| - exit and break Statements |  | |
-| - export Command | | |
+| Additional Shell Scripting: | **Week 12 Lecture 1 Notes:** [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx) | [Tutorial12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) |
+| - if - elif - else statement | **YouTube Video:** [Bash Shell Scripting II](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6) | Tutorial 11 Due Friday @ 11:59pm |
+| - for loop revisited |  | Tutorial 12: Worth 2% (Due Week 13: Friday @ 11:59pm) |
+| - while loop statement | |  |
+| - Error-Checking with Loops |  |  |
+| - exit and break Statements |  |   |
+| - export Command |  | |
 | - Start-up Files | | |
 | - Further Study | | |
 
 ### Week 13
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| **Objectives:** | **Interest Topic:** | **Tutorial 12 Due Friday @ Midnight** |
-| - Interest Topic | - [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-ExtraResources/interest-topic.md) | **Review Tutorial Due Friday @ Midnight** |
-| - Take up Review Questions | **Review Questions:** | |
-| | - [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | |
+| - Interest Topic | **Interest Topic:** [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-ExtraResources/interest-topic.md) | **Tutorial 12 Due Friday @ 11:59pm** |
+| - Take up Review Questions | **Review Questions:** [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | Review Tutorial Due Friday @ 11:59pm |
 
 ### Week 14
 
-| **Objectives and Tasks** | **Reference** | **Evaluation** |
+| **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | **Evaluation Week:** | | **Final Test (20%)** |
-| - Final Test (20%) | | |
