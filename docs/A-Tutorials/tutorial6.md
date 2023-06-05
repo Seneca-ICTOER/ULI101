@@ -67,7 +67,9 @@ The **ssh** command can be used to run and view commands on **remote computer** 
 
 _Command Usage:_
 
-`ssh username@matrix.senecacollege.ca ls -l`
+```bash
+ssh username@matrix.senecacollege.ca ls -l
+```
 
 You will be prompted for your Matrix account password, then the contents of your home directory in your remote Matrix account will be displayed on your local computer's terminal.
 
@@ -82,11 +84,17 @@ The **scp** Unix/Linux command is used to securely copy files between Unix/Linux
 
 _Command Usage:_
 
-`scp local.file username@host:destination-pathname`
+```bash
+scp local.file username@host:destination-pathname
+```
 
-`scp local.file username@host:`
+```bash
+scp local.file username@host:
+```
 
-`scp user@host:file-pathname local-pathname`
+```bash
+scp user@host:file-pathname local-pathname
+```
 
 
 The most common **mistake** that students make is forgetting to add
@@ -106,7 +114,9 @@ The sftp Unix/Linux command is used to securely transfer (copy) files between Un
 
 _Command Usage:_
 
-`sftp username@hostname`
+```bash
+sftp username@hostname
+```
 
 When you login via the _sftp_ command, the **sftp prompt** appears. The sftp prompt is like a Bash shell prompt, but with a limited number of commands. When issuing sftp commands, the local server relates to the server where you first issued the sftp command. Refer to the diagram on the right for local and remote sftp commands.
 
@@ -150,7 +160,7 @@ You can use the **mail** command in Matrix to send email messages to other email
 Viewing email with file attachment in **Seneca email account**.
 
 
-## INVESTIGATION 1: File Transfer (Secure Copy)
+## Investigation 1: File Transfer (Secure Copy)
 
 **ATTENTION**
 
@@ -173,17 +183,29 @@ You will also learn how to issue the **ssh** command to run commands on your **r
 **Newer Version of Windows 10:**
 
   - From the start menu, type **cmd** and launch program
-  - In the command terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the command terminal, enter the following command: 
+
+```bash
+ssh senecausername@matrix.senecacollege.ca
+```
 
 **MacOSX:**
 
   - Click _Launchpad_ icon, type **terminal** and press **ENTER**
-  - In the terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the terminal, enter the following command: 
+
+```bash
+ssh senecausername@matrix.senecacollege.ca
+```
 
 **Linux:**
 
   - From the menu, choose: **Applications > System Tools > Terminal**
-  - In the terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the terminal, enter the following command: 
+
+```bash
+ssh senecausername@matrix.senecacollege.ca
+```
 
   3. **NOTE:** Make certain to open a **command-line terminal** and NOT a graphical SSH application for this tutorial.
 
@@ -193,7 +215,9 @@ You will also learn how to issue the **ssh** command to run commands on your **r
 
   5. Issue the following Linux command to create the following directory:
 
-`mkdir ~/remote`
+```bash
+mkdir ~/remote
+```
 
   6. Change to the **~/remote** directory and confirm that you have changed to that directory.
 
@@ -210,22 +234,33 @@ It is a small file
 
   10. Let's run a **shell script** to check that you created the **remote** directory and that you created the **myfile.txt** file (with correct file contents) in that directory.
 
-Enter the following command: `~uli101/week6-check-1`
+      - Enter the following command: 
 
-  11. If you encounter errors, make corrections and then re-run the checking script until you receive
-a congratulations message, and proceed to the next step.
+```bash
+~uli101/week6-check-1
+```
 
-**NOTE:** We will now learn to transfer files between your **local home computer** and your **remote Matrix Linux server**.
+  11. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message, and proceed to the next step.
+
+      - **NOTE:** We will now learn to transfer files between your **local home computer** and your **remote Matrix Linux server**.
 
   12. **Exit your Matrix ssh session** but **remain** in the command terminal on your **local** computer..
 
-**ATTENTION:** You are required to **remain** in your **local** computer's command terminal for the remainder of this INVESTIGATION and INVESTIGATION 2.
+      - **ATTENTION:** You are required to **remain** in your **local** computer's command terminal for the remainder of this INVESTIGATION and INVESTIGATION 2.
 
 ![CMD](/img/Cmd.png)
 
-  13. The **mkdir** command works with _MS Windows/UNIX/Linux/MacOSx_ computers. Issue the following command on your local computer to create a directory called **local**: `mkdir local`
+  13. The **mkdir** command works with _MS Windows/UNIX/Linux/MacOSx_ computers. Issue the following command on your local computer to create a directory called **local**: 
 
-  14. The **cd** command works with _MS Windows/UNIX/Linux/MacOSx_ computers. Issue the following command on your local computer to change to the **local** directory: `cd local`
+```bash
+mkdir local
+```
+
+  14. The **cd** command works with _MS Windows/UNIX/Linux/MacOSx_ computers. Issue the following command on your local computer to change to the **local** directory: 
+
+```bash
+cd local
+```
 
   15. If you are using MS Windows on your local computer, issue the `dir` command to confirm you are in the local directory; otherwise, use the `pwd` command.
 
@@ -233,34 +268,42 @@ a congratulations message, and proceed to the next step.
 
   17. Enter a few lines of text, and if using **Notepad**, then click on the **File** menu and select **save as** (save as the filename `other.txt` in your `local` directory) and then **exit** the Notepad text editor.
 
-**NOTE:** if using another text editor, save your editing session and exit the text editor.
+      - **NOTE:** if using another text editor, save your editing session and exit the text editor.
 
   18. If your OS is MS Windows issue the `dir` Windows command to view the contents of your current directory (otherwise, issue the `ls` command for other operating systems).
 
-We will use the **scp** command to copy the local file called **other.txt** to your home directory on your remote Matrix Linux server.
+      - We will use the **scp** command to copy the local file called **other.txt** to your home directory on your remote Matrix Linux server.
 
-  19. Issue the following Linux command to copy the **other.txt** file from your local machine to your remote Matrix server (replace yoursenecaid is YOUR Seneca ID and **ADD A COLON : TO THE END OF THE COMMAND**): `scp other.txt yoursenecaid@matrix.senecacollege.ca:`
+  19. Issue the following Linux command to copy the **other.txt** file from your local machine to your remote Matrix server (replace yoursenecaid is YOUR Seneca ID and **ADD A COLON : TO THE END OF THE COMMAND**): 
+
+```bash
+scp other.txt yoursenecaid@matrix.senecacollege.ca:
+```
 
   20. When prompted, enter your **Matrix password.**
 
-**TIP:** You can issue the ssh command, followed by a command that will be run on your remote computer, but display on your local computer **without** having to establish a continuous connection to your remote Matrix server.
+      - **TIP:** You can issue the ssh command, followed by a command that will be run on your remote computer, but display on your local computer **without** having to establish a continuous connection to your remote Matrix server.
 
   21. Issue the following command (using your matrix username):
 
-`ssh yoursenecaid@matrix.senecacollege.ca ls -l other.txt`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ls -l other.txt
+```
 
   22. When prompted, **enter your password** and press **ENTER**.
 
-Do you see detailed information **other.txt** file? (look at bottom)
-That command was run remotely on your Matrix server as confirmation that you securely copied that file to the home directory of the Matrix server.
+      - Do you see detailed information **other.txt** file? (look at bottom)
+      - That command was run remotely on your Matrix server as confirmation that you securely copied that file to the home directory of the Matrix server.
 
 ![SCP Diagram 2](/img/Scp-diagram-2.png)
 
-Let's copy the file called **myfile.txt** in the **~/remote** directory that you created earlier in your Matrix account to your **local** directory on your home computer.
+   - Let's copy the file called **myfile.txt** in the **~/remote** directory that you created earlier in your Matrix account to your **local** directory on your home computer.
 
   23. Issue the following Linux command (replace yoursenecaid is YOUR Seneca ID). The period "." as **second argument** represents your current directory on your local computer):
 
-`scp yoursenecaid@matrix.senecacollege.ca:remote/myfile.txt .`
+```bash
+scp yoursenecaid@matrix.senecacollege.ca:remote/myfile.txt .
+```
 
   24. Issue the `dir` or `ls` command (depending on the OS of your local computer) to confirmed your properly copied that file from Matrix.
 
@@ -270,59 +313,70 @@ Let's copy the file called **myfile.txt** in the **~/remote** directory that you
 
   27. We are going to intentionally make a **mistake** with the **scp** command.
 
-Issue the following Linux command to copy the **mytextfile.txt** file from your local machine to your remote Matrix server
-(replace yoursenecaid is YOUR Seneca ID and DO NOT INCLUDE THE : at the end of the command so see what happens):
+      - Issue the following Linux command to copy the **mytextfile.txt** file from your local machine to your remote Matrix server (replace yoursenecaid is YOUR Seneca ID and DO NOT INCLUDE THE : at the end of the command so see what happens):
 
-`scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca`
+```bash
+scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca
+```
 
-Did you notice anything different (i.e. no password)?
+   - Did you notice anything different (i.e. no password)?
 
   28. Issue the following command (using your matrix username):
 
-`ssh yoursenecaid@matrix.senecacollege.ca ls -l mytextfile.txt`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ls -l mytextfile.txt
+```
 
   29. When prompted, enter your password and press ENTER.
 
-**The file mytextfile.txt does NOT appear in your home directory on your Matrix server!
-Note that the COLON was NOT added to the end of the command! Therefore, you MUST
-remember to include the COLON : at the end of the hostname, or it will NOT remotely copy the file!**
+      - **The file mytextfile.txt does NOT appear in your home directory on your Matrix server!
+      - Note that the COLON was NOT added to the end of the command! Therefore, you MUST remember to include the COLON : at the end of the hostname, or it will NOT remotely copy the file!**
 
   30. Issue the following command to properly copy that same file to your Matrix server:
 
-`scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca:`
+```bash
+scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca:
+```
 
   31. Issue the following command to confirm that it was remotely copied to your **home** directory in Matrix:
 
-`ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/mytextfile.txt`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/mytextfile.txt
+```
 
-Do you see the output for the detailed file listing of **mytextfile.txt**?
-What does this indicate?
+   - Do you see the output for the detailed file listing of **mytextfile.txt**?
+   - What does this indicate?
 
   32. Issue the following command to copy the **other.txt** file on your local computer to the **~/remote** directory in Matrix renaming it as **different.txt**:
 
-`scp other.txt yoursenecaid@matrix.senecacollege.ca:remote/different.txt`
+```bash
+scp other.txt yoursenecaid@matrix.senecacollege.ca:remote/different.txt
+```
 
   33. Issue the following command to confirm that the file was remotely copied to your **~/remote** directory in Matrix with a different filename:
 
-`ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/remote/different.txt`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/remote/different.txt
+```
 
-Were you able to properly copy this file?
+   - Were you able to properly copy this file?
 
-Let's issue a checking script remotely to see that you properly copied that file from your
-local computer to your remote Linux server to both your **home** directory and **~/remote** directory.
+   - Let's issue a checking script remotely to see that you properly copied that file from your local computer to your remote Linux server to both your **home** directory and **~/remote** directory.
 
   34. Issue the following:
 
-`ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-2`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-2
+```
 
-If you encounter errors, re-run the scp commands to correct and re-run the above command until you receive a congratulations message.
+   - If you encounter errors, re-run the scp commands to correct and re-run the above command until you receive a congratulations message.
 
   35. Remain in the terminal on your local computer and proceed to INVESTIGATION 2.
 
 In the next investigation, you will use the **sftp** Linux command to transfer (i.e. copy) files between your local computer and the Matrix server.
 
 
-## INVESTIGATION 2: File Transfer (Secure FTP)
+## Investigation 2: File Transfer (Secure FTP)
 
 The **SSH** package on your _home computer_ and on the _Matrix Linux server_
 contain a **suite** (i.e. collection)of secure utilities including **ssh** and **sftp**.
@@ -342,8 +396,7 @@ Let's look at using the **sftp** command on your **local** machine.
 
 **Perform the Following Steps:**
 
-  1. Make certain that you are in a command terminal on your local computer
-(i.e. do **NOT** log into your Matrix account).
+  1. Make certain that you are in a command terminal on your local computer (i.e. do **NOT** log into your Matrix account).
 
   2. Issue a command (depending on your OS) to confirm that you are located in the **local** directory in your home computer.
 
@@ -354,81 +407,115 @@ Let's look at using the **sftp** command on your **local** machine.
 
   4. Enter a few lines of text, and then click on the **File** menu and select **save as** (save as the filename `thefile.txt` in your `local` directory) and then **exit** the Notepad text editor.
 
-If you using another OS, then save-as using the same filename and directory location for the text editor you are using.
+      - If you using another OS, then save-as using the same filename and directory location for the text editor you are using.
 
   5. If your OS is MS Windows issue the `dir` Windows command to view the contents of your current directory (otherwise, issue the **ls** command for other operating systems).
 
-**Note:** the relative pathname symbols "." and ".." work for the _Windows/MacOSx/Unix/Linux_ operating systems.
+      - **Note:** the relative pathname symbols "." and ".." work for the _Windows/MacOSx/Unix/Linux_ operating systems.
 
-  6. Issue the following command to move to the **parent** directory: `cd ..`
+  6. Issue the following command to move to the **parent** directory: 
+
+```bash
+cd ..
+```
 
   7. If your OS is MS Windows issue the `dir` Windows command to view the contents of that parent directory that you changed to (otherwise, issue the **ls** command for other operating systems).
 
   8. Issue the following command to start an **sftp** session (note: yoursenecaid is YOUR Seneca ID):
 
-`sftp yoursenecaid@matrix.senecacollege.ca`
+```bash
+sftp yoursenecaid@matrix.senecacollege.ca
+```
 
-**NOTE:** You may be required to enter **yes** to have the public key shared.
+   - **NOTE:** You may be required to enter **yes** to have the public key shared.
 
   9. You should be in the **sftp command prompt** where you are expected to issue **sftp commands**. Please take a moment to view common local and remote _sftp_ commands on the table below.
 
 ![SFTP Commands](/img/Sftp-commands.png)
 
-  10. Issue the following sftp command: `pwd`
+  10. Issue the following sftp command: 
 
-What is the pathname? Which server does this represent: local or remote?
+```bash
+pwd
+```
 
-  11. Issue the following sftp command: `lpwd`
+   - What is the pathname? Which server does this represent: local or remote?
 
-What is the pathname? Which server does this represent: local or remote?
+  11. Issue the following sftp command: 
 
-  12. Issue the following sftp command to create a directory on your remote server: `mkdir remote2`
+```bash
+lpwd
+```
+
+   - What is the pathname? Which server does this represent: local or remote?
+
+  12. Issue the following sftp command to create a directory on your remote server: 
+
+```bash
+mkdir remote2
+```
 
   13. Issue the following sftp command to confirm that the **remote2** directory has been created in your _remote_ server's home directory: 
 
-`ls`
+```bash
+ls
+```
 
   14. Issue the following sftp command to change to the **remote2** directory on your remote server:
 
-`cd remote2`
+```bash
+cd remote2
+```
 
   15. Issue the **pwd** _sftp command_ to confirm that you have changed to the _remote2_ directory on your remote server.
 
   16. Issue the following sftp command to change to the **local** directory on your local computer:
 
-`lcd local`
+```bash
+lcd local
+```
 
   17. Issue the **lpwd** _sftp command_ to confirm that you have changed to the _local_ directory on your local computer.
 
   18. Issue the following _sftp command_ to transfer the file called **thefile.txt** to the **~/remote2** directory on your remote server:
 
-`put thefile.txt`
+```bash
+put thefile.txt
+```
 
   19. Issue the **ls** sftp command to confirmed that you transferred the file called: **thefile.txt**
 
-Let's create another directory on your local computer called **local2** so we can learn to download a file from your remote directory.
+      - Let's create another directory on your local computer called **local2** so we can learn to download a file from your remote directory.
 
   20. Issue the following sftp command to change to the **parent** directory on your local computer:
 
-`lcd ..`
+```bash
+lcd ..
+```
 
   21. Issue the **lpwd** _sftp command_ to confirm that your current working directory on your local computer is your home directory.
 
   22. Issue the following _sftp command_ to create the following directory on your local computer:
 
-`lmkdir local2`
+```bash
+lmkdir local2
+```
 
   23. Issue the following _sftp command_ to change to the **local2** directory on your local computer:
 
-`lcd local2`
+```bash
+lcd local2
+```
 
   24. Issue the **lpwd** _sftp command_ to confirm you have changed to the **local2** directory on your local computer.
 
-Let's learn to download a file from your remote server to your local computer.
+      - Let's learn to download a file from your remote server to your local computer.
 
   25. Issue the following **sftp command** to transfer your **thefile.txt** file from the **remote2** directory on your remote server to your local computer:
 
-`get thefile.txt`
+```bash
+get thefile.txt
+```
 
   26. Issue the **lls** _sftp command_ to confirm that you transferred the file **thefile.txt** to your local computer.
 
@@ -436,19 +523,18 @@ Let's learn to download a file from your remote server to your local computer.
 
   28. Issue the following Linux command to remotely run a checking script to ensure you created the correct directories and properly transferred those created files:
 
-`ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-3`
+```bash
+ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-3
+```
 
   29. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message.
 
-**FYI:** To run a checking program to check if you created the **local** and **local2** directories in MS Windows would require
-running a local-based script (like **PowerShell**). Since this is a Unix/Linux based course, we don't have a PowerShell script,
-so we will ignore checking for files transferred to your local computer.
+      - **FYI:** To run a checking program to check if you created the **local** and **local2** directories in MS Windows would require running a local-based script (like **PowerShell**). Since this is a Unix/Linux based course, we don't have a PowerShell script, so we will ignore checking for files transferred to your local computer.
 
-In the next investigation, you will learn an alternative way to transfer a file to another computer server
-by sending an **e-mail message with an attached file**.
+      - In the next investigation, you will learn an alternative way to transfer a file to another computer server by sending an **e-mail message with an attached file**.
 
 
-## INVESTIGATION 3: File Transfer (Email)
+## Investigation 3: File Transfer (Email)
 
 The **Matrix** server is also an **email server** that can allow you to **send** emails messages to other email accounts.
 
@@ -460,7 +546,9 @@ In this investigation, you will learn how to **transfer** a file from your Matri
 
   2. Issue the following Linux command (using your Seneca-ID):
 
-`mail yoursenecaid@myseneca.ca`
+```bash
+mail yoursenecaid@myseneca.ca
+```
 
   3. When prompted, enter the **subject line**: `Test Message` and press `ENTER`
 
@@ -472,17 +560,18 @@ This is a test email message
 
   5. Press `ctrl-d` to send your email message.
 
-Did any output display? What you do think **EOT** stands for?
+      - Did any output display? What you do think **EOT** stands for?
 
   6. Launch a **web-browser**, login into your **Seneca email** account and check for new email messages. Did you receive the email message that you sent from your Matrix server?
 
-If you did NOT receive an e-mail message, check the **JUNK** or **CLUTTER** folders.
-If you still did not receive an email message, return to your terminal and re-issue the **mail** command
-making certain that you pressed `ctrl-d` instead of pressing **ctrl-c**
+      - If you did NOT receive an e-mail message, check the **JUNK** or **CLUTTER** folders.
+      - If you still did not receive an email message, return to your terminal and re-issue the **mail** command making certain that you pressed `ctrl-d` instead of pressing **ctrl-c**
 
   7. Return to your terminal (i.e. Linux Bash shell) and issue the following Linux command:
 
-`mail -a ~/remote/myfile.txt yoursenecaid@myseneca.ca`
+```bash
+mail -a ~/remote/myfile.txt yoursenecaid@myseneca.ca
+```
 
   8. When prompted, enter the subject line: `Test Message with Attachment` and press `ENTER`
 
@@ -496,26 +585,28 @@ This is a test email message with a file attachment
 
   11. Switch to your Seneca email and check for new email messages.
 
-Did you receive that email message? Does the email contain a file attachment?
+      - Did you receive that email message? Does the email contain a file attachment?
 
   12. Return to your Linux Bash shell and issue the following Linux command:
 
-`mail yoursenecaid@myseneca.ca < ~/remote/myfile.txt`
+```bash
+mail yoursenecaid@myseneca.ca < ~/remote/myfile.txt
+```
 
-What happened? Were you prompted for subject and could you enter text in email body?
-Did you see a file attachment as a separate file, or just text?
+   - What happened? Were you prompted for subject and could you enter text in email body?
+   - Did you see a file attachment as a separate file, or just text?
 
   13. Check your email to see if you received your email message. If you did, what do you notice regarding the subject line?
 
-You should have noticed that there was **NO** customized **subject line**,
-since you redirected **standard input** (_stdin_) from the file, so there was no way
-for the user to send a subject line.
+      - You should have noticed that there was **NO** customized **subject line**, since you redirected **standard input** (_stdin_) from the file, so there was no way for the user to send a subject line.
 
-You can use the **-s** option, followed by text (in quotes) to specify a **subject line**.
+      - You can use the **-s** option, followed by text (in quotes) to specify a **subject line**.
 
   14. Return to your Linux Bash shell and issue the following Linux command:
 
-`mail -s "email with attachment" yoursenecaid@myseneca.ca < ~/remote/myfile.txt`
+```bash
+mail -s "email with attachment" yoursenecaid@myseneca.ca < ~/remote/myfile.txt
+```
 
   15. Check your email to see if you received your email message. If you did, what do you notice this time?
 
