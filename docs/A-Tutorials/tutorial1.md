@@ -153,7 +153,7 @@ In this section, you will learn how to access your Matrix Linux account by two d
 It is essential that you complete these Weekly Tutorials fully and on time. These are your major learning tool in the course. There are no late marks.
 
 
-### METHOD 1: Connecting To Your Matrix Account From Your Home Computer
+### Method 1: Connecting To Your Matrix Account From Your Home Computer
 
 You will now learn a quick and simple method of connecting to your Matrix account by opening a text-based **terminal** (in any OS) and issuing the **ssh command.**
 
@@ -242,7 +242,7 @@ The main reason for this is to **force students to learn how to issue Linux comm
 by downloading and running a graphical SSH application.
 
 
-### METHOD 2: Connecting To Your Matrix Account From Seneca Computer Lab
+### Method 2: Connecting To Your Matrix Account From Seneca Computer Lab
 
 **NOTE: This section requires you have access to a Seneca computer lab on campus.
 If you don't have access to a Seneca computer lab this semester, then you can skip this section**
