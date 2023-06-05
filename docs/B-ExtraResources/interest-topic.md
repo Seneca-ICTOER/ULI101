@@ -177,8 +177,7 @@ was downloaded (eg. **Downloads**).
 
   9. Navigate to the folder containing the extracted zipped files and **double-click** the file called **Ubuntu.vbox** to launch the Ubuntu VM.
 
-      - **NOTE:** By **double-clicking** on this file (even if the VirtualBox application is not running)
-it will launch the VirtualBox application and start the Ubuntu virtual machine.
+   - **NOTE:** By **double-clicking** on this file (even if the VirtualBox application is not running) it will launch the VirtualBox application and start the Ubuntu virtual machine.
 
 **For Mac Users:** If you experience an error message regarding the Kernel extension,
 click on **System Preferences**, select **Security and Privacy**
