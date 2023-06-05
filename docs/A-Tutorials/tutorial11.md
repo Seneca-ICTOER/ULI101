@@ -850,7 +850,7 @@ to create an **empty** file and assigning the exit status variable a _TRUE_ valu
 
 To prevent problems when issuing the **test** command when comparing numbers,
 you can use the following **test options**:
-**-lt** (\<), **-le** (\<=), **-gt** (\>), **-ge** (\>=;), **-eq** (=), **-ne** (!=)
+**-lt** (<), **-le** (<=), **-gt** (\>), **-ge** (\>=;), **-eq** (=), **-ne** (!=)
 
   12. Issue the correct Linux command to **properly** test both values:
 
