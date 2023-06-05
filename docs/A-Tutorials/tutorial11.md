@@ -218,7 +218,7 @@ We can do this by using 2 pairs of round brackets **(( ))**.
 
 _Examples:_
 
-```text
+```bash
 num1=5;num2=10
 echo “$(($num1 + $num2))”
 15
@@ -1019,7 +1019,7 @@ chmod u+x if-1.bash
 
   24. Enter the following lines in your shell script:
 
-```text
+```bash
 #!/bin/bash
 read -p "Enter the first number: " num1
 read -p "Enter the second number: " num2
