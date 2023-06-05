@@ -98,7 +98,7 @@ The following table displays and defines commonly used directories (listed by di
 When you log into your Matrix account, you are automatically directed to your home directory. This directory is where the user can store files, and create subdirectories to organize their files.
 
 
-## INVESTIGATION 1: Creating & Managing Directories
+## Investigation 1: Creating & Managing Directories
 
 **ATTENTION:**
 
@@ -140,84 +140,122 @@ For example, if your Seneca user ID was **mkhan** then you would display the pat
   2. Issue a command to confirm that you are located in your home directory
 (you should know how to do this from performing [Tutorial 1 INVESTIGATION 2](./tutorial1.md#investigation-2-using-the-linux-shell)
 
-  3. Issue the following Linux command: `mkdir /home/your-seneca-id/uli101xx` (remember: use your Seneca username instead of "your-seneca-id")
+  3. Issue the following Linux command: 
 
-**NOTE:** You should always confirm that you have created a directory. This can be done by issuing the `ls` command.
+```bash
+mkdir /home/your-seneca-id/uli101xx
+``` 
 
-  4. Issue the following Linux command: `ls /home/your-seneca-id/uli101xx`
+   - (remember: use your Seneca username instead of "your-seneca-id")
 
-There are no contents that are contained in this newly-created directory; therefore, no contents appear. A useful option **-d** can be used to confirm that the actual directory has been created as opposed to viewing the contents of the directory.
+   - **NOTE:** You should always confirm that you have created a directory. This can be done by issuing the `ls` command.
 
-  5. Issue the following Linux command: `ls -d /home/your-seneca-id/uli101xx`
+  4. Issue the following Linux command: 
 
-You should now see just the directory listed. You can also combine the **-d** and **-l** options to provide more detail regarding the newly-created directory.
+```bash
+ls /home/your-seneca-id/uli101xx
+```
 
-  6. Issue the following Linux command: `ls -d -l /home/your-seneca-id/uli101xx`
+   - There are no contents that are contained in this newly-created directory; therefore, no contents appear. A useful option **-d** can be used to confirm that the actual directory has been created as opposed to viewing the contents of the directory.
 
-How can you confirm from the output of this command that the file uli101xx is a directory?
+  5. Issue the following Linux command: 
 
-  7. Issue the following Linux command: `ls -ld /home/your-seneca-id/uli101xx`
+```bash
+ls -d /home/your-seneca-id/uli101xx
+```
 
-Is the output from this command the same was the output from the previous command?
-If so, what does this say about how to use multiple options for Linux commands?
+   - You should now see just the directory listed. You can also combine the **-d** and **-l** options to provide more detail regarding the newly-created directory.
+
+  6. Issue the following Linux command: 
+
+```bash
+ls -d -l /home/your-seneca-id/uli101xx
+```
+
+   - How can you confirm from the output of this command that the file uli101xx is a directory?
+
+  7. Issue the following Linux command: 
+
+```bash
+ls -ld /home/your-seneca-id/uli101xx
+```
+
+   - Is the output from this command the same was the output from the previous command?
+   - If so, what does this say about how to use multiple options for Linux commands?
 
 ![Directory Structure 4](/img/Directory-structure-4.png)
 
 **Creating** and **Confirming** the Creation of a Directory.
 
-  8. Issue the following Linux command to create the **acp100xx** and **xyz100xx** directories: `mkdir /home/your-seneca-id/acp100xx /home/your-seneca-id/xyz100xx`
+  8. Issue the following Linux command to create the **acp100xx** and **xyz100xx** directories: 
 
-**NOTE:** You can create multiple directories by issuing the **mkdir** command with multiple arguments.
+```bash
+mkdir /home/your-seneca-id/acp100xx /home/your-seneca-id/xyz100xx
+```
 
-  9. Issue the following Linux command to confirm that those directories have been created: `ls -ld /home/your-seneca-id/acp100xx /home/your-seneca-id/xyz100xx`
+   - **NOTE:** You can create multiple directories by issuing the **mkdir** command with multiple arguments.
 
-**Using a FULL pathname starting from the root directory (i.e. /) requires is a LOT of typing!.
-Since we are already located in our home directory, we don't have to start from
-the root directory. This is called a "relative" pathname.**
+  9. Issue the following Linux command to confirm that those directories have been created: 
+
+```bash
+ls -ld /home/your-seneca-id/acp100xx /home/your-seneca-id/xyz100xx
+```
+
+   - **Using a FULL pathname starting from the root directory (i.e. /) requires is a LOT of typing!. Since we are already located in our home directory, we don't have to start from the root directory. This is called a "relative" pathname.**
 
   10. We will now create the subdirectories that are contained in the **uli101xx** directory.
 Issue the following Linux command to move to the **uli101xx** directory using a **relative** pathname: 
 
-`cd uli101xx`
+```bash
+cd uli101xx
+```
 
   11. Issue a Linux command to confirm that your current location is in the _uli101xx_ directory. You should know how to issue this command from a previous tutorial.
 
   12. Issue the following Linux command to create the directories called **notes**, **tutorials** and **samples**:
  
-`mkdir notes tutorials samples`
+```bash
+mkdir notes tutorials samples
+```
 
   13. Issue a Linux command to confirm that those directories have been created. (you should already know how to do this).
 
-There are better ways to create the same directory structure without using the **cd** command.
-
-Issuing the **cd** command **prior** to issuing other commands indicates to others that you are a novice or "**newbie**".
-
-You can actually **lose marks** on quizzes or tests if you issue multiple Linux commands to performed tasks that can be performed
+   - There are better ways to create the same directory structure without using the **cd** command.
+   - Issuing the **cd** command **prior** to issuing other commands indicates to others that you are a novice or "**newbie**".
+   - You can actually **lose marks** on quizzes or tests if you issue multiple Linux commands to performed tasks that can be performed
 using a single Linux command with **pathnames**.
 
-  14. Issue the following Linux command to return to your home directory: `cd`
+  14. Issue the following Linux command to return to your home directory: 
+
+ ```bash
+ cd
+ ```
 
   15. Issue a Linux command to confirm that you are now located in your home directory.
 
-Although we will teach you how to **remove** directories and their contents in another investigation,
-let's remove the created directory structure' and **recreate** the same directory structure
-using just one command using pathnames.
+   - Although we will teach you how to **remove** directories and their contents in another investigation, let's remove the created directory structure' and **recreate** the same directory structure using just one command using pathnames.
 
   16. Issue the following Linux command to remove all of the directories that you have created:
 
-`rm -r uli101xx acp100xx xyz100xx`
+```bash
+rm -r uli101xx acp100xx xyz100xx
+```
 
   17. Issue a Linux command to confirm that the **uli101xx**, **acp100xx** and **xyz100xx** directories have been removed.
 
   18. Issue the following single Linux command to create the entire directory structure:
 
-`mkdir -p uli101xx/notes uli101xx/tutorials uli101xx/samples acp100xx xyz100xx`
+```bash
+mkdir -p uli101xx/notes uli101xx/tutorials uli101xx/samples acp100xx xyz100xx
+```
 
-**NOTE:** The **-p** option allows "parent" directories to be automatically created first to then create their subdirectories.
+   - **NOTE:** The **-p** option allows "parent" directories to be automatically created first to then create their subdirectories.
 
   19. Issue the following Linux command to confirm that all of the directories have been created:
 
-`ls -ld uli101xx/ uli101xx/notes uli101xx/tutorials uli101xx/samples acp100xx xyz100xx`
+```bash
+ls -ld uli101xx/ uli101xx/notes uli101xx/tutorials uli101xx/samples acp100xx xyz100xx
+```
 
 **Running a Shell Script to Check your Work**
 
@@ -246,7 +284,9 @@ If there is a warning, then feedback is provided to user to correct and re-run c
 
   2. Issue the following Linux command to run a checking script:
 
-`~uli101/week2-check-1`
+```bash
+~uli101/week2-check-1
+```
 
   3. If you encounter errors, then view the feedback to make corrections, and then re-run the checking script. If you receive a congratulation message that there are no errors, then proceed to the next part.
 
@@ -258,37 +298,52 @@ to **view directory contents** as well as **copy** and **move** directories.
 
 **Perform the Following Steps:**
 
-  1. Issue the following Linux command: `tree`
+  1. Issue the following Linux command: 
 
-**NOTE:** You should see the directory structure that you created in the previous investigation. You can also issue the **tree** command using a directory pathname to display the directory structure for a specific scope.
+```bash
+tree
+```
+
+   - **NOTE:** You should see the directory structure that you created in the previous investigation. You can also issue the **tree** command using a directory pathname to display the directory structure for a specific scope.
 
 ![Directory Structure 5](/img/Directory-structure-5.png)
 
 Output of the tree command to display directory structure.
 
-You can also use the -R option for the ls command to display all directories and subdirectories for a specified directory path (referred to as a recursive directory listing).
+   - You can also use the -R option for the ls command to display all directories and subdirectories for a specified directory path (referred to as a recursive directory listing).
 
 ![Directory Structure 6](/img/Directory-structure-6.png)
 
 Output of the ls -R command to display directory structure.
 
-  2. Issue the following Linux command: `ls -lR`
+  2. Issue the following Linux command: 
 
-What directories do you see?
+```bash
+ls -lR
+```
 
-  3. Issue the following Linux command: `ls -lR uli101xx`
+   - What directories do you see?
 
-Note the differences between both of these commands (i.e. using and not using a pathname).
+  3. Issue the following Linux command: 
 
-You can copy and move entire directories (and their contents) to other directories.
+```bash
+ls -lR uli101xx
+```
+
+   - Note the differences between both of these commands (i.e. using and not using a pathname).
+   - You can copy and move entire directories (and their contents) to other directories.
 
   4. Issue the following Linux command:
 
-`cp -R uli101xx xyz100xx`
+```bash
+cp -R uli101xx xyz100xx
+```
 
   5. Issue the following Linux command to display the directory structure of your home directory to confirm you copied the uli101xx directory:
 
-`tree`
+```bash
+tree
+```
 
 ![Directory Structure 7](/img/Directory-structure-7.png)
 
@@ -296,23 +351,29 @@ Output of the **tree** command to confirm copy of **uli101xx** directory (and co
 
   6. Issue the following Linux command:
 
-`mv acp100xx xyz100xx/uli101xx/tutorials`
+```bash
+mv acp100xx xyz100xx/uli101xx/tutorials
+```
 
   7. Issue the following Linux command to display the directory structure of your home directory to confirm you moved the acp100xx directory:
 
-`tree`
+```bash
+tree
+```
 
 ![Directory Structure 8](/img/Directory-structure-8.png)
 
 Output of the **tree** command to confirm movement of **acp100 directory** directory (and contents) to the **xyz100xx diredtory.**
 
-Let's run a checking script to see if you moved and copied the directories correctly.
+   - Let's run a checking script to see if you moved and copied the directories correctly.
 
   8. Make certain that your current directory is **your home directory.**
 
   9. Issue the following Linux command run checking script:
 
-`~uli101/week2-check-2`
+```bash
+~uli101/week2-check-2
+```
 
   10. If you encounter errors. make corrections and re-run the checking script until you receive a congratulations message, and proceed to the next investigation.
 
@@ -326,38 +387,54 @@ In this investigation, we will learn how to **safely remove** directories and th
 
 The **rmdir** command is used to remove empty directories.
 
-  2. Issue the following Linux command to remove the empty directory called **tutorials**: `rmdir uli101xx/tutorials`
+  2. Issue the following Linux command to remove the empty directory called **tutorials**: 
+
+```bash
+rmdir uli101xx/tutorials
+```
 
   3. Issue a command to confirm that you removed the **tutorials** directory.
 
-  4. Issue the following Linux command to remove the empty directory called **uli101xx**: `rmdir uli101xx`
+  4. Issue the following Linux command to remove the empty directory called **uli101xx**: 
 
-NOTE: You should get an **error message**, since the **uli101xx** directory is **NOT** empty.
+```bash
+rmdir uli101xx
+```
 
-To remove non-empty directories, you can use the **rm -r** command.
-The **-r** option stands for recursive, which can travel down the directory paths and their contents.
+   - NOTE: You should get an **error message**, since the **uli101xx** directory is **NOT** empty.
 
-  5. Issue the following Linux command to remove the **uli101xx** directory and its contents: `rm -r uli101xx`
+   - To remove non-empty directories, you can use the **rm -r** command. The **-r** option stands for recursive, which can travel down the directory paths and their contents.
+
+  5. Issue the following Linux command to remove the **uli101xx** directory and its contents: 
+
+```bash
+rm -r uli101xx
+```
 
   6. Issue the **tree** command to confirm that the uli101xx directory (contained in your home directory) and its contents have been removed.
 
-**NOTE:** To safely remove non-empty directories, you can add the -i option which will prompt the user if they wish to remove contents as it your travel recursively down a directory to remove directories and their contents.
+   - **NOTE:** To safely remove non-empty directories, you can add the -i option which will prompt the user if they wish to remove contents as it your travel recursively down a directory to remove directories and their contents.
 
-  7. Issue the following Linux command (entering "y" when prompted): `rm -ri xyz100xx`
+  7. Issue the following Linux command (entering "y" when prompted): 
 
-**NOTE:** You should have removed all directories that you have created.
+```bash
+rm -ri xyz100xx
+```
 
-Let's run a checking script to confirm that you have correctly removed all of those directories.
+   - **NOTE:** You should have removed all directories that you have created.
+   - Let's run a checking script to confirm that you have correctly removed all of those directories.
 
   8. Issue the **tree** command to confirm that all of those recently created directories have been removed.
 
   9. Issue the following Linux command to run a checking script to confirm removal of those directories:
 
-`~uli101/week2-check-3`
+```bash
+~uli101/week2-check-3
+```
 
   10. If you encounter errors, make corrections and re-run the checking script until you receive a congratulations message, and proceed to the next INVESTIGATION.
 
-## INVESTIGATION 2: Managing Text Files
+## Investigation 2: Managing Text Files
 
 Since IT students will be working in the Unix / Linux command line environment, it is useful to learn a least two common command-line **text editors.**
 
@@ -392,25 +469,27 @@ You will now learn basic editing skills using the **Nano** text editor including
 
   4. Issue the following Linux command to edit a text file called mytext.txt in the linux/practice directory:
 
-`nano textedit/practice/mytext.txt`
+```bash
+nano textedit/practice/mytext.txt
+```
 
-**NOTE:** When using the **Nano** text editor, you are placed in **INPUT mode**, so you can enter text immediately.
+   - **NOTE:** When using the **Nano** text editor, you are placed in **INPUT mode**, so you can enter text immediately.
 
   5. Enter the lines shown in the diagram of the nano text editor below:
 
 ![Nano text editor 2](/img/Nano-text-editor-2.png)
 
-**NOTE:** Refer to the table below for a list of common **Nano** navigation & editing commands:
+   - **NOTE:** Refer to the table below for a list of common **Nano** navigation & editing commands:
 
 | **Key(s)** |	**Purpose** |
 | :--- | :---: |
-| **\<ctrl\>\<SPACEBAR\>, \<esc\>\<6\>** |	Move forward/backward one word |
-| **\<ctrl\>\<a\>, \<ctrl\>\<e\>** |	Move to beginning/end of line |
-| **\<ctrl\>\<k\>**|	Cut line |
-| **\<esc\>6** |	Copy Line |
-| **\<ctrl\>\<u\>**	| Paste Cut/Copied Text |
-| **\<ctrl\>\<g\>** |	Display help screen (ctrl-x to exit help screen) |
-| **\<ctrl\>\<x\>** |	Save editing changes and exit |
+| **<ctrl\><SPACEBAR\>, <esc\><6\>** |	Move forward/backward one word |
+| **<ctrl\><a\>, <ctrl\><e\>** |	Move to beginning/end of line |
+| **<ctrl\><k\>**|	Cut line |
+| **<esc\>6** |	Copy Line |
+| **<ctrl\><u\>**	| Paste Cut/Copied Text |
+| **<ctrl\><g\>** |	Display help screen (ctrl-x to exit help screen) |
+| **<ctrl\><x\>** |	Save editing changes and exit |
 
   6. Referring to the table above, practice navigating and editing your entered lines for practice.
 
@@ -420,8 +499,7 @@ You will now learn basic editing skills using the **Nano** text editor including
 
   9. The name of the file will be displayed, Press `ENTER`.to save editing changes for that file name.
 
-**NOTE:** This prompt for file name allows you to change the name of the file if you wish.
-By pressing **ENTER**, it will accept the default filename.
+   - **NOTE:** This prompt for file name allows you to change the name of the file if you wish. By pressing **ENTER**, it will accept the default filename.
 
   10. Perform some more editing operations based on the editing chart above.
 
@@ -444,14 +522,15 @@ The major different between nano and vi is that **vi starts in COMMAND LINE mode
 
   2. Issue the following Linux command to edit a text file called **othertext.txt** in the **linux/practice** directory:
 
-`vi textedit/practice/othertext.txt`
+```bash
+vi textedit/practice/othertext.txt
+```
 
-**NOTE:** When using the **vi** text editor, you are placed in **COMMAND** mode, so you need to issue a command to switch to INPUT mode.
+   - **NOTE:** When using the **vi** text editor, you are placed in **COMMAND** mode, so you need to issue a command to switch to INPUT mode.
 
   3. Type the following key to enter INPUT mode: `i`
 
-You should notice you are in INSERT mode by seeing the notification **-- INSERT --**
-at the bottom left-hand side of the application screen.
+   - You should notice you are in INSERT mode by seeing the notification **-- INSERT --** at the bottom left-hand side of the application screen.
 
   4. Enter the line shown in the diagram of the vi text editor below:
 
@@ -459,14 +538,14 @@ at the bottom left-hand side of the application screen.
 
   5. While on the first line, press the following key to enter COMMAND mode: `ESC`
 
-You should see the -- INSERT -- notification disappear indicating that you are in COMMAND mode.
+   - You should see the -- INSERT -- notification disappear indicating that you are in COMMAND mode.
 
-**NOTE:** Refer to the table below for a list of the most common **vi (vim)** navigation & editing commands:
+   - **NOTE:** Refer to the table below for a list of the most common **vi (vim)** navigation & editing commands:
 
 | **Key(s)** |	**Purpose** |
 | :--- | :---: |
 | **i** |	Enter **INPUT** mode |
-| **\<esc\>**	| Return to **COMMAND** MODE |
+| **<esc\>**	| Return to **COMMAND** MODE |
 | **x** |	Delete text to the right in COMMAND mode |
 | **W** |	Move forward one word in COMMAND mode |
 | **B** |	Move back one word in COMMAND mode |
@@ -474,27 +553,26 @@ You should see the -- INSERT -- notification disappear indicating that you are i
 | **yy** |	Copy Line in COMMAND mode |
 | **p / P** |	Paste Cut/Copied Text below/above line in COMMAND mode |
 | **u** |	Undo previous editing command |
-| **\:help** |	Display help screen in COMMAND mode |
-| **\:x** |	Save editing changes and exit (in COMMAND mode) |
-| **\:w name**	| Save editing changes to "name" in COMMAND mode |
-| **\:q!** |	Abort editing session and exit (in COMMAND mode) |
+| **:help** |	Display help screen in COMMAND mode |
+| **:x** |	Save editing changes and exit (in COMMAND mode) |
+| **:w name**	| Save editing changes to "name" in COMMAND mode |
+| **:q!** |	Abort editing session and exit (in COMMAND mode) |
 
-Once you can get used to working in INPUT and COMMAND mode, it is easier to perform
-text editing operations in **vi** via _COMMAND_ mode as opposed to nano!
+   - Once you can get used to working in INPUT and COMMAND mode, it is easier to perform text editing operations in **vi** via _COMMAND_ mode as opposed to nano!
 
   6. Type the following keys to copy the current line: `yy`
 
   7. Type the following key to paste the copied line: `p`
 
-What did you notice?
+   - What did you notice?
 
   8. Type the following keys: `u`
 
-What did you notice?
+   - What did you notice?
 
   9. Type the following keys: `3p`
 
-What did you notice?
+   - What did you notice?
 
   10. Use the up or down **arrow** keys to move to the second line.
 
@@ -512,19 +590,18 @@ What did you notice?
 
 ![Vi text editor b](/img/Vi-text-editor-b.png)
 
-Use a combination of **arrow** keys and the **w** and **b** keys while in COMMAND mode to change the correct words for the **third** and **fourth** lines.
+   - Use a combination of **arrow** keys and the **w** and **b** keys while in COMMAND mode to change the correct words for the **third** and **fourth** lines.
 
   17. Move to the 4th line (i.e. last line).
 
   18. Type the following keys: `dd`
 
-What did you notice?
-
-Let's save editing changes and exit the vi text editor.
+   - What did you notice?
+   - Let's save editing changes and exit the vi text editor.
 
   19. Type the following keys: `:x` and press **ENTER**
 
-What did you notice?
+   - What did you notice?
 
   20. Issue the same command that you performed in **Step #2** to confirm that you had properly edited that file.
 
@@ -532,11 +609,13 @@ What did you notice?
 
 ![Vi text editor 2](/img/Vi-text-editor-2.png)
 
-An **online tutorial** has been created to give you "hands-on" experience on how to use vi text editor. It is recommended that you run this online tutorial in your Matrix account to learn how to create and edit text files with the vi text editor.
+   - An **online tutorial** has been created to give you "hands-on" experience on how to use vi text editor. It is recommended that you run this online tutorial in your Matrix account to learn how to create and edit text files with the vi text editor.
 
   22. Issue the following to run the vi online tutorial:
 
-`/home/jason.carman/vi-tutorial`
+```bash
+/home/jason.carman/vi-tutorial
+```
 
   23. In the tutorial menu, select the first menu item labelled **"USING THE VI TEXT EDITOR"**
 
@@ -544,8 +623,7 @@ An **online tutorial** has been created to give you "hands-on" experience on how
 and will provide you with **"hands-on"** practice using the vi text editor. As far as this author is aware,
 there is NO "hands-on" tutorial for the nano text editor in this particular format.
 
-  25. When you have completed that section, you will be returned to the main menu.
-If you want to get extra practice, you can select the menu item labelled "**REVIEW EXERCISE**".
+  25. When you have completed that section, you will be returned to the main menu. If you want to get extra practice, you can select the menu item labelled "**REVIEW EXERCISE**".
 
   26. When you want to exit the tutorial, select the menu option to exit the tutorial.
 
@@ -580,65 +658,102 @@ We conclude this tutorial by learning to **manage**, **view** or **manipulate th
 
   3. Issue the following Linux command to create three empty text files in your current directory:
 
-`touch a.txt b.txt c.txt`
+```bash
+touch a.txt b.txt c.txt
+```
 
-  4. Issue the following Linux command: `ls -l a.txt b.txt c.txt`
+  4. Issue the following Linux command: 
+
+```bash
+ls -l a.txt b.txt c.txt
+```
 
 Check the size in the detailed listing to confirm that these newly-created files are empty.
 
   5. Use the **nano** text editor to edit the empty file called **a.txt**.
 
-Type the number "**1**" and press **ENTER**. On the second line, type the number "**2**" and press **ENTER**.
-Continue entering increasing number values until you reach the number **40** on line 40
-(refer to the diagram below).
+   - Type the number "**1**" and press **ENTER**. On the second line, type the number "**2**" and press **ENTER**.
+   - Continue entering increasing number values until you reach the number **40** on line 40 (refer to the diagram below).
 
 ![Vi Screen 40](/img/Vi-screen-40.png)
 
   6. **Save** and **exit** your editing session.
 
-  7. Issue the following Linux command: `cat a.txt`
+  7. Issue the following Linux command: 
 
-Can you see all of the contents?
+```bash
+cat a.txt
+```
 
-  8. Issue the following Linux command: `more a.txt`
+   - Can you see all of the contents?
 
-**NOTE:** The **more** command uses the same navigation keys as with the **man** command
-(refer to week 1 notes for reference). Try using keys that you used to navigate the man pages.
+  8. Issue the following Linux command: 
 
-What is the advantage of using the more command?
+```bash
+more a.txt
+```
+
+   - **NOTE:** The **more** command uses the same navigation keys as with the **man** command (refer to week 1 notes for reference). Try using keys that you used to navigate the man pages.
+   - What is the advantage of using the more command?
 
   9. Type the letter "`q`" to exit the more command.
 
-  10. Issue the following Linux command: `less a.txt`
+  10. Issue the following Linux command: 
 
-Is there any difference between the **more** and **less** commands?
-(again press **q** to quit)
+```bash
+less a.txt
+```
 
-  11. Issue the following Linux command: `sort a.txt`
+   - Is there any difference between the **more** and **less** commands? (again press **q** to quit)
 
-Why does the output not look what you expected? Why?
+  11. Issue the following Linux command: 
 
-  12. Issue the following Linux command: `sort -n a.txt`
+```bash
+sort a.txt
+```
 
-Try the same command using both the **-n** and **-r** options to see what happens.
+   - Why does the output not look what you expected? Why?
 
-  13. Issue the following Linux command: `head a.txt`
+  12. Issue the following Linux command: 
 
-What is the output from this command display?
+```bash
+sort -n a.txt
+```
 
-  14. Issue the following Linux command: `head -7 a.txt`
+   - Try the same command using both the **-n** and **-r** options to see what happens.
 
-What is the output from this command display?
+  13. Issue the following Linux command: 
 
-  15. Issue the following Linux command: `tail a.txt`
+```bash
+head a.txt
+```
 
-What is the output from this command display?
+   - What is the output from this command display?
 
-How would you issue this command to display only the **last line** contained in that file?
+  14. Issue the following Linux command: 
 
-  16. Issue the following Linux command: `grep 2 a.txt`
+```bash
+head -7 a.txt
+```
 
-What type of output appear? Why did these lines appear (what do they all have in common)?
+   - What is the output from this command display?
+
+  15. Issue the following Linux command: 
+
+```bash
+tail a.txt
+```
+
+   - What is the output from this command display?
+   - How would you issue this command to display only the **last line** contained in that file?
+
+  16. Issue the following Linux command: 
+
+```bash
+grep 2 a.txt
+```
+
+   - What type of output appear? Why did these lines appear (what do they all have in common)?
 
   17. Edit the **a.txt** file and add to the bottom 5 new lines each consisting
 of the same text: "**end of line**" (refer to diagram below).
@@ -647,37 +762,73 @@ of the same text: "**end of line**" (refer to diagram below).
 
   18. **Save** your editing session and **exit** your text editor.
 
-  19. Issue the following Linux command: `uniq a.txt`
+  19. Issue the following Linux command: 
 
-What do you notice happened to those newly created lines?
+```bash
+uniq a.txt
+```
 
-  20. Issue the following Linux command: `cp a.txt a.txt.bk`
+   - What do you notice happened to those newly created lines?
 
-  21. Issue the following Linux command: `cp a.txt b.txt`
+  20. Issue the following Linux command: 
 
-  22. Issue the following Linux command: `mv a.txt aa.txt`
+```bash
+cp a.txt a.txt.bk
+```
+
+  21. Issue the following Linux command: 
+
+```bash
+cp a.txt b.txt
+```
+
+  22. Issue the following Linux command: 
+
+```bash
+mv a.txt aa.txt
+```
 
   23. Issue a Linux command to view the directory contents.
 
-What happened to the file called **a.txt**? Why?
+   - What happened to the file called **a.txt**? Why?
 
-  24. Issue the following Linux command: `file b.txt`
+  24. Issue the following Linux command: 
 
-What sort of information did it provide?
+```bash
+file b.txt
+```
 
-  25. Issue the following Linux command: `diff aa.txt b.txt`
+   - What sort of information did it provide?
 
-Was there any output? If not, why?
+  25. Issue the following Linux command: 
 
-  26. Issue the following Linux command: `diff aa.txt c.txt`
+```bash
+diff aa.txt b.txt
+```
 
-What do you think is the purpose of this output?
+   - Was there any output? If not, why?
 
-  27. Issue the following Linux command: `find -P .`
+  26. Issue the following Linux command: 
 
-What is the output of this command?
+```bash
+diff aa.txt c.txt
+```
 
-  28. Issue the following Linux command: `rm aa.txt b.txt a.txt.bk c.txt`
+   - What do you think is the purpose of this output?
+
+  27. Issue the following Linux command: 
+
+```bash
+find -P .
+```
+
+   - What is the output of this command?
+
+  28. Issue the following Linux command: 
+
+```bash
+rm aa.txt b.txt a.txt.bk c.txt
+```
 
   29. Issue the **ls** command to verify that these files have been removed.
 
