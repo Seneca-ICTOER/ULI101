@@ -377,7 +377,7 @@ awk '$1 ~ /^f/ {print $1,$2,$4}' cars.txt | tee awk-6.txt
 ```
 
    - Combined pattern searches can be made by using **compound operator** symbols:
-     - **\&\&**     (and)
+     - **&&**     (and)
      - **\|\|**        (or)
 
   13. Issue the following linux pipeline command to list all **fords**
