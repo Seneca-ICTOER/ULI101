@@ -17,7 +17,7 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | - Course introduction | **Week 1 Lecture 1 Notes:** [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx) | [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |
-| - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) | **Tutorial 1: Worth 2% (Due Week 2: Friday @ 11:59pm)** |
+| - Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) | Tutorial 1: Worth 2% (Due Week 2: Friday @ 11:59pm) |
 | - Unix/Linux Background | **Tutorial:** [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) | |
 | - Open source philosophy | **Tutorial:** [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
 | - Linux GUI and the terminal | **Tutorial:** [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
@@ -30,8 +30,8 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | - Unix file system | **Week 2 Lecture 1 Notes:** [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx) | [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md) |
-| - File types and file naming | **Week 2 Lecture 2 Notes:** [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | **Tutorial 1 Due Friday @ 11:59pm** |
-| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | **Reference Sheet:** [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | **Tutorial 2: Worth 2% (Due Week 3: Friday @ 11:59pm)** |
+| - File types and file naming | **Week 2 Lecture 2 Notes:** [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | Tutorial 1 Due Friday @ 11:59pm |
+| - Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | **Reference Sheet:** [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | Tutorial 2: Worth 2% (Due Week 3: Friday @ 11:59pm) |
 | - Text editing | **Reference Sheet:** [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf/) |  |
 | - Common file utilities: (cat,more,less,touch,file,find) | **YouTube Video:** [Linux File System, Basic Navigation: (ls, cd, pwd, tree),Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2) |  |
 |  | **YouTube Video:** [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r), Relative-to-home Paths](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3) |  |
