@@ -51,9 +51,11 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 **Using the sed Utility**
 
-**Usage:**
+**Usage (Syntax):** 
 
-`Syntax: sed [-n] 'address instruction' filename`
+```bash
+sed [-n] 'address instruction' filename
+```
 
 **How it Works:**
 
@@ -88,7 +90,9 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 **Usage:**
 
-`awk [-F] 'selection-criteria {action}’ file-name`
+```bash
+awk [-F] 'selection-criteria {action}’ file-name
+```
 
 **How It Works:**
 
@@ -116,7 +120,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
   - Parameters greater than nine requires the value of the parameter to be placed within braces (for example: **${10}**,**${11}**,**${12}**, etc.)
   - You can use built-in **variables** (such as **NR** or "record number" representing line number) eg. **{print NR,$0}** (will print record number, then entire record).
 
-## INVESTIGATION 1: Using The SED Utility
+## Investigation 1: Using The sed Utility
 
 **ATTENTION:**
 
@@ -135,128 +139,141 @@ In this investigation, you will learn how to manipulate text using the **sed** u
 
   4. Issue the following Linux command to copy the data.txt file (**copy and paste** to save time):
 
-`cp ~uli101/tutorialfiles/data.txt ~/`
+```bash
+cp ~uli101/tutorialfiles/data.txt ~/
+```
 
   5. Issue the **more** command to quickly view the contents of the **data.txt** file. When finished, exit the more command by pressing the letter `q`
 
-The **p** instruction with the **sed** command is used to
-**print** (i.e. _display_) the contents of a text file.
+   - The **p** instruction with the **sed** command is used to **print** (i.e. _display_) the contents of a text file.
 
   6. Issue the following Linux command:
 
-`sed 'p' data.txt`
+```bash
+sed 'p' data.txt
+```
 
-**NOTE: You should notice that each line appears twice.**
+   - **NOTE: You should notice that each line appears twice.**
 
 ![Sed 1](/img/Sed-1.png)
 
-The reason why standard output appears twice is that the sed command
-(without the **-n** option) displays all lines regardless of an address used.
+   - The reason why standard output appears twice is that the sed command (without the **-n** option) displays all lines regardless of an address used.
 
-We will use **pipeline commands** to both display stdout to the screen and save to files
-for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
+   - We will use **pipeline commands** to both display stdout to the screen and save to files for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
 
   7. Issue the following Linux pipeline command:
 
-`sed -n 'p' data.txt | tee sed-1.txt`
+```bash
+sed -n 'p' data.txt | tee sed-1.txt
+```
 
-What do you notice? You should see only one line.
+   - What do you notice? You should see only one line.
 
-You can specify an **address** to display lines using the sed utility
-(eg. _line \#_, **line \#s** or range of **line \#s**).
+   - You can specify an **address** to display lines using the sed utility (eg. _line \#_, **line \#s** or range of **line \#s**).
 
   8. Issue the following Linux pipeline command:
 
-`sed -n '1 p' data.txt | tee sed-2.txt`
+```bash
+sed -n '1 p' data.txt | tee sed-2.txt
+```
 
-You should see the first line of the text file displayed.
-What other command is used to only display the first line in a file?
+   - You should see the first line of the text file displayed.
+   - What other command is used to only display the first line in a file?
 
   9. Issue the following Linux pipeline command:
 
-`sed -n '2,5 p' data.txt | tee sed-3.txt`
+```bash
+sed -n '2,5 p' data.txt | tee sed-3.txt
+```
 
-What is displayed? How would you modify the sed command to display the line range 10 to 50?
+   - What is displayed? How would you modify the sed command to display the line range 10 to 50?
 
 ![Sed 2](/img/Sed-2.png)
 
-Using the sed command to display a range of lines. ^
+   - Using the sed command to display a range of lines. ^
 
-The **s** instruction is used to **substitute** text
-(a similar to method was demonstrated in the vi editor in tutorial 9).
+   - The **s** instruction is used to **substitute** text (a similar to method was demonstrated in the vi editor in tutorial 9).
 
   10. Issue the following Linux pipeline command:
 
-`sed '2,5 s/TUTORIAL/LESSON/g' data.txt | tee sed-4.txt | more`
+```bash
+sed '2,5 s/TUTORIAL/LESSON/g' data.txt | tee sed-4.txt | more
+```
 
-What do you notice? View the original contents of lines 2 to 5 in the **data.txt** file
-in another shell to confirm that the substitution occurred.
+   - What do you notice? View the original contents of lines 2 to 5 in the **data.txt** file in another shell to confirm that the substitution occurred.
 
-The **q** instruction terminates or **quits** the execution of the sed utility as soon as it is read in a particular line or matching pattern.
+   - The **q** instruction terminates or **quits** the execution of the sed utility as soon as it is read in a particular line or matching pattern.
 
   11. Issue the following Linux pipeline command:
 
-`sed '11 q' data.txt | tee sed-5.txt`
+```bash
+sed '11 q' data.txt | tee sed-5.txt
+```
 
-What did you notice? How many lines were displayed
-before the sed command exited?
+   - What did you notice? How many lines were displayed before the sed command exited?
 
 ![Sed 3](/img/Sed-3.png)
 
-You can use **regular expressions** to select lines that match a pattern. In fact,
-the sed command was one of the first Linux commands that used regular expression.
+   - You can use **regular expressions** to select lines that match a pattern. In fact, the sed command was one of the first Linux commands that used regular expression.
 
-The rules remain the same for using regular expressions as demonstrated in **tutorial 9**
-except the regular expression must be contained within **forward slashes** (eg. **/regexp/** ).
+   - The rules remain the same for using regular expressions as demonstrated in **tutorial 9** except the regular expression must be contained within **forward slashes** (eg. **/regexp/** ).
 
   12. Issue the following Linux pipeline command:
 
-`sed -n '/^The/ p' data.txt | tee sed-6.txt`
+```bash
+sed -n '/^The/ p' data.txt | tee sed-6.txt
+```
 
-What do you notice?
+   - What do you notice?
 
 ![Sed 4](/img/Sed-4.png)
 
-Using the sed command using regular expressions with **anchors**.
+   - Using the sed command using regular expressions with **anchors**.
 
   13. Issue the following Linux pipeline command:
 
-`sed -n '/d$/ p' data.txt | tee sed-7.txt`
+```bash
+sed -n '/d$/ p' data.txt | tee sed-7.txt
+```
 
-What do you notice?
+   - What do you notice?
 
 ![Sed 4](/img/Sed-4.png)
 
-Using the sed command using regular expressions with **anchors**.
+   - Using the sed command using regular expressions with **anchors**.
 
-The **sed** utility can also be used as a **filter** to manipulate text that
-was generated from Linux commands.
+   - The **sed** utility can also be used as a **filter** to manipulate text that was generated from Linux commands.
 
   14. Issue the following Linux pipeline command:
 
-`who | sed -n '/^[a-m]/ p' | tee sed-8.txt | more`
+```bash
+who | sed -n '/^[a-m]/ p' | tee sed-8.txt | more
+```
 
-What did you notice?
+   - What did you notice?
 
   15. Issue the following Linux pipeline command:
 
-`ls | sed -n '/txt$/ p' | tee sed-9.txt`
+```bash
+ls | sed -n '/txt$/ p' | tee sed-9.txt
+```
 
-What did you notice?
+   - What did you notice?
 
 ![Sed 5](/img/Sed-5.png)
 
   16. Issue the following to run a checking script:
 
-`~uli101/week10-check-1`
+```bash
+~uli101/week10-check-1
+```
 
-If you encounter errors, make corrections and **re-run** the checking script
-until you receive a congratulations message, then you can proceed.
+   - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
 
 In the next investigation, you will learn how to manipulate text using the **awk** utility.
 
-## INVESTIGATION 2: Using The AWK Utility
+## Investigation 2: Using The AWK Utility
 
 In this investigation, you will learn how to use the awk utility to manipulate text and generate reports.
 
@@ -266,140 +283,148 @@ In this investigation, you will learn how to use the awk utility to manipulate t
   2. Issue a Linux command to create a directory called **awk**
   3. Issue a Linux command to change to the **awk** directory and confirm you are located in the **awk** directory.
 
-Let's download a database file that contains information regarding classic cars.
+      - Let's download a database file that contains information regarding classic cars.
 
   4. Issue the following linux command:
 
-`cp ~uli101/tutorialfiles/cars.txt ~/`
+```bash
+cp ~uli101/tutorialfiles/cars.txt ~/
+```
 
   5. Issue the **cat** command to quickly view the contents of the **cars.txt** file.
 
-The "**print**" action (command) is the default action of awk to print all selected lines that match a **pattern**.
+   - The "**print**" action (command) is the default action of awk to print all selected lines that match a **pattern**.
 
-This **action** (contained in braces) can provide more options
-such as printing **specific fields** of selected lines (or records) from a database.
+   - This **action** (contained in braces) can provide more options such as printing **specific fields** of selected lines (or records) from a database.
 
   6. Issue the following linux command all to display all lines (i.e. records) in the **cars.txt** database that matches the pattern (or "make") called **ford**:
 
-`awk '/ford/ {print}' cars.txt`
+```bash
+awk '/ford/ {print}' cars.txt
+```
 
 ![Awk 1](/img/Awk-1.png)
 
-We will use **pipeline commands** to both display stdout to the screen and save to files for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
+   - We will use **pipeline commands** to both display stdout to the screen and save to files for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
 
   7. Issue the following linux pipeline command all to display records in the **cars.txt** database that contain the pattern (i.e. make) **ford**:
 
-`awk '/ford/' cars.txt | tee awk-1.txt`
+```bash
+awk '/ford/' cars.txt | tee awk-1.txt
+```
 
-What do you notice? You should notice ALL lines displayed without using **search criteria**.
+   - What do you notice? You should notice ALL lines displayed without using **search criteria**.
 
-You can use _builtin_ **variables** with the **print** command for further processing.
-We will discuss the following variables in this tutorial:
-
-**$0** - Current record (entire line)
-
-**$1** - First field in record
-
-**$n** - nth field in record
-
-**NR** - Record Number (order in database)
-
-**NF** - Number of fields in current record
+   - You can use _builtin_ **variables** with the **print** command for further processing.
+   - We will discuss the following variables in this tutorial:
+        - **$0** - Current record (entire line)
+        - **$1** - First field in record
+        - **$n** - nth field in record
+        - **NR** - Record Number (order in database)
+        - **NF** - Number of fields in current record
 
 
-For a listing of more variables, please consult your course notes.
+   - For a listing of more variables, please consult your course notes.
 
   8. Issue the following linux pipeline command to display the **model, year, quantity** and price
 in the **cars.txt** database for makes of **chevy**:
 
-`awk '/chevy/ {print $2,$3,$4,$5}' cars.txt | tee awk-2.txt`
+```bash
+awk '/chevy/ {print $2,$3,$4,$5}' cars.txt | tee awk-2.txt
+```
 
-Notice that a **space** is the delimiter for the fields that appear as standard output.
+   - Notice that a **space** is the delimiter for the fields that appear as standard output.
 
-The **tilde character ~** is used to search for a pattern or display standard output for a particular field.
+   - The **tilde character ~** is used to search for a pattern or display standard output for a particular field.
 
 ![Awk 2](/img/Awk-2.png)
 
   9. Issue the following linux pipeline command to display all **plymouths** (**plym**)
 by **model name, price** and **quantity**:
 
-`awk '$1 ~ /plym/ {print $2,$3,$4,$5}' cars.txt | tee awk-3.txt`
+```bash
+awk '$1 ~ /plym/ {print $2,$3,$4,$5}' cars.txt | tee awk-3.txt
+```
 
-You can also use **comparison operators** to specify conditions for processing with matched patterns
-when using the awk command. Since they are used WITHIN the awk expression,
-they are not confused with redirection symbols
-
-**<**     Less than
-
-**<=**   Less than or equal
-
-**\>**     Greater than
-
-**\>=**   Greater than or equal
-
-**==**   Equal
-
-**!=**   Not equal
-
+   - You can also use **comparison operators** to specify conditions for processing with matched patterns when using the awk command. Since they are used WITHIN the awk expression, they are not confused with redirection symbols
+         - **<**     Less than
+         - **<=**   Less than or equal
+         - **\>**     Greater than
+         - **\>=**   Greater than or equal
+         - **==**   Equal
+         - **!=**   Not equal
 
   10. Issue the following linux pipeline command to display display the **car make, model, quantity** and **price** of all vehicles whose **prices are less than \$5,000**:
 
-`awk '$5 < 5000 {print $1,$2,$4,$5}' cars.txt | tee awk-4.txt`
+```bash
+awk '$5 < 5000 {print $1,$2,$4,$5}' cars.txt | tee awk-4.txt
+```
 
-What do you notice?
+   - What do you notice?
 
 ![Awk 3](/img/Awk-3.png)
 
   11. Issue the following linux pipeline command to display display **price, quantity, model** and **car make** of vehicles whose **prices are less than $5,000**:
 
-`awk '$5 < 5000 {print $5,$4,$2,$1}' cars.txt | tee awk-5.txt`
+```bash
+awk '$5 < 5000 {print $5,$4,$2,$1}' cars.txt | tee awk-5.txt
+```
 
   12. Issue the following linux pipeline command to display the **car make, year** and **quantity** of cars that **begin** with the **letter 'f'**:
 
-`awk '$1 ~ /^f/ {print $1,$2,$4}' cars.txt | tee awk-6.txt`
+```bash
+awk '$1 ~ /^f/ {print $1,$2,$4}' cars.txt | tee awk-6.txt
+```
 
-Combined pattern searches can be made by using **compound operator** symbols:
-
-**\&\&**     (and)
-
-**\|\|**        (or)
+   - Combined pattern searches can be made by using **compound operator** symbols:
+          - **\&\&**     (and)
+          - **\|\|**        (or)
 
   13. Issue the following linux pipeline command to list all **fords**
 whose **price is greater than $10,000**:
 
-`awk '$1 ~ /ford/ && $5 > 10000 {print $0}' cars.txt | tee awk-7.txt`
+```bash
+awk '$1 ~ /ford/ && $5 > 10000 {print $0}' cars.txt | tee awk-7.txt
+```
 
 ![Awk 4](/img/Awk-4.png)
 
   14. Issue the following linux command:
 
-`cp ~uli101/tutorialfiles/cars2.txt ~/`
+```bash
+cp ~uli101/tutorialfiles/cars2.txt ~/
+```
 
   15. Issue the **cat** command to quickly view the contents of the **cars2.txt** file.
 
   16. Issue the following linux pipeline command to display the **year** and **quantity** of cars that **begin** with the **letter 'f'** for the **cars2.txt** database:
 
-`awk '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-8.txt`
+```bash
+awk '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-8.txt
+```
 
-What did you notice?
+   - What did you notice?
 
-The problem is that the **cars2.txt** database separates each field by a semi-colon (**;**) instead of **TAB**.
-Therefore, it does not recognize the second and fourth fields.
+   - The problem is that the **cars2.txt** database separates each field by a semi-colon (**;**) instead of **TAB**.
+   - Therefore, it does not recognize the second and fourth fields.
 
-You need to issue awk with the -F option to indicate that this file's fields are separated (delimited) by a semi-colorn.
+   - You need to issue awk with the -F option to indicate that this file's fields are separated (delimited) by a semi-colorn.
 
   17. Issue the following linux pipeline command to display the **year** and **quantity** of cars that **begin** with the **letter 'f'** for the **cars2.txt** database:
 
-`awk -F";" '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-9.txt`
+```bash
+awk -F";" '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-9.txt
+```
 
-What did you notice this time?
+   - What did you notice this time?
 
   18. Issue the following to run a checking script:
 
-`~uli101/week10-check-2`
+```bash
+~uli101/week10-check-2
+```
 
-If you encounter errors, make corrections and **re-run** the checking script until you
-receive a congratulations message, then you can proceed.
+   - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
 
 ## Linux Practice Questions
