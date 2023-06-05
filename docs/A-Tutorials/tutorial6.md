@@ -431,7 +431,14 @@ sftp yoursenecaid@matrix.senecacollege.ca
 
   9. You should be in the **sftp command prompt** where you are expected to issue **sftp commands**. Please take a moment to view common local and remote _sftp_ commands on the table below.
 
-![SFTP Commands](/img/Sftp-commands.png)
+| **Operation** | **sftp Command** (Local Server) | **sftp Command** (Remote Server) |
+| :--- | :---: | :---: |
+| Display current working directory | **lpwd** | **pwd** |
+| Display directory contents | **lls** | **ls** |
+| Create directory | **lmkdir** | **mkdir** |
+| Change directory location | **lcd** | **cd** |
+| Upload file to remote server | **put** | |
+| Download file to local server | **get** | |
 
   10. Issue the following sftp command: 
 
