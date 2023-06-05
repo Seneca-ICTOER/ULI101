@@ -61,7 +61,12 @@ Before proceeding, let's look at some additional commands used to manipulate con
 
 Refer to the table below regarding these text file manipulation commands:
 
-![Manipulation Commands](/img/Manipulation-commands.png)
+| **Command** | **Description** |
+| :--- | :--- |
+| **tr** | Used to **translate** characters to different characters. eg. `tr 'a-z' 'A-Z' < filename` |
+| **cut** | Used to **extract** fields and characters from records. The option **-c** is used to cut by a character or a range of characters. The **-f** option indicates the field number or field range to display (this may require using the **-d** option to indicate the field seperator (delimeter) which is tab by default). eg. `cut -c1-5 filename`, `cut -d":" -f2 filename` |
+| **wc** | Displays various **counts** of the contents of a file. The **-l** option displays the number of lines, the **-w** option displays the number of words, and the **-c** option displays the number of characters. eg. `wc filename`, `wc -l filename`, `wc -w filename` |
+
 
 **Redirection (Standard Input, Standard Output, Standard Error)**
 
@@ -80,11 +85,17 @@ The **standard input (stdin)** symbol that describes where a Unix/Linux command 
 
 _Examples:_
 
-`tr 'a-z' 'A-Z' < words.txt`
+```bash
+tr 'a-z' 'A-Z' < words.txt
+```
 
-`cat < abc.txt`
+```bash
+cat < abc.txt
+```
 
-`sort < xyz.txt`
+```bash
+sort < xyz.txt
+```
 
 
 **Standard output (stdout)** describes where a command sends its **output**.
@@ -100,11 +111,17 @@ The **standard output (stdout)** symbol with two greater than signs **add** comm
 
 _Examples:_
 
-`ls -l`
+```bash
+ls -l
+```
 
-`ls -l > detailed-listing.txt`
+```bash
+ls -l > detailed-listing.txt
+```
 
-`ls /bin >> output.txt`
+```bash
+ls /bin >> output.txt
+```
 
 
 **Standard Error (stderr)** describes where a command sends it's error messages. In the examples below we issue the pwd in capitals on purpose to generate an error message, which can be redirected to a **text file**.
@@ -119,13 +136,21 @@ The **standard error (stderr)** symbol with two greater than signs **add** comma
 
 _Examples:_
 
-`PWD`
+```bash
+PWD
+```
 
-`PWD 2> error-message.txt`
+```bash
+PWD 2> error-message.txt
+```
 
-`PWD 2 >> error-messages.txt`
+```bash
+PWD 2 >> error-messages.txt
+```
 
-`PWD 2> /dev/null`
+```bash
+PWD 2> /dev/null
+```
 
 
 **The /dev/null File**
@@ -136,11 +161,17 @@ that **discard** all data written into it. This is useful to discard unwanted co
 
 _Examples:_
 
-`LS 2> /dev/null`
+```bash
+LS 2> /dev/null
+```
 
-`ls > /dev/null`
+```bash
+ls > /dev/null
+```
 
-`find / -name "tempfile" 2> /dev/null`
+```bash
+find / -name "tempfile" 2> /dev/null
+```
 
 
 **The Here Document**
@@ -153,15 +184,13 @@ The **Here Document** allows a user to redirect stdin from within the command it
 
 _Example:_
 
-`cat <<+`
-
-`Line 1`
-
-`Line 2`
-
-`Line 3`
-
-`+`
+```bash
+cat <<+
+Line 1
+Line 2
+Line 3
++
+```
 
 
 **Pipeline Commands**
@@ -177,17 +206,29 @@ Commands to the **right** of the pipe symbol are referred to as **filters**. The
 
 _Examples:_
 
-`ls -al | more`
+```bash
+ls -al | more
+```
 
-`ls | sort -r`
+```bash
+ls | sort -r
+```
 
-`ls | sort | more`
+```bash
+ls | sort | more
+```
 
-`ls -l | cut -d" " -f2 | tr 'a-z' 'A-z"`
+```bash
+ls -l | cut -d" " -f2 | tr 'a-z' 'A-z"
+```
 
-`ls | grep Linux | head -5`
+```bash
+ls | grep Linux | head -5
+```
 
-`head -7 filename | tail -2`
+```bash
+head -7 filename | tail -2
+```
 
 
 **The tee Command**
@@ -208,11 +249,17 @@ The reason for the name "**tee**" is that the splitting of the flow of informati
 
 _Examples:_
 
-`ls | tee unsorted.txt | sort`
+```bash
+ls | tee unsorted.txt | sort
+```
 
-`ls | grep Linux | tee matched.txt | more`
+```bash
+ls | grep Linux | tee matched.txt | more
+```
 
-`ls | head -5 | tee -a listing.txt`
+```bash
+ls | head -5 | tee -a listing.txt
+```
 
 
 **Multiple Commands Using Semicolon, Grouping, and Backquotes**
@@ -222,7 +269,9 @@ commands may be separated by **semi-colons.**
 
 _Example:_
 
-`sleep 5; ls`
+```bash
+sleep 5; ls
+```
 
 
 Multiple commands can also be **grouped** by using parentheses.
@@ -230,7 +279,9 @@ Multiple commands can also be **grouped** by using parentheses.
 
 _Example:_
 
-`(echo "Who is on:"; w) > whoson`
+```bash
+(echo "Who is on:"; w) > whoson
+```
 
 (_**Note:** _all command output is sent to a file_)
 
@@ -243,18 +294,15 @@ The \ symbol “quotes-out” the meaning of the **ENTER** key as text
 
 _Example:_
 
-`echo "This will be split over multiple \`
+```bash
+echo "This will be split over multiple \
+lines. Note that the shell will realize \
+that a pipe requires another command, so \
+it will automatically go to the next line" |tr '[a-z]' '[A-Z]'
+```
 
 
-`lines. Note that the shell will realize \`
-
-
-`that a pipe requires another command, so \`
-
-`it will automatically go to the next line" |tr '[a-z]' '[A-Z]'`
-
-
-## INVESTIGATION 1: Basics Of Redirection
+## Investigation 1: Basics Of Redirection
 
 **ATTENTION:**
 
@@ -280,32 +328,60 @@ This is line 3
 
   5. **Save** editing changes and **exit** the text editor.
 
-  6. Issue the following Linux command: `tr 'a-z' 'A-Z' < data.txt`
+  6. Issue the following Linux command: 
 
-What does this command do?
+```bash
+tr 'a-z' 'A-Z' < data.txt
+```
 
-  7. Issue the following Linux command: `tr 'a-z' 'A-Z' < data.txt > output.txt`
+   - What does this command do?
 
-What does this command do? What are the contents of the file output.txt?
+  7. Issue the following Linux command: 
 
-  8. Issue the following Linux command: `tr 'a-z' 'A-Z' > output.txt < data.txt`
+```bash
+tr 'a-z' 'A-Z' < data.txt > output.txt
+```
 
-What does this command do? Is there any difference in terms of this command and the previous command issued?
+   - What does this command do? What are the contents of the file output.txt?
 
-  9. Issue the following Linux command: `tr 'a-z' 'A-Z' >> output.txt < data.txt`
+  8. Issue the following Linux command: 
 
-What happens to the content of the **output.txt** file? Why?
+```bash
+tr 'a-z' 'A-Z' > output.txt < data.txt
+```
 
-  10. Issue the following Linux command: `tail -2 < data.txt > output.txt`
+   - What does this command do? Is there any difference in terms of this command and the previous command issued?
 
-What does this command do? Check the contents of the **output.txt** file to confirm.
+  9. Issue the following Linux command: 
 
-  11. Issue the following Linux command: `tail -2 > output2.txt < data.txt`
+```bash
+tr 'a-z' 'A-Z' >> output.txt < data.txt
+```
 
-Why does this command render the same results as the previous command?
-Try explaining how the command works in terms of **stdin** and then **stdout**.
+   - What happens to the content of the **output.txt** file? Why?
 
-  12. Issue the following Linux command to create a file: `cat > output3.txt`
+  10. Issue the following Linux command: 
+
+```bash
+tail -2 < data.txt > output.txt
+```
+
+   - What does this command do? Check the contents of the **output.txt** file to confirm.
+
+  11. Issue the following Linux command: 
+
+```bash
+tail -2 > output2.txt < data.txt
+```
+
+   - Why does this command render the same results as the previous command?
+   - Try explaining how the command works in terms of **stdin** and then **stdout**.
+
+  12. Issue the following Linux command to create a file: 
+
+```bash
+cat > output3.txt
+```
 
   13. Enter the follow text displayed below:
 
@@ -317,131 +393,186 @@ This is the file output3.txt
 
   15. Issue the **cat** command to view the contents of the file: **output3.txt**
 
-  16. Issue the following Linux command: `cp ~jason.carman/uli101/cars .`
+  16. Issue the following Linux command: 
+
+```bash
+cp ~jason.carman/uli101/cars .
+```
 
   17. Issue the **cat** command to view the contents of the **cars** file.
 
-  18. Issue the following Linux command: `cut -c1-10 cars`
+  18. Issue the following Linux command: 
 
-What did this command do?
+```bash
+cut -c1-10 cars
+```
 
-  19. Issue the following Linux command: `cut -f5 cars > field5.txt`
+   - What did this command do?
 
-What did this command do?
-Check the contents in the file **field5.txt** to see what happened.
+  19. Issue the following Linux command: 
 
-  20. Issue the following Linux command: `cut -f1-3 cars > field123.txt`
+```bash
+cut -f5 cars > field5.txt
+```
 
-What did this command do? (check file contents)
+   - What did this command do?
+   - Check the contents in the file **field5.txt** to see what happened.
 
-  21. Issue the following Linux command: `cut -f1,5 cars > field15.txt`
+  20. Issue the following Linux command: 
 
-What did this command do? (check file contents)
+```bash
+cut -f1-3 cars > field123.txt
+```
 
-  22. Issue the following Linux command: `wc cars > count.txt`
+   - What did this command do? (check file contents)
 
-What information does the **count.txt** file contain?
+  21. Issue the following Linux command: 
 
-  23. Issue the following Linux command: `wc -l cars > count1.txt`
+```bash
+cut -f1,5 cars > field15.txt
+```
 
-What information does the **count1.txt** file contain?
+   - What did this command do? (check file contents)
 
-  24. Issue the following Linux command: `wc -w cars > count2.txt`
+  22. Issue the following Linux command: 
 
-What information does the **count2.txt** file contain?
+```bash
+wc cars > count.txt
+```
 
-  25. Issue the following Linux command: `ls -l > listing.txt`
+   - What information does the **count.txt** file contain?
 
-What information does the **listing.txt** file contain?
+  23. Issue the following Linux command: 
 
-  26. Issue the following Linux command: `pwd > listing.txt`
+```bash
+wc -l cars > count1.txt
+```
 
-What happenned to the original contents of the file called **listing.txt**? Why?
+   - What information does the **count1.txt** file contain?
 
-  27. Issue the following Linux command (use 2 greater-than signs): `date >> listing.txt`
+  24. Issue the following Linux command: 
 
-What information does the **listing.txt** file contain? Why?
+```bash
+wc -w cars > count2.txt
+```
 
-  28. Issue the following Linux command: `cat listing.txt cars > combined.txt`
+   - What information does the **count2.txt** file contain?
 
-What information does the **combined.txt** file contain? Why?
+  25. Issue the following Linux command: 
 
-**NOTE:** The **cat** command stands for "**concatenate**" which means to **combine** contents of multiple files into a single file.
-This is why the command is called "_cat_".
+```bash
+ls -l > listing.txt
+```
 
-  29. Issue the following Linux command: `cat listing.txt cars murray 2> result.txt`
+   - What information does the **listing.txt** file contain?
 
-What is displayed on the monitor? What information does the **result.txt** file contain? Why?
+  26. Issue the following Linux command: 
 
-  30. Issue the following Linux command: `cat listing.txt cars murray > myoutput.txt 2> /dev/null`
+```bash
+pwd > listing.txt
+```
 
-What is displayed on the monitor? What happened to the error message?
+   - What happenned to the original contents of the file called **listing.txt**? Why?
 
-  31. Issue the following Linux command: `cat listing.txt cars murray > myoutput.txt 2> result.txt`
+  27. Issue the following Linux command (use 2 greater-than signs): 
 
-What is displayed on the monitor? what do those files contain? Why?
+```bash
+date >> listing.txt
+```
 
-The **Here Document** allows you to redirect stdin from with the Linux command itself. Let's get some practice using the Here Document.
+   - What information does the **listing.txt** file contain? Why?
+
+  28. Issue the following Linux command: 
+
+```bash
+cat listing.txt cars > combined.txt
+```
+
+   - What information does the **combined.txt** file contain? Why?
+   - **NOTE:** The **cat** command stands for "**concatenate**" which means to **combine** contents of multiple files into a single file.
+   - This is why the command is called "_cat_".
+
+  29. Issue the following Linux command: 
+
+```bash
+cat listing.txt cars murray 2> result.txt
+```
+
+   - What is displayed on the monitor? What information does the **result.txt** file contain? Why?
+
+  30. Issue the following Linux command: 
+
+```bash
+cat listing.txt cars murray > myoutput.txt 2> /dev/null
+```
+
+   - What is displayed on the monitor? What happened to the error message?
+
+  31. Issue the following Linux command: 
+
+```bash
+cat listing.txt cars murray > myoutput.txt 2> result.txt
+```
+
+   - What is displayed on the monitor? what do those files contain? Why?
+   - The **Here Document** allows you to redirect stdin from with the Linux command itself. Let's get some practice using the Here Document.
 
   32. Issue the following Linux command:
 
-`cat <<+`
+```bash
+cat <<+
+line 1
+line 2
+line 3
++
+```
 
-`line 1`
-
-`line 2`
-
-`line 3`
-
-`+`
-
-What do you notice?
+   - What do you notice?
 
   33. Issue the following Linux command:
 
-`grep 2 <<+`
+```bash
+grep 2 <<+
+line 1
+line 2
+line 3
++
+```
 
-`line 1`
-
-`line 2`
-
-`line 3`
-
-`+`
-
-What do you notice? How does this differ from the previous command? Why?
+   - What do you notice? How does this differ from the previous command? Why?
 
   34. Issue the following Linux command:
 
-`grep 2 > line2.txt <<+`
+```bash
+grep 2 > line2.txt <<+
+line 1
+line 2
+line 3
++
+```
 
-`line 1`
-
-`line 2`
-
-`line 3`
-
-`+`
-
-What do you notice? What is contained in the file **line2.txt**? Why?
-
-**NOTE:** You will now run a shell script to confirm that you properly issued Linux commands using redirection.
+   - What do you notice? What is contained in the file **line2.txt**? Why?
+   - **NOTE:** You will now run a shell script to confirm that you properly issued Linux commands using redirection.
 
   35. Issue the following Linux command to run a checking script:
 
-`~uli101/week5-check-1`
+```bash
+~uli101/week5-check-1
+```
 
   36. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
   37. Issue the **ls** command to see all of the **temporary files** that were created as a result of redirection.
 
-The problem with using these redirection symbols is that you create **temporary text files** that take up **space** on your file system.
+      - The problem with using these redirection symbols is that you create **temporary text files** that take up **space** on your file system.
 
   38. Issue a Linux command (using **Filename Expansion**) to **remove** those temporary text files in the current directory.
 
   39. Issue the following Linux command to check that you removed ALL of those temporary text files:
 
-`~uli101/week5-check-2`
+```bash
+~uli101/week5-check-2
+```
 
   40. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
@@ -449,7 +580,7 @@ The problem with using these redirection symbols is that you create **temporary 
 In the next investigation, you will be learning how to issue **pipeline Linux commands** which can
 accomplish tasks without creating temporary files.
 
-## INVESTIGATION 2: Redirection Using Pipeline Commands
+## Investigation 2: Redirection Using Pipeline Commands
 
 In this investigation, you will learn to issue **pipeline commands** to to accomplish tasks without having to generate temporary files.
 
@@ -464,88 +595,122 @@ You will be issuing a **pipeline command** which will use the pipe symbol "\|"
 that will send the stdout from a command as stdin into another command
 without having to create temporary files.
 
-  2. Issue the follow Linux **pipeline command**: `ls /bin | more`
+  2. Issue the follow Linux **pipeline command**: 
 
-What happened? Press **q** to exit display.
+```bash
+ls /bin | more
+```
 
-  3. Issue the following Linux **pipeline command**: `ls /bin | who`
+   - What happened? Press **q** to exit display.
 
-What happened? Although this pipeline command provides output,
-it **does not work** properly as a pipeline command since the **who** command is
-**NOT** designed to accept standard input.
+  3. Issue the following Linux **pipeline command**: 
+
+```bash
+ls /bin | who
+```
+
+   - What happened? Although this pipeline command provides output, it **does not work** properly as a pipeline command since the **who** command is **NOT** designed to accept standard input.
 
 ![Pipe diagram 1](/img/Pipe-diagram-1.png)
 
-**NOTE:** When issuing pipeline commands, commands to the right of the pipe symbol must be designed to accept **standard input**. Since the _who_ command does not, you did NOT see the contents of the **/bin** directory but only information relating to the _who_ command. Therefore, the **order** of which you build your pipeline command and the **type of command** that is used as a _filter_ is extremely important!
+   - **NOTE:** When issuing pipeline commands, commands to the right of the pipe symbol must be designed to accept **standard input**. Since the _who_ command does not, you did NOT see the contents of the **/bin** directory but only information relating to the _who_ command. Therefore, the **order** of which you build your pipeline command and the **type of command** that is used as a _filter_ is extremely important!
 
-  4. Issue the following Linux command: `ls /bin/?? > listing.txt`
+  4. Issue the following Linux command: 
 
-  5. Issue the following Linux command: `sort listing.txt`
+```bash
+ls /bin/?? > listing.txt
+```
 
-  6. Issue the following Linux command to remove the listing file: `rm listing.txt`
+  5. Issue the following Linux command: 
 
-  7. Issue the following Linux **pipeline command**: `ls /bin/?? | sort`
+```bash
+sort listing.txt
+```
 
-You should notice that the output from this pipeline command is the same output
-from the command you issued in **step \#5**.
+  6. Issue the following Linux command to remove the listing file: 
 
-  8. Issue the following Linux **pipeline command**: `ls /bin/?? | sort | more`
+```bash
+rm listing.txt
+```
 
-What is difference with this pipeline command as opposed to the previous pipeline command? Press **q** to exit display.
+  7. Issue the following Linux **pipeline command**: 
+
+```bash
+ls /bin/?? | sort
+```
+
+   - You should notice that the output from this pipeline command is the same output from the command you issued in **step \#5**.
+
+  8. Issue the following Linux **pipeline command**: 
+
+```bash
+ls /bin/?? | sort | more
+```
+
+   - What is difference with this pipeline command as opposed to the previous pipeline command? Press **q** to exit display.
 
   9. Issue the **ls** command.
 
-You should notice that **no files have been created**.
-Let's get practice issuing more pipeline commands using commands
-(previously learned or new) to be used as **filters**.
+      - You should notice that **no files have been created**. 
+      - Let's get practice issuing more pipeline commands using commands (previously learned or new) to be used as **filters**.
 
-  10. Issue the following Linux **pipeline command**: `ls /bin/?? | sort | head -5`
+  10. Issue the following Linux **pipeline command**: 
 
-What did you notice?
+```bash
+ls /bin/?? | sort | head -5
+```
 
-  11. Issue the following Linux **pipeline command**: `ls /bin/???? | sort | grep r | tail -2`
+   - What did you notice?
 
-What did you notice? Could you predict the output prior to issuing this pipeline command?
+  11. Issue the following Linux **pipeline command**: 
 
-  12. Issue the following Linux **pipeline command**: `ls /bin/???? | sort | grep r | cut -c1-6`
+```bash
+ls /bin/???? | sort | grep r | tail -2
+```
 
-Try to explain step-by-step each process in the pipeline command (including filters)
-to explain the final output from this pipeine command.
+   - What did you notice? Could you predict the output prior to issuing this pipeline command?
+
+  12. Issue the following Linux **pipeline command**: 
+
+```bash
+ls /bin/???? | sort | grep r | cut -c1-6
+```
+
+   - Try to explain step-by-step each process in the pipeline command (including filters) to explain the final output from this pipeine command.
 
   13. Confirm that you are still located in the **~/redirect** directory.
 
   14. Issue the following Linux **pipeline command**:
 
-`ls /bin/???? | tee unsort.txt | sort | tee sort.txt | grep r | tee match.txt | head`
+```bash
+ls /bin/???? | tee unsort.txt | sort | tee sort.txt | grep r | tee match.txt | head
+```
 
   15. Issue the **ls** command to view the contents of this redirectory.
 
-What did you notice?
+      - What did you notice?
 
-  16. View the contents of the **text files** that were created to see how the **tee** command
-was used in the previous pipeline command.
+  16. View the contents of the **text files** that were created to see how the **tee** command was used in the previous pipeline command.
 
-What was the purpose of using the **tee** command for this pipeline command?
-
-You will now run a shell script to confirm that you properly issued that Linux pipeline command
-using the **tee** command and redirection.
+      - What was the purpose of using the **tee** command for this pipeline command?
+      - You will now run a shell script to confirm that you properly issued that Linux pipeline command using the **tee** command and redirection.
 
   17. Issue the following Linux command to run a checking script:
 
-`~uli101/week5-check-3`
+```bash
+~uli101/week5-check-3
+```
 
-If you encounter errors, make corrections and **re-run** the checking script until you receive
-a congratulations message, then you can proceed.
+   - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
   18. Change to your **home** directory.
 
   19. Remove the **~/redirect** directory and its contents.
 
-In the next investigation, you will learn various techniques to issue **multiple Linux commands**
-on the same line, or issue a **single Linux command over multiple lines.**
+      - In the next investigation, you will learn various techniques to issue **multiple Linux commands** on the same line, or issue a **single Linux command over multiple lines.**
 
 
-## INVESTIGATION 3: Issuing Multiple Unix/Linux Commands
+## Investigation 3: Issuing Multiple Unix/Linux Commands
 
 In this investigation, you will learn how to issue multiple Unix / Linux commands in a single line or over multiple lines.
 
@@ -555,46 +720,57 @@ In this investigation, you will learn how to issue multiple Unix / Linux command
 
   2. Issue the following Linux commands (using the _semicolon_ character ";" to separate each Linux command):
 
-`cal;pwd;date`
+```bash
+cal;pwd;date
+```
 
-Note the output as well as the order of what each Linux command results.
+   - Note the output as well as the order of what each Linux command results.
 
-  3. Issue the following Linux commands: `(cal;pwd;date)`
+  3. Issue the following Linux commands: 
 
-Was there any difference in the output of this command as opposed to the previous command?
+```bash
+(cal;pwd;date)
+```
 
-Let's see how grouping affects working with redirection.
+   - Was there any difference in the output of this command as opposed to the previous command?
+   - Let's see how grouping affects working with redirection.
 
-  4. Issue the following Linux commands: `cal;pwd;date > output.txt`
+  4. Issue the following Linux commands: 
 
-What happened? Where is the output for the **date** command?
-Why isn't the output for the **cal** and **pwd** commands are NOT contained in that file?
+```bash
+cal;pwd;date > output.txt
+```
+
+   - What happened? Where is the output for the **date** command?
+   - Why isn't the output for the **cal** and **pwd** commands are NOT contained in that file?
 
   5. Issue a Linux command to view the contents of the file called **output.txt**
 
-What do you notice?
+      - What do you notice?
+      - Let's use **grouping** to make modification to the previous command
 
-Let's use **grouping** to make modification to the previous command
+  6. Issue the following Linux commands: 
 
-  6. Issue the following Linux commands: `(cal;pwd;date) > output.txt`
+```bash
+(cal;pwd;date) > output.txt
+```
 
-What did you notice?
+   - What did you notice?
 
   7. Issue a Linux command to view the contents of the file called **output.txt**
 
-What does _grouping_ do when issuing multiple Linux commands (separated by a semi-colon ";") that uses redirection?
+      - What does _grouping_ do when issuing multiple Linux commands (separated by a semi-colon ";") that uses redirection?
 
   8. Issue the following Linux pipeline command (using \ at the end of most lines):
 
-`echo "This will be split over multiple \`
+```bash
+echo "This will be split over multiple \
+lines. Note that the shell will realize \
+that a pipe requires another command, so \
+it will automatically go to the next line" |tr '[a-z]' '[A-Z]'
+```
 
-`lines. Note that the shell will realize \`
-
-`that a pipe requires another command, so \`
-
-`it will automatically go to the next line" |tr '[a-z]' '[A-Z]'`
-
-Did the command work? What is the purpose of issuing a Linux command in this way?
+   - Did the command work? What is the purpose of issuing a Linux command in this way?
 
   9. Complete the Review Questions sections to get additional practice.
 
