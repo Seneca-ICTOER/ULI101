@@ -197,7 +197,12 @@ The permissions of **newly-created** directories and regular files are automatic
 
 The chmod can use **symbols** to _add, remove,_ and _set_ **rwx** permissions for the **user**, **same group members**, and/or **other group members** for a directory or reqular file.
 
-![Symbolic Chart](/img/Symbolic-chart.png)
+| **Command** | **Description** |
+| :--- | :--- |
+| `chmod ugo+x script.bash` | Add execute permissions to the file **script.bash** so it can be run |
+| `chmod u=rwx,go=x ~` | Set "**pass-thru**" permissions of your **home** directory for same group members and other group members to navigate to other subdirectories (that may have access / view permissions) |
+| `chmod go-w ~/shared` | Remove write permissions for same group members and other group members and other group members for the directory **~/shared** |
+| `chmod a=rx myfile.txt` | Set read and execute permissions for the file **myfile.txt** |
 
 
 ***Octal (Absolute) Method:***
