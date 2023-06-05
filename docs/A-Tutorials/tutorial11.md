@@ -160,7 +160,7 @@ There are a couple of ways to assign values as positional parameters:
 
 There are a group of **special parameters** that can be used for shell scripting.
 A few of these special parameters and their purpose are displayed below:
-**\$\*** , **“\$\*”** , **"\$\@"** , **\$\#** , **\$\?**
+**\$\*** , **“\$\*”** , **"\$@"** , **\$\#** , **\$?**
 
 ![Positional](/img/Positional.png)
 
@@ -241,7 +241,7 @@ more **flexible** and can **adapt** to changing situations.
 
 In order to use control flow statements, you need to test a condition to get
 **TRUE** (zero value) or **FALSE** (non zero value). This can be done two ways:
-  - Run a command to get the exit status (**\$\?**)
+  - Run a command to get the exit status (**\$?**)
   - Use the **test** command
 
 Refer to the diagrams below to see how to use the test command.
