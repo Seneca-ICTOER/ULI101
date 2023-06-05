@@ -329,9 +329,9 @@ You can also use **comparison operators** to specify conditions for processing w
 when using the awk command. Since they are used WITHIN the awk expression,
 they are not confused with redirection symbols
 
-**\<**     Less than
+**<**     Less than
 
-**\<=**   Less than or equal
+**<=**   Less than or equal
 
 **\>**     Greater than
 
