@@ -314,7 +314,11 @@ In this investigation, you will learn how to redirect **standard input, standard
 
   1. **Login** to your matrix account and issue a command to **confirm** you are located in your **home** directory.
 
-  2. Issue the following Linux command to create the following directory: `mkdir ~/redirect`
+  2. Issue the following Linux command to create the following directory: 
+
+```bash
+mkdir ~/redirect
+```
 
   3. Change to the **~/redirect** directory and confirm that you changed to that directory.
 
@@ -588,12 +592,8 @@ In this investigation, you will learn to issue **pipeline commands** to to accom
 
   1. Confirm that you are still located in the **~/redirect** directory.
 
-The **problem** with creating temporary files, is that they take up space on your server,
-and should be removed. You actually did that in the previous investigation.
-
-You will be issuing a **pipeline command** which will use the pipe symbol "\|"
-that will send the stdout from a command as stdin into another command
-without having to create temporary files.
+      - The **problem** with creating temporary files, is that they take up space on your server, and should be removed. You actually did that in the previous investigation.
+      - You will be issuing a **pipeline command** which will use the pipe symbol "\|" that will send the stdout from a command as stdin into another command without having to create temporary files.
 
   2. Issue the follow Linux **pipeline command**: 
 
