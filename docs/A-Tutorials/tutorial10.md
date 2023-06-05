@@ -293,9 +293,9 @@ cp ~uli101/tutorialfiles/cars.txt ~/
 
   5. Issue the **cat** command to quickly view the contents of the **cars.txt** file.
 
-   - The "**print**" action (command) is the default action of awk to print all selected lines that match a **pattern**.
+      - The "**print**" action (command) is the default action of awk to print all selected lines that match a **pattern**.
 
-   - This **action** (contained in braces) can provide more options such as printing **specific fields** of selected lines (or records) from a database.
+      - This **action** (contained in braces) can provide more options such as printing **specific fields** of selected lines (or records) from a database.
 
   6. Issue the following linux command all to display all lines (i.e. records) in the **cars.txt** database that matches the pattern (or "make") called **ford**:
 
@@ -347,12 +347,12 @@ awk '$1 ~ /plym/ {print $2,$3,$4,$5}' cars.txt | tee awk-3.txt
 ```
 
    - You can also use **comparison operators** to specify conditions for processing with matched patterns when using the awk command. Since they are used WITHIN the awk expression, they are not confused with redirection symbols
-         - **<**     Less than
-         - **<=**   Less than or equal
-         - **\>**     Greater than
-         - **\>=**   Greater than or equal
-         - **==**   Equal
-         - **!=**   Not equal
+     - **<**     Less than
+     - **<=**   Less than or equal
+     - **\>**     Greater than
+     - **\>=**   Greater than or equal
+     - **==**   Equal
+     - **!=**   Not equal
 
   10. Issue the following linux pipeline command to display display the **car make, model, quantity** and **price** of all vehicles whose **prices are less than \$5,000**:
 
