@@ -13,7 +13,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
   - Understand the difference between **absolute** , **relative** and **relative-to-home** pathnames
   - Become productive at issuing Linux commands with the most appropriate pathname
-  - Use **Filename Expansion (FNE)** Symbols: **\* , \? , \[ \] , \[\! \]**
+  - Use **Filename Expansion (FNE)** Symbols: **\* , ? , \[ \] , \[\! \]**
   - Use **quotation** treat special characters as just **text** when issuing Linux commands.
   - Understand the quotation symbols: **Backslash \\** , **single quotes ' '** and **double quotes " "**
 
