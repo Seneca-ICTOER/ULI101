@@ -15,38 +15,38 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
   - Become productive at issuing Linux commands with the most appropriate pathname
   - Use **Filename Expansion (FNE)** Symbols: **\* , \? , \[ \] , \[\! \]**
   - Use **quotation** treat special characters as just **text** when issuing Linux commands.
-  - Understand the quotation symbols: **Backslash \\** , **single quotes \' \'** and **double quotes \" \"**
+  - Understand the quotation symbols: **Backslash \\** , **single quotes ' '** and **double quotes " "**
 
 ### Tutorial Reference Material
 
-#### Course Notes
+**Course Notes**
 
-##### Slides:
+**Slides:**
 
 - Week 3 Lecture 1 Notes: [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx)
 
 - Week 3 Lecture 2 Notes: [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx)
 
-#### Pathname Type / Filename Expansion / Quoting
+**Pathname Type / Filename Expansion / Quoting**
 
-##### Pathname / Filename Expansion:
+**Pathname / Filename Expansion:**
 
 - [Absolute](https://www.cyberciti.biz/faq/understanding-absolute-pathnames/)
 - [Relative](https://www.oreilly.com/library/view/web-design-in/0596009879/ch04s02s02.html)
 - [Relative-to-home](https://stackoverflow.com/questions/24048533/unix-simple-what-is-a-relative-to-home-pathname)
 - [Filename Expansion Symbols](https://docstore.mik.ua/orelly/linux/run/ch04_08.htm#:~:text=Another%20way%20to%20save%20time,is%20sometimes%20called%20%22globbing.%22)
 
-##### Quoting Special Characters::
+**Quoting Special Characters:**
 
 - [Backslash \ , Single ' ' , Double " "](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_03.html)
 
-##### Linux Commands:
+**Linux Commands:**
 
 - [echo](https://man7.org/linux/man-pages/man1/echo.1.html)
 
-#### YouTube Videos
+**YouTube Videos**
 
-##### Instructional Videos:
+**Instructional Videos:**
 
 - [Pathname Types](https://www.youtube.com/watch?v=ephId3mYu9o)
 - [Filename Expansion Examples](https://youtu.be/5FQnehwzwSM)
@@ -55,7 +55,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 ## Key Concepts
 
-### Pathname Types
+**Pathname Types**
 
 As previously mentioned, a **pathname is a fully-specified location of a unique filename** within a file system.
 The concept of a pathname relates to every operating system including: _Unix, Linux, MS-DOS,  MS-Windows, Apple-Macintosh_, etc.
@@ -86,13 +86,17 @@ _Advantages of using Absolute Pathnames:_
 
 Examples:
 
-`ls /bin`
+```bash
+ls /bin
+```
 
 ![Absolute Path 2](/img/Absolute-path-2.png)
 
 The directory in red displays the FULL path from the root directory to the bin directory (i.e. the absolute pathname: /bin.
 
-`ls /home/your-user-id/uli101/examples`
+```bash
+ls /home/your-user-id/uli101/examples
+```
 
 ![Absolute Path 1](/img/Absolute-path-1.png)
 
@@ -117,15 +121,21 @@ _Advantages of using Relative Pathnames:_
 
 Examples:
 
-`ls ../../../bin`
+```bash
+ls ../../../bin
+```
 
 ![Relative Pathname 1](/img/Relative-pathname-1.png)
 
 Directories in red display the path from the current directory location (which is **xyz100**) to the **bin** directory (i.e. the relative pathname: **../../../bin.**
 
-`ls examples`
+```bash
+ls examples
+```
 
-`ls ./examples`
+```bash
+ls ./examples
+```
 
 ![Relative Pathname 2](/img/Relative-pathname-2.png)
 
@@ -144,15 +154,19 @@ You can immediately place a username after the tilde to represent another user�
 
 Examples:
 
-`ls ~/uli101/examples`
+```bash
+ls ~/uli101/examples
+```
 
 ![Relative To Home 1](/img/Relative-to-home-1.png)
 
 Directories in red display the path from the home directory of the current user (which is **userid**) to the **examples** directory (i.e. the relative-to-home pathname: **~/uli101/examples**.
 
-`ls ~murray.saul/uli101/notes`
+```bash
+ls ~murray.saul/uli101/notes
+```
 
-![Relative To Home 2]/img/Relative-to-home-2.png)
+![Relative To Home 2](/img/Relative-to-home-2.png)
 
 Directories in red display the path from another user's home directory location to their **notes** directory (i.e. the relative-to-home pathname: **~jane/uli101/notes**
 
@@ -172,9 +186,12 @@ You can use a special character to indicate to the Bash shell to match all files
 
 command:
 
-`ls *.txt`
+```bash
+ls *.txt
+```
 
 output:
+
 ```text
 a.txt b.txt c.txt 1.txt 2.txt 3.txt abc.txt work.txt
 ```
@@ -184,13 +201,13 @@ Below are the most common Filename Expansion symbols and how they are used for f
 | **Filename Expansion Symbol**	| **Purpose** |
 | :--- | :--- |
 | **\*** |	Asterisk (\*) to represent **0 or more characters** |
-| **\?** |	Question mark (\?) to represent **exactly one character (any character)** |
-| **\[ \]** |	Square brackets (\[ \]) to represent and match for the **character enclosed within the square brackets**. It represents ONLY ONE character - it's like a **Question Mark (\?)** but with **conditions or restrictions** |
+| **?** |	Question mark (?) to represent **exactly one character (any character)** |
+| **\[ \]** |	Square brackets (\[ \]) to represent and match for the **character enclosed within the square brackets**. It represents ONLY ONE character - it's like a **Question Mark (?)** but with **conditions or restrictions** |
 | **\[\! \]**	| Square brackets containing an exclamation mark immediately after the open square bracket (\[\! \]) to represent and match and **OPPOSITE** character for the character enclosed within the square brackets. |
 
 ### Quoting Special Characters
 
-As discussed in the above section, there are some special characters that the shell uses to perform an operation; for example, the filename expansion symbols: **\*** or **\?**
+As discussed in the above section, there are some special characters that the shell uses to perform an operation; for example, the filename expansion symbols: **\*** or **?**
 
 
 There are **3 methods** to make those special characters **act only like text characters** when issuing Linux commands (displayed in chart below):
@@ -202,7 +219,7 @@ There are **3 methods** to make those special characters **act only like text ch
 | Contain Special character within **single quotes** (Quotes out ALL special characters)	 | **echo '\* hello \*'** |
 
 
-## INVESTIGATION 1: Absolute / Relative / Relative-To-Home Pathnames
+## Investigation 1: Absolute / Relative / Relative-To-Home Pathnames
 
 **ATTENTION:**
 
@@ -219,41 +236,48 @@ Linux commands and see which pathnames (or combination of pathnames) is the **mo
 
   2. Issue a command to **confirm** you are located in your home directory.
 
-Let's create the following directory structure under your home directory by issuing the mkdir command using only absolute pathnames.
+      - Let's create the following directory structure under your home directory by issuing the mkdir command using only absolute pathnames.
 
   3. Issue the following Linux command to create the directory structure displayed to the right using **absolute pathnames**:
 
-**NOTE:** Just continue typing and let the text continue of separate lines. Remeber to replace the text "youruserid" with your actual Seneca-id.
+      - **NOTE:** Just continue typing and let the text continue of separate lines. Remeber to replace the text "youruserid" with your actual Seneca-id.
 
-`mkdir -p /home/youruserid/tutorial3/practice/commands /home/youruserid/tutorial3/practice/examples /home/youruserid/tutorial3/notes/lesson1 /home/youruserid/tutorial3/notes/lesson2`
+```bash
+mkdir -p /home/youruserid/tutorial3/practice/commands /home/youruserid/tutorial3/practice/examples /home/youruserid/tutorial3/notes/lesson1 /home/youruserid/tutorial3/notes/lesson2
+```
 
 ![Dir12](/img/Dir12.png)
 
   4. Issue the following Linux command to confirm that you properly created the directory structure: 
   
-`tree /home/youruserid/tutorial3`
+```bash
+tree /home/youruserid/tutorial3
+```
 
-You should notice that using absolute pathnames with this Linux command **requires a lot of typing**.
-Let's **remove** this directory structure, and issue the same command using a relative-to-home pathname instead.
+   - You should notice that using absolute pathnames with this Linux command **requires a lot of typing**.
+   - Let's **remove** this directory structure, and issue the same command using a relative-to-home pathname instead.
 
   5. To remove this directory structure, issue the following Linux command (enter "**y**" at each prompt to remove ALL contents): 
 
-`rm -ri /home/youruserid/tutorial3`
+```bash
+rm -ri /home/youruserid/tutorial3
+```
 
   6. Issue a command tree command as you did in **step #4** to confirm that the directory structure has been removed.
 
   7. Issue the following Linux command to create the same directory structure using relative-to-home pathnames:
 
-**NOTE:** You usually generate the ~ character by Holding down **SHIFT** and press the button
-to the left of the number **1** above the text on your keyboard.
+      - **NOTE:** You usually generate the ~ character by Holding down **SHIFT** and press the button to the left of the number **1** above the text on your keyboard.
 
-`mkdir -p ~/tutorial3/practice/commands ~/tutorial3/practice/examples ~/tutorial3/notes/lesson1 ~/tutorial3/notes/lesson2`
+```bash
+mkdir -p ~/tutorial3/practice/commands ~/tutorial3/practice/examples ~/tutorial3/notes/lesson1 ~/tutorial3/notes/lesson2
+```
 
-Did this command require less typing than the previous command using absolute pathnames?
+   - Did this command require less typing than the previous command using absolute pathnames?
 
   8. Issue the **tree** command to confirm the directory structure was properly created.
 
-Let's remove the **tutorial3** directory and its contents and issue the same command using **relative pathnames**.
+      - Let's remove the **tutorial3** directory and its contents and issue the same command using **relative pathnames**.
 
   9. Issue the same command as you did in **step #5** to remove the **tutorial3** directory and its contents safely.
 
@@ -261,11 +285,13 @@ Let's remove the **tutorial3** directory and its contents and issue the same com
 
   11. Issue the following Linux command to create the same directory structure using relative pathnames:
 
-`mkdir -p tutorial3/practice/commands tutorial3/practice/examples tutorial3/notes/lesson1 tutorial3/notes/lesson2`
+```bash
+mkdir -p tutorial3/practice/commands tutorial3/practice/examples tutorial3/notes/lesson1 tutorial3/notes/lesson2
+```
 
   12. Issue a command to verify that the proper directory structure was created.
 
-**QUESTION:** Which **mkdir** command (pathname type) that you performed in steps **3** , **7** , and **11** required the LEAST number of keystrokes (i.e. characters)?
+      - **QUESTION:** Which **mkdir** command (pathname type) that you performed in steps **3** , **7** , and **11** required the LEAST number of keystrokes (i.e. characters)?
 
 
 You may think that issuing Linux file management commands are better using **relative** or **relative-to-home** pathnames instead of **absolute** pathnames, but that is not always true.
@@ -282,65 +308,93 @@ When performing the next series of steps, refer to the **tree diagram** below. L
 
   2. Since we will be running Linux commands depending on the directory structure that you have created, issue the following Linux command to verify you created it correctly:
  
-`~uli101/week3-check-1`
+```bash
+~uli101/week3-check-1
+```
 
   3. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message.
 
   4. Issue a Linux command to change to the **examples** directory in your recently-created directory structure.
 
-`cd tutorial3/practice/examples`
+```bash
+cd tutorial3/practice/examples
+```
 
   5. Issue a Linux command to confirm you are located in the examples directory.
 
   6. Remembering that we are located in the **examples** directory, issue the following Linux command using a **relative** pathname to display files in the /bin directory: 
 
-`ls ../../../../../bin`
+```bash
+ls ../../../../../bin
+```
 
-  7. Now issue the following Linux command using an **absolute** pathname: `ls /bin`
+  7. Now issue the following Linux command using an **absolute** pathname: 
 
-Which type of pathname would be the best to use in this situation?
+```bash
+ls /bin
+```
 
-**NOTE:** Using the previous command using the **relative-to-home** pathname would work,
-            but it would look weird. Try to issue the command yourself!
+   - Which type of pathname would be the best to use in this situation?
+   - **NOTE:** Using the previous command using the **relative-to-home** pathname would work, but it would look weird. Try to issue the command yourself!
 
   8. Let's copy the file called ls which is contained in the **/bin** directory to your **home** directory by using the **cp** command.
 First, issue the following Linux command to copy the ls command from the /bin directory to your home directory using absolute pathnames:
 
-`cp /bin/ls /home/youruserid`
+```bash
+cp /bin/ls /home/youruserid
+```
 
   9. Now let's issue the previous command using just relative pathname (remember, our current directory location is **examples**):
 
-`cp ../../../../../bin/ls ../..`
+```bash
+cp ../../../../../bin/ls ../..
+```
 
-**TIP:** For relative pathnames that move up multiple parent directories such as these, it is HIGHLY RECOMMENDED
-to view the tree diagram and check for the correct number of .. symbols. Students commonly make mistakes
-and lose marks on these type of questions!
+   - **TIP:** For relative pathnames that move up multiple parent directories such as these, it is HIGHLY RECOMMENDED to view the tree diagram and check for the correct number of .. symbols. Students commonly make mistakes and lose marks on these type of questions!
 
-  10. Let's issue the command using one absolute pathname and a relative pathname: `cp /bin/ls ../..`
+  10. Let's issue the command using one absolute pathname and a relative pathname: 
 
-What did this command do?
+```bash
+cp /bin/ls ../..
+```
 
-  11. Let's issue the same command using one absolute pathname and a relative-to-home pathname: `cp /bin/ls ~`
+   - What did this command do?
 
-What did this command do?
+  11. Let's issue the same command using one absolute pathname and a relative-to-home pathname: 
 
-Which of the following file type combinations requires the LEAST number of keystrokes to copy the ls file to your home directory?
+```bash
+cp /bin/ls ~
+```
 
-  12. Let's copy the **ls** file from the **/bin** directory to your current directory (i.e. examples): `cp /bin/ls .`
+   - What did this command do?
+   - Which of the following file type combinations requires the LEAST number of keystrokes to copy the ls file to your home directory?
 
-  13. Issue the following Linux command: `cp /bin/ls ./ls.bk`
+  12. Let's copy the **ls** file from the **/bin** directory to your current directory (i.e. examples): 
 
-What does this command do?
+```bash
+cp /bin/ls .
+```
 
-Let's run a checking script to make certain you performed the a few of the recently-issued commands correctly.
+  13. Issue the following Linux command: 
 
-  14. Issue the following: `~uli101/week3-check-2`
+```bash
+cp /bin/ls ./ls.bk
+```
+
+   - What does this command do?
+   - Let's run a checking script to make certain you performed the a few of the recently-issued commands correctly.
+
+  14. Issue the following: 
+
+```bash
+~uli101/week3-check-2
+```
 
   15. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message,
 and proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 2: Filename Expansion
+## Investigation 2: Filename Expansion
 
 You will now get practice issuing Linux file management commands using filename expansion symbols.
 We will be using the directory structure that was created in the previous INVESTIGATION.
@@ -378,13 +432,13 @@ abcde.txt
 
   4. To verify that you properly created those files, issue the following:
 
-`~uli101/week3-check-3`
+```bash
+~uli101/week3-check-3
+```
 
-If you encounter errors, then make corrections (eg. viewing directory contents, check for correct filename syntax,
-case sensitivity, missing files, files in the wrong location, etc.) and then re-run the checking script
-until you receive a congratulations message, and then continue with this investigation.
+   - If you encounter errors, then make corrections (eg. viewing directory contents, check for correct filename syntax, case sensitivity, missing files, files in the wrong location, etc.) and then re-run the checking script until you receive a congratulations message, and then continue with this investigation.
 
-##### ATTENTION:
+**ATTENTION:**
 
 Learning to **fix your mistakes** by issuing Linux commands may be required if you make mistakes in your online tutorial.
 
@@ -394,84 +448,110 @@ The output should look identical to the diagram displayed below.
 You can refer to this listing to see all files so you can then predict the output from Linux commands that use filename expansion symbols.
 
 command:
-`ls`
+
+```bash
+ls
+```
 
 output:
+
 ```text
 123.TXT  1234.txt  1a4.txt  456.txt  6u9.txt  ab2.html  abc.txt  abcde.txt  abcdef.txt  def.text  hij.TxT
 ```
 
   6. What do you think the output will be from the following Linux command?
 
-`ls ???.txt`
+```bash
+ls ???.txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   7. What do you think the output will be from the following Linux command?
 
-`ls ?????.txt`
+```bash
+ls ?????.txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   8. What do you think the output will be from the following Linux command?
 
-`ls ??????.txt`
+```bash
+ls ??????.txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   9. What do you think the output will be from the following Linux command?
 
-`ls [0-9].txt`
+```bash
+ls [0-9].txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer. Did the command work?
-
-What does this teach you about the character class \[ \] symbol?
+   - Write down the expected output on paper, then issue the command to check your answer. Did the command work?
+   - What does this teach you about the character class \[ \] symbol?
 
   10. What do you think the output will be from the following Linux command?
 
-`ls [0-9][0-9][0-9].txt`
+```bash
+ls [0-9][0-9][0-9].txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   11. What do you think the output will be from the following Linux command?
 
-`ls [a-z][a-z][a-z].txt`
+```bash
+ls [a-z][a-z][a-z].txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   12. What do you think the output will be from the following Linux command (using character class with UPPERCASE letters)?:
 
-`ls [A-Z][A-Z][A-Z].txt`
+```bash
+ls [A-Z][A-Z][A-Z].txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   13. What do you think the output will be from the following Linux command (using character class using alpha-numeric characters)?
 
-`ls [a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].txt`
+```bash
+ls [a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer.
+   - Write down the expected output on paper, then issue the command to check your answer.
 
   14. What do you think the output will be from the following Linux command?
 
-`ls *.txt`
+```bash
+ls *.txt
+```
 
-Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed? Why not?
+   - Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed? Why not?
 
   15. What do you think the output will be from the following Linux command?
 
-`ls *.[tT][xX][tT]`
+```bash
+ls *.[tT][xX][tT]
+```
 
-Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed this time? If so, why?
+   - Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed this time? If so, why?
 
   16. NOTE: We have just been using filename expansion symbols just with the ls command.
 
-Filename expansion symbols can be used for ANY Linux file management command (e.g. cat, more, less, cp, mv, rm, ls, etc.).
+      - Filename expansion symbols can be used for ANY Linux file management command (e.g. cat, more, less, cp, mv, rm, ls, etc.).
+      - Let's get some practice issuing these other Linux file management commands.
 
-Let's get some practice issuing these other Linux file management commands.
+  17. Issue the following Linux command: 
 
-  17. Issue the following Linux command: `file *.[tT][xX][tT]`
+```bash
+file *.[tT][xX][tT]
+```
 
-What is the purpose of this command? Which files are contained in this output?
+   - What is the purpose of this command? Which files are contained in this output?
 
   18. Change to the commands directory using an absolute pathname (use the diagram below for reference).
 
@@ -481,23 +561,35 @@ What is the purpose of this command? Which files are contained in this output?
 
   20. Issue the following Linux command (lowercase "l" NOT the number "1"):
 
-`cp /bin/l*   .`
+```bash
+cp /bin/l*   .
+```
 
-View the contents of the contents directory. What did this command do?
+   - View the contents of the contents directory. What did this command do?
 
-  21. Issue the following Linux command: `rm *`
+  21. Issue the following Linux command: 
 
-View the contents of the contents directory. What did this command do?
+```bash
+rm *
+```
+
+   - View the contents of the contents directory. What did this command do?
 
   22. Issue the following Linux command (lowercase "l" NOT the number "1"):
 
-`cp /bin/l?   .`
+```bash
+cp /bin/l?   .
+```
 
-View the contents of the contents directory. What did this command do?
+   - View the contents of the contents directory. What did this command do?
 
-  23. Issue the following Linux command: `rm l[!s]`
+  23. Issue the following Linux command: 
 
-View the contents of the contents directory. What did this command do?
+```bash
+rm l[!s]
+```
+
+   - View the contents of the contents directory. What did this command do?
 
   24. Use a text editor (nano or vi) to create the file called ab in the commands directory that contains the line of text below, and then save editing changes to this file:
 
@@ -517,21 +609,28 @@ This is file cd
 This is file ef
 ```
 
-  27. Issue the following Linux command: `cat ??`
+  27. Issue the following Linux command: 
 
-View the contents of the contents directory. What did this command do? Why does the output look strange?
+```bash
+cat ??
+```
 
-NOTE: Press the keys ctrl-c to return to the shell prompt.
+   - View the contents of the contents directory. What did this command do? Why does the output look strange?
+   - NOTE: Press the keys ctrl-c to return to the shell prompt.
 
-  28. Issue the following Linux command: `cat [!l][!s]`
+  28. Issue the following Linux command: 
 
-View the contents of the contents directory. What did this command do? Does the output look better? If so, why?
+```bash
+cat [!l][!s]
+```
+
+   - View the contents of the contents directory. What did this command do? Does the output look better? If so, why?
 
 
 Proceed to the next INVESTIGATION.
 
 
-## INVESTIGATION 3: Quoting Special Characters
+## Investigation 3: Quoting Special Characters
 
 As discussed in the above investigation, there are some special characters that the shell uses to perform an operation
 including the filename expansion symbol: \* 
@@ -547,65 +646,113 @@ In this investigation, you will learn **three unique methods** to quote special 
 
 ![Quotation](/img/Quotation.png)
 
-  2. Issue the following Linux command: `echo hello there`
+  2. Issue the following Linux command: 
 
-**NOTE:** the **echo** command is used to display text onto your terminal.
+```bash
+echo hello there
+```
 
-  3. Issue the following Linux command: `echo * hello *`
+   - **NOTE:** the **echo** command is used to display text onto your terminal.
 
-What happened? What is shown in addition to the text "hello".
+  3. Issue the following Linux command: 
 
-Why do you think those filenames are also being displayed?
+```bash
+echo * hello *
+```
 
-  4. Issue the following Linux command: `echo \* hello \*`
+   - What happened? What is shown in addition to the text "hello".
+   - Why do you think those filenames are also being displayed?
 
-What do you notice? What does the \ character do?
+  4. Issue the following Linux command: 
 
-  5. Issue the following Linux command: `echo "* hello *"`
+```bash
+echo \* hello \*
+```
 
-Is there a difference between this command and the previous command?
+   - What do you notice? What does the \ character do?
 
-  6. Issue the following Linux command: `echo '* hello *'`
+  5. Issue the following Linux command: 
 
-Is there any difference between this command and the two previous commands?
+```bash
+echo "* hello *"
+```
 
-  7. Issue the following Linux command: `echo $USER`
+   - Is there a difference between this command and the previous command?
 
-**NOTE:** The environment variable **USER** contains the current user's login name.
-The **\$** character immediately followed by the environment variable name causes it to
-expand to the **value** that the variable contains.
+  6. Issue the following Linux command: 
 
-  8. Issue the following Linux command (using single quotes): `echo '* $USER *'`
+```bash
+echo '* hello *'
+```
 
-What happened? Why is the output display like this?
+   - Is there any difference between this command and the two previous commands?
 
-  9. Issue the following Linux command (using double quotes): `echo "* $USER *"`
+  7. Issue the following Linux command: 
 
-What happened? Why?
+```bash
+echo $USER
+```
+
+   - **NOTE:** The environment variable **USER** contains the current user's login name. The **\$** character immediately followed by the environment variable name causes it to expand to the **value** that the variable contains.
+
+  8. Issue the following Linux command (using single quotes): 
+
+```bash
+echo '* $USER *'
+```
+
+   - What happened? Why is the output display like this?
+
+  9. Issue the following Linux command (using double quotes): 
+
+```bash
+echo "* $USER *"
+```
+
+   - What happened? Why?
 
   10. Let's use quoting special characters for a couple of other commands. Move to the **lesson2** directory.
 Confirm that you are currently located in the lesson2 directory.
 
-**NOTE:** Although it is NOT RECOMMENDED to create a filename using a special character (remember file naming rules?),
-we will create an empty file called "\*"
+   - **NOTE:** Although it is NOT RECOMMENDED to create a filename using a special character (remember file naming rules?), we will create an empty file called "\*"
 
-  11. Issue the following Linux command (using single quotes): `touch '*'`
+  11. Issue the following Linux command (using single quotes): 
+
+```bash
+touch '*'
+```
 
   12. Issue the **ls** command. Do you now see a file called "\*" in addition to the other copied files?
 
-  13. Issue the following Linux command to remove the file called "\*": `rm *`
+  13. Issue the following Linux command to remove the file called "\*": 
+
+```bash
+rm *
+```
 
   14. Issue the **ls** command to view the files in your current directory. What happened?!?
 
-Why is it dangerous to use special characters when creating filenames?
+      - Why is it dangerous to use special characters when creating filenames?
 
-  15. Issue the following Linux command: `cp /bin/ls .`
+  15. Issue the following Linux command: 
 
-  16. Issue the following Linux command (using single quotes): `touch '*'`
+```bash
+cp /bin/ls .
+```
+
+  16. Issue the following Linux command (using single quotes): 
+
+```bash
+touch '*'
+```
 
   17. Issue the **ls** command to view the files in your current directory.
 
-  18. Issue the following Linux command (using single quotes): `rm '*'`
+  18. Issue the following Linux command (using single quotes): 
+
+```bash
+rm '*'
+```
 
   19. Issue the **ls** command to confirm that the file called "\*" has been removed in your current directory. What happened this time?
 
@@ -632,13 +779,13 @@ When answering Linux command questions on this side or the back side of this pag
   4. Assuming you are in your home directory, write a Linux command to view the contents of the “.answers.txt” file using a relative pathname. You can assume this text file is very large and you want to see all of the contents.
   5. Write a Linux command to change to the “backup “directory using an absolute pathname.
  
-Write a command to verify that you changed to that directory:
+      - Write a command to verify that you changed to that directory:
 
   6. Assuming that you remain in the “backup” directory, write a Linux command to copy the “questions.txt file” to your current directory. You are required to only use relative pathnames.
   7. Assuming that you remain in the “backup” directory, write a Linux command to delete the “questions.txt” file that is in your “backup” directory. Use a relative-to-home pathname.
   8. Assuming that you are currently located in your “backup” directory, write a Linux command to safely remove the directory “week3” and all of its contents. Use an absolute pathname.
   
-Will your command you wrote in question 8 work if you run it? (yes/no). Why?
+      - Will your command you wrote in question 8 work if you run it? (yes/no). Why?
 
   9. Assuming you are still located in the “backup” directory. Write a Linux command using a relative-to-home pathname to remove all files that end with the extension “.txt” in the “final” directory.
   10. Write a Linux command using an absolute pathname to list all files that consist of just 4 consecutive characters that are contained in your home directory.
