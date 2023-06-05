@@ -329,8 +329,7 @@ ssh yoursenecaid@matrix.senecacollege.ca ls -l mytextfile.txt
 
   29. When prompted, enter your password and press ENTER.
 
-      - **The file mytextfile.txt does NOT appear in your home directory on your Matrix server!
-      - Note that the COLON was NOT added to the end of the command! Therefore, you MUST remember to include the COLON : at the end of the hostname, or it will NOT remotely copy the file!**
+      - **The file mytextfile.txt does NOT appear in your home directory on your Matrix server! Note that the COLON was NOT added to the end of the command! Therefore, you MUST remember to include the COLON : at the end of the hostname, or it will NOT remotely copy the file!**
 
   30. Issue the following command to properly copy that same file to your Matrix server:
 
