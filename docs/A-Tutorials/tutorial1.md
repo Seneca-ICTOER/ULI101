@@ -119,11 +119,15 @@ There are two basic methods to connecting to your Matrix account.
 
 **Method 1: Run ssh Command from command prompt:**
 
-  After connecting to the **Seneca Student VPN**, you can open a **command terminal** in **Windows 10 (or above), Mac** or **Linux** computer and issue the following command: `ssh senecauserid@matrix.senecacollege.ca`
+  After connecting to the **Seneca Student VPN**, you can open a **command terminal** in **Windows 10 (or above), Mac** or **Linux** computer and issue the following command: 
+  
+ ```shell 
+ssh senecauserid@matrix.senecacollege.ca
+```
 
 ![CLS Shell](/img/Cls-shell.png "Image of CLS Shell")
 
-Connect to Matrix via**ssh** command
+Connect to Matrix via **ssh** command
 
 **Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
 
@@ -157,9 +161,9 @@ You will now learn a quick and simple method of connecting to your Matrix accoun
 
   1. If you want to connect to your Matrix account from home, you MUST first connect to the Seneca Student VPN. Make certain that your **Seneca Student VPN is connected.**
 
-  **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
+      - **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
 
-You only have to connect to your Seneca student VPN once during the day,
+      - You only have to connect to your Seneca student VPN once during the day,
 or while you are logged into your computer.
 
 ![Seneca Student VPN](/img/Gp1.png "Seneca Student VPN")
@@ -173,55 +177,68 @@ The **Seneca Student VPN** service must be connected.
   **Windows 10 (or above):**
 
   - From the start menu, type `cmd` and launch program
-  - In the command terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the command terminal, enter the following command: 
+  
+  ```shell
+  ssh senecausername@matrix.senecacollege.ca
+  ```
 
   **macOS:**
 
   - Click Launchpad icon, type **terminal** and press **ENTER**
-  - In the terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the terminal, enter the following command: 
+  
+  ```bash
+  ssh senecausername@matrix.senecacollege.ca
+  ```
 
   **Linux:**
 
   - From the menu, choose: **Applications > System Tools > Terminal**
-  - In the terminal, enter the following command: `ssh senecausername@matrix.senecacollege.ca`
+  - In the terminal, enter the following command: 
+
+```bash
+ssh senecausername@matrix.senecacollege.ca
+```
 
 4. When connecting securely for the **first time,** a **dialog box** will appear to share a **"public key"** with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users)
 
-**FYI:** _To make communications over a network_ **secure,** _a computer generates_ **two keys:** a **private key** _that is kept on the computer, and a_ **public key,** _which can be shared with other computers. Transmissions from your computer uses the private key to encrypt_ **(scramble)** _transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt_ **(unscramble)** _those transmissions._
+    - **FYI:** _To make communications over a network_ **secure,** _a computer generates_ **two keys:** a **private key** _that is kept on the computer, and a_ **public key,** _which can be shared with other computers. Transmissions from your computer uses the private key to encrypt_ **(scramble)** _transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt_ **(unscramble)** _those transmissions._
 
 5. Type **yes** and press **ENTER** to share your public key.
 
-Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account.
+    - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account.
 Your Matrix password is identical to your Seneca password.
 
-**NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
+   - **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
 
 6. Enter your Seneca password and press **ENTER**
 
-**NOTE:** If you encounter an **error message,** this can occur for several reasons:
+    - **NOTE:** If you encounter an **error message,** this can occur for several reasons:
+      
     1. You mis-spelled the **name of the server**
     2. You mis-spelled your Matrix **username** (same username that you connect to my.senecacollege.ca)
     3. You have **CAPS LOCK** on by mistake (your username should be **lowercase** only).
     4. You mis-spelled your **password** (same password that you connect to my.senecacollege.ca)
 
-If you continue to experience the same problems, click on the following link for IT service desk contact info: [IT service desk](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its)
+    - If you continue to experience the same problems, click on the following link for IT service desk contact info: [IT service desk](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its)
 
 7. If you entered your password correctly, the **Matrix Linux shell** should appear where you can enter Linux commands.
 
-The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.**
+    - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.**
 The main reason for this is to **force students to learn how to issue Linux commands.**
 
 8. To **exit** your Matrix session, type the command `exit` followed by **ENTER**
 
-**NOTE:** You should notice that you are returned to the original command prompt where you issued the ssh command.
+    - **NOTE:** You should notice that you are returned to the original command prompt where you issued the ssh command.
 
 9. Type the same command at the **command terminal prompt:** `exit` followed by **ENTER**
 
-**NOTE:** You should notice that the you are disconnected and that the original terminal window has **automatically closed.**
+    - **NOTE:** You should notice that the you are disconnected and that the original terminal window has **automatically closed.**
 
 10. Try accessing your Matrix account, and then exiting your Matrix account several times to become familiar with this process.
 
-You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine)
+    - You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine)
 by downloading and running a graphical SSH application.
 
 
@@ -255,14 +272,14 @@ to allow you to connect and login to your Matrix server account.
 
   2. Make certain that the **MyApps** window is open. This window should have opened shortly after you logged into your Windows workstation. If the application windows is not open, click on the **MyApps** icon on the desktop to launch).
 
-  **NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.**
+      - **NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.**
 
 
   3. Click on the Search Apps area located in the top right corner of the MyApps window and type the word: ***ssh***
 
   4. Several SSH applications will appear.
 
-  **NOTE:** All of these applications allow you to connect to your Matrix account. We will use the application called **SSH Secure Shell Client** for this practice tutorial.
+      - **NOTE:** All of these applications allow you to connect to your Matrix account. We will use the application called **SSH Secure Shell Client** for this practice tutorial.
 
   ![MyApps Anywhere App Menu](/img/Apps-anywhere.png "MyApps Anywhere App Menu")
 
@@ -270,7 +287,7 @@ to allow you to connect and login to your Matrix server account.
 
   5. Launch the **SSH Secure Shell Client** application icon to launch this program.
 
-**NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster
+      - **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster
 to access this application in the future.
 
 ![SSH Secure Shell Client Window](/img/Ssh-main-window.png "SSH Secure Shell Client Window")
@@ -279,7 +296,7 @@ SSH Client Application Window
 
   6. The main SSH Client window will appear. Click on the **Quick Connect** button.
 
-**NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name**
+      - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name**
 to allow you to connect to the server.
 
 ![Quick Connect Dialog Window](/img/Quick-connect-window.png "Quick Connect Dialog Window")
@@ -288,12 +305,12 @@ Quick Connect Dialog Window
 
   7. Click on the textbox labelled Hostname and enter the text: ***matrix***
 
-**NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network.
+      - **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network.
 If you where located outside Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**
 
   8. When connecting securely for the **first time**, a dialog box will appear to share a "public key" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users)
 
-  **FYI:** To make communications over a network secure, a computer generates **two keys:** a **private key** that is kept on the computer, and a **public key,** which can be shared with other computers. Transmissions from your computer uses the private key to encrypt (scramble) transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt (unscramble) those transmissions.
+      - **FYI:** To make communications over a network secure, a computer generates **two keys:** a **private key** that is kept on the computer, and a **public key,** which can be shared with other computers. Transmissions from your computer uses the private key to encrypt (scramble) transmission to the remote computer, which in turn, uses the public key to decrypt (unscramble) the transmission. Likewise, the remote computer uses the public key to encrypt (scramble) transmissions and your computer uses the private key to decrypt (unscramble) those transmissions.
 
 ![Dialog Box to Share Public Key on Remote Server](/img/Share-public-key.png "Dialog Box to Share Public Key on Remote Server")
 
@@ -313,11 +330,12 @@ Password Dialog Box
 
 ![Authentication Response Dialog Box](/img/Ssh-authentication-response.png "SSH Authentication Response Dialog Box")
 
-**NOTE:** If you encounter an **error message,** this can occur for several reasons:
-  1. You mis-spelled the **name of the server**
-  2. You mis-spelled your Matrix **username** (same username that you connect to ***my.senecacollege.ca***)
-  3. You have **CAPS LOCK** on by mistake (your username should be **lowercase** only).
-  4. You mis-spelled your **password** (same password that you connect to my.senecacollege.ca)
+   - **NOTE:** If you encounter an **error message,** this can occur for several reasons:
+    
+      1. You mis-spelled the **name of the server**
+      2. You mis-spelled your Matrix **username** (same username that you connect to ***my.senecacollege.ca***)
+      3. You have **CAPS LOCK** on by mistake (your username should be **lowercase** only).
+      4. You mis-spelled your **password** (same password that you connect to my.senecacollege.ca)
 
 ![SSH Login Error](/img/Ssh-login-error.png "SSH Login Error")
 
@@ -325,13 +343,13 @@ If you continue to experience the same problems, click on the following link for
 
 13. If you entered your password correctly, the main SSH Linux shell should appear where you enter Linux commands.
 
-The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.** There are various reasons for this, but the main 2 reasons are to **force students to learn how to issue Linux commands** as well as **limitations to remote access to a graphical Linux server** due to large number of users (students).
+    - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.** There are various reasons for this, but the main 2 reasons are to **force students to learn how to issue Linux commands** as well as **limitations to remote access to a graphical Linux server** due to large number of users (students).
 
 ![Matrix Shell Command Line Interface](/img/Ssh-shell-window.png "Matrix Shell Command Line Interface")
 
 Matrix Shell Command Line Interface
 
-You can **configure** the SSH application to adjust elements such as the **window size** and **text font type** and **text font size.** We will be showing you how to configure your SSH Secure Shell Client, but the other applications can allow you to configure their settings.
+   - You can **configure** the SSH application to adjust elements such as the **window size** and **text font type** and **text font size.** We will be showing you how to configure your SSH Secure Shell Client, but the other applications can allow you to configure their settings.
 
 **Perform the Following Steps:**
 
@@ -351,7 +369,7 @@ You can **configure** the SSH application to adjust elements such as the **windo
 
   7. To exit your Matrix session, type the following command and press **ENTER**: `exit`
 
-**NOTE:** You should notice that the colour of the text changes slightly when disconnected and you are unable to issue Linux commands from that window.
+      - **NOTE:** You should notice that the colour of the text changes slightly when disconnected and you are unable to issue Linux commands from that window.
 
   8. After you have disconnected from your account, close the SSH Secure Shell Client application window.
 
@@ -382,79 +400,146 @@ Some Linux commands can be used as-is (e.g. `pwd`, `date`, `ls`, `cal`), but man
 An argument is used to change the default behaviour of a command. Arguments come in three major forms:
 
   1. A command **option.**
-    - Example: `-l`
+      - Example: `-l`
   2. A **file pathname.**
-    - Example: `/etc`
+      - Example: `/etc`
   3. A series of characters (i.e. **text**) that the command can use.
-    - Example: `"Hello, world."`
+      - Example: `"Hello, world."`
 
 An **argument** must be separated from a command (and from other arguments) by whitespace (a **SPACE, MULTIPLE SPACES** or a **TAB**).
 
 **Perform the Following Steps:**
 
   1. Confirm that you are logged into your Matrix account.
-  2. Issue the following Linux command: `pwd`
+  2. Issue the following Linux command: 
 
-     - **Explanation:** The output from this Linux command shows your **current location** on the Matrix server (otherwise known as your **P**resent **W**orking **D**irectory). This represents a **directory pathname** to your home directory. We will discuss pathnames later in this course.
+```bash
+pwd
+```
+
+   - **Explanation:** The output from this Linux command shows your **current location** on the Matrix server (otherwise known as your **P**resent **W**orking **D**irectory). This represents a **directory pathname** to your home directory. We will discuss pathnames later in this course.
     
-  3. Issue the following Linux command: `ls`
-
-     - **Question:** What do you notice?
-     - **Answer:** If there are any files in your home directory, only their file names are displayed.
-    
-  4. Change your directory location by issuing the following command: `cd /etc`
-  5. Issue the following Linux command to confirm your changed current location: `pwd`
-
-     - **Result:** Your Linux session should display /etc/ when running this command. If your output is different, retrace your steps to make sure you haven't skipped anything or had a typo in a command.
-
-  6. Issue the following Linux command again: `ls`
-
-     - **Question:** What do you notice? How is this different from the last time you ran it?
-
-  7. Re-run the ls command using an option: `ls -l`
-
-     - **Question:** What do you notice?
-     - **Answer:** The **-l** option combined with the ls command displays a **detailed** ("long") listing of the same files, providing you with more information about each file. This is called metadata (data about data), and includes information such as last modified date, file size, ownership and permissions.
-
-  8. Return to your home directory: `cd`
-  9. Now confirm you've changed back to your home directory: `pwd`
-
-     - **Result:** The shell should display `/home/yourusername`
+  3. Issue the following Linux command: 
  
-  10. Issue the following Linux command: `ls /bin`
-  11. Issue the following Linux command to confirm your current location: `pwd`
+ ```bash
+ ls
+ ```
+
+   - **Question:** What do you notice?
+   - **Answer:** If there are any files in your home directory, only their file names are displayed.
+    
+  4. Change your directory location by issuing the following command: 
+
+```bash
+cd /etc
+```
+
+  5. Issue the following Linux command to confirm your changed current location: 
+
+```bash
+pwd
+```
+
+   - **Result:** Your Linux session should display /etc/ when running this command. If your output is different, retrace your steps to make sure you haven't skipped anything or had a typo in a command.
+
+  6. Issue the following Linux command again: 
+
+```bash
+ls
+```
+
+   - **Question:** What do you notice? How is this different from the last time you ran it?
+
+  7. Re-run the ls command using an option: 
+
+```bash
+ls -l
+```
+
+   - **Question:** What do you notice?
+   - **Answer:** The **-l** option combined with the ls command displays a **detailed** ("long") listing of the same files, providing you with more information about each file. This is called metadata (data about data), and includes information such as last modified date, file size, ownership and permissions.
+
+  8. Return to your home directory: 
+
+```bash
+cd
+```
+
+  9. Now confirm you've changed back to your home directory: 
+
+```bash
+pwd
+```
+
+   - **Result:** The shell should display `/home/yourusername`
+ 
+  10. Issue the following Linux command: 
+
+```bash
+ls /bin
+```
+
+  11. Issue the following Linux command to confirm your current location: 
+
+```bash
+pwd
+```
       
-      - **Question:** What do you notice?
-      - **Question:** What makes this command with that argument useful if you are currently located in your home directory?
+   - **Question:** What do you notice?
+   - **Question:** What makes this command with that argument useful if you are currently located in your home directory?
      
-  12. Issue the following Linux command: `clear`
-    
-      - **Question:** What do you notice? Why is this command helpful?
-      - **Tip:** The shortcut keys to clear the screen for the Bash shell are: `ctrl-l`
+  12. Issue the following Linux command: 
+
+```bash
+clear
+```
+
+   - **Question:** What do you notice? Why is this command helpful?
+   - **Tip:** The shortcut keys to clear the screen for the Bash shell are: `ctrl-l`
    
-  13. Issue the following Linux command: `who`
+  13. Issue the following Linux command: 
 
-      - **Question:** What information does this command show?
-      - **Answer:** This command lists users that are logged into the same Linux server as yourself.
-      - **NOTE:** Remember that the Matrix Linux cluster contains several servers (or nodes). It won't display all users logged into the cluster, only the ones on the same node as you.
+```bash
+who
+```
+
+   - **Question:** What information does this command show?
+   - **Answer:** This command lists users that are logged into the same Linux server as yourself.
+   - **NOTE:** Remember that the Matrix Linux cluster contains several servers (or nodes). It won't display all users logged into the cluster, only the ones on the same node as you.
   
-  14. Issue the following Linux command: `whoami`
+  14. Issue the following Linux command: 
+
+```bash
+whoami
+```
   
-      - **Question:** What does this command display?
-      - **Question:** What do you think is the purpose of this command?
+   - **Question:** What does this command display?
+   - **Question:** What do you think is the purpose of this command?
 
-  15. Issue the following Linux command: `cal`
+  15. Issue the following Linux command: 
 
-      - **Question:** What does this command do?
+```bash
+cal
+```
+
+   - **Question:** What does this command do?
     
-  16. Issue the following Linux command: `cal 2035`
+  16. Issue the following Linux command: 
 
-      - **Question:** How and why is the output different?
+```bash
+cal 2035
+```
+
+   - **Question:** How and why is the output different?
     
-  17. Issue the following Linux command: `cal 2 2035`
+  17. Issue the following Linux command: 
 
-      - **Question:** What do each of these numbers do?
-      - **Question:** What do you think would happen if you reversed the order of those arguments? (i.e. cal 2035 2)
+```bash
+cal 2 2035
+```
+
+   - **Question:** What do each of these numbers do?
+   - **Question:** What do you think would happen if you reversed the order of those arguments? (i.e. cal 2035 2)
 
 **Getting Help with Linux Commands**
 
@@ -476,13 +561,18 @@ The man utility is an interactive collection of manual pages that provides infor
   | :--- | :---: |
   | **ENTER** |	Move down one line |
   | **SPACEBAR** |	Move one screen down |
-  | **\<ctrl\>\<b\>**	| Move one screen up |
+  | **<ctrl\><b\>**	| Move one screen up |
   | **/pattern/** |	Search for Pattern |
   | **q** |	quit man utility |
 
   4. If you are connected to Matrix through a terminal application, you can also use your mouse's scroll wheel.
   5. Press the `q` key to exit the man command.
-  6. Use the _man_ utility to get help with the ls command: `man ls`
+  6. Use the _man_ utility to get help with the ls command: 
+
+```bash
+man ls
+```
+
   7. Navigate through the **ls** manual page and write down the **option letters** that correspond to the following descriptions:
     
       - **"use a long listing format"**
@@ -496,9 +586,19 @@ The man utility is an interactive collection of manual pages that provides infor
       - **NOTE:** The **man** utility can be used with the **-k** option to help list Linux commands that match a text pattern that is contained within the help screen for a Linux command.
 
   10. **Pipeline commands** can be used to filter-out unnecessary output. In the next command that you will be issuing, the output from the **man -k** command, is sent into the **grep** command to filter (i.e. trap) only output that matches the pattern "8" (The number "8" refers to the category of type of command - in this case, administration commands). We will learn more about pipeline commands later in this course.
-  11. Issue the following Linux pipeline command: `man -k user | grep 8`
-      - **Question:** How does this pipeline command make it easier to obtain information regarding man command?
-  12. If you wish to change your password on typical Linux systems, you can by issuing the command: `passwd`
+  11. Issue the following Linux pipeline command: 
+
+```bash 
+man -k user | grep 8
+```
+
+  - **Question:** How does this pipeline command make it easier to obtain information regarding man command?
+    
+  12. If you wish to change your password on typical Linux systems, you can by issuing the command: 
+
+```bash
+passwd
+```
 
 **WARNING: Do NOT run the `passwd` command on Matrix!**
 
@@ -516,14 +616,14 @@ Learning **shortcut keys** in any OS terminal will allow you to be more producti
 
 | **Shortcut Key(s)** | **Purpose** |
 | :--- | :--- |
-| **\<ctrl\>\<l\>** | Clear Screen |
-| **\<ctrl\>\<u\>** | Clear Command Line |
-| **\<Up Arrow\>, \<Down Arrow\>** | Scroll Up / Down Command History |
-| **\<backspace\>, \<ctrl\>\<backspace\>, \<ctrl\>\<h\>** | Delete character before cursor |
-| **\<ctrl\>\<w\>** | Delete word before the cursor |
-| **\<ctrl\>\<a\>** | Move word before the cursor |
-| **\<ctrl\>\<e\>** | Move cursor to end of command line |
-| **\<alt\>f / \<alt\>b (Mac: OPTION+Right/Left-Arrow)** | Move Forward/Backward one word |
+| **<ctrl\><l\>** | Clear Screen |
+| **<ctrl\><u\>** | Clear Command Line |
+| **<Up Arrow\>, <Down Arrow\>** | Scroll Up / Down Command History |
+| **<backspace\>, <ctrl\><backspace\>, <ctrl\><h\>** | Delete character before cursor |
+| **<ctrl\><w\>** | Delete word before the cursor |
+| **<ctrl\><a\>** | Move word before the cursor |
+| **<ctrl\><e\>** | Move cursor to end of command line |
+| **<alt\>f / <alt\>b (Mac: OPTION+Right/Left-Arrow)** | Move Forward/Backward one word |
 
 Command Line Editing Shortcut Keys.
 
@@ -531,21 +631,25 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
 **Perform the Following Steps:**
 
-  1. Type the following Linux command, but **DON’T** press the ENTER key: `cd /bin`
+  1. Type the following Linux command, but **DON’T** press the ENTER key: 
+
+```bash
+cd /bin
+```
 
   2. Press the `ctrl-a` key combination. What happens?
 
-**NOTE:** To make **alt-f** key work when use the **GRAPHICAL Windows SSH Client application**, select **Edit -> Settings -> Keyboard**, and select the checkbox **Use ALT as Meta key (and Escape).**
+      - **NOTE:** To make **alt-f** key work when use the **GRAPHICAL Windows SSH Client application**, select **Edit -> Settings -> Keyboard**, and select the checkbox **Use ALT as Meta key (and Escape).**
 
 ![To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).](/img/Meta-key.png "To make alt-f key work, select Edit -> Settings -> Keyboard, and select the checkbox Use ALT as Meta key (and Escape).")
 
   3. Press the `alt-f` key combination two times
 
-(OPTION+right-arrow for Mac OSx).
+      - (OPTION+right-arrow for Mac OSx).
 
   4. Press the `alt-b` key combination one time.
 
-(OPTION+left-arrow for Mac OSx).
+      - (OPTION+left-arrow for Mac OSx).
 
 ![Ctrl-b](/img/Ctrl-b.png "Ctrl B")
 
@@ -553,7 +657,7 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
   5. Press the `ctrl-w` shortcut key. 
   
-      What happens?
+      - What happens?
       
  ![Ctrl W](/img/Ctrl-w.png "Ctrl W")
  
@@ -563,18 +667,18 @@ Let's learn a few common Bash Shell keyboard shortcut keys and find out where yo
 
 ![Updated ls](/img/New-ls.png)
 
-After command is deleted, then type new command and press **ctrl-e** to move to end of the command line.
+   - After command is deleted, then type new command and press **ctrl-e** to move to end of the command line.
 
   7. Press the `ctrl-e` key combination
 
-      What happens?
+      - What happens?
 
   8. Press the `ENTER` key to execute the command.
   9. Press the `up arrow` key. What happens?
   10. Press the `ctrl-u` key combination. What happens?
   11. Press the `up arrow` key combination, and see what happens when you press `BACKSPACE` , `<ctrl><BACKSPACE>` and `<ctrl><h>`.
 
-Why is it important to know those series of key combinations?
+      - Why is it important to know those series of key combinations?
 
   12. Press the `ctrl-u` key combination to clear the line.
   13. Press the `ctrl-l key` combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?
@@ -603,12 +707,17 @@ If the checking shell script detects an **error**, then it will provide feedback
 
   1. Make certain that your current directory is **your home directory** by entering the following Linux command:
 
-      - `cd`
+```bash
+cd
+```
 
   2. Issue the following command to run a checking script:
 
-      - `~uli101/week1-check`
-      - **Note:** The beginning character "**~**" is called **tilde.** You get this character by pressing **SHIFT** + \` (which is the key to the left of the number 1 on your keyboard).
+```bash
+~uli101/week1-check
+```
+
+   - **Note:** The beginning character "**~**" is called **tilde.** You get this character by pressing **SHIFT** + \` (which is the key to the left of the number 1 on your keyboard).
   3. Your screen should clear and indicate that you have proved that you have successfully logged in.
   4. An email will be sent to your Seneca email as **confirmation** in case your ULI101 professor is assigning marks to these tutorials.
 
