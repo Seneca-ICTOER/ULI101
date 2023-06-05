@@ -7,7 +7,7 @@ description: Interest Topic for Students who want extra practice with Linux and 
 
 # Interest Topic: Graphical Linux via a Virtual Machine (VM)
 
-## INSTALLING LINUX / LIVE LINUX / VIRTUALIZATION
+## Installing Linux / Live Linux / Virtualization
 
 ### Main Objectives of this Practice Tutorial
 
@@ -18,15 +18,32 @@ description: Interest Topic for Students who want extra practice with Linux and 
 
 ### Tutorial Reference Material
 
-| **Course Notes** | **Concepts** | | **YouTube Videos** |
-| :--- | :--- | :--- | :--- |
-| **Course Notes:** | **Installing Linux** | **Ubuntu Resources** | **Instructional Videos:** |
-| - [PDF](https://github.com/ULI101/slides/raw/main/ULI101-7.1.pdf) \| [PPTX](https://github.com/ULI101/slides/raw/main/ULI101-7.1.pptx) | - [Linux Installation Choices](https://www.linux.com/training-tutorials/linux-installation-choices/) | - [Ubuntu Website](https://ubuntu.com/) | - [Install Ubuntu as a Virtual Machine](https://www.youtube.com/watch?v=8UFsXtIEQSc)|
-| | - [Live Linux Definition](https://en.wikipedia.org/wiki/Live_CD) | - [Download Ubuntu VirtualBox VM](https://senecafts.senecacollege.ca/link/to4Ztj33rphUlHFGsgGETf) | |
-| | - [Virtualization Definition](https://en.wikipedia.org/wiki/Virtualization) | - [Download Ubuntu VMware VM](https://senecafts.senecacollege.ca/link/exmCHYEOdASPqZu8SpXDxf) | |
+**Course Notes**
+
+- **Course Notes:** [PDF](/slides/ULI101-7.1.pdf) \| [PPTX](/slides/ULI101-7.1.pptx)
+
+**Concepts**
+
+**Installing Linux**
+
+- [Linux Installation Choices](https://www.linux.com/training-tutorials/linux-installation-choices/)
+- [Live Linux Definition](https://en.wikipedia.org/wiki/Live_CD)
+- [Virtualization Definition](https://en.wikipedia.org/wiki/Virtualization)
+
+**Ubuntu Resources**
+
+- [Ubuntu Website](https://ubuntu.com/)
+- [Download Ubuntu VirtualBox VM](https://senecafts.senecacollege.ca/link/to4Ztj33rphUlHFGsgGETf)
+- [Download Ubuntu VMware VM](https://senecafts.senecacollege.ca/link/exmCHYEOdASPqZu8SpXDxf)
+
+**YouTube Videos**
+
+**Instructional Videos:**
+
+- [Install Ubuntu as a Virtual Machine](https://www.youtube.com/watch?v=8UFsXtIEQSc)
 
 
-## KEY CONCEPTS
+## Key Concepts
 
 **Installing Linux**
 
@@ -115,7 +132,7 @@ Reference: https://en.wikipedia.org/wiki/Live_CD
 Knoppix is a popular Live Linux CD Distribution. (Image licensed under [cc](https://creativecommons.org/licenses/by-sa/3.0/))
 
 
-## INVESTIGATION 1: BOOTING UBUNTU (LIVE LINUX) VIA VIRTUALBOX
+## Investigation 1: Booting Ubuntu (Live Linux) Via VirtualBox
 
 **ATTENTION: This tutorial relates to an interest topic and is NOT worth marks.**
 
@@ -142,12 +159,11 @@ https://www.virtualbox.org/wiki/Downloads
 
   3. **Install** the downloaded **Virtualbox** VM application on your computer.
 
-**NOTE:** You may be required to allow **authorization** to run this program, select to install devices (if prompted) and to **restart** your computer after installation.
+      - **NOTE:** You may be required to allow **authorization** to run this program, select to install devices (if prompted) and to **restart** your computer after installation.
 
-  4.  **Click** the following link to download the **zipped** (compressed) Ubuntu Distribution
-file to your computer: [Ubuntu Virtualbox VM](https://senecafts.senecacollege.ca/link/to4Ztj33rphUlHFGsgGETf)
+  4.  **Click** the following link to download the **zipped** (compressed) Ubuntu Distribution file to your computer: [Ubuntu Virtualbox VM](https://senecafts.senecacollege.ca/link/to4Ztj33rphUlHFGsgGETf)
 
-**NOTE:** This file is approximately **5GB** in size and might take a while to download.
+      - **NOTE:** This file is approximately **5GB** in size and might take a while to download.
 
   5. **VMware alternative:** If you are using VMware workstation, download this **zipped** (compressed) Ubuntu Distribution file instead: [Ubuntu VMware VM](https://senecafts.senecacollege.ca/link/exmCHYEOdASPqZu8SpXDxf)
 
@@ -157,11 +173,11 @@ was downloaded (eg. **Downloads**).
 
   8. **Unzip** the downloaded zip file (In MS Windows: _Right click_ and Select "_Extract All_" )
 
-**NOTE:** The contents of this zipped file should appear in another file manager window.
+      - **NOTE:** The contents of this zipped file should appear in another file manager window.
 
   9. Navigate to the folder containing the extracted zipped files and **double-click** the file called **Ubuntu.vbox** to launch the Ubuntu VM.
 
-**NOTE:** By **double-clicking** on this file (even if the VirtualBox application is not running)
+      - **NOTE:** By **double-clicking** on this file (even if the VirtualBox application is not running)
 it will launch the VirtualBox application and start the Ubuntu virtual machine.
 
 **For Mac Users:** If you experience an error message regarding the Kernel extension,
@@ -172,9 +188,7 @@ and click to **allow Oracle** service extensions to run on your machine.
 
 Knoppix VM file contained in the zipped file. **Double-click Knoppix.vbox** file to launch the **Knoppix Live Linux** Distribution.
 
-If you have difficulty running Knoppix on your home machine/laptop you may ask your
-**Learning Centre ULG leaders** for additional help in troubleshooting why Knoppix
-is not working on your home machine/laptop.
+   - If you have difficulty running Knoppix on your home machine/laptop you may ask your **Learning Centre ULG leaders** for additional help in troubleshooting why Knoppix is not working on your home machine/laptop.
 
   10. If you are using MS Windows, look in the taskbar below to see if the Virtual Box application is running click to display that application window.
 
@@ -185,10 +199,9 @@ is not working on your home machine/laptop.
 
   14. Allow **time** for the Ubuntu Linux distribution to start. This is a **graphical Linux distribution** which will start-up in a desktop environment.
 
-**NOTE:** When you are prompted for a _username_ and _password_ use _ubuntu_ for both.
-
-**NOTE:** If you are using MS Windows, press the **RIGHT CTRL** key to change to other applications by pressing **ALT-TAB**.
-When you want to use Graphical Linux (i.e. Ubuntu screen), click in the screen to focus and use that screen.
+      - **NOTE:** When you are prompted for a _username_ and _password_ use _ubuntu_ for both.
+      - **NOTE:** If you are using MS Windows, press the **RIGHT CTRL** key to change to other applications by pressing **ALT-TAB**.
+      - When you want to use Graphical Linux (i.e. Ubuntu screen), click in the screen to focus and use that screen.
 
 ![Knoppix Desktop](/img/Knoppix-desktop.png)
 
@@ -200,27 +213,32 @@ The **Knoppix Linux desktop environment** has a similar look as the MS Windows d
 
   16. In the **system tools** menu, and select **Terminal** to launch a terminal application.
 
-You can drag the Terminal terminal window from the bottom-right corner to increase the window size, or double click on the window title.
+      - You can drag the Terminal terminal window from the bottom-right corner to increase the window size, or double click on the window title.
 
-  17. In the bash shell, issue the following Linux command: `whoami`
+  17. In the bash shell, issue the following Linux command: 
+
+```bash
+whoami
+```
 
 ![Xterm](/img/Xterm.png)
 
-What is the name of your Ubuntu Linux account?
+   - What is the name of your Ubuntu Linux account?
 
-Let's test this out by using the ssh command to connect to your Matrix account.
-Your Ubuntu virtual machine uses your host computer's operating system which
-is already connected to **Seneca's GlobalProtect VPN**.
+   - Let's test this out by using the ssh command to connect to your Matrix account. 
+   - Your Ubuntu virtual machine uses your host computer's operating system which is already connected to **Seneca's GlobalProtect VPN**.
 
   18. Issue the following Linux command to connect to your Matrix account:
 
-`ssh YourSenecaUsername@matrix.senecacollege.ca`
+```bash
+ssh YourSenecaUsername@matrix.senecacollege.ca
+```
 
   19. Enter **yes** to share your _public_ key.
 
   20. When prompted, enter your **password** (remember that password does not "echo-back").
 
-Were you able to connect to your Matrix account?
+      - Were you able to connect to your Matrix account?
 
   21. Confirm that you are in your **home** directory on your Matrix account.
 
@@ -237,9 +255,13 @@ This is line 3
 
   24. Confirm that you created this file and confirm that the contents of this file are correct.
 
-Let's run a **shell script** to check that you created the **myvm.txt** file (with correct file contents) in your home directory.
+      - Let's run a **shell script** to check that you created the **myvm.txt** file (with correct file contents) in your home directory.
 
-  25. Enter the following command: `~uli101/week7-check-1`
+  25. Enter the following command: 
+
+```bash
+~uli101/week7-check-1
+```
 
   26. If you encounter errors, make corrections and then re-run the checking script until you receive
 a congratulations message, and proceed to the next step.
@@ -253,7 +275,7 @@ In the next investigation, you will learn to work in a graphical Linux environme
 You will also run several open-source application within the Ubuntu graphical environment.
 
 
-## INVESTIGATION 2: USING THE GRAPHICAL UBUNTU VM
+## Investigation 2: Using The Graphical Ubuntu VM
 
 Let's learn to run _open-source_ applications on your graphical Ubuntu Linux distribution.
 But first, let's **download** and run a **shell script** that will **display dialog** boxes in your graphical Ubuntu VM.
@@ -261,64 +283,69 @@ But first, let's **download** and run a **shell script** that will **display dia
 
 **Perform the Following Steps:**
 
-  1. Make certain that you are running your Ubuntu Linux Live virtual Machine
-(refer to **step \#7** in [\[1\]](#investigation-1-booting-ubuntu-live-linux-via-virtualbox) )
+  1. Make certain that you are running your Ubuntu Linux Live virtual Machine (refer to **step \#7** in [\[1\]](#investigation-1-booting-ubuntu-live-linux-via-virtualbox) )
 
-Although you will be learning to create and run **shell scripts** (near the end of this course)
-in your **Matrix** server , those scripts will only run in a **command-line** environment.
-
-Since you are running a **graphical Knoppix** Linux distribution on your computer,
-you can run scripts graphically (including the use of **dialog boxes** for _input_, _output_, etc.).
+      - Although you will be learning to create and run **shell scripts** (near the end of this course) in your **Matrix** server , those scripts will only run in a **command-line** environment.
+      - Since you are running a **graphical Knoppix** Linux distribution on your computer, you can run scripts graphically (including the use of **dialog boxes** for _input_, _output_, etc.).
 
 ![Input Dialog](/img/Input-dialog.png)
 
 Graphical **input dialog box**. ^
 
-  2. Make certain that you are in a **Terminal** _terminal_ window
-(but **NOT** connected to your Matrix account).
+  2. Make certain that you are in a **Terminal** _terminal_ window (but **NOT** connected to your Matrix account).
 
   3. Issue the following command to **download** a shell script called **week7-demo-1** from the Internet:
 
-`wget https://wiki.cdot.senecacollege.ca/uli101/files/week7-demo-1`
+```bash
+wget https://wiki.cdot.senecacollege.ca/uli101/files/week7-demo-1
+```
 
   4. Issue the **ls** command to confirm that the file called **week7-demo-1**
 has been downloaded to your current directory.
 
   5. Issue the following to run this shell script:
 
-`bash week7-demo-1`
+```bash
+bash week7-demo-1
+```
 
   6. In the dialog box, click to select the **/home/ubuntu** directory and click **OK**.
 
-What did you notice?
+      - What did you notice?
 
-  7. Issue the following Linux command: `ls -l week7-demo-1`
+  7. Issue the following Linux command: 
 
-Notice there are NO **execute** permissions for this shell script file.
-That is why we have to issue the **bash** command followed by
-the **shell script file pathname** (as an argument) to run the shell script.
+```bash
+ls -l week7-demo-1
+```
 
-Let's **add execute permissions** so we can run this command by name
-(i.e. without using the **bash** command).
+   - Notice there are NO **execute** permissions for this shell script file. That is why we have to issue the **bash** command followed by the **shell script file pathname** (as an argument) to run the shell script.
 
-  8. Issue the following command to **add execute permissions** for everyone
-for the **week7-demo-1** file: `chmod +x week7-demo-1`
+   - Let's **add execute permissions** so we can run this command by name (i.e. without using the **bash** command).
 
-**FYI:** This method is a **quick** method of adding execute permissions for
-the **owner**, **same group members** and **others**.
+  8. Issue the following command to **add execute permissions** for everyone for the **week7-demo-1** file: 
+
+```bash
+chmod +x week7-demo-1
+```
+
+   - **FYI:** This method is a **quick** method of adding execute permissions for the **owner**, **same group members** and **others**.
 
   9. Issue the **ls -l** command for this file to confirm execution permissions were properly added.
 
 ![Output Dialog](/img/Output-dialog.png)
 
-  10. Issue the following: `./week7-demo-1`
+  10. Issue the following: 
 
-Did the shell script run?
+```bash
+./week7-demo-1
+```
 
-**NOTE:** The shell script uses the **zenity** command to create dialog boxes. Although you may need to install this application in other Linux distributions, it is automatically included with the Knoppix distribution. We don't learn about the _zenity_ command in this course, but here is a link to some simple examples using this command in case you are interested: [How to Use Zenity](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiKztuinuruAhXwm-AKHSGnCq8QFjAAegQIBBAC&url=https%3A%2F%2Fwiki.cdot.senecacollege.ca%2Fwiki%2FHow_to_Use_Zenity&usg=AOvVaw3pDy1Afw8Vw9-09cs5zE6Y)
+   - Did the shell script run?
 
-**REMEMBER:** You **CANNOT** run this graphical shell script on your **Matrix** server,
-since Matrix is only a **COMMAND-LINE environment** and NOT a **graphical environment**.
+   - **NOTE:** The shell script uses the **zenity** command to create dialog boxes. Although you may need to install this application in other Linux distributions, it is automatically included with the Knoppix distribution. We don't learn about the _zenity_ command in this course, but here is a link to some simple examples using this command in case you are interested: [How to Use Zenity](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiKztuinuruAhXwm-AKHSGnCq8QFjAAegQIBBAC&url=https%3A%2F%2Fwiki.cdot.senecacollege.ca%2Fwiki%2FHow_to_Use_Zenity&usg=AOvVaw3pDy1Afw8Vw9-09cs5zE6Y)
+
+   - **REMEMBER:** You **CANNOT** run this graphical shell script on your **Matrix** server, since Matrix is only a **COMMAND-LINE environment** and NOT a **graphical environment**.
 
   11. Issue the Linux command: `exit` to **close** the **Konsole** terminal window.
   12. Use the _Knoppix start menu_ and search the **Internet** submenu to launch the **firefox** web-browser.
@@ -331,13 +358,11 @@ since Matrix is only a **COMMAND-LINE environment** and NOT a **graphical enviro
   15. Use the _Knoppix start menu_ to select **Office** and then select **LibreOffice - Writer**
 to launch a word processing application.
 
-**NOTE:** Libre office is a free **open-source suite** of productivity tools for
-_creating documents, spreadsheets and slide presentations._
+   - **NOTE:** Libre office is a free **open-source suite** of productivity tools for _creating documents, spreadsheets and slide presentations._
 
 ![Libre Office](/img/Libreoffice.png)
 
-  16. Create a new document, type in a paragraph and then **save** changes to the file **mydoc** to your home directory,
-and **exit** the Libreoffice word processing document.
+  16. Create a new document, type in a paragraph and then **save** changes to the file **mydoc** to your home directory, and **exit** the Libreoffice word processing document.
 
   17. Use the _Knoppix start menu_ to select **logout**, then select **shutdown** to terminate your Knoppix Linux Live session.
 
@@ -345,8 +370,7 @@ and **exit** the Libreoffice word processing document.
 
   18. Press **ENTER** when it indicates to **Remove your CD.**
 
-**NOTE:** Although you are NOT using a physical CD, this step is required to shut-down
-your Knoppix session and close your VirtualBox application.
+      - **NOTE:** Although you are NOT using a physical CD, this step is required to shut-down your Knoppix session and close your VirtualBox application.
 
   19. **Launch** a new Knoppix Linux Live session ([INVESTIGATION 1](#investigation-1-booting-ubuntu-live-linux-via-virtualbox), **step \#7**).
 
@@ -357,7 +381,7 @@ your Knoppix session and close your VirtualBox application.
 
   21. In the file manager, search for your word processing document file and your downloaded shell script that were contained on your home directory.
 
-Does your word processing document or your downloaded shell script exist? If not, why?
+      - Does your word processing document or your downloaded shell script exist? If not, why?
 
   22. Open the _Knoppix start menu_, select **games** and try running a few games
 (a few recommendations are: **Frozen Bubble**, and **Extreme Tux Racer**).
@@ -366,8 +390,7 @@ Does your word processing document or your downloaded shell script exist? If not
 
 The **Frozen-Bubble** arcade game. ^
 
-Now that you have had an opportunity to use your Knoppix Linux Live distribution,
-let's shutdown the VM and move onto the practice questions at the bottom of this tutorial.
+   - Now that you have had an opportunity to use your Knoppix Linux Live distribution, let's shutdown the VM and move onto the practice questions at the bottom of this tutorial.
 
   23. Open the _Knoppix start menu_ and select **logout** and **shutdown** to end your Knoppix Live session.
 
@@ -378,7 +401,7 @@ The purpose of this section is to obtain **extra practice** to help with **quizz
 
 Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
 
-https://github.com/ULI101/labs/blob/main/uli101_week7_practice.docx
+[Week 7 Practice](/files/uli101_week7_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
