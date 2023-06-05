@@ -530,7 +530,7 @@ vi textedit/practice/othertext.txt
 
   3. Type the following key to enter INPUT mode: `i`
 
-   - You should notice you are in INSERT mode by seeing the notification **-- INSERT --** at the bottom left-hand side of the application screen.
+      - You should notice you are in INSERT mode by seeing the notification **-- INSERT --** at the bottom left-hand side of the application screen.
 
   4. Enter the line shown in the diagram of the vi text editor below:
 
@@ -538,9 +538,8 @@ vi textedit/practice/othertext.txt
 
   5. While on the first line, press the following key to enter COMMAND mode: `ESC`
 
-   - You should see the -- INSERT -- notification disappear indicating that you are in COMMAND mode.
-
-   - **NOTE:** Refer to the table below for a list of the most common **vi (vim)** navigation & editing commands:
+      - You should see the -- INSERT -- notification disappear indicating that you are in COMMAND mode.
+      - **NOTE:** Refer to the table below for a list of the most common **vi (vim)** navigation & editing commands:
 
 | **Key(s)** |	**Purpose** |
 | :--- | :---: |
@@ -564,15 +563,15 @@ vi textedit/practice/othertext.txt
 
   7. Type the following key to paste the copied line: `p`
 
-   - What did you notice?
+      - What did you notice?
 
   8. Type the following keys: `u`
 
-   - What did you notice?
+      - What did you notice?
 
   9. Type the following keys: `3p`
 
-   - What did you notice?
+      - What did you notice?
 
   10. Use the up or down **arrow** keys to move to the second line.
 
@@ -596,12 +595,12 @@ vi textedit/practice/othertext.txt
 
   18. Type the following keys: `dd`
 
-   - What did you notice?
-   - Let's save editing changes and exit the vi text editor.
+      - What did you notice?
+      - Let's save editing changes and exit the vi text editor.
 
   19. Type the following keys: `:x` and press **ENTER**
 
-   - What did you notice?
+      - What did you notice?
 
   20. Issue the same command that you performed in **Step #2** to confirm that you had properly edited that file.
 
@@ -790,7 +789,7 @@ mv a.txt aa.txt
 
   23. Issue a Linux command to view the directory contents.
 
-   - What happened to the file called **a.txt**? Why?
+      - What happened to the file called **a.txt**? Why?
 
   24. Issue the following Linux command: 
 
