@@ -514,7 +514,16 @@ You will now learn how to perform **command line editing** to correct syntax err
 
 Learning **shortcut keys** in any OS terminal will allow you to be more productive as a Linux user or Linux System Administrator (commonly referred to as: **Linux sysadmin**).
 
-![Command Line Editing Shortcut Keys.](/img/Command-line-editing.png "Command Line Editing Shortcut Keys.")
+| **Shortcut Key(s)** | **Purpose** |
+| :--- | :--- |
+| **\<ctrl\>\<l\>** | Clear Screen |
+| **\<ctrl\>\<u\>** | Clear Command Line |
+| **\<Up Arrow\>, \<Down Arrow\>** | Scroll Up / Down Command History |
+| **\<backspace\>, \<ctrl\>\<backspace\>, \<ctrl\>\<h\>** | Delete character before cursor |
+| **\<ctrl\>\<w\>** | Delete word before the cursor |
+| **\<ctrl\>\<a\>** | Move word before the cursor |
+| **\<ctrl\>\<e\>** | Move cursor to end of command line |
+| **\<alt\>f / \<alt\>b (Mac: OPTION+Right/Left-Arrow)** | Move Forward/Backward one word |
 
 Command Line Editing Shortcut Keys.
 
