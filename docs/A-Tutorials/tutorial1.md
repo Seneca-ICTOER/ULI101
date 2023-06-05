@@ -44,7 +44,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 **Matrix Account Access:**
 
 - [logout, exit](https://ss64.com/bash/logout.html)
-- [\<ctrl\>\<d\>](https://www.quora.com/What-is-the-difference-between-typing-Ctrl+C-and-Ctrl+D-in-the-Linux-terminal)
+- [<ctrl\><d\>](https://www.quora.com/What-is-the-difference-between-typing-Ctrl+C-and-Ctrl+D-in-the-Linux-terminal)
 - [passwd](http://man7.org/linux/man-pages/man1/passwd.1.html)
 
 **Command Line Editing:**
