@@ -53,7 +53,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 **General Linux Commands:**
 
-| [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [cal](http://man7.org/linux/man-pages/man1/cal.1.html) | [date](http://man7.org/linux/man-pages/man1/date.1.html) | [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html) | [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html) | [clear, \<ctrl\>\<l\>](http://man7.org/linux/man-pages/man1/clear.1.html) |
+| [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [cal](http://man7.org/linux/man-pages/man1/cal.1.html) | [date](http://man7.org/linux/man-pages/man1/date.1.html) | [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html) | [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html) | [clear, <ctrl\><l\>](http://man7.org/linux/man-pages/man1/clear.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 **YouTube Videos**
@@ -161,9 +161,9 @@ You will now learn a quick and simple method of connecting to your Matrix accoun
 
   1. If you want to connect to your Matrix account from home, you MUST first connect to the Seneca Student VPN. Make certain that your **Seneca Student VPN is connected.**
 
-      - **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
+   - **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
 
-      - You only have to connect to your Seneca student VPN once during the day,
+   - You only have to connect to your Seneca student VPN once during the day,
 or while you are logged into your computer.
 
 ![Seneca Student VPN](/img/Gp1.png "Seneca Student VPN")
@@ -207,10 +207,10 @@ ssh senecausername@matrix.senecacollege.ca
 
 5. Type **yes** and press **ENTER** to share your public key.
 
-    - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account.
+ - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account.
 Your Matrix password is identical to your Seneca password.
 
-   - **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
+ - **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
 
 6. Enter your Seneca password and press **ENTER**
 
@@ -225,7 +225,7 @@ Your Matrix password is identical to your Seneca password.
 
 7. If you entered your password correctly, the **Matrix Linux shell** should appear where you can enter Linux commands.
 
-    - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.**
+  - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.**
 The main reason for this is to **force students to learn how to issue Linux commands.**
 
 8. To **exit** your Matrix session, type the command `exit` followed by **ENTER**
@@ -238,7 +238,7 @@ The main reason for this is to **force students to learn how to issue Linux comm
 
 10. Try accessing your Matrix account, and then exiting your Matrix account several times to become familiar with this process.
 
-    - You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine)
+  - You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine)
 by downloading and running a graphical SSH application.
 
 
@@ -279,7 +279,7 @@ to allow you to connect and login to your Matrix server account.
 
   4. Several SSH applications will appear.
 
-      - **NOTE:** All of these applications allow you to connect to your Matrix account. We will use the application called **SSH Secure Shell Client** for this practice tutorial.
+   - **NOTE:** All of these applications allow you to connect to your Matrix account. We will use the application called **SSH Secure Shell Client** for this practice tutorial.
 
   ![MyApps Anywhere App Menu](/img/Apps-anywhere.png "MyApps Anywhere App Menu")
 
@@ -287,7 +287,7 @@ to allow you to connect and login to your Matrix server account.
 
   5. Launch the **SSH Secure Shell Client** application icon to launch this program.
 
-      - **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster
+   - **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster
 to access this application in the future.
 
 ![SSH Secure Shell Client Window](/img/Ssh-main-window.png "SSH Secure Shell Client Window")
@@ -296,7 +296,7 @@ SSH Client Application Window
 
   6. The main SSH Client window will appear. Click on the **Quick Connect** button.
 
-      - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name**
+   - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name**
 to allow you to connect to the server.
 
 ![Quick Connect Dialog Window](/img/Quick-connect-window.png "Quick Connect Dialog Window")
@@ -305,7 +305,7 @@ Quick Connect Dialog Window
 
   7. Click on the textbox labelled Hostname and enter the text: ***matrix***
 
-      - **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network.
+   - **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network.
 If you where located outside Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**
 
   8. When connecting securely for the **first time**, a dialog box will appear to share a "public key" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users)
@@ -657,7 +657,7 @@ cd /bin
 
   5. Press the `ctrl-w` shortcut key. 
   
-      - What happens?
+   - What happens?
       
  ![Ctrl W](/img/Ctrl-w.png "Ctrl W")
  
