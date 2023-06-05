@@ -394,7 +394,7 @@ The **Frozen-Bubble** arcade game. ^
   23. Open the _Knoppix start menu_ and select **logout** and **shutdown** to end your Knoppix Live session.
 
 
-## LINUX PRACTICE QUESTIONS
+## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
