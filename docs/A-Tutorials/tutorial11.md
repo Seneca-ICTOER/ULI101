@@ -1188,7 +1188,7 @@ Your instructor may take-up these questions during class. It is up to the studen
 
 ### Review Questions:
 
-#### Part A: Write Bash Shell Script Code
+**Part A: Write Bash Shell Script Code**
 
 **Write the answer to each question below the question in the space provided.**
 
@@ -1209,7 +1209,7 @@ Your instructor may take-up these questions during class. It is up to the studen
   4. Write a Bash shell script that will clear the screen and then display all **arguments** that were entered after your Bash shell script when it was run. Also have the Bash shell script display the **number of arguments** that were entered after your Bash shell script.
 
 
-#### Part B: Walk-Thrus
+**Part B: Walk-Thrus**
 
 **Write the expected output from running each of the following Bash shell scripts You can assume that these Bash shell script files have execute permissions. Show your work.**
 
