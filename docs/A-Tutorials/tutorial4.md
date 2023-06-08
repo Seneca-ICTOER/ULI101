@@ -23,7 +23,7 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 
 - Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
 
-- Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
+- Week 4 Lecture 2 Notes: [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx)
 
 **Numbering Conversion and Data Representation Definitions:**
 
