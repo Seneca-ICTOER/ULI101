@@ -64,7 +64,7 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 
 A shell script is a **file** that contains **Unix/Linux commands** and **reserved words** to help **automatic** common tasks.
 
-**Creating & Executing Shell Scripts**
+### Creating & Executing Shell Scripts
 
 It is recommended to **plan** out on a piece of paper the purpose of the shell script.
 Once you have planned your shell script by listing the **sequence of steps (commands)**,
@@ -113,7 +113,7 @@ chmod u+x myscript.bash
 ```
 
 
-**Variables / Parameters**
+### Variables / Parameters
 
 **Environment Variables**
 
@@ -167,7 +167,7 @@ A few of these special parameters and their purpose are displayed below:
 Examples of using **positional** and **special** parameters. ^
 
 
-**Command Substitution / Math Operations**
+### Command Substitution / Math Operations
 
 **Command Substitution:**
 
@@ -234,7 +234,7 @@ echo “$product”
 Common Math Operator Symbols. ^
 
 
-**Control Flow Statements**
+### Control Flow Statements
 
 **Control Flow Statements** are used to make your shell scripts
 more **flexible** and can **adapt** to changing situations.
@@ -674,7 +674,7 @@ In the next investigation, you will learn to use **command substitution** and **
 
 In this investigation, you will learn how to use **command substitution** and **math operations** in your shell scripts.
 
-**Command Substitution**
+### Command Substitution
 
 Command Substitution is a method of running a Linux command that provides **stdout**
 that is used as **argument(s)** for another Linux command.
@@ -723,7 +723,7 @@ echo
 ![Command Substitution 1](/img/Commandsubstitution1.png)
 
 
-**Math Operations**
+### Math Operations
 
 Since you do NOT have to declare the **data-type** of a variable (as opposed to compiled program
 such as the C-programming language), numbers would be stored as **text** in variables.
@@ -1186,9 +1186,9 @@ Here is a link to the MS Word Document of ALL of the questions displayed below b
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
 
-**Review Questions:**
+### Review Questions:
 
-**Part A: Write Bash Shell Script Code**
+#### Part A: Write Bash Shell Script Code
 
 **Write the answer to each question below the question in the space provided.**
 
@@ -1209,7 +1209,7 @@ Your instructor may take-up these questions during class. It is up to the studen
   4. Write a Bash shell script that will clear the screen and then display all **arguments** that were entered after your Bash shell script when it was run. Also have the Bash shell script display the **number of arguments** that were entered after your Bash shell script.
 
 
-**Part B: Walk-Thrus**
+#### Part B: Walk-Thrus
 
 **Write the expected output from running each of the following Bash shell scripts You can assume that these Bash shell script files have execute permissions. Show your work.**
 
