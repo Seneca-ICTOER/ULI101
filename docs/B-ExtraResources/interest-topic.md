@@ -7,20 +7,20 @@ description: Interest Topic for Students who want extra practice with Linux and 
 
 # Interest Topic: Graphical Linux via a Virtual Machine (VM)
 
-## Installing Linux / Live Linux / Virtualization
+## Installing Linux and Live Linux and Virtualization
 
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Download and install the **VirtualBox** VM software application
   - Download and run the **Ubuntu VirtualBox file** in a virtual machine
   - Open a terminal and connect to your Matrix account via the **ssh** utility
   - Run several **open-source applications** in your graphical Ubuntu Linux environment
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
 **Course Notes**
 
-- **Course Notes:** [PDF](/slides/ULI101-7.1.pdf) \| [PPTX](/slides/ULI101-7.1.pptx)
+- [PDF](/slides/ULI101-7.1.pdf) \| [PPTX](/slides/ULI101-7.1.pptx)
 
 **Concepts**
 
@@ -36,9 +36,7 @@ description: Interest Topic for Students who want extra practice with Linux and 
 - [Download Ubuntu VirtualBox VM](https://senecafts.senecacollege.ca/link/to4Ztj33rphUlHFGsgGETf)
 - [Download Ubuntu VMware VM](https://senecafts.senecacollege.ca/link/exmCHYEOdASPqZu8SpXDxf)
 
-**YouTube Videos**
-
-**Instructional Videos:**
+**Instructional YouTube Videos:**
 
 - [Install Ubuntu as a Virtual Machine](https://www.youtube.com/watch?v=8UFsXtIEQSc)
 
