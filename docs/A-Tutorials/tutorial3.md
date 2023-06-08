@@ -17,14 +17,10 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 ## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Lecture Slides:**
 
 - Week 3 Lecture 1 Notes: [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx)
 - Week 3 Lecture 2 Notes: [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx)
-
-**Pathname Type / Filename Expansion / Quoting**
 
 **Pathname / Filename Expansion:**
 
@@ -40,8 +36,6 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 **Linux Commands:**
 
 - [echo](https://man7.org/linux/man-pages/man1/echo.1.html)
-
-**YouTube Videos**
 
 **Instructional Videos:**
 
@@ -218,10 +212,7 @@ There are **3 methods** to make those special characters **act only like text ch
 
 ## Investigation 1: Absolute / Relative / Relative-To-Home Pathnames
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 4 by midnight to obtain a grade of 2% towards this course**
-
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 4 by midnight to obtain a grade of 2% towards this course**
 
 The best way to learn about different types of file pathnames is to use them while issuing
 Linux commands and see which pathnames (or combination of pathnames) is the **most efficient**
@@ -435,9 +426,7 @@ abcde.txt
 
    - If you encounter errors, then make corrections (eg. viewing directory contents, check for correct filename syntax, case sensitivity, missing files, files in the wrong location, etc.) and then re-run the checking script until you receive a congratulations message, and then continue with this investigation.
 
-**ATTENTION:**
-
-Learning to **fix your mistakes** by issuing Linux commands may be required if you make mistakes in your online tutorial.
+**ATTENTION:** Learning to **fix your mistakes** by issuing Linux commands may be required if you make mistakes in your online tutorial.
 
   5. Issue the ls command to get a listing of files in your examples directory.
 
