@@ -7,9 +7,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 # Tutorial 3: Advanced File Management / Quoting Special Characters
 
-## Advanced Unix / Linux File Management
-
-### Main Objectives of this Tutorial
+## Main Objectives of this Tutorial
 
   - Understand the difference between **absolute** , **relative** and **relative-to-home** pathnames
   - Become productive at issuing Linux commands with the most appropriate pathname
@@ -17,7 +15,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
   - Use **quotation** treat special characters as just **text** when issuing Linux commands.
   - Understand the quotation symbols: **Backslash \\** , **single quotes ' '** and **double quotes " "**
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
 **Course Notes**
 
