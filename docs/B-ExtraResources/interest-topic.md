@@ -20,7 +20,7 @@ description: Interest Topic for Students who want extra practice with Linux and 
 
 **Course Notes**
 
-- [PDF](/slides/ULI101-7.1.pdf) \| [PPTX](/slides/ULI101-7.1.pptx)
+- **Course Notes:** [PDF](/slides/ULI101-7.1.pdf) \| [PPTX](/slides/ULI101-7.1.pptx)
 
 **Concepts**
 
