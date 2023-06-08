@@ -52,7 +52,7 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 
 ## Key Concepts
 
-**if-elif-else Statement**
+### if-elif-else Statement
 
 The **elif** statement can be used to perform additional conditional tests of the previous test condition tests **FALSE**. This statement is used to make your logic control-flow statement to be more adaptable.
 
@@ -84,7 +84,7 @@ else    echo “Equal to”
 fi
 ```
 
-**For Loop Using Command Substitution**
+### For Loop Using Command Substitution
 
 Let’s issue the **for** loop with a **list** using **command substitution**.
 In the example below, we will use command substitution to issue the ls command and
@@ -99,7 +99,7 @@ do
 done
 ```
 
-**While Loop**
+### While Loop
 
 The **while** loop is useful to loop based on the result from a test condition or command result.
 This type of loop is very useful for **error-checking**.
@@ -141,7 +141,7 @@ done
 5
 ```
 
-**Exit & Break Statements**
+### Exit & Break Statements
 
 **exit Statement**
 
@@ -179,7 +179,7 @@ done
 ```
 
 
-**Start-Up Files**
+### Start-Up Files
 
 **Shell configuration (start-up) files** are **scripts** that are run when you log in, log out, or start a new shell.
 The start-up files can be used, for example, to **set the prompt and screen display**, **create local variables**,
@@ -591,7 +591,7 @@ but NOT terminate the running of the shell script.
 In this investigation, you will learn to use the **exit** and **break** statements in your shell scripts.
 
 
-**The exit Statement**
+### The exit Statement
 
 The **exit** statement is used to terminate a shell script.
 This statement is very useful when combined with logic in a shell script to display an **error message**
@@ -686,7 +686,7 @@ cat error.txt
 ```
 
 
-**The break Statement**
+### The break Statement
 
 The **break** statement is used to **terminate** a **loop** without
 terminating the running shell script.
