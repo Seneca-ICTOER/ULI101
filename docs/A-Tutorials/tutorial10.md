@@ -49,7 +49,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 ## Key Concepts
 
-**Using the sed Utility**
+### Using the sed Utility
 
 **Usage (Syntax):** 
 
@@ -86,7 +86,7 @@ sed [-n] 'address instruction' filename
 | **s** | substitute text to replace a matched regular expression, similar to vi substitution |
 
 
-**Using the awk Utility**
+### Using the awk Utility
 
 **Usage:**
 
