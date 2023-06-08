@@ -48,7 +48,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 
 ## Key Concepts
 
-**Regular Expressions**
+### Regular Expressions
 
 _A **regular expression** is a combination of two types of characters: **literals** and **special characters**.
 Strings of text can be compared to this pattern to see if there is a match._
@@ -56,7 +56,7 @@ Strings of text can be compared to this pattern to see if there is a match._
 This usually refers to text that is contained inside a **file** or text as a result
 of issuing Linux commands using a **Linux pipeline command**.
 
-**Literal (Simple) Regular Expressions**
+### Literal (Simple) Regular Expressions
 
 The simplest regular expression is a series of letters and numbers, (tabs or spaces).
 A **simple (literal)** regular expression consists of normal characters, which used to match patterns.
@@ -74,7 +74,7 @@ grep Linux document.txt
 A **simple (literal)** regular expression is a series of letters and numbers (tabs or spaces).
 
 
-**Complex / Extended Regular Expressions**
+### Complex / Extended Regular Expressions
 
 **Complex Regular Expressions**
 
