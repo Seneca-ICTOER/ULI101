@@ -7,9 +7,7 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 
 # Tutorial 12: Shell Scripting - Part 2
 
-## Additional Shell Scripting
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Use the **if-elif-else** control flow statement in a shell script.
   - Use the **for** loop control using a list with **command substitution**.
@@ -17,15 +15,11 @@ description: Tutorial 12 for Students to Learn Shell Scripting
   - Use the **exit** and **break** statements in a shell script.
   - Explain how to configure and use a **.bashrc** start-up file.
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 12 Lecture 1 Notes: [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx)
-
-**Linux Command/Shortcut Reference**
 
 **Control Flow Statements:**
 
@@ -43,9 +37,7 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 - [Purpose](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
 - [Examples](http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html)
 
-**YouTube Videos**
-
-**Instructional Videos:**
+**Instructional YouTube Videos:**
 
 - [Bash Shell Scripting - Part 2](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6)
 
@@ -198,9 +190,7 @@ There is a file that **resets or restores the shell environment** (including shu
 
 ## Investigation 1: Additional Logic Statements
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 13 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 13 by midnight to obtain a grade of 2% towards this course**
 
 
 In this investigation, you will learn additional control-flow statements to allow your shell scripts to be even **more adaptable**.
