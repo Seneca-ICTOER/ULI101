@@ -7,9 +7,7 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 
 # Tutorial 11: Shell Scripting - Part 1
 
-## Introduction To Shell Scripting
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Plan and create a Shell Script
   - Explain the purpose of the **she-bang line** contained at the top of a shell script.
@@ -20,16 +18,12 @@ description: Tutorial 11 for Students to Learn Shell Scripting
   - Use **if** and **if-else** logic statements in shell scripts.
   - Use a **for** loop statement with a list in shell scripts.
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 11 Lecture 1 Notes: [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx)
 - Week 11 Lecture 2 Notes: [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx)
-
-**Linux Command/Shortcut Reference**
 
 **Shell Scripting:**
 
@@ -52,9 +46,7 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 | [Purpose](https://en.wikipedia.org/wiki/Control_flow) | [test command](https://www.computerhope.com/unix/test.htm) | [if statement](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#:~:text=If%20statements%20(and%2C%20closely%20related,conditions%20that%20we%20may%20set.)) | [if-else statement](https://www.tutorialspoint.com/unix/if-else-statement.htm) | [for loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.) |
 | :--- | :--- | :--- | :--- | :--- |
 
-**YouTube Videos**
-
-**Instructional Videos:**
+**Instructional YouTube Videos:**
 
 - [Bash Shell Scripting - Part 1](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5)
 - [Creating and Running a Shell Script](https://www.youtube.com/watch?v=cQepf9fY6cE)
@@ -332,9 +324,7 @@ Example of using the **for** looping control-flow statement.
 
 ## Investigation 1: Creating A Shell Script
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 12 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 12 by midnight to obtain a grade of 2% towards this course**
 
 
 In this investigation, you will learn how to create and run a **Bash Shell script**.
