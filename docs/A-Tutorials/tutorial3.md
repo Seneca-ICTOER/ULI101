@@ -24,7 +24,6 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 **Slides:**
 
 - Week 3 Lecture 1 Notes: [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx)
-
 - Week 3 Lecture 2 Notes: [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx)
 
 **Pathname Type / Filename Expansion / Quoting**
@@ -65,13 +64,13 @@ There are **different types of file pathnames** that we can use to access a dire
 
 **For Example:**
 
-/home/userid/uli101/cars.txt **(absolute pathname)**
-samples/cars.txt **(relative pathname)**
-~/cars.txt **(relative-to-home pathname)**
+- /home/userid/uli101/cars.txt **(absolute pathname)**
+- samples/cars.txt **(relative pathname)**
+- ~/cars.txt **(relative-to-home pathname)**
 
 These types of file pathnames can make it more efficient (i.e. less keystrokes for users to type) when issuing Unix and Linux commands.
 
-**Absolute Pathnames**
+#### Absolute Pathnames
 
 An **absolute pathname** is a path to a file or directory always **beginning from the root directory (i.e. / )**.
 
@@ -79,7 +78,7 @@ An **absolute pathname** is a path to a file or directory always **beginning fro
 This type of pathname is referred to as **absolute** because the pathname always begins from the **root directory**, regardless the location or your current directory. In other words, this type of pathname requires that you always provide the **FULL** pathname starting with the root directory.
 
 
-_Advantages of using Absolute Pathnames:_
+Advantages of using Absolute Pathnames:
 
   - Useful if you do not know your current directory location
   - Understand the location of file within the filesystem.
@@ -103,7 +102,7 @@ ls /home/your-user-id/uli101/examples
 Directories in red display the FULL path from the root directory to the examples directory (i.e. the absolute pathname: /home/your-user-id/uli101/examples.
 
 
-**Relative Pathnames**
+#### Relative Pathnames
 
 A **relative pathname** is a path to a file or directory that begins from your **current** directory. This is called relative because it is used to locate a specific file relative to your current directory.
 
@@ -142,7 +141,7 @@ ls ./examples
 Directories in red display the path from the current directory location (which is **uli101**) to the **examples** directory (i.e. the relative pathname: **uli101/examples** or **./uli101/examples**
 
 
-**Relative-to-home Pathnames**
+#### Relative-to-Home Pathnames
 
 A **relative-to-home pathname begins** with the tilde character ( i.e. ~) to represent the user’s home directory.
 
