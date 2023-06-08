@@ -55,7 +55,7 @@ description: Tutorial 5 for Students to Learn Redirection
 
 ## Key Concepts
 
-**Additional File Manipulation Commands**
+### Additional File Manipulation Commands
 
 Before proceeding, let's look at some additional commands used to manipulate content of text files.
 
@@ -68,7 +68,7 @@ Refer to the table below regarding these text file manipulation commands:
 | **wc** | Displays various **counts** of the contents of a file. The **-l** option displays the number of lines, the **-w** option displays the number of words, and the **-c** option displays the number of characters. eg. `wc filename`, `wc -l filename`, `wc -w filename` |
 
 
-**Redirection (Standard Input, Standard Output, Standard Error)**
+### Redirection (Standard Input, Standard Output, Standard Error)
 
 _**Redirection** can be defined as changing the way from where commands read input to where commands sends output.
 You can redirect input and output of a command._
@@ -193,7 +193,7 @@ Line 3
 ```
 
 
-**Pipeline Commands**
+### Pipeline Commands
 
 **Pipeline Command:** Having commands send their **standard output** directly to **standard input** of other commands WITHOUT having to use **temporary** files.
 
@@ -262,7 +262,7 @@ ls | head -5 | tee -a listing.txt
 ```
 
 
-**Multiple Commands Using Semicolon, Grouping, and Backquotes**
+### Multiple Commands Using Semicolon, Grouping, and Backquotes
 
 Besides piping, there are other ways that multiple commands may be placed in one line:
 commands may be separated by **semi-colons.**
