@@ -45,7 +45,7 @@ description: Interest Topic for Students who want extra practice with Linux and 
 
 ## Key Concepts
 
-**Installing Linux**
+### Installing Linux
 
 Having a Linux system on your home computer provides **access** to a large selection of **open source software.**
 
@@ -67,7 +67,7 @@ _Steps in the Linux Installation Process:_
   - **Create** VM and **install** Linux Distribution or **run** VM file.
 
 
-**Linux Installation Methods**
+### Linux Installation Methods
 
 **Standalone Installation**
 
@@ -97,7 +97,7 @@ A **boot menu** allows the user to select the desired OS.
 The **grub boot menu** to select different operating systems upon computer startup. (Image licensed under [cc](https://creativecommons.org/licenses/by-sa/3.0/))
 
 
-**Virtual Machine Installation**
+### Virtual Machine Installation
 
 _Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware_. Reference: https://opensource.com/resources/virtualization
 
@@ -121,7 +121,7 @@ The virtualized OS is installed and run in a window under another OS. Special so
 VMware Player launch menu for Ubuntu Linux OS (Image licensed under [cc](https://creativecommons.org/licenses/by-sa/3.0/))
 
 
-**Live Linux CD**
+### Live Linux CD
 
 _A live CD (also live DVD, live disc, or live operating system) is a complete bootable computer installation including operating system which runs directly from a CD-ROM or similar storage device into a computer's memory, rather than loading from a hard disk drive. A Live CD allows users to run an operating system for any purpose without installing it or making any changes to the computer's configuration._
 
