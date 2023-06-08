@@ -229,7 +229,16 @@ echo “$product”
 50
 ```
 
-![Math Op](/img/Math-op.png)
+| **Operator** | **Description** |
+| :--- | :--- |
+| + | Addition |
+| - | Subtraction |
+| \* | Multiplication |
+| / | Division |
+| % | Remainder |
+| \*\* | Exponential |
+| ++ | Increment (increase by 1) |
+| -- | Decrement (decrease by 1) |
 
 Common Math Operator Symbols. ^
 
