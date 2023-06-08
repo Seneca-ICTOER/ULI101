@@ -367,7 +367,7 @@ Output of the **tree** command to confirm movement of **acp100 directory** direc
 
   10. If you encounter errors. make corrections and re-run the checking script until you receive a congratulations message, and proceed to the next investigation.
 
-**Part 3: Removing Directories**
+### Part 3: Removing Directories
 
 In this investigation, we will learn how to **safely remove** directories and their contents.
 
