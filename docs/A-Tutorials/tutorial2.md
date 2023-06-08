@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Tutorial 2 for Students to learn Unix/Linux File Management
 ---
 
-# Tutorial 2: Unix / Linux File Management
+# Tutorial 2: Unix and Linux File Management
 
 ## Main Objectives of this Practice Tutorial
 
@@ -26,7 +26,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 | [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [tree](https://www.systutorials.com/docs/linux/man/1-tree/) | [mkdir](http://man7.org/linux/man-pages/man1/mkdir.1.html) | [rmdir](http://man7.org/linux/man-pages/man1/rmdir.1.html) | [cp](http://man7.org/linux/man-pages/man1/cp.1.html) | [mv](http://man7.org/linux/man-pages/man1/mv.1p.html) | [rm , rm -r](http://man7.org/linux/man-pages/man1/rm.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Text Editors / File Content Reference:**
+**Text Editors and File Content Reference:**
 
 | [vi](http://man7.org/linux/man-pages/man1/vi.1p.html) , [nano](https://linux.die.net/man/1/nano) | [cat](http://man7.org/linux/man-pages/man1/cat.1.html) | [more](http://man7.org/linux/man-pages/man1/more.1.html) , [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html) , [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [touch](http://man7.org/linux/man-pages/man1/touch.1.html) | [file](http://man7.org/linux/man-pages/man1/file.1.html) | [find](http://man7.org/linux/man-pages/man1/find.1.html) | [diff](http://man7.org/linux/man-pages/man1/diff.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | :--- |
@@ -279,7 +279,7 @@ If there is a warning, then feedback is provided to user to correct and re-run c
   3. If you encounter errors, then view the feedback to make corrections, and then re-run the checking script. If you receive a congratulation message that there are no errors, then proceed to the next part.
 
 
-### Part 2: Viewing Directory Contents / Copying & Moving Directories
+### Part 2: Viewing Directory Contents and Copying & Moving Directories
 
 Now that you have learned how to efficiently create your directory structure, you will now learn how to issue Linux commands
 to **view directory contents** as well as **copy** and **move** directories.
