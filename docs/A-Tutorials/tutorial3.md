@@ -55,7 +55,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 ## Key Concepts
 
-**Pathname Types**
+### Pathname Types
 
 As previously mentioned, a **pathname is a fully-specified location of a unique filename** within a file system.
 The concept of a pathname relates to every operating system including: _Unix, Linux, MS-DOS,  MS-Windows, Apple-Macintosh_, etc.
@@ -174,7 +174,7 @@ Directories in red display the path from another user's home directory location 
 **NOTE:** Deciding which **type of pathname** to use depends on many factors including: **knowledge of current directory**, **knowledge of directory structure**, **currently directory location**, and **type of file management command** that is being used.
 
 
-**Filename Expansion**
+### Filename Expansion
 
 When issuing Linux commands, it may be **more efficient** (less typing) to use **filename expansion symbols**
 to match files that share similar characteristics (e.g. same file extension) when issuing Linux commands.
@@ -205,7 +205,7 @@ Below are the most common Filename Expansion symbols and how they are used for f
 | **\[ \]** |	Square brackets (\[ \]) to represent and match for the **character enclosed within the square brackets**. It represents ONLY ONE character - it's like a **Question Mark (?)** but with **conditions or restrictions** |
 | **\[\! \]**	| Square brackets containing an exclamation mark immediately after the open square bracket (\[\! \]) to represent and match and **OPPOSITE** character for the character enclosed within the square brackets. |
 
-**Quoting Special Characters**
+### Quoting Special Characters
 
 As discussed in the above section, there are some special characters that the shell uses to perform an operation; for example, the filename expansion symbols: **\*** or **?**
 
