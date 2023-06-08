@@ -65,7 +65,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 ## Key Concepts
 
-**Purpose of Your Student Account on Matrix**
+### Purpose of Your Student Account on Matrix
 
 While attending Seneca College, you will be using many different computer systems. Some of these servers include:
 
@@ -83,7 +83,7 @@ In Unix/Linux, a **shell** is simply an **interface** to allow a user to communi
 
 A **shell** is an interface / interpreter to allow a user to communicate with the Linux computer system.
 
-**Layout of the Matrix Linux Server**
+### Layout of the Matrix Linux Server
 
 The **Matrix server** consists of **several computers connected together** to form a **cluster.**
 A **Linux cluster** is a **cost effective** alternative to buying larger servers.
@@ -99,7 +99,7 @@ You will be using this account for the following reasons:
 
 ![Matrix Linux Server Layout](/img/Matrix-layout.png "Image of Matrix Linux Server Layout")
 
-**Connecting to the Seneca Student VPN**
+### Connecting to the Seneca Student VPN
 
 All Seneca College students are required to connect to the **Seneca Student VPN** in order to be able to connect to their **Matrix** Linux account when outside of campus as a **network security** measure. The Seneca Student VPN uses multi-factor authentication (MFA) when logging in to verify you are who you say you are.
 
@@ -113,7 +113,7 @@ In the next investigation, you will learn how to **connect** to and **login** to
 
 **Seneca Student VPN**
 
-**Connecting to Your Matrix Account**
+### Connecting to Your Matrix Account
 
 There are two basic methods to connecting to your Matrix account.
 
@@ -385,7 +385,7 @@ In this investigation, you will learn how to use the Linux Shell. Topics in the 
   - Perform **Basic Shell Editing**
   - Issue a **program** to confirm that you connected to your Matrix account
 
-**Linux Command Structure**
+### Linux Command Structure
 
 The Bash shell allows you to interact with Linux by typing commands.
 
@@ -541,7 +541,7 @@ cal 2 2035
    - **Question:** What do each of these numbers do?
    - **Question:** What do you think would happen if you reversed the order of those arguments? (i.e. cal 2035 2)
 
-**Getting Help with Linux Commands**
+### Getting Help with Linux Commands
 
 With the Linux OS containing over **2500** commands and utilities, it's important for Linux users and Linux system administrators (sysadmin) to learn how to use commands “on-the-fly”.
 
@@ -610,7 +610,7 @@ Unique to this college, your Linux password is changed automatically when you ch
 
 You will now learn how to perform **command line editing** to correct syntax errors while typing Linux commands PRIOR to pressing the ENTER key.
 
-**Command Line Editing**
+### Command Line Editing
 
 Learning **shortcut keys** in any OS terminal will allow you to be more productive as a Linux user or Linux System Administrator (commonly referred to as: **Linux sysadmin**).
 
@@ -687,7 +687,7 @@ The Bash shortcut keys that you just learned are sufficient to perform Bash Shel
 Although you are NOT required to learn other short-cut keys, here is a link to a listing in case you are interested: https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
 
 
-**Tutorial Submission**
+### Tutorial Submission
 
 **Running a Shell Script to Check Student Online Tutorial Participation**
 
