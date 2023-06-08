@@ -56,7 +56,7 @@ Unix / Linux servers, as well as securely copy and transfer files among Unix/Lin
 In this tutorial, you will learn several different methods to securely transfer files from your Matrix Linux account
 to other computers using Linux commands including scp, sftp and mail.
 
-**Issuing Commands on Remote Unix/Linux Servers**
+### Issuing Commands on Remote Unix/Linux Servers
 
 You can use the **ssh** command to issue Unix/Linux commands on a **remote** server
 from your local computer without logging into a remote server (such as Matrix).
@@ -74,7 +74,7 @@ ssh username@matrix.senecacollege.ca ls -l
 You will be prompted for your Matrix account password, then the contents of your home directory in your remote Matrix account will be displayed on your local computer's terminal.
 
 
-**Secure Copy (scp)**
+### Secure Copy (scp)
 
 The **scp** command is used to securely copy files between your **local** computer and **remote** Unix/Linux server. The usage for the _scp_ command is similar to the **cp** command with the addition of **user name** and **host name**.
 
@@ -104,7 +104,7 @@ The user name in the command can be **omitted** if it's the same as on the local
 Multiple file and recursive directory copy (i.e. option **-r**) is supported.
 
 
-**Secure File Transmission Control Protocol (sftp)**
+### Secure File Transmission Control Protocol (sftp)
 
 **FTP** stands for **File Transfer Protocol** which provides a set of **rules** on how to convert data that is transferred between computers (both identical and different operating systems). The **sftp** command performs file transfers securely using encryption.
 
@@ -130,7 +130,7 @@ there are **graphical sftp applications** that provide an alternative to issuing
 If you installed the graphical **Secure Shell Client** application in your Windows computer from performing [TUTORIAL 1 INVESTIGATION 1](./tutorial1.md#investigation-1-accessing-your-matrix-linux-account), you can use this application to transfer files between your computer and your Matrix account by graphically **navigating, selecting** and **dragging** files between computers.
 
 
-**Sending Emails with File Attachment (mail)**
+### Sending Emails with File Attachment (mail)
 
 You can use the **mail** command in Matrix to send email messages to other email accounts via the Internet.
 
@@ -389,7 +389,7 @@ You will also learn how to issue the **ssh** command to run commands on your
 **remote** Matrix server while remaining on your **local**computer.
 
 
-**Command Line Terminal (CLI)**
+### Command Line Terminal (CLI)
 
 Let's look at using the **sftp** command on your **local** machine.
 
