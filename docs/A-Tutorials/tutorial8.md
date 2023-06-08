@@ -56,7 +56,7 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 
 ## Key Concepts
 
-**i-node (index) ID Number of a File**
+### i-node (index) ID Number of a File
 
 An **i-node** is a **database** containing information (e.g. _file type, owner, permissions,_ etc.) for all files that are created on the Unix/Linux filesystem.
 
@@ -69,7 +69,7 @@ i-node number.
 
 The **i-node number** is like a **finger-print**, and is considered to be **unique** for each file on the Unix / Linux file system.
 
-**Hard Links**
+### Hard Links
 
 A **Hard link** is a **reference** to the physical data on a file system.
 It does this by creating a file that shares the **same i-node number** with the original file.
@@ -93,7 +93,7 @@ ln myfile.txt myfile1.hard.lnk
 ln myfile.txt ~/backups/myfile.hard.lnk
 ```
 
-**Symbolic Links**
+### Symbolic Links
 
 A **Symbolic Link** is an indirect **pointer** to a file and are also known as **soft** link or **symlink**. The symbolic link file contains the **pathname** to the original file.
 
@@ -118,7 +118,7 @@ ln -s otherfile.txt ~/backups/otherfile.sym.lnk
 ```
 
 
-**Managing Processes**
+### Managing Processes
 
 All **commands/programs (tasks)** that are **running** on a Unix/Linux computer system are referred to as **processes**.
 
@@ -148,7 +148,7 @@ Below are a listing of common **Linux commands** and **keyboard shortcuts** to m
 | **kill** |	The kill command sends the specified signal to the specified processes or process groups. If no signal is specified, the **TERM** signal is sent. The default action for this signal is to terminate the process. _Examples:_ **kill PID** , **kill -9 PID** , **kill %job-number** , **kill -9 %job-number** |
 
 
-**Aliases / Command History**
+### Aliases / Command History
 
 **Aliases:**
 
