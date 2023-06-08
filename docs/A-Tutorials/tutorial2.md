@@ -1,6 +1,6 @@
 ---
 id: tutorial2
-title: Tutorial 2 - Unix / Linux File Management
+title: Tutorial 2 - Unix and Linux File Management
 sidebar_position: 2
 description: Tutorial 2 for Students to learn Unix/Linux File Management
 ---
@@ -43,7 +43,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 ## Key Concepts
 
-### Unix / Linux Directories
+### Unix and Linux Directories
 
 To better **organize** files (eg. text, images, documents, spreadsheets, programs) within your Matrix account, they should be stored in **directories.** To further organize many files, directories
 may contain **sub-directories.**
