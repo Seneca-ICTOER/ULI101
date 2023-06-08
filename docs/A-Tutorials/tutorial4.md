@@ -1,6 +1,6 @@
 ---
 id: tutorial4
-title: Tutorial 4 - Data Representation / Numbering Conversion/ File Permissions
+title: Tutorial 4 - Data Representation and Numbering Conversion/ File Permissions
 sidebar_position: 4
 description: Tutorial 4 for Students to Learn Data Representation, Numbering Conversion, and File Permissions
 ---
