@@ -22,7 +22,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 - Week 3 Lecture 1 Notes: [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx)
 - Week 3 Lecture 2 Notes: [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx)
 
-**Pathname / Filename Expansion:**
+**Pathname and Filename Expansion:**
 
 - [Absolute](https://www.cyberciti.biz/faq/understanding-absolute-pathnames/)
 - [Relative](https://www.oreilly.com/library/view/web-design-in/0596009879/ch04s02s02.html)
@@ -210,7 +210,7 @@ There are **3 methods** to make those special characters **act only like text ch
 | Contain Special character within **single quotes** (Quotes out ALL special characters)	 | **echo '\* hello \*'** |
 
 
-## Investigation 1: Absolute / Relative / Relative-To-Home Pathnames
+## Investigation 1: Absolute and Relative and Relative-To-Home Pathnames
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 4 by midnight to obtain a grade of 2% towards this course**
 
