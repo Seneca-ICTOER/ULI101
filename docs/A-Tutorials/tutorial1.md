@@ -18,7 +18,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 ## Tutorial Reference Material
 
-**Course Slides / Software**
+**Course Slides and Software**
 
 - Week 1 Lecture 1 Notes: [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
 
