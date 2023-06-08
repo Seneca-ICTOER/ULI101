@@ -18,33 +18,25 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 ### Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Lecture Slides:**
 
 - Week 2 Lecture 1 Notes: [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx)
-
 - Week 2 Lecture 2 Notes: [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx)
 
-**Tutorials:**
-
-- [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf)
-- [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf)
-
-**Linux Command/Shortcut Reference**
-
-**File Management:**
+**File Management Reference:**
 
 | [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [tree](https://www.systutorials.com/docs/linux/man/1-tree/) | [mkdir](http://man7.org/linux/man-pages/man1/mkdir.1.html) | [rmdir](http://man7.org/linux/man-pages/man1/rmdir.1.html) | [cp](http://man7.org/linux/man-pages/man1/cp.1.html) | [mv](http://man7.org/linux/man-pages/man1/mv.1p.html) | [rm , rm -r](http://man7.org/linux/man-pages/man1/rm.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Text Editors / File Content:**
+**Text Editors / File Content Reference:**
 
 | [vi](http://man7.org/linux/man-pages/man1/vi.1p.html) , [nano](https://linux.die.net/man/1/nano) | [cat](http://man7.org/linux/man-pages/man1/cat.1.html) | [more](http://man7.org/linux/man-pages/man1/more.1.html) , [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html) , [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [touch](http://man7.org/linux/man-pages/man1/touch.1.html) | [file](http://man7.org/linux/man-pages/man1/file.1.html) | [find](http://man7.org/linux/man-pages/man1/find.1.html) | [diff](http://man7.org/linux/man-pages/man1/diff.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | :--- |
 
+**Text Editor Cheat Sheets:**
 
-**YouTube Videos**
+- [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf)
+- [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf)
 
 **Brauer Instructional Videos:**
 
@@ -53,7 +45,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 ## Key Concepts
 
-**Unix / Linux Directories**
+### Unix / Linux Directories
 
 To better **organize** files (eg. text, images, documents, spreadsheets, programs) within your Matrix account, they should be stored in **directories.** To further organize many files, directories
 may contain **sub-directories.**
@@ -70,7 +62,7 @@ In the Linux (Unix) OS, the "**root directory**" / is the starting directory, an
 
 There is actually a command called tree that displays a "**directory tree diagram**"!
 
-**Directory Pathnames**
+### Directory Pathnames
 
 A pathname is used to specify a route to a file within the file system.
 
@@ -100,9 +92,7 @@ When you log into your Matrix account, you are automatically directed to your ho
 
 ## Investigation 1: Creating & Managing Directories
 
-**ATTENTION:**
-
-**This weekly tutorial must be completed by Friday at 11:59pm in Week 3 to obtain a grade of 2% towards this course.**
+**ATTENTION: This weekly tutorial must be completed by Friday at 11:59pm in Week 3 to obtain a grade of 2% towards this course.**
 
 
 **Directory File Naming Rules**
@@ -117,7 +107,7 @@ Listed below are some common **file-naming rules:**
   - **Avoid non-alphanumeric characters**, as they may have a special meaning to the system that will make your work more difficult when changing to directories, etc.
   - **Avoid using spaces** for directory names (consider periods, hyphens, and underscores instead)
 
-**Part 1: Creating Directories**
+### Part 1: Creating Directories
 
 Creating subdirectories within your home directory makes it more **efficient** to save and access files on your Linux server.
 
@@ -291,7 +281,7 @@ If there is a warning, then feedback is provided to user to correct and re-run c
   3. If you encounter errors, then view the feedback to make corrections, and then re-run the checking script. If you receive a congratulation message that there are no errors, then proceed to the next part.
 
 
-**Part 2: Viewing Directory Contents / Copying & Moving Directories**
+### Part 2: Viewing Directory Contents / Copying & Moving Directories
 
 Now that you have learned how to efficiently create your directory structure, you will now learn how to issue Linux commands
 to **view directory contents** as well as **copy** and **move** directories.
@@ -452,8 +442,7 @@ The **Nano Text Editor** is Easy to Operate for Novice Users.
 
 The **vi Text Editor**, although taking longer to master, has outstanding features and allow the user to be more productive with editing text files.
 
-
-**Part 1: Creating Text Files Using The Nano Text Editor**
+### Part 1: Creating Text Files Using The Nano Text Editor
 
 You will now learn basic editing skills using the **Nano** text editor including **creating, editing,** and **saving** text files.
 
@@ -506,7 +495,7 @@ nano textedit/practice/mytext.txt
   11. **Save** your editing session and **exit** your text editor.
 
 
-**Part 2: Creating Text Files Using The vi Text Editor**
+### Part 2: Creating Text Files Using The vi Text Editor
 
 You will now learn basic editing skills using the **vi (vim)** text editor including **creating, editing,** and **saving** text files.
 
@@ -629,7 +618,7 @@ there is NO "hands-on" tutorial for the nano text editor in this particular form
 It is recommended to try both text editors, and choose the text editor that you feel that is easier to use.
 
 
-**Part 3: Manage & Manipulate Text File Content**
+### Part 3: Manage & Manipulate Text File Content
 
 We conclude this tutorial by learning to **manage**, **view** or **manipulate the display** of text files. This is HIGHLY ADVISED in case you only want to view contents and **NOT** edit text file contents which can cause accidental erasure of data.
 
@@ -880,7 +869,6 @@ What command would you issue to return to your home directory?
 ---
 
 Author: Murray Saul
-
 License: LGPL version 3 Link: https://www.gnu.org/licenses/lgpl.html
 
 ---
