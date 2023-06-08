@@ -5,11 +5,9 @@ sidebar_position: 5
 description: Tutorial 5 for Students to Learn Redirection
 ---
 
-# Tutorial 5: Redirection
+# Tutorial 5: Redirection - Standard Input and Standard Output and Standard Error
 
-## Redirection: Standard Input / Standard Output / Standard Error
-
-### Main Objectives of this Tutorial
+## Main Objectives of this Tutorial
 
   - Understand and use the **cut, tr**, and **wc** Linux commands
   - Define the terms **Standard Input** (_stdin_), **Standard Output** (_stdout_), and **Standard Error** (_stderr_)
@@ -20,16 +18,12 @@ description: Tutorial 5 for Students to Learn Redirection
   - Use the **semicolon** ";" and **grouping** "( )" symbols to issue multiple Unix / Linux commands on a single line
   - Use the **backslash** "\" symbol to spread-out long Unix/Linux commands over multiple lines
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 5 Lecture 1 Notes: [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx)
 - Week 5 Lecture 2 Notes: [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx)
-
-**Linux Command / Shortcut Reference**
 
 **Redirection:**
 
@@ -46,9 +40,7 @@ description: Tutorial 5 for Students to Learn Redirection
 | [more](http://man7.org/linux/man-pages/man1/more.1.html), [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html), [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) | [cut](http://man7.org/linux/man-pages/man1/cut.1.html) | [tr](http://linuxcommand.org/lc3_man_pages/tr1.html) | [wc](http://man7.org/linux/man-pages/man1/wc.1.html) | [tee](http://man7.org/linux/man-pages/man1/tee.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**YouTube Videos**
-
-**Brauer Instructional Videos:**
+**Brauer Instructional YouTube Videos:**
 
 - [Reading/Writing to Files (echo, stdin, stdout, stderr, >, >>, 2>, cat, more, less, man, date, diff, diff -y, find, wc](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4)
 
@@ -304,9 +296,7 @@ it will automatically go to the next line" |tr '[a-z]' '[A-Z]'
 
 ## Investigation 1: Basics Of Redirection
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 6 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 6 by midnight to obtain a grade of 2% towards this course**
 
 In this investigation, you will learn how to redirect **standard input, standard output** and **standard error** when issuing Unix / Linux commands.
 
