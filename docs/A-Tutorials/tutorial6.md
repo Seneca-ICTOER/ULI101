@@ -1,15 +1,13 @@
 ---
 id: tutorial6
-title: Tutorial 6 - File Transfer / Sending Email Messages
+title: Tutorial 6 - File Transfer and Sending Email Messages
 sidebar_position: 6
 description: Tutorial 6 for Students to Learn File Transfer and Sending Email Messages
 ---
 
-# Tutorial 6: File Transfer / Sending Email Messages
+# Tutorial 6: File Transfer and Sending Email Messages
 
-## Transferring Files Between Computers
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - List **common utilities** contained in the **ssh** application framework
   - Securely **copy** files between Unix/Linux servers using the **scp** command
@@ -17,15 +15,11 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
   - Use the **ssh** command to run and view commands on a **remote computer** from a **local computer**.
   - Use the **mail** command to send email with **file attachments** to your Seneca email account
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 6 Lecture 1 Notes: [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx)
-
-**Definitions / Commands**
 
 **Definitions:**
 
@@ -39,9 +33,7 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
 - [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html)
 - [mail](https://man.openbsd.org/mail)
 
-**YouTube Videos**
-
-**Instructional Videos:**
+**Instructional YouTube Videos:**
 
 - [Using scp Command](https://www.youtube.com/watch?v=EBvxbuhDKBw)
 - [Using sftp Command](https://www.youtube.com/watch?v=QcKYFEgfV-I)
@@ -162,9 +154,7 @@ Viewing email with file attachment in **Seneca email account**.
 
 ## Investigation 1: File Transfer (Secure Copy)
 
-**ATTENTION**
-
-**This online tutorial will be required to be completed by Friday in week 8 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 8 by midnight to obtain a grade of 2% towards this course**
 
 The **SSH** package on your _home computer_ and on the _Matrix Linux server_
 contain a **suite** (i.e. collection) of secure utilities including **ssh** and **scp**.
