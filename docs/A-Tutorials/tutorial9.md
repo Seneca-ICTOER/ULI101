@@ -7,9 +7,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 
 # Tutorial 9: Regular Expressions
 
-## Using Regular Expressions
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Define the term **Regular Expressions**
   - Explain the difference between **Regular Expressions** and **Filename Expansion**
@@ -18,16 +16,12 @@ description: Tutorial 9 for Students to Learn Regular Expressions
   - Understand and use command symbols for **Extended** Regular Expressions and their purpose
   - List several Linux commands that can use regular expressions
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 9 Lecture 1 Notes: [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx)
 - Week 9 Lecture 2 Notes: [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx)
-
-**Linux Command/Shortcut Reference**
 
 **Regular Expressions:**
 
@@ -39,9 +33,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 | [egrep](https://ss64.com/bash/egrep.html) | [man](https://www.man7.org/linux/man-pages/man1/man.1.html) | [more](https://man7.org/linux/man-pages/man1/more.1.html) / [less](https://www.man7.org/linux/man-pages/man1/less.1.html) | [vi](https://man7.org/linux/man-pages/man1/vi.1p.html) / [vim](http://linuxcommand.org/lc3_man_pages/vim1.html) | [sed](https://man7.org/linux/man-pages/man1/sed.1p.html) | [awk](https://man7.org/linux/man-pages/man1/awk.1p.html) | [wget](https://linux.die.net/man/1/wget) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**YouTube Videos**
-
-**Brauer Instructional Videos:**
+**Brauer Instructional YouTube Videos:**
 
 - [Using grep Command with Regular Expressions](https://www.youtube.com/watch?v=-2pwLHcvCsU&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=12)
 
@@ -153,9 +145,7 @@ Example of using **or** condition with **groups**. ^
 
 ## Investigation 1: Simple & Complex Regular Expressions
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 10 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 10 by midnight to obtain a grade of 2% towards this course**
 
 In this investigation, you will learn how to use the **grep** command with **simple and complex regular expressions**
 to help search for _patterns_ contained in text files.
