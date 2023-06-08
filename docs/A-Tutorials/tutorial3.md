@@ -5,7 +5,7 @@ sidebar_position: 3
 description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and Quoting Special Characters
 ---
 
-# Tutorial 3: Advanced File Management / Quoting Special Characters
+# Tutorial 3: Advanced File Management and Quoting Special Characters
 
 ## Main Objectives of this Tutorial
 
