@@ -1,15 +1,13 @@
 ---
 id: tutorial8
-title: Tutorial 8 - Links / Process Management
+title: Tutorial 8 - Links and Process Management
 sidebar_position: 7
 description: Tutorial 8 for Students to Learn Links and Process Management
 ---
 
-# Tutorial 8: Links / Process Management
+# Tutorial 8: Links and Process Management
 
-## Linking Files / Managing Processes
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Define the term **i-node** as it relates to the Unix/Linux File System
   - Issue the **ls -i** command to view **i-node** (index) numbers associated with Unix/Linux files
@@ -20,16 +18,12 @@ description: Tutorial 8 for Students to Learn Links and Process Management
   - **Display** and **manipulate** background and foreground processes
   - Use **alias** and **history** commands in Unix/Linux
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 8 Lecture 1 Notes: [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx)
 - Week 8 Lecture 2 Notes: [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx)
-
-**Concepts / Commands**
 
 **Links:**
 
@@ -46,9 +40,7 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 | [ln](http://man7.org/linux/man-pages/man1/ln.1.html) | [ps](http://man7.org/linux/man-pages/man1/ps.1.html) | [top](http://man7.org/linux/man-pages/man1/top.1.html) | [fg](http://man7.org/linux/man-pages/man1/fg.1p.html) | [bg](http://man7.org/linux/man-pages/man1/bg.1p.html) | [jobs](http://man7.org/linux/man-pages/man1/jobs.1p.html) | [kill](http://man7.org/linux/man-pages/man1/kill.1.html) | [sleep](https://man7.org/linux/man-pages/man1/sleep.1.html) | [alias](http://linuxcommand.org/lc3_man_pages/aliash.html) , [unalias](https://man.linuxreviews.org/man1p/unalias.1p.html) | [history](https://mediatemple.net/community/products/dv/204404624/using-the-history-command) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**YouTube Videos**
-
-**Brauer Instructional Videos:**
+**Brauer Instructional YouTube Videos:**
 
 - [Inodes and Links](https://www.youtube.com/watch?v=tZ94-qH9unM&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=9)
 - [Processes and Jobs](https://www.youtube.com/watch?v=q93POTgH-aQ&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=7)
@@ -201,9 +193,7 @@ _Examples of commands that use command history:_
 
 ## Investigation 1: Linking Files
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 9 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 9 by midnight to obtain a grade of 2% towards this course**
 
 In this investigation, you will learn how to create **hard links** and **symbolic links** on your Matrix account, and observe the advantages and limitations of using both types of links.
 
