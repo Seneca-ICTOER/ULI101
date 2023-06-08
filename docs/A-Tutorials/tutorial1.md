@@ -7,9 +7,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 # Tutorial 1: Using Your Matrix Server Account
 
-## Using Your Matrix Server Account
-
-### Main Objectives of this Tutorial
+## Main Objectives of this Tutorial
 
 - Learn how to access your Matrix server account (from home and/or from Seneca computer lab).
 - Learn several ways to exit your Matrix Linux Account session.
@@ -18,11 +16,9 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 - Issue a checking program (i.e. Shell Script) to confirm that you accessed your Matrix account.
 - Perform LINUX PRACTICE QUESTIONS for additional practice.
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes / Software**
-
-**Slides:**
+**Course Slides / Software**
 
 - Week 1 Lecture 1 Notes: [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
 
@@ -39,8 +35,6 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 - [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download)
 - [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 
-**Linux Command/Shortcut Reference**
-
 **Matrix Account Access:**
 
 - [logout, exit](https://ss64.com/bash/logout.html)
@@ -56,9 +50,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 | [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [cal](http://man7.org/linux/man-pages/man1/cal.1.html) | [date](http://man7.org/linux/man-pages/man1/date.1.html) | [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html) | [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html) | [clear, <ctrl\><l\>](http://man7.org/linux/man-pages/man1/clear.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**YouTube Videos**
-
-**Brauer Instructional Videos:**
+**Brauer Instructional Youtube Videos:**
 
 - [Connecting to Matrix Using SSH Client, and Running UBUNTU Within Windows 10](https://www.youtube.com/watch?v=L5RcOngDV_o)
 - [Linux File System, Basic Navigation (ls, cd, pwd, tree), Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2)
@@ -146,9 +138,7 @@ In this section, you will learn how to access your Matrix Linux account by two d
   - From your **home computer**
   - From a **workstation in a Seneca College** lab via **MyApps**
 
-**ATTENTION:**
-
-**This weekly tutorial must be completed by Friday at 11:59pm in Week 2 to obtain a grade of 2% towards this course.**
+**ATTENTION: This weekly tutorial must be completed by Friday at 11:59pm in Week 2 to obtain a grade of 2% towards this course.**
 
 It is essential that you complete these Weekly Tutorials fully and on time. These are your major learning tool in the course. There are no late marks.
 
