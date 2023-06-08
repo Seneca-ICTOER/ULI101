@@ -1,15 +1,13 @@
 ---
 id: tutorial10
-title: Tutorial 10 - Sed & Awk Utilities
+title: Tutorial 10 - Sed and Awk Utilities
 sidebar_position: 9
 description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 ---
 
-# Tutorial 10: Sed & Awk Utilities
+# Tutorial 10: Sed and Awk Utilities
 
-## Using SED & AWK Utilities
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
   - Use the **sed** command to **manipulate text** contained in a file.
   - List and explain several **addresses** and **instructions** associated with the **sed** command.
@@ -18,16 +16,12 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
   - List and explain **comparison operators**, **variables** and **actions** associated with the **awk** command.
   - Use the **awk** command as a **filter** with Linux pipeline commands.
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 10 Lecture 1 Notes: [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx)
 - Week 10 Lecture 2 Notes: [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx)
-
-**Linux Command/Shortcut Reference**
 
 **Text Manipulation:**
 
@@ -39,9 +33,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 - [sed](https://man7.org/linux/man-pages/man1/sed.1p.html)
 - [awk](https://man7.org/linux/man-pages/man1/awk.1p.html)
 
-**YouTube Videos**
-
-**Brauer Instructional Videos:**
+**Brauer Instructional YouTube Videos:**
 
 - [Using the sed Utility](https://www.youtube.com/watch?v=npU6S61AIko&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=14)
 - [Using the awk Utility](https://www.youtube.com/watch?v=OV3XzjDYgJo&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=13)
@@ -122,9 +114,7 @@ awk [-F] 'selection-criteria {action}’ file-name
 
 ## Investigation 1: Using The sed Utility
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 11 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 11 by midnight to obtain a grade of 2% towards this course**
 
 
 In this investigation, you will learn how to manipulate text using the **sed** utility.
