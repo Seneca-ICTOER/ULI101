@@ -7,16 +7,14 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 # Tutorial 2: Unix / Linux File Management
 
-## Unix / Linux File Management Concepts
-
-### Main Objectives of this Practice Tutorial
+## Main Objectives of this Practice Tutorial
 
 - Understand the purpose of **directories** and **directory pathnames.**
 - Use common **Unix / Linux commands** to perform **directory management** tasks.
 - Use **Text Editors** to create and modify text files
 - Use Common Unix / Linux commands to **manage** and **manipulate** text files.
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
 **Lecture Slides:**
 
