@@ -5,11 +5,9 @@ sidebar_position: 4
 description: Tutorial 4 for Students to Learn Data Representation, Numbering Conversion, and File Permissions
 ---
 
-# Tutorial 4: Data Representation / Numbering Conversion / File Permissions
+# Tutorial 4: Data Representation and Numbering Conversion and File Permissions
 
-## Data Representation / Numbering Conversion / File Permissions
-
-### Main Objectives of this Tutorial
+## Main Objectives of this Tutorial
 
   - Understand how digital computers store data (i.e. data representation)
   - Define **decimal, binary, octal** and **hexadecimal** numbers
@@ -19,19 +17,15 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
   - Change file **permissions** with the **chmod** command (both symbolic and absolute methods)
   - Use the **umask** command to automatically assign permissions for **newly created directories** and **regular files**
 
-### Tutorial Reference Material
+## Tutorial Reference Material
 
-**Course Notes**
-
-**Slides:**
+**Course Slides:**
 
 - Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
 
 - Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
 
-**Numbering Conversion / File Permissions Reference**
-
-**Data Representation Definitions:**
+**Numbering Conversion and Data Representation Definitions:**
 
 | [Data Representation](https://home.adelphi.edu/~siegfried/cs170/170l1.pdf) | [Decimal Numbers](https://en.wikipedia.org/wiki/Decimal) | [Binary Numbers](https://en.wikipedia.org/wiki/Binary_number) | [Octal Numbers](https://en.wikipedia.org/wiki/Octal) | [Hexadecimal Numbers](https://en.wikipedia.org/wiki/Hexadecimal) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -45,9 +39,7 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 - [chmod](https://ss64.com/bash/chmod.html)
 - [umask](https://ss64.com/bash/umask.html)
 
-**YouTube Videos**
-
-**Instructional Videos:**
+**Instructional YouTube Videos:**
 
 - [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U)
 - [File Permissions](https://www.youtube.com/watch?v=SdgiYoOi0CY)
@@ -106,7 +98,7 @@ When converting **decimal** numbers to **binary** numbers, perform the following
 ![Decimal to Binary](/img/Decimal-to-bin.png)
 
 
-**Method 3: Octal to Binary / Binary to Octal**
+**Method 3: Octal to Binary and Binary to Octal**
 
 _Binary to Octal_
 
@@ -125,7 +117,7 @@ _Octal to Binary_
 ![Octal to Binary](/img/Octal-to-bin.png)
 
 
-**Method 4: Hexadecimal to Binary / Binary to Hexadecimal**
+**Method 4: Hexadecimal to Binary and Binary to Hexadecimal**
 
 _Binary to Hexadecimal_
 
@@ -145,7 +137,7 @@ _Hexadecimal to Binary_
 
 ![Hexidecimal to Binary](/img/Hex-to-bin.png)
 
-**Method 5: Octal to Hexadecimal / Hexadecimal to Octal**
+**Method 5: Octal to Hexadecimal and Hexadecimal to Octal**
 
 To convert using the method, simply use binary as a "**bridge**".
 
@@ -234,9 +226,7 @@ Setting **umask** for newly-created **regular files** ^
 
 ## Investigation 1: Numbering Conversions
 
-**ATTENTION:**
-
-**This online tutorial will be required to be completed by Friday in week 5 by midnight to obtain a grade of 2% towards this course**
+**ATTENTION: This online tutorial will be required to be completed by Friday in week 5 by midnight to obtain a grade of 2% towards this course**
 
 
 For this investigation, we will NOT be logged into our Matrix account, but it is recommended to have an **MS Word document** open to manually perform numbering conversions.
