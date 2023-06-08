@@ -55,7 +55,7 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 
 ## Key Concepts
 
-**Data Representation**
+### Data Representation
 
 Digital computers are **electronic devices** that contain a series of **circuits** and voltage levels that can store / represent data.
 
@@ -74,7 +74,7 @@ IT Professionals that Use Data Representation:
   - _Web Developers:_ Setting color codes for webpage background or text
   - _Unix/Linux System Administrators:_ Setting _permissions_ for files and directories
 
-**Numbering Conversion Methods**
+### Numbering Conversion Methods
 
 **Method 1: Binary to Decimal**
 
@@ -158,7 +158,7 @@ To convert hexadecimal to octal, convert hexadecimal to binary, then convert bin
 ![Bridge](/img/Octal-hex.png)
 
 
-**File Permissions**
+### File Permissions
 
 Since Unix / Linux operating file systems allow for **multiple user accounts** it is essential to have a system to **share** or **limit** access to directories and files contained within the file system.
 
