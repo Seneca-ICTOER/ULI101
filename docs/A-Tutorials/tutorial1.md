@@ -21,7 +21,6 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 **Course Slides and Software**
 
 - Week 1 Lecture 1 Notes: [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx)
-
 - Week 1 Lecture 2 Notes: [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx)
 
 **Tutorials:**
@@ -77,11 +76,9 @@ A **shell** is an interface / interpreter to allow a user to communicate with th
 
 ### Layout of the Matrix Linux Server
 
-The **Matrix server** consists of **several computers connected together** to form a **cluster.**
-A **Linux cluster** is a **cost effective** alternative to buying larger servers.
+The **Matrix server** consists of **several computers connected together** to form a **cluster.** A **Linux cluster** is a **cost effective** alternative to buying larger servers.
 
 All registered students in this course should have an account on the Matrix server. You will be using this account for the following reasons:
-
   - Issuing **Linux commands**
   - Becoming productive using the Linux **command prompt (shell)**
   - Performing **Linux Tutorials (11 Weekly Tutorials x 2% = 22% of your final grade)**
@@ -108,7 +105,7 @@ In the next investigation, you will learn how to **connect** to and **login** to
 
 There are two basic methods to connecting to your Matrix account.
 
-#### Method 1: Run ssh Command from command prompt:**
+#### Method 1: Run ssh Command from command prompt:
 
   After connecting to the **Seneca Student VPN**, you can open a **command terminal** in **Windows 10 (or above), Mac** or **Linux** computer and issue the following command: 
   
@@ -120,10 +117,11 @@ ssh senecauserid@matrix.senecacollege.ca
 
 Connect to Matrix via **ssh** command
 
-#### Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
+#### Method 2: Run graphical ssh program via MyApps in Seneca computer lab:
 
   If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH application** for your Windows machine. One advantage of using this method is that you are already at Seneca and are NOT required to connect to the student VPN.
-  
+
+
 **NOTE:** You instructor may show you how to run a graphic Linux VM in order to connect to your Matrix account (if interested, refer to the optional tutorial at the end of this semester).
 
 ![SSH Graphical Main Window](/img/Ssh-main-window.png "SSH Graphical Main Window")
