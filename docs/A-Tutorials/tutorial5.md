@@ -763,7 +763,6 @@ When answering Linux command questions, refer to the following Inverted Tree Dia
   11. Write a single Linux **pipeline command** to display only the first 10 characters of each filename contained in your current directory. Also, there is will be a lot of output, so also pause at each screenful so you can navigate throughout the display contents. Use a relative pathname.
   12. Create a **table** listing each Linux command, useful options that were mentioned in this tutorial for the following Linux commands: **cut , tr , wc** , and **tee**.
 
-
 ---
 
 Author: Murray Saul
