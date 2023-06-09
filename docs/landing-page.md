@@ -32,8 +32,7 @@ You will need a **Matrix** account to complete and submit the ULI101 Weekly Tuto
   - not seeing your home directory in your Matrix Account
   - any other Matrix issue
 
-If you require technical assistance with the issues above, please click on the following link:
-[IT Service Desk](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its).
+If you require technical assistance with the issues above, please click on the following link: [IT Service Desk](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its).
 
 Phoning may resolve the issue sooner. Be ready to specify the exact error message you received.
 
@@ -49,7 +48,6 @@ It's extremely helpful to take a full-desktop screenshot of your screen with the
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download)
 - [Moba Xterm](https://mobaxterm.mobatek.net/download-home-edition.html)
-
 
 **Learning Tools**
 
