@@ -415,7 +415,7 @@ output:
 ls ???.txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   7. What do you think the output will be from the following Linux command?
 
@@ -423,7 +423,7 @@ ls ???.txt
 ls ?????.txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   8. What do you think the output will be from the following Linux command?
 
@@ -431,7 +431,7 @@ ls ?????.txt
 ls ??????.txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   9. What do you think the output will be from the following Linux command?
 
@@ -439,7 +439,7 @@ ls ??????.txt
 ls [0-9].txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer. Did the command work?
+   - **Write down the expected output on paper**, then **issue the command** to check your answer. Did the command work?
    - What does this teach you about the character class \[ \] symbol?
 
   10. What do you think the output will be from the following Linux command?
@@ -448,7 +448,7 @@ ls [0-9].txt
 ls [0-9][0-9][0-9].txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   11. What do you think the output will be from the following Linux command?
 
@@ -456,7 +456,7 @@ ls [0-9][0-9][0-9].txt
 ls [a-z][a-z][a-z].txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   12. What do you think the output will be from the following Linux command (using character class with UPPERCASE letters)?:
 
@@ -464,7 +464,7 @@ ls [a-z][a-z][a-z].txt
 ls [A-Z][A-Z][A-Z].txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   13. What do you think the output will be from the following Linux command (using character class using alpha-numeric characters)?
 
@@ -472,7 +472,7 @@ ls [A-Z][A-Z][A-Z].txt
 ls [a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer.
+   - **Write down the expected output on paper**, then **issue the command** to check your answer.
 
   14. What do you think the output will be from the following Linux command?
 
@@ -480,7 +480,7 @@ ls [a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].txt
 ls *.txt
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed? Why not?
+   - **Write down the expected output on paper**, then **issue the command** to check your answer. Did ALL text files get listed? Why not?
 
   15. What do you think the output will be from the following Linux command?
 
@@ -488,7 +488,7 @@ ls *.txt
 ls *.[tT][xX][tT]
 ```
 
-   - Write down the expected output on paper, then issue the command to check your answer. Did ALL text files get listed this time? If so, why?
+   - **Write down the expected output on paper**, then **issue the command** to check your answer. Did ALL text files get listed this time? If so, why?
 
   16. NOTE: We have just been using filename expansion symbols just with the ls command.
 
