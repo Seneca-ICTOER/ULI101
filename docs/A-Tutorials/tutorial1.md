@@ -80,8 +80,7 @@ A **shell** is an interface / interpreter to allow a user to communicate with th
 The **Matrix server** consists of **several computers connected together** to form a **cluster.**
 A **Linux cluster** is a **cost effective** alternative to buying larger servers.
 
-All registered students in this course should have an account on the Matrix server.
-You will be using this account for the following reasons:
+All registered students in this course should have an account on the Matrix server. You will be using this account for the following reasons:
 
   - Issuing **Linux commands**
   - Becoming productive using the Linux **command prompt (shell)**
@@ -109,7 +108,7 @@ In the next investigation, you will learn how to **connect** to and **login** to
 
 There are two basic methods to connecting to your Matrix account.
 
-**Method 1: Run ssh Command from command prompt:**
+#### Method 1: Run ssh Command from command prompt:**
 
   After connecting to the **Seneca Student VPN**, you can open a **command terminal** in **Windows 10 (or above), Mac** or **Linux** computer and issue the following command: 
   
@@ -121,7 +120,7 @@ ssh senecauserid@matrix.senecacollege.ca
 
 Connect to Matrix via **ssh** command
 
-**Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
+#### Method 2: Run graphical ssh program via MyApps in Seneca computer lab:**
 
   If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH application** for your Windows machine. One advantage of using this method is that you are already at Seneca and are NOT required to connect to the student VPN.
   
@@ -142,7 +141,6 @@ In this section, you will learn how to access your Matrix Linux account by two d
 
 It is essential that you complete these Weekly Tutorials fully and on time. These are your major learning tool in the course. There are no late marks.
 
-
 ### Method 1: Connecting To Your Matrix Account From Your Home Computer
 
 You will now learn a quick and simple method of connecting to your Matrix account by opening a text-based **terminal** (in any OS) and issuing the **ssh command.**
@@ -153,8 +151,7 @@ You will now learn a quick and simple method of connecting to your Matrix accoun
 
    - **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
 
-   - You only have to connect to your Seneca student VPN once during the day,
-or while you are logged into your computer.
+   - You only have to connect to your Seneca student VPN once during the day, or while you are logged into your computer.
 
 ![Seneca Student VPN](/img/Gp1.png "Seneca Student VPN")
 
@@ -197,8 +194,7 @@ ssh senecausername@matrix.senecacollege.ca
 
 5. Type **yes** and press **ENTER** to share your public key.
 
- - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account.
-Your Matrix password is identical to your Seneca password.
+ - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password.
 
  - **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
 
@@ -215,8 +211,7 @@ Your Matrix password is identical to your Seneca password.
 
 7. If you entered your password correctly, the **Matrix Linux shell** should appear where you can enter Linux commands.
 
-  - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.**
-The main reason for this is to **force students to learn how to issue Linux commands.**
+  - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.** The main reason for this is to **force students to learn how to issue Linux commands.**
 
 8. To **exit** your Matrix session, type the command `exit` followed by **ENTER**
 
@@ -228,15 +223,11 @@ The main reason for this is to **force students to learn how to issue Linux comm
 
 10. Try accessing your Matrix account, and then exiting your Matrix account several times to become familiar with this process.
 
-  - You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine)
-by downloading and running a graphical SSH application.
-
+  - You will now learn an **alternative method** to access your Matrix account (if you have an MS Windows machine) by downloading and running a graphical SSH application.
 
 ### Method 2: Connecting To Your Matrix Account From Seneca Computer Lab
 
-**NOTE: This section requires you have access to a Seneca computer lab on campus.
-If you don't have access to a Seneca computer lab this semester, then you can skip this section**
-
+**NOTE: This section requires you have access to a Seneca computer lab on campus. If you don't have access to a Seneca computer lab this semester, then you can skip this section**
 
 You can also connect to your Matrix server account in the **Seneca Computer lab via MyApps.**
 
@@ -277,8 +268,7 @@ to allow you to connect and login to your Matrix server account.
 
   5. Launch the **SSH Secure Shell Client** application icon to launch this program.
 
-   - **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster
-to access this application in the future.
+   - **NOTE:** Prior to launching the application, you can add this to your **favourites** which will make it faster to access this application in the future.
 
 ![SSH Secure Shell Client Window](/img/Ssh-main-window.png "SSH Secure Shell Client Window")
 
@@ -286,8 +276,7 @@ SSH Client Application Window
 
   6. The main SSH Client window will appear. Click on the **Quick Connect** button.
 
-   - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name**
-to allow you to connect to the server.
+   - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name** to allow you to connect to the server.
 
 ![Quick Connect Dialog Window](/img/Quick-connect-window.png "Quick Connect Dialog Window")
 
@@ -295,8 +284,7 @@ Quick Connect Dialog Window
 
   7. Click on the textbox labelled Hostname and enter the text: ***matrix***
 
-   - **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network.
-If you where located outside Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**
+   - **NOTE:** You can use the hostname **matrix** since you are located inside Seneca's network. If you where located outside Seneca's network, then you would need to enter the full domain name: **matrix.senecac.on.ca**
 
   8. When connecting securely for the **first time**, a dialog box will appear to share a "public key" with your Matrix account in order to make your interaction between your workstation and the remote Linux server secure within the network (i.e. encrypted to prevent unauthorized access by other users)
 
@@ -329,7 +317,7 @@ Password Dialog Box
 
 ![SSH Login Error](/img/Ssh-login-error.png "SSH Login Error")
 
-If you continue to experience the same problems, click on the following link for IT service desk contact info: [IT service desk.](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its)
+   - If you continue to experience the same problems, click on the following link for IT service desk contact info: [IT service desk.](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its)
 
 13. If you entered your password correctly, the main SSH Linux shell should appear where you enter Linux commands.
 
@@ -643,7 +631,7 @@ cd /bin
 
 ![Ctrl-b](/img/Ctrl-b.png "Ctrl B")
 
-**alt-b** moves one word backwards for Windows OS
+   - **alt-b** moves one word backwards for Windows OS
 
   5. Press the `ctrl-w` shortcut key. 
   
@@ -651,7 +639,7 @@ cd /bin
       
  ![Ctrl W](/img/Ctrl-w.png "Ctrl W")
  
- **ctrl-w** deletes a word to left of the cursor.
+   - **ctrl-w** deletes a word to left of the cursor.
 
   6. Type the following command: `ls`
 
@@ -673,9 +661,7 @@ cd /bin
   12. Press the `ctrl-u` key combination to clear the line.
   13. Press the `ctrl-l key` combination. What happens? What is the advantage of using **ctrl-u** as opposed to **ctrl-l**?
 
-The Bash shortcut keys that you just learned are sufficient to perform Bash Shell editing.
-Although you are NOT required to learn other short-cut keys, here is a link to a listing in case you are interested: https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
-
+The Bash shortcut keys that you just learned are sufficient to perform Bash Shell editing. Although you are NOT required to learn other short-cut keys, here is a link to a listing in case you are interested: https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
 
 ### Tutorial Submission
 
@@ -712,7 +698,6 @@ cd
   4. An email will be sent to your Seneca email as **confirmation** in case your ULI101 professor is assigning marks to these tutorials.
 
       - Keep those confirmation email messages for the duration of this semester as proof that you have completed those checking scripts in case there is a discrepancy in tutorial grades.
-
 
 ## Linux Practice Questions
 
