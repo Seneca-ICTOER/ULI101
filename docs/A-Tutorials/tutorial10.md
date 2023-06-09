@@ -119,11 +119,8 @@ In this investigation, you will learn how to manipulate text using the **sed** u
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account and confirm you are located in your **home** directory.
-
   2. Issue a Linux command to create a directory called **sed**
-
   3. Issue a Linux command to change to the **sed** directory and confirm that you are located in the **sed** directory.
-
   4. Issue the following Linux command to copy the data.txt file (**copy and paste** to save time):
 
 ```bash
@@ -353,8 +350,7 @@ awk '$1 ~ /^f/ {print $1,$2,$4}' cars.txt | tee awk-6.txt
      - **&&**     (and)
      - **\|\|**        (or)
 
-  13. Issue the following linux pipeline command to list all **fords**
-whose **price is greater than $10,000**:
+  13. Issue the following linux pipeline command to list all **fords** whose **price is greater than $10,000**:
 
 ```bash
 awk '$1 ~ /ford/ && $5 > 10000 {print $0}' cars.txt | tee awk-7.txt
