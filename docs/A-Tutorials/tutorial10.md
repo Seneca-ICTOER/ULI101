@@ -38,7 +38,6 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 - [Using the sed Utility](https://www.youtube.com/watch?v=npU6S61AIko&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=14)
 - [Using the awk Utility](https://www.youtube.com/watch?v=OV3XzjDYgJo&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=13)
 
-
 ## Key Concepts
 
 ### Using the sed Utility
@@ -76,7 +75,6 @@ sed [-n] 'address instruction' filename
 | **d** | delete line(s) that match the address |
 | **q** | quit processing at the first line that matches the address |
 | **s** | substitute text to replace a matched regular expression, similar to vi substitution |
-
 
 ### Using the awk Utility
 
@@ -116,7 +114,6 @@ awk [-F] 'selection-criteria {action}’ file-name
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 11 by midnight to obtain a grade of 2% towards this course**
 
-
 In this investigation, you will learn how to manipulate text using the **sed** utility.
 
 **Perform the Following Steps:**
@@ -148,7 +145,6 @@ sed 'p' data.txt
 ![Sed 1](/img/Sed-1.png)
 
    - The reason why standard output appears twice is that the sed command (without the **-n** option) displays all lines regardless of an address used.
-
    - We will use **pipeline commands** to both display stdout to the screen and save to files for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
 
   7. Issue the following Linux pipeline command:
@@ -158,7 +154,6 @@ sed -n 'p' data.txt | tee sed-1.txt
 ```
 
    - What do you notice? You should see only one line.
-
    - You can specify an **address** to display lines using the sed utility (eg. _line \#_, **line \#s** or range of **line \#s**).
 
   8. Issue the following Linux pipeline command:
@@ -181,7 +176,6 @@ sed -n '2,5 p' data.txt | tee sed-3.txt
 ![Sed 2](/img/Sed-2.png)
 
    - Using the sed command to display a range of lines. ^
-
    - The **s** instruction is used to **substitute** text (a similar to method was demonstrated in the vi editor in tutorial 9).
 
   10. Issue the following Linux pipeline command:
@@ -191,7 +185,6 @@ sed '2,5 s/TUTORIAL/LESSON/g' data.txt | tee sed-4.txt | more
 ```
 
    - What do you notice? View the original contents of lines 2 to 5 in the **data.txt** file in another shell to confirm that the substitution occurred.
-
    - The **q** instruction terminates or **quits** the execution of the sed utility as soon as it is read in a particular line or matching pattern.
 
   11. Issue the following Linux pipeline command:
@@ -205,7 +198,6 @@ sed '11 q' data.txt | tee sed-5.txt
 ![Sed 3](/img/Sed-3.png)
 
    - You can use **regular expressions** to select lines that match a pattern. In fact, the sed command was one of the first Linux commands that used regular expression.
-
    - The rules remain the same for using regular expressions as demonstrated in **tutorial 9** except the regular expression must be contained within **forward slashes** (eg. **/regexp/** ).
 
   12. Issue the following Linux pipeline command:
@@ -231,7 +223,6 @@ sed -n '/d$/ p' data.txt | tee sed-7.txt
 ![Sed 4](/img/Sed-4.png)
 
    - Using the sed command using regular expressions with **anchors**.
-
    - The **sed** utility can also be used as a **filter** to manipulate text that was generated from Linux commands.
 
   14. Issue the following Linux pipeline command:
@@ -260,7 +251,6 @@ ls | sed -n '/txt$/ p' | tee sed-9.txt
 
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
-
 In the next investigation, you will learn how to manipulate text using the **awk** utility.
 
 ## Investigation 2: Using The AWK Utility
@@ -284,7 +274,6 @@ cp ~uli101/tutorialfiles/cars.txt ~/
   5. Issue the **cat** command to quickly view the contents of the **cars.txt** file.
 
       - The "**print**" action (command) is the default action of awk to print all selected lines that match a **pattern**.
-
       - This **action** (contained in braces) can provide more options such as printing **specific fields** of selected lines (or records) from a database.
 
   6. Issue the following linux command all to display all lines (i.e. records) in the **cars.txt** database that matches the pattern (or "make") called **ford**:
@@ -304,7 +293,6 @@ awk '/ford/' cars.txt | tee awk-1.txt
 ```
 
    - What do you notice? You should notice ALL lines displayed without using **search criteria**.
-
    - You can use _builtin_ **variables** with the **print** command for further processing.
    - We will discuss the following variables in this tutorial:
         - **$0** - Current record (entire line)
@@ -312,25 +300,20 @@ awk '/ford/' cars.txt | tee awk-1.txt
         - **$n** - nth field in record
         - **NR** - Record Number (order in database)
         - **NF** - Number of fields in current record
-
-
    - For a listing of more variables, please consult your course notes.
 
-  8. Issue the following linux pipeline command to display the **model, year, quantity** and price
-in the **cars.txt** database for makes of **chevy**:
+  8. Issue the following linux pipeline command to display the **model, year, quantity** and price in the **cars.txt** database for makes of **chevy**:
 
 ```bash
 awk '/chevy/ {print $2,$3,$4,$5}' cars.txt | tee awk-2.txt
 ```
 
    - Notice that a **space** is the delimiter for the fields that appear as standard output.
-
    - The **tilde character ~** is used to search for a pattern or display standard output for a particular field.
 
 ![Awk 2](/img/Awk-2.png)
 
-  9. Issue the following linux pipeline command to display all **plymouths** (**plym**)
-by **model name, price** and **quantity**:
+  9. Issue the following linux pipeline command to display all **plymouths** (**plym**) by **model name, price** and **quantity**:
 
 ```bash
 awk '$1 ~ /plym/ {print $2,$3,$4,$5}' cars.txt | tee awk-3.txt
@@ -394,10 +377,8 @@ awk '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-8.txt
 ```
 
    - What did you notice?
-
    - The problem is that the **cars2.txt** database separates each field by a semi-colon (**;**) instead of **TAB**.
    - Therefore, it does not recognize the second and fourth fields.
-
    - You need to issue awk with the -F option to indicate that this file's fields are separated (delimited) by a semi-colorn.
 
   17. Issue the following linux pipeline command to display the **year** and **quantity** of cars that **begin** with the **letter 'f'** for the **cars2.txt** database:
@@ -415,7 +396,6 @@ awk -F";" '$1 ~ /^f/ {print $2,$4}' cars2.txt | tee awk-9.txt
 ```
 
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
 
 ## Linux Practice Questions
 
@@ -451,19 +431,14 @@ Write the results of each of the following Linux commands for the above-mentione
   3. `sed '/the/ d' ~murray.saul/uli101/stuff.txt`
   4. `sed 's/line/NUMBER/g' ~murray.saul/uli101/stuff.txt`
 
-
 **Part B: Writing Linux Commands Using the sed Utility**
 
 Write a single Linux command to perform the specified tasks for each of the following questions.
 
   1. Write a Linux sed command to display only lines 5 to 9 for the file: **~murray.saul/uli101/stuff.txt**
-
   2. Write a Linux sed command to display only lines the begin the pattern “and” for the file: **~murray.saul/uli101/stuff.txt**
-
   3. Write a Linux sed command to display only lines that end with a digit for the file: **~murray.saul/uli101/stuff.txt**
-
   4. Write a Linux sed command to save lines that match the pattern “line” (upper or lowercase) for the file: **~murray.saul/uli101/stuff.txt** and save results (overwriting previous contents) to: **~/results.txt**
-
 
 **Part C: Writing Linux Commands Using the awk Utility**
 
@@ -495,13 +470,9 @@ Finally, line 10
 Write a single Linux command to perform the specified tasks for each of the following questions.
 
   1. Write a Linux awk command to display all records for the file: **~/cars** whose fifth field is greater than 10000.
-
   2. Write a Linux awk command to display the first and fourth fields for the file: **~/cars** whose fifth field begins with a number.
-
   3. Write a Linux awk command to display the second and third fields for the file: **~/cars** for records that match the pattern “chevy”.
-
   4. Write a Linux awk command to display the first and second fields for all the records contained in the file: **~/cars**
-
 
 ---
 
