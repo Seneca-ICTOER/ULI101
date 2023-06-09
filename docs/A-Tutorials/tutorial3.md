@@ -158,7 +158,6 @@ Directories in red display the path from another user's home directory location 
 
 When issuing Linux commands, it may be **more efficient** (less typing) to use **filename expansion symbols** to match files that share similar characteristics (e.g. same file extension) when issuing Linux commands.
 
-
 Examples:
 
 You can use a special character to indicate to the Bash shell to match all files that end with the extension ".txt":
@@ -188,7 +187,6 @@ Below are the most common Filename Expansion symbols and how they are used for f
 
 As discussed in the above section, there are some special characters that the shell uses to perform an operation; for example, the filename expansion symbols: **\*** or **?**
 
-
 There are **3 methods** to make those special characters **act only like text characters** when issuing Linux commands (displayed in chart below):
 
 | **Quoting Method** |	**Example** |
@@ -206,7 +204,6 @@ The best way to learn about different types of file pathnames is to use them whi
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account.
-
   2. Issue a command to **confirm** you are located in your home directory.
 
       - Let's create the following directory structure under your home directory by issuing the mkdir command using only absolute pathnames.
@@ -237,7 +234,6 @@ rm -ri /home/youruserid/tutorial3
 ```
 
   6. Issue a command tree command as you did in **step #4** to confirm that the directory structure has been removed.
-
   7. Issue the following Linux command to create the same directory structure using relative-to-home pathnames:
 
       - **NOTE:** You usually generate the ~ character by Holding down **SHIFT** and press the button to the left of the number **1** above the text on your keyboard.
@@ -253,9 +249,7 @@ mkdir -p ~/tutorial3/practice/commands ~/tutorial3/practice/examples ~/tutorial3
       - Let's remove the **tutorial3** directory and its contents and issue the same command using **relative pathnames**.
 
   9. Issue the same command as you did in **step #5** to remove the **tutorial3** directory and its contents safely.
-
   10. Issue a Linux command to confirm you removed the **tutorial3** directory and its contents.
-
   11. Issue the following Linux command to create the same directory structure using relative pathnames:
 
 ```bash
@@ -277,7 +271,6 @@ When performing the next series of steps, refer to the **tree diagram** below. L
 **Perform the Following Steps:**
 
   1. Make certain that your current directory is **your home directory**.
-
   2. Since we will be running Linux commands depending on the directory structure that you have created, issue the following Linux command to verify you created it correctly:
  
 ```bash
@@ -285,7 +278,6 @@ When performing the next series of steps, refer to the **tree diagram** below. L
 ```
 
   3. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message.
-
   4. Issue a Linux command to change to the **examples** directory in your recently-created directory structure.
 
 ```bash
@@ -293,7 +285,6 @@ cd tutorial3/practice/examples
 ```
 
   5. Issue a Linux command to confirm you are located in the examples directory.
-
   6. Remembering that we are located in the **examples** directory, issue the following Linux command using a **relative** pathname to display files in the /bin directory: 
 
 ```bash
@@ -309,8 +300,7 @@ ls /bin
    - Which type of pathname would be the best to use in this situation?
    - **NOTE:** Using the previous command using the **relative-to-home** pathname would work, but it would look weird. Try to issue the command yourself!
 
-  8. Let's copy the file called ls which is contained in the **/bin** directory to your **home** directory by using the **cp** command.
-First, issue the following Linux command to copy the ls command from the /bin directory to your home directory using absolute pathnames:
+  8. Let's copy the file called ls which is contained in the **/bin** directory to your **home** directory by using the **cp** command. First, issue the following Linux command to copy the ls command from the /bin directory to your home directory using absolute pathnames:
 
 ```bash
 cp /bin/ls /home/youruserid
@@ -377,7 +367,6 @@ A great way to practice filename expansion, use the touch command to create a lo
 ![Dir12](/img/Dir12.png)
 
   2. Issue a Linux command to confirmed that you have moved to the examples directory.
-
   3. Issue the touch command to create the following empty text files in the examples directory: (note _upper_ and _lowercase_ letters)
 
 ```text
@@ -519,7 +508,6 @@ file *.[tT][xX][tT]
 ![Dir12](/img/Dir12.png)
 
   19. Issue a Linux command to confirm that you are now in the commands directory.
-
   20. Issue the following Linux command (lowercase "l" NOT the number "1"):
 
 ```bash
@@ -679,7 +667,6 @@ touch '*'
 ```
 
   12. Issue the **ls** command. Do you now see a file called "\*" in addition to the other copied files?
-
   13. Issue the following Linux command to remove the file called "\*": 
 
 ```bash
@@ -703,7 +690,6 @@ touch '*'
 ```
 
   17. Issue the **ls** command to view the files in your current directory.
-
   18. Issue the following Linux command (using single quotes): 
 
 ```bash
@@ -711,7 +697,6 @@ rm '*'
 ```
 
   19. Issue the **ls** command to confirm that the file called "\*" has been removed in your current directory. What happened this time?
-
   20. Complete the _Linux Practice Questions_ section below to get additional practice.
 
 ## Linux Practice Questions
