@@ -45,7 +45,6 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 - [Inodes and Links](https://www.youtube.com/watch?v=tZ94-qH9unM&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=9)
 - [Processes and Jobs](https://www.youtube.com/watch?v=q93POTgH-aQ&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=7)
 
-
 ## Key Concepts
 
 ### i-node (index) ID Number of a File
@@ -63,8 +62,7 @@ The **i-node number** is like a **finger-print**, and is considered to be **uniq
 
 ### Hard Links
 
-A **Hard link** is a **reference** to the physical data on a file system.
-It does this by creating a file that shares the **same i-node number** with the original file.
+A **Hard link** is a **reference** to the physical data on a file system. It does this by creating a file that shares the **same i-node number** with the original file.
 
 ![Hard link 1](/img/Hard-link-1.png)
 
@@ -73,7 +71,6 @@ It does this by creating a file that shares the **same i-node number** with the 
 **Advantages:** If only one hard link remains (even if original file has been removed), the **data in that hard linked file is NOT lost**. The data in hard linked files are **automatically updated** when original file are updated.
 
 **Disadvantages:** Hard links **take-up extra space**, you **cannot hard link directories**, and you **cannot hard link files from other Unix/Linux servers** (since the inode number may already be used by the other Unix/Linux server).
-
 
 _Examples:_
 
@@ -95,9 +92,7 @@ A **Symbolic Link** is an indirect **pointer** to a file and are also known as *
 
 **Advantages:** symbolic links are **shortcuts** to other files, where the symbolic link only contains the pathname to the original file, you **can create symbolic links on different Unix/Linux servers**, and that you can **create symbolic links for directories**.
 
-**Disadvantages:** Symbolic links are NOT good for backup purposes
-since a symbolic link can point to a nonexistent file (referred to as a "broken link").
-
+**Disadvantages:** Symbolic links are NOT good for backup purposes since a symbolic link can point to a nonexistent file (referred to as a "broken link").
 
 _Examples:_
 
@@ -108,7 +103,6 @@ ln -s otherfile.txt otherfile1.sym.lnk
 ```bash
 ln -s otherfile.txt ~/backups/otherfile.sym.lnk
 ```
-
 
 ### Managing Processes
 
@@ -122,9 +116,7 @@ All **commands/programs (tasks)** that are **running** on a Unix/Linux computer 
   - Usually a parent sleeps (_suspends_) when a child is running (the exception is when the child process is running in the background)
   - UNIX / Linux processes are **hierarchical**. The process structure can have **child processes, great grandchild processes**, etc.
 
-Users can **manage processes** to become more **productive** while working in the Unix / Linux Command-line environment.
-Processes that run in the terminal are known as **foreground** processes. You can run or send processes currently running
-in the _foreground_ to the **background** to free-up your terminal (e.g. issue other Linux commands).
+Users can **manage processes** to become more **productive** while working in the Unix / Linux Command-line environment. Processes that run in the terminal are known as **foreground** processes. You can run or send processes currently running in the _foreground_ to the **background** to free-up your terminal (e.g. issue other Linux commands).
 
 Below are a listing of common **Linux commands** and **keyboard shortcuts** to manage foreground and background processes:
 
@@ -139,15 +131,13 @@ Below are a listing of common **Linux commands** and **keyboard shortcuts** to m
 | **jobs** |	The **jobs** utility displays the **status** of jobs that were started in the current shell environment. _Example:_ jobs   \[1\]+ Stopped vim a   <-- Job \#1 (+ most recent process / background)    \[2\]  Running sleep 200 &  <-- Job \#2    \[3\]  Running sleep 300 &  <-- Job \#3    \[4\]- Running sleep 400 &  <-- Job \#4 (- second recent process / background) |
 | **kill** |	The kill command sends the specified signal to the specified processes or process groups. If no signal is specified, the **TERM** signal is sent. The default action for this signal is to terminate the process. _Examples:_ **kill PID** , **kill -9 PID** , **kill %job-number** , **kill -9 %job-number** |
 
-
 ### Aliases / Command History
 
 **Aliases:**
 
 An **alias** is a **nickname** to an existing command or group of commands.
 
-An alias existing in **system memory** and will be **lost** when your current Linux session ends,
-unless the alias is set in a **start-up file** (e.g. **~/.bashrc**. You will learn about using start-up files later in this course.
+An alias existing in **system memory** and will be **lost** when your current Linux session ends, unless the alias is set in a **start-up file** (e.g. **~/.bashrc**. You will learn about using start-up files later in this course.
 
 _Examples:_
 
@@ -169,13 +159,11 @@ alias ls='ls -al'
 alias clearfile='cat /dev/null >'
 ```
 
-
 ```bash
 unalias alias-name
 ``` 
 
 (removes alias from memory)
-
 
 **Command History:**
 
@@ -189,7 +177,6 @@ _Examples of commands that use command history:_
 | **history \| more** |	display all stored commands |
 | **!num** |	**re-execute** an issued command number by command number (determined from history command) |
 | **!xxx** |	**re-run** a most recent previously-issued command beginning with string "xxx" |
-
 
 ## Investigation 1: Linking Files
 
@@ -368,8 +355,7 @@ ls -li ~/links2/text-file.txt ~/links2/text-file.sym.lnk
 
 ![Symbolic link inode 1](/img/Symbolic-link-inode1.png)
 
-**Symbolic links** are **pointers** (i.e. pathnames) to **regular files** and **directories**.
-They do **NOT** share the same **i-node**.
+**Symbolic links** are **pointers** (i.e. pathnames) to **regular files** and **directories**. They do **NOT** share the same **i-node**.
 
   30. Issue the following Linux command to create the following **symbolic link** in your **home** directory:
 
@@ -468,9 +454,7 @@ ls -ld t8example
 
 **Symbolic links** can be used to point to **directories** as well as regular files. Symbolic links can also point to files on **other** Unix/Linux filesystems.
 
-
 In the next investigation, you will learn how to **manage processes** on your Matrix server.
-
 
 ## Investigation 2: Managing Processes
 
@@ -615,7 +599,8 @@ kill %3
 ```
 
   18. Issue the **jobs** command (you may have to issue the _jobs_ command several times to get final result).
-What do you notice?
+
+         - What do you notice?
 
   19. Let's use **grouping** to run several commands in sequence within a single process.
 
@@ -625,8 +610,7 @@ What do you notice?
 (sleep 400; sleep 500; sleep 600) &
 ```
 
-  21. Issue the **jobs** command. What do you notice?
-You should notice all commands are run in a group as just one process.
+  21. Issue the **jobs** command. What do you notice? You should notice all commands are run in a group as just one process.
 
 ![Process jobs 5](/img/Process-jobs5.png)
 
@@ -669,7 +653,6 @@ kill -9 PID
 ```
 
 In the next investigation, you will learn how to **create aliases** and **view command history** on your Matrix server.
-
 
 ## Investigation 3: Aliases / Command History
 
@@ -779,7 +762,6 @@ alias | ~uli101/week8-check-3
 
    - If you encounter errors, then view the feedback to make corrections, and then re-run the checking script.
    - If you receive a congratulation message that there are no errors, then proceed with this tutorial.
-
    - We will complete this investigation by learning to execute **previously issued commands** by using **command history**.
 
   26. Issue the following Linux command: 
@@ -805,7 +787,6 @@ history | grep "lh"
 ```
 
    - What happened?
-
 
 ## Linux Practice Questions
 
@@ -839,8 +820,7 @@ Your instructor may take-up these questions during class. It is up to the studen
 
   4. Managing Background processes:
 
-Use the following diagram to answer the accompanying questions.
-Each of the following questions will use the diagram below and are treated as independent situations.
+Use the following diagram to answer the accompanying questions. Each of the following questions will use the diagram below and are treated as independent situations.
 
 ```text
 [1]  Stopped vim a
@@ -852,19 +832,14 @@ Write a single Linux command to bring the second-recently process placed in the 
 
 Write a single Linux command to **terminate job \#3**.
 
-
   5. Write a single Linux command to display running processes in “real-time”.
   6. Write a single Linux command to terminate a process that has the following PID: **22384**
-
   7. Aliases / History:
       1. Write a linux command to create an **alias** called **ld** that issues the command: **ls -ld**
       2. Write a linux command to unset the **alias** created in the previous question.
       3. Issue a Linux command to list **history** of commands that match the pattern called **touch**.
 
-  8. Create a **table** listing each Linux command, useful options and command purpose for the following Linux commands:
-
-**ln , ps , top , fg , bg , jobs , kill , alias , unalias , history**
-
+  8. Create a **table** listing each Linux command, useful options and command purpose for the following Linux commands: **ln , ps , top , fg , bg , jobs , kill , alias , unalias , history**
 
 ---
 
