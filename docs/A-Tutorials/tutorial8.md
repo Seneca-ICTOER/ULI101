@@ -40,7 +40,7 @@ description: Tutorial 8 for Students to Learn Links and Process Management
 | [ln](http://man7.org/linux/man-pages/man1/ln.1.html) | [ps](http://man7.org/linux/man-pages/man1/ps.1.html) | [top](http://man7.org/linux/man-pages/man1/top.1.html) | [fg](http://man7.org/linux/man-pages/man1/fg.1p.html) | [bg](http://man7.org/linux/man-pages/man1/bg.1p.html) | [jobs](http://man7.org/linux/man-pages/man1/jobs.1p.html) | [kill](http://man7.org/linux/man-pages/man1/kill.1.html) | [sleep](https://man7.org/linux/man-pages/man1/sleep.1.html) | [alias](http://linuxcommand.org/lc3_man_pages/aliash.html) , [unalias](https://man.linuxreviews.org/man1p/unalias.1p.html) | [history](https://mediatemple.net/community/products/dv/204404624/using-the-history-command) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Brauer Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Inodes and Links](https://www.youtube.com/watch?v=tZ94-qH9unM&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=9)
 - [Processes and Jobs](https://www.youtube.com/watch?v=q93POTgH-aQ&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=7)
