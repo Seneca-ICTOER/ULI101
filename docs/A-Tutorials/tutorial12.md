@@ -37,7 +37,7 @@ description: Tutorial 12 for Students to Learn Shell Scripting
 - [Purpose](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
 - [Examples](http://www.linuxfromscratch.org/blfs/view/svn/postlfs/profile.html)
 
-**Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Bash Shell Scripting - Part 2](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6)
 
