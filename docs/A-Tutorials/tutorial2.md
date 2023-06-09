@@ -40,7 +40,6 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 
 - [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r)](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3)
 
-
 ## Key Concepts
 
 ### Unix and Linux Directories
@@ -87,11 +86,9 @@ The following table displays and defines commonly used directories (listed by di
 
 When you log into your Matrix account, you are automatically directed to your home directory. This directory is where the user can store files, and create subdirectories to organize their files.
 
-
 ## Investigation 1: Creating & Managing Directories
 
 **ATTENTION: This weekly tutorial must be completed by Friday at 11:59pm in Week 3 to obtain a grade of 2% towards this course.**
-
 
 **Directory File Naming Rules**
 
@@ -173,7 +170,7 @@ ls -ld /home/your-seneca-id/uli101xx
 
 ![Directory Structure 4](/img/Directory-structure-4.png)
 
-**Creating** and **Confirming** the Creation of a Directory.
+   - **Creating** and **Confirming** the Creation of a Directory.
 
   8. Issue the following Linux command to create the **acp100xx** and **xyz100xx** directories: 
 
@@ -191,8 +188,7 @@ ls -ld /home/your-seneca-id/acp100xx /home/your-seneca-id/xyz100xx
 
    - **Using a FULL pathname starting from the root directory (i.e. /) requires is a LOT of typing!. Since we are already located in our home directory, we don't have to start from the root directory. This is called a "relative" pathname.**
 
-  10. We will now create the subdirectories that are contained in the **uli101xx** directory.
-Issue the following Linux command to move to the **uli101xx** directory using a **relative** pathname: 
+  10. We will now create the subdirectories that are contained in the **uli101xx** directory. Issue the following Linux command to move to the **uli101xx** directory using a **relative** pathname: 
 
 ```bash
 cd uli101xx
@@ -210,8 +206,7 @@ mkdir notes tutorials samples
 
    - There are better ways to create the same directory structure without using the **cd** command.
    - Issuing the **cd** command **prior** to issuing other commands indicates to others that you are a novice or "**newbie**".
-   - You can actually **lose marks** on quizzes or tests if you issue multiple Linux commands to performed tasks that can be performed
-using a single Linux command with **pathnames**.
+   - You can actually **lose marks** on quizzes or tests if you issue multiple Linux commands to performed tasks that can be performed using a single Linux command with **pathnames**.
 
   14. Issue the following Linux command to return to your home directory: 
 
@@ -278,11 +273,9 @@ If there is a warning, then feedback is provided to user to correct and re-run c
 
   3. If you encounter errors, then view the feedback to make corrections, and then re-run the checking script. If you receive a congratulation message that there are no errors, then proceed to the next part.
 
-
 ### Part 2: Viewing Directory Contents and Copying & Moving Directories
 
-Now that you have learned how to efficiently create your directory structure, you will now learn how to issue Linux commands
-to **view directory contents** as well as **copy** and **move** directories.
+Now that you have learned how to efficiently create your directory structure, you will now learn how to issue Linux commands to **view directory contents** as well as **copy** and **move** directories.
 
 **Perform the Following Steps:**
 
@@ -335,7 +328,7 @@ tree
 
 ![Directory Structure 7](/img/Directory-structure-7.png)
 
-Output of the **tree** command to confirm copy of **uli101xx** directory (and contents) to the **xyz100xx** directory.
+   - Output of the **tree** command to confirm copy of **uli101xx** directory (and contents) to the **xyz100xx** directory.
 
   6. Issue the following Linux command:
 
@@ -492,7 +485,6 @@ nano textedit/practice/mytext.txt
 
   11. **Save** your editing session and **exit** your text editor.
 
-
 ### Part 2: Creating Text Files Using The vi Text Editor
 
 You will now learn basic editing skills using the **vi (vim)** text editor including **creating, editing,** and **saving** text files.
@@ -605,16 +597,13 @@ vi textedit/practice/othertext.txt
 
   23. In the tutorial menu, select the first menu item labelled **"USING THE VI TEXT EDITOR"**
 
-  24. Read and follow the instructions in the tutorial. Eventually, it will display a **simulated** vi environment
-and will provide you with **"hands-on"** practice using the vi text editor. As far as this author is aware,
-there is NO "hands-on" tutorial for the nano text editor in this particular format.
+  24. Read and follow the instructions in the tutorial. Eventually, it will display a **simulated** vi environment and will provide you with **"hands-on"** practice using the vi text editor. As far as this author is aware, there is NO "hands-on" tutorial for the nano text editor in this particular format.
 
   25. When you have completed that section, you will be returned to the main menu. If you want to get extra practice, you can select the menu item labelled "**REVIEW EXERCISE**".
 
   26. When you want to exit the tutorial, select the menu option to exit the tutorial.
 
 It is recommended to try both text editors, and choose the text editor that you feel that is easier to use.
-
 
 ### Part 3: Manage & Manipulate Text File Content
 
@@ -654,7 +643,7 @@ touch a.txt b.txt c.txt
 ls -l a.txt b.txt c.txt
 ```
 
-Check the size in the detailed listing to confirm that these newly-created files are empty.
+   - Check the size in the detailed listing to confirm that these newly-created files are empty.
 
   5. Use the **nano** text editor to edit the empty file called **a.txt**.
 
@@ -741,8 +730,7 @@ grep 2 a.txt
 
    - What type of output appear? Why did these lines appear (what do they all have in common)?
 
-  17. Edit the **a.txt** file and add to the bottom 5 new lines each consisting
-of the same text: "**end of line**" (refer to diagram below).
+  17. Edit the **a.txt** file and add to the bottom 5 new lines each consisting of the same text: "**end of line**" (refer to diagram below).
 
 ![End of line image](/img/End-of-line.png)
 
@@ -818,8 +806,7 @@ rm aa.txt b.txt a.txt.bk c.txt
 
   29. Issue the **ls** command to verify that these files have been removed.
 
-  30. Complete the **LINUX PRACTICE QUESTIONS** to get additional practice.
-
+  30. Complete the **LINUX PRACTICE QUESTIONS** below to get additional practice.
 
 ## Linux Practice Questions
 
@@ -839,11 +826,11 @@ For each of the following questions, use a pathname starting from the **root** d
 
   2. Write a Linux command to display a detailed listing of **history** directory.
 
-How would this command differ if you wanted to also view hidden files as well?
+        - How would this command differ if you wanted to also view hidden files as well?
 
   3. Write a Linux command to change to the **project** directory.
  
-What command would you issue to return to your home directory?
+        - What command would you issue to return to your home directory?
 
   4. Write a Linux command to copy the **project** directory and its contents to the **history** directory.
   5. Write a Linux command to move the directory called **directories** to the **history** directory.
@@ -852,9 +839,9 @@ What command would you issue to return to your home directory?
   8. Write a Linux command to remove the **concepts** directory and prompt the user if they want to remove this directory’s contents.
   9. Write a single Linux command to create the following empty files in the concepts directory:
  
-      - **myfile.txt**
-      - **yourfile.txt**
-      - **thefile.txt**
+        - **myfile.txt**
+        - **yourfile.txt**
+        - **thefile.txt**
 
   10. Write a Linux command to view the contents of the myfile.txt text file to prove it is empty. What is the difference between the commands: **cat**, **more** and **less**?
   11. Write a Linux command to sort the contents of a file called **practice/customers.txt**
@@ -867,6 +854,7 @@ What command would you issue to return to your home directory?
 ---
 
 Author: Murray Saul
+
 License: LGPL version 3 Link: https://www.gnu.org/licenses/lgpl.html
 
 ---
