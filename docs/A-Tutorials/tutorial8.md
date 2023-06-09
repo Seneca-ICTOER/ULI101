@@ -187,7 +187,6 @@ In this investigation, you will learn how to create **hard links** and **symboli
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account.
-
   2. Issue a Linux command to **confirm** you are located in your **home** directory.
 
       - **NOTE:** You will remain in your **home** directory to get practice using pathnames.
@@ -199,9 +198,7 @@ mkdir ~/links
 ```
 
   4. Issue the **ls -ld** command to confirm that the directory **~/links** exists.
-
   5. Use a text editor to create a file called **~/links/data-file.txt** (i.e. without changing to the links directory).
-
   6. Enter the following text displayed below:
 
 ```text
@@ -211,7 +208,6 @@ This is line 3
 ```
 
   7. Save your editing session and exit your text editor.
-
   8. Issue the following Linux command:
 
 ```bash
@@ -219,7 +215,6 @@ ls -li ~/links/data-file.txt
 ```
 
    - View the **i-node** number for this file. What does this i-node number represent?
-
    - We will now create a **hard link** file to demonstrate how creating hard links are useful for **back-ups**.
 
 ![Hard link inode 1](/img/Hard-link-inode1.png)
@@ -250,9 +245,7 @@ ls -li ~/links/data-file.txt ~/links/data-file.hard.lnk
    - What do you notice about both of those file's _i-node_ numbers?
 
   11. Use a text editor to edit **~/links/data-file.txt** and **add some lines of text** to the bottom of that file.
-
   12. Save your editing session and exit your text editor.
-
   13. Issue the following Linux command:
 
 ```bash
@@ -263,9 +256,7 @@ cat ~/links/data-file.hard.lnk
    - This is very useful for backing up your files without using the **cp** command!
 
   14. Use a text editor to edit the hard-linked file **~/links/data-file.hard.lnk** and add some lines to the bottom of this file.
-
   15. Save your editing session and exit your text editor.
-
   16. Issue the following Linux command:
 
 ```bash
@@ -305,7 +296,6 @@ rm -rf ~/links
 ```
 
   21. Issue a Linux command to confirm that the **~/links** directory has been removed.
-
   22. Issue the following Linux command to view the contents of your linked file in your **home** directory:
 
 ```bash
@@ -324,9 +314,7 @@ mkdir ~/links2
    - **NOTE:** You will remain in your **home** directory to get practice using pathnames.
 
   24. Issue the **ls -ld** command to confirm that the directory called **~/links2** exists.
-
   25. Use a text editor to create a file called **~/links2/text-file.txt** (i.e. without changing to the links2 directory).
-
   26. Enter the following text displayed below:
 
 ```text
@@ -336,7 +324,6 @@ This is line three
 ```
 
   27. Save your editing session and exit your text editor.
-
   28. Issue the following Linux command to create the following **symbolic** link in the same directory:
 
 ```bash
@@ -374,9 +361,7 @@ ls -li ~/links2/text-file.txt ~/links2/text-file.sym.lnk ~/text-file.sym.lnk
    - What **pathname** do you think this _symbolic-linked_ file contains?
 
   32. Use a text editor to edit the **symbolic link** file called **~/links2/text-file.sym.lnk** and add some lines to the bottom of that file.
-
   33. Save your editing session and exit your text editor.
-
   34. Issue the following Linux command to view the contents of the **original** file:
 
 ```bash
@@ -386,9 +371,7 @@ cat ~/links2/text-file.txt
    - What did you notice? This happened because when you edited the symbolic-linked file, you were redirected (via _pathname_) to the original file.
 
   35. Use a text editor to edit the **original** file called **~/links2/text-file.txt** and add some lines to the bottom of that file.
-
   36. Save your editing session and exit your text editor.
-
   37. Issue the following Linux command to view the contents of the **symbolic** linked file:
 
 ```bash
@@ -413,7 +396,6 @@ rm -rf ~/links2
 ```
 
   40. Issue a Linux command to confirm that the **~/links2** directory has been removed.
-
   41. Issue the following Linux command to view the contents of the **original** file called **~/links2/text-file.txt**:
 
 ```bash
@@ -435,7 +417,6 @@ ls -l ~/text-file.sym.lnk
 Example of a **broken link** when a symbolic link points to a **non-existent file**.
 
   43. Issue a command to delete the **~/text-file.sym.lnk** file which is a _broken link_.
-
   44. Issue the following Linux command:
 
 ```bash
@@ -463,7 +444,6 @@ In this investigation, you will learn how to **manage processes** on a Unix / Li
 **Perform the Following Steps:**
 
   1. Make certain that you are logged into your Matrix account.
-
   2. Issue a Linux command to confirm that you are located in your **home** directory.
 
       - The **sleep** command **pauses for a specified number of seconds** before returning to the shell prompt.
@@ -491,7 +471,6 @@ sleep 700
 ```
 
   6. Press the **key combination**: `ctrl-z`
-
   7. You should now see output similar to what is displayed below:
 
 ```text
@@ -603,7 +582,6 @@ kill %3
          - What do you notice?
 
   19. Let's use **grouping** to run several commands in sequence within a single process.
-
   20. Issue the following Linux command:
 
 ```bash
@@ -645,7 +623,6 @@ kill PID
 ```
 
    - What did you notice?
-
    - **FYI**: If the command did NOT work, issue the following Linux command (using the bash processes' PID number instead of "PID"):
 
 ```bash
@@ -710,17 +687,11 @@ lh
    - What do you think this command does?
 
   9. **Logout** of your Matrix account and then **login** to your Matrix account.
-
   10. Reissue the **lal** alias. What happened?
-
   11. Reissue the **lh** alias. What happened?
-
   12. Issue the **alias | grep lh** command without any arguments to see if it is stored in memory.
-
   13. Reissue the command to create the **lh** alias in **step \#6**.
-
   14. Run the **lh** alias to confirm that it is properly set in memory.
-
   15. Issue the following Linux command to edit your ~/.bashrc startup file:
 
 ```bash
@@ -734,21 +705,15 @@ alias lh='ls --human-readable --size -1 -S --classify'
 ```
 
   17. Save your editing changes and exit your text editor.
-
   18. **Logout** of your Matrix account, then **login** to your Matrix account.
-
   19. Reissue the **lh** alias. What happened?
-
   20. Issue the following Linux command: **unalias lh**
-
   21. Run the **lh** alias to see what happens.
 
       - What happenned?
 
   22. **Logout** of your Matrix account, then **login** to your Matrix account.
-
   23. Reissue the **lh** alias. What happened? Why?
-
   24. Reissue the **lal** alias. Why **didn't** this alias work?
 
       - The checking script below is designed to act as a **filter** with a **pipeline command**.
