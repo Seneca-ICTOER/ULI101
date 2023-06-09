@@ -58,12 +58,9 @@ Refer to the table below regarding these text file manipulation commands:
 | **cut** | Used to **extract** fields and characters from records. The option **-c** is used to cut by a character or a range of characters. The **-f** option indicates the field number or field range to display (this may require using the **-d** option to indicate the field seperator (delimeter) which is tab by default). eg. `cut -c1-5 filename`, `cut -d":" -f2 filename` |
 | **wc** | Displays various **counts** of the contents of a file. The **-l** option displays the number of lines, the **-w** option displays the number of words, and the **-c** option displays the number of characters. eg. `wc filename`, `wc -l filename`, `wc -w filename` |
 
-
 ### Redirection (Standard Input, Standard Output, Standard Error)
 
-_**Redirection** can be defined as changing the way from where commands read input to where commands sends output. You can redirect input and output of a command._
-
-Reference: https://www.javatpoint.com/linux-input-output-redirection
+_**Redirection** can be defined as changing the way from where commands read input to where commands sends output. You can redirect input and output of a command._ Reference: https://www.javatpoint.com/linux-input-output-redirection
 
 **Standard input** (**stdin**) is a term which describes from where a command receives **input**. This would apply only to Unix/Linux commands that accept stdin input (like _cat, more, less, sort, grep, head, tail, tr, cut, wc_, etc.).
 
@@ -277,7 +274,6 @@ In this investigation, you will learn how to redirect **standard input, standard
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account and issue a command to **confirm** you are located in your **home** directory.
-
   2. Issue the following Linux command to create the following directory: 
 
 ```bash
@@ -285,7 +281,6 @@ mkdir ~/redirect
 ```
 
   3. Change to the **~/redirect** directory and confirm that you changed to that directory.
-
   4. Use a text editor to create a file in your current directory called **data.txt** and enter the following text displayed below:
 
 ```text
@@ -295,7 +290,6 @@ This is line 3
 ```
 
   5. **Save** editing changes and **exit** the text editor.
-
   6. Issue the following Linux command: 
 
 ```bash
@@ -358,9 +352,7 @@ This is the file output3.txt
 ```
 
   14. Press `ctrl-d` to exit the command.
-
   15. Issue the **cat** command to view the contents of the file: **output3.txt**
-
   16. Issue the following Linux command: 
 
 ```bash
@@ -368,7 +360,6 @@ cp ~jason.carman/uli101/cars .
 ```
 
   17. Issue the **cat** command to view the contents of the **cars** file.
-
   18. Issue the following Linux command: 
 
 ```bash
@@ -529,13 +520,11 @@ line 3
 ```
 
   36. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
   37. Issue the **ls** command to see all of the **temporary files** that were created as a result of redirection.
 
       - The problem with using these redirection symbols is that you create **temporary text files** that take up **space** on your file system.
 
   38. Issue a Linux command (using **Filename Expansion**) to **remove** those temporary text files in the current directory.
-
   39. Issue the following Linux command to check that you removed ALL of those temporary text files:
 
 ```bash
@@ -543,7 +532,6 @@ line 3
 ```
 
   40. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
 
 In the next investigation, you will be learning how to issue **pipeline Linux commands** which can accomplish tasks without creating temporary files.
 
@@ -642,7 +630,6 @@ ls /bin/???? | sort | grep r | cut -c1-6
    - Try to explain step-by-step each process in the pipeline command (including filters) to explain the final output from this pipeine command.
 
   13. Confirm that you are still located in the **~/redirect** directory.
-
   14. Issue the following Linux **pipeline command**:
 
 ```bash
@@ -667,7 +654,6 @@ ls /bin/???? | tee unsort.txt | sort | tee sort.txt | grep r | tee match.txt | h
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
   18. Change to your **home** directory.
-
   19. Remove the **~/redirect** directory and its contents.
 
       - In the next investigation, you will learn various techniques to issue **multiple Linux commands** on the same line, or issue a **single Linux command over multiple lines.**
@@ -679,7 +665,6 @@ In this investigation, you will learn how to issue multiple Unix / Linux command
 **Perform the Following Steps:**
 
   1. Confirm you are located in your **home** directory in your Matrix account.
-
   2. Issue the following Linux commands (using the _semicolon_ character ";" to separate each Linux command):
 
 ```bash
