@@ -111,11 +111,9 @@ _Extended Regular Expressions_ consist of additional special characters to “ex
 
 Allows for more precise repetitions. Using braces, you can specify the **minimum** and/or **maximum** number of repetitions.
 
-**Groups**: `( )`
-Allows you to search for repetition for a **group of characters**, a **word**, or a **phase**. You enclose them within brackets **( )** to specify a **group**.
+**Groups**: `( )` Allows you to search for repetition for a **group of characters**, a **word**, or a **phase**. You enclose them within brackets **( )** to specify a **group**.
 
-**or Condition**: `|`
-Can be used with **groups** to match a variety of character(s), words or phases. The | symbol is used to separate the variety of character(s) within a _group_.
+**or Condition**: `|` Can be used with **groups** to match a variety of character(s), words or phases. The | symbol is used to separate the variety of character(s) within a _group_.
 
 Examples of how to use **extended regular expressions** with the **egrep** command are displayed below:
 
@@ -140,9 +138,7 @@ In this investigation, you will learn how to use the **grep** command with **sim
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account.
-
   2. Issue a Linux command to **confirm** you are located in your **home** directory.
-
   3. Issue the following linux Linux command to **copy** a text file to _your_ **home** directory from the ULI101 home directory:
 
 ```bash
@@ -180,9 +176,7 @@ grep -w -i "the" textfile1.txt
 ```
 
    - You should now see only strings of text that match the word **the** (upper or lower case).
-
    - Matching literal or simple regular expressions can be useful, but are **limited** in what pattens they can match. For example, you may want to search for a pattern located at the **beginning** or **end** of the string.
-
    - There are other regular expression symbols that provide more **precise** search pattern matching.
    - These special characters are known as **complex** and **extended** regular expressions symbols.
 
@@ -319,7 +313,6 @@ mkdir ~/regexps
 ```
 
   22. Change to the **regexps** directory and confirm that you have moved to this directory.
-
   23. First, issue the following Linux command to copy another data file called **numbers1.dat**:
 
 ```bash
@@ -327,7 +320,6 @@ cp ~uli101/tutorialfiles/numbers1.dat ~/
 ```
 
   24. View the contents of the **numbers.dat** file using the **more** command and quickly view the contents of this file. You should notice **valid** and **invalid** numbers contained in this file. When finished, exit the more command.
-
   25. Issue the following linux pipeline command to display only **whole** numbers (i.e. no + or - sign):
 
 ```bash
@@ -401,7 +393,6 @@ In this investigation, you will learn how to use **extended regular expressions*
 **Perform the Following Steps:**
 
   1. Make certain that you are located in your **~/regexps** directory on your _Matrix_ account.
-
   2. Issue the following Linux command to copy another data file called **numbers2.dat**:
 
 ```bash
@@ -409,7 +400,6 @@ cp ~uli101/tutorialfiles/numbers2.dat ~/
 ```
 
   3. View the contents of the **numbers2.dat** file using the **more** command and quickly view the contents of this file. You should notice _valid_ and _invalid_ numbers contained in this file. When finished, exit the more command.
-
   4. Issue the following Linux command to display **signed** or **unsigned integers**:
 
 ```bash
@@ -540,7 +530,6 @@ In this investigation, you will see commands other than **grep** or **egrep** th
 **Perform the Following Steps:**
 
   1. Make certain that you are located in your **~/regexps** directory on your _Matrix_ account.
-
   2. Let's look at using regular expressions with the **man** command. Issue the following linux command :
 
 ```bash
@@ -559,7 +548,6 @@ man ls
    - **FYI:** The **grep** and **egrep** Linux commands contain the regular expressions within quotes, but **most** other Linux commands specify regular expressions using **forward slashes** (e.g. **/regular expression**   or   **/regular expression/**).
 
   4. Scroll throughout the man pages for the ls command to view matches for the pattern "**sort**" (You can press **SPACE** or key combination **alt-b** to move forward and backwards one screen respectively).
-
   5. Press the letter `q` to **exit** the man pages for **ls**.
 
       - Let's use regular expressions with the **less** command.
@@ -589,7 +577,6 @@ less large-file.txt
    - Entering **/uli101** in the **less** command can display all matches of "**uli101**" throughout the text file.
 
   9. Press the letter `q` to exit the **less** command.
-
   10. Try the same search techniques with the **more** command.
 
       - Does it work the same for the _less_ command?
@@ -604,7 +591,6 @@ vi large-file.txt
    - Let's first perform a simple search within this text file.
 
   12. Press the **ESC** key to make certain you are in **COMMAND** mode.
-
   13. Type the following and press **ENTER**:
 
 ```bash
@@ -637,7 +623,6 @@ vi large-file.txt
    - In **last line** MODE in the **vi** text editor, issuing a command using regular expressions to convert **uli101** to **ULI101**.
 
   16. Navigate throughout the text file to confirm that ALL occurrences of **uli101** have been replaced with **ULI101**.
-
   17. Save changes to your vi editing session and exit by typing the following and pressing ENTER:
 
 `:x`
