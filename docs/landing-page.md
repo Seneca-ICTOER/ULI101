@@ -46,7 +46,7 @@ It's extremely helpful to take a full-desktop screenshot of your screen with the
 
 ### Course Resources
 
-#### Free Applications for Remote Access:
+#### Free Applications for Remote Access
 
 - [Secure Shell SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe)
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
