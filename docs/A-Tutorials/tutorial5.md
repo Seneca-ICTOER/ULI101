@@ -5,7 +5,7 @@ sidebar_position: 5
 description: Tutorial 5 for Students to Learn Redirection
 ---
 
-# Tutorial 5: Redirection - Standard Input and Standard Output and Standard Error
+# Tutorial 5: Redirection - Standard Input, Standard Output, and Standard Error
 
 ## Main Objectives of this Tutorial
 
@@ -44,7 +44,6 @@ description: Tutorial 5 for Students to Learn Redirection
 
 - [Reading/Writing to Files (echo, stdin, stdout, stderr, >, >>, 2>, cat, more, less, man, date, diff, diff -y, find, wc](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4)
 
-
 ## Key Concepts
 
 ### Additional File Manipulation Commands
@@ -62,14 +61,11 @@ Refer to the table below regarding these text file manipulation commands:
 
 ### Redirection (Standard Input, Standard Output, Standard Error)
 
-_**Redirection** can be defined as changing the way from where commands read input to where commands sends output.
-You can redirect input and output of a command._
+_**Redirection** can be defined as changing the way from where commands read input to where commands sends output. You can redirect input and output of a command._
 
 Reference: https://www.javatpoint.com/linux-input-output-redirection
 
-**Standard input** (**stdin**) is a term which describes from where a command receives **input**.
-This would apply only to Unix/Linux commands that accept stdin input
-(like _cat, more, less, sort, grep, head, tail, tr, cut, wc_, etc.).
+**Standard input** (**stdin**) is a term which describes from where a command receives **input**. This would apply only to Unix/Linux commands that accept stdin input (like _cat, more, less, sort, grep, head, tail, tr, cut, wc_, etc.).
 
 ![stdin Symbol](/img/Stdin-symbol.png)
 
@@ -89,9 +85,7 @@ cat < abc.txt
 sort < xyz.txt
 ```
 
-
-**Standard output (stdout)** describes where a command sends its **output**.
-In the examples below, output from a command is sent to the **monitor**, unless it is sent to a **text file**.
+**Standard output (stdout)** describes where a command sends its **output**. In the examples below, output from a command is sent to the **monitor**, unless it is sent to a **text file**.
 
 ![stdout symbol 1](/img/Stdout-symbol-1.png)
 
@@ -114,7 +108,6 @@ ls -l > detailed-listing.txt
 ```bash
 ls /bin >> output.txt
 ```
-
 
 **Standard Error (stderr)** describes where a command sends it's error messages. In the examples below we issue the pwd in capitals on purpose to generate an error message, which can be redirected to a **text file**.
 
@@ -144,12 +137,9 @@ PWD 2 >> error-messages.txt
 PWD 2> /dev/null
 ```
 
-
 **The /dev/null File**
 
-The **/dev/null** file (sometimes called the **bit bucket** or **black hole**) is a special system file
-that **discard** all data written into it. This is useful to discard unwanted command output.
-
+The **/dev/null** file (sometimes called the **bit bucket** or **black hole**) is a special system file that **discard** all data written into it. This is useful to discard unwanted command output.
 
 _Examples:_
 
@@ -164,7 +154,6 @@ ls > /dev/null
 ```bash
 find / -name "tempfile" 2> /dev/null
 ```
-
 
 **The Here Document**
 
@@ -184,15 +173,13 @@ Line 3
 +
 ```
 
-
 ### Pipeline Commands
 
 **Pipeline Command:** Having commands send their **standard output** directly to **standard input** of other commands WITHOUT having to use **temporary** files.
 
 ![Pipe Diagram 1](/img/Pipe-diagram-1.png)
 
-Pipes that are used in a **pipeline command** are represented by the **pipe** "\|" symbol.
-A few simple commands can be **combined** to form a more powerful command line.
+Pipes that are used in a **pipeline command** are represented by the **pipe** "\|" symbol. A few simple commands can be **combined** to form a more powerful command line.
 
 Commands to the **right** of the pipe symbol are referred to as **filters**. They are referred to as _filters_ since those commands are used to **modify** the stdout of the previous command. Many commands can be "piped" together, but these commands (filters) must be chained in a specific order, depending on what you wish to accomplish
 
@@ -222,22 +209,17 @@ ls | grep Linux | head -5
 head -7 filename | tail -2
 ```
 
-
 **The tee Command**
 
-The **tee** utility can be used to split the flow of **standard output**
-between a **text file** and the **terminal screen.**
+The **tee** utility can be used to split the flow of **standard output** between a **text file** and the **terminal screen.**
 
 ![Tee Diagram 1](/img/Tee-diagram-1.png)
 
-The **tee** utility can be used to **split** the flow of information. For example to save in a file as well as display on a screen.
-(Image licensed under [cc](https://creativecommons.org/licenses/by-sa/3.0/))
+The **tee** utility can be used to **split** the flow of information. For example to save in a file as well as display on a screen. (Image licensed under [cc](https://creativecommons.org/licenses/by-sa/3.0/))
 
-The **tee** option **-a** can be used to add content to the **bottom** of an existing file
-as opposed to _overwriting_ the file's previous contents.
+The **tee** option **-a** can be used to add content to the **bottom** of an existing file as opposed to _overwriting_ the file's previous contents.
 
 The reason for the name "**tee**" is that the splitting of the flow of information resembles a capital T.
-
 
 _Examples:_
 
@@ -253,11 +235,9 @@ ls | grep Linux | tee matched.txt | more
 ls | head -5 | tee -a listing.txt
 ```
 
-
 ### Multiple Commands Using Semicolon, Grouping, and Backquotes
 
-Besides piping, there are other ways that multiple commands may be placed in one line:
-commands may be separated by **semi-colons.**
+Besides piping, there are other ways that multiple commands may be placed in one line: commands may be separated by **semi-colons.**
 
 _Example:_
 
@@ -265,9 +245,7 @@ _Example:_
 sleep 5; ls
 ```
 
-
 Multiple commands can also be **grouped** by using parentheses.
-
 
 _Example:_
 
@@ -277,12 +255,9 @@ _Example:_
 
 (_**Note:** _all command output is sent to a file_)
 
-
 Commands may also be **spread-out over multiple lines**, making it easier (for humans) to interpret a long command.
 
-The \ symbol “quotes-out” the meaning of the **ENTER** key as text
-(i.e. _new-line_ as instead of _running_ the command).
-
+The \ symbol “quotes-out” the meaning of the **ENTER** key as text (i.e. _new-line_ as instead of _running_ the command).
 
 _Example:_
 
@@ -292,7 +267,6 @@ lines. Note that the shell will realize \
 that a pipe requires another command, so \
 it will automatically go to the next line" |tr '[a-z]' '[A-Z]'
 ```
-
 
 ## Investigation 1: Basics Of Redirection
 
@@ -571,8 +545,7 @@ line 3
   40. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
 
-In the next investigation, you will be learning how to issue **pipeline Linux commands** which can
-accomplish tasks without creating temporary files.
+In the next investigation, you will be learning how to issue **pipeline Linux commands** which can accomplish tasks without creating temporary files.
 
 ## Investigation 2: Redirection Using Pipeline Commands
 
@@ -699,7 +672,6 @@ ls /bin/???? | tee unsort.txt | sort | tee sort.txt | grep r | tee match.txt | h
 
       - In the next investigation, you will learn various techniques to issue **multiple Linux commands** on the same line, or issue a **single Linux command over multiple lines.**
 
-
 ## Investigation 3: Issuing Multiple Unix/Linux Commands
 
 In this investigation, you will learn how to issue multiple Unix / Linux commands in a single line or over multiple lines.
@@ -762,7 +734,7 @@ it will automatically go to the next line" |tr '[a-z]' '[A-Z]'
 
    - Did the command work? What is the purpose of issuing a Linux command in this way?
 
-  9. Complete the Review Questions sections to get additional practice.
+  9. Complete the _Linux Practice Questions_ sections below to get additional practice.
 
 ## Linux Practice Questions
 
@@ -782,7 +754,6 @@ When answering Linux command questions, refer to the following Inverted Tree Dia
   2. Write a single Linux command to redirect the stderr from the command: **cat a.txt b.txt c.txt** to a file called **error.txt** contained in the “**assignments**” directory. (overwrite previous file’s contents and use only relative pathnames)
   3. Write a single Linux command: **cat ~/a.txt ~/b.txt ~/c.txt** and redirect stdout to a file called “**good.txt**” to the “**tests**” directory and stderr to a file called “**bad.txt**” to the “**tests**” directory. (overwrite previous contents for both files and use only relative-to-home pathnames).
   4. Write a single Linux command to redirect the stdout from the command: **cat a.txt b.txt c.txt** to a file called **wrong.txt** contained in the “**projects**” directory and throw-out any standard error messages so they don’t appear on the screen (append output to existing file and use only relative pathnames).
-
   5. Write a single Linux **pipeline command** to display a detailed listing of the **projects** directory but pause one screen at a time to view and navigate through all of the directory contents. Use a relative-to-home pathname.
   6. Write a single Linux **pipeline command** to display the sorted contents (in reverse alphabetical order) of the “**linux**” directory. Use a relative pathname.
   7. Assume that the text file called “**.answers.txt**” contains 10 lines. Write a single Linux pipeline command to only displays lines 5 through 8 for this file. Use only relative pathnames.
