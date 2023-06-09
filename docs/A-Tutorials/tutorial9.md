@@ -33,7 +33,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 | [egrep](https://ss64.com/bash/egrep.html) | [man](https://www.man7.org/linux/man-pages/man1/man.1.html) | [more](https://man7.org/linux/man-pages/man1/more.1.html) / [less](https://www.man7.org/linux/man-pages/man1/less.1.html) | [vi](https://man7.org/linux/man-pages/man1/vi.1p.html) / [vim](http://linuxcommand.org/lc3_man_pages/vim1.html) | [sed](https://man7.org/linux/man-pages/man1/sed.1p.html) | [awk](https://man7.org/linux/man-pages/man1/awk.1p.html) | [wget](https://linux.die.net/man/1/wget) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Brauer Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Using grep Command with Regular Expressions](https://www.youtube.com/watch?v=-2pwLHcvCsU&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=12)
 
