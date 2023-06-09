@@ -36,7 +36,7 @@ description: Tutorial 2 for Students to learn Unix/Linux File Management
 - [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf)
 - [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf)
 
-**Brauer Instructional Videos:**
+**Instructional Videos:**
 
 - [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r)](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3)
 
