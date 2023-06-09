@@ -33,7 +33,7 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 - [sed](https://man7.org/linux/man-pages/man1/sed.1p.html)
 - [awk](https://man7.org/linux/man-pages/man1/awk.1p.html)
 
-**Brauer Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Using the sed Utility](https://www.youtube.com/watch?v=npU6S61AIko&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=14)
 - [Using the awk Utility](https://www.youtube.com/watch?v=OV3XzjDYgJo&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=13)
