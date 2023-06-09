@@ -49,7 +49,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 | [pwd](http://man7.org/linux/man-pages/man1/pwd.1.html) | [cd](http://man7.org/linux/man-pages/man1/cd.1p.html) | [ls](http://man7.org/linux/man-pages/man1/ls.1p.html) | [cal](http://man7.org/linux/man-pages/man1/cal.1.html) | [date](http://man7.org/linux/man-pages/man1/date.1.html) | [who](http://man7.org/linux/man-pages/man1/who.1.html) , [w](http://man7.org/linux/man-pages/man1/w.1.html) | [whoami, who am i](http://man7.org/linux/man-pages/man1/whoami.1.html) | [clear, <ctrl\><l\>](http://man7.org/linux/man-pages/man1/clear.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Brauer Instructional Youtube Videos:**
+**Instructional Videos:**
 
 - [Connecting to Matrix Using SSH Client, and Running UBUNTU Within Windows 10](https://www.youtube.com/watch?v=L5RcOngDV_o)
 - [Linux File System, Basic Navigation (ls, cd, pwd, tree), Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2)
