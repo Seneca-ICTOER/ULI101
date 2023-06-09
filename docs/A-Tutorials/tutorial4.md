@@ -43,22 +43,19 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 - [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U)
 - [File Permissions](https://www.youtube.com/watch?v=SdgiYoOi0CY)
 
-
 ## Key Concepts
 
 ### Data Representation
 
 Digital computers are **electronic devices** that contain a series of **circuits** and voltage levels that can store / represent data.
 
-**Binary numbers** can represent those series of circuits with voltage levels.
-Those binary numbers are combined in a sequence to form a **byte**. Bytes are used to represent numbers or characters.
+**Binary numbers** can represent those series of circuits with voltage levels. Those binary numbers are combined in a sequence to form a **byte**. Bytes are used to represent numbers or characters.
 
 ![Binary Number 1](/img/Binary-number1.png)
 
 IT professionals may need to perform **numbering conversion** to use with programming functions or OS commands to perform common operations on a computer system.
 
 IT Professionals that use data representation:
-
   - _Network Specialists:_ Building Large Networks via Sub-netting
   - _Programmers:_ Sending information over networks, files
   - _Web Developers:_ Setting color codes for webpage background or text
@@ -83,14 +80,12 @@ When converting **binary** numbers to **decimal** numbers, perform the following
 #### Method 2: Decimal to Binary
 
 When converting **decimal** numbers to **binary** numbers, perform the following steps:
-
   1. Write down the **decimal number** to be converted.
   2. On the right-side, write the number **1** and moving **leftwards**, keep doubling the numbers until that number is **greater than** the decimal number to be converted (refer to the diagram below).
   3. Starting on the left-side of those doubled numbers, compare that number with the decimal number. If that number if less than or equal to the decimal number, then write a 1 below and subtract that number from the decimal number to get a remainder. If the number is greater than decimal number (or remainder), then write a 0 below.
-
   4. Repeat **step \#3** (moving rightwards and comparing the number with the decimal's remainder)
 
-**NOTE:** If you are converting to **8-bit**, **32-bit**, etc., add **leading zeros** if necessary.
+        - **NOTE:** If you are converting to **8-bit**, **32-bit**, etc., add **leading zeros** if necessary.
 
 ![Decimal to Binary](/img/Decimal-to-bin.png)
 
@@ -111,7 +106,6 @@ When converting **decimal** numbers to **binary** numbers, perform the following
   3. Write **0**'s or **1**'s for each group of binary numbers to add up to the corresponding octal number (refer to diagram of _octal_ to _binary_ conversion below).
 
 ![Octal to Binary](/img/Octal-to-bin.png)
-
 
 #### Method 4: Hexadecimal to Binary and Binary to Hexadecimal
 
@@ -159,23 +153,19 @@ Users that own those directories and regular files are referred to as **users**,
 
 **NOTE:** In this course, we CANNOT create groups or assign users to groups in the **Matrix** server. Instead, you may learn how to those tasks when or if you take a Unix/Linux administration course. On the other hand, you can change which **user, same group members** or **other group members** can access or NOT access a directory or regular file.
 
-
 File Permissions consist of **two-layers**:
 
 **First**, the permissions of a **directory** that contains regular files, and **second**, permissions of the _subdirectories and/or regular files_ within that directory. Refer to the diagram below to see the explanation of permissions of a directory.
 
 ![Directory Permissions](/img/Directory-permissions.png)
 
-
 Permissions for directories have a different meaning than permissions for **regular files**. Refer to the diagram below to see the explanation of permissions of a regular file.
 
 ![File Permissions](/img/File-permissions.png)
 
-
 A symbol dash "-" indicates that the permission has **NOT** been granted.
 
 The permissions of **newly-created** directories and regular files are automatically assigned via a **user mask** (we will discuss this shortly). In order to change permissions for directories and regular files, you would use the **chmod** command.
-
 
 ### Changing File Permissions - chmod:
 
@@ -189,7 +179,6 @@ The chmod can use **symbols** to _add, remove,_ and _set_ **rwx** permissions fo
 | `chmod u=rwx,go=x ~` | Set "**pass-thru**" permissions of your **home** directory for same group members and other group members to navigate to other subdirectories (that may have access / view permissions) |
 | `chmod go-w ~/shared` | Remove write permissions for same group members and other group members and other group members for the directory **~/shared** |
 | `chmod a=rx myfile.txt` | Set read and execute permissions for the file **myfile.txt** |
-
 
 #### Octal (Absolute) Method:
 
@@ -232,7 +221,6 @@ You will now get practice performing numbering conversions.
       - **NOTE:** It is important to learn and **memorize** the **correct methods** to perform the proper numbering conversion method (i.e. view **method 1** above (drawing the L's).
 
   2. Write the manual conversion either in your MS Word document.
-
   3. Use a **calculator** to check your work. In MS Windows, you can set the calculator to Programming mode by making the selection to **binary**, enter the binary number **10111110** and view the decimal equivalent.
 
 ![Calc Check](/img/Calc-check.png)
@@ -282,7 +270,6 @@ In this investigation, you will get experience using the **chmod** command to **
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account and issue a command to **confirm** you are located in your **home** directory.
-
   2. Issue a single Linux command to create the following directory structure displayed in the diagram below.
 
 ![File Permission Practice 1](/img/File-permission-practice-1.png)
@@ -296,7 +283,6 @@ In this investigation, you will get experience using the **chmod** command to **
 ```
 
   4. If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
   5. Issue Linux commands to create **empty files** for each of those newly created **directories** as shown in diagram below:
 
 ![File Permission Practice 2](/img/File-permission-practice-2.png)
@@ -342,7 +328,6 @@ chmod 750 -R ~/documents
 ```
 
   12. Issue the **ls -ld** command to confirm the permissions for the **~/documents**, **~/document/memos** , **~/documents/reports**, and **~/documents/contracts** directories.
-
   13. Issue the following Linux command: 
 
 ```bash
@@ -390,7 +375,6 @@ chmod ugo-w ~/documents/memos/memo*.txt
 ```
 
   6. Use the **ls** command to verify that those regular file's permissions have changed.
-
   7. Using the nano or vi text editor, open the regular file **~/documents/memos/memo1.txt** and type in some text and try to save your editing changes.
 
       - What happened?
@@ -446,10 +430,7 @@ umask
    - **NOTE:** You should see a **four-digit octal** number. Drop the leading zero on the left to obtain the **default umask value**.
 
   5. Perform a **mathematical calculation** by taking the **octal number 777** and **subtracting** the default umask value you determined in the previous step. What is the result?
-
-  6. Convert that octal number result to a **binary number**. What does that represent as newly created directory permissions?
-Does that correspond to the permissions for the newly created **~/shared** directory?
-
+  6. Convert that octal number result to a **binary number**. What does that represent as newly created directory permissions? Does that correspond to the permissions for the newly created **~/shared** directory?
   7. Repeat the calculation (like in step \#4) but with a umask setting of **077** to see how this new umask setting would
 affect permissions of newly-created directories.
 
@@ -501,7 +482,6 @@ touch ~/shared2/myfile.txt
    - If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
 
   15. Logout of your Matrix account, and then log-back into your Matrix account.
-
   16. Issue the following Linux command (without arguments): 
 
 ```bash
