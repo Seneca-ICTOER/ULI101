@@ -368,7 +368,7 @@ chmod u+x hello
 
 Proceed to the next investigation.
 
-## Investigation 2: She-Bang Line / Variables / Parameters
+## Investigation 2: She-Bang Line, Variables, and Parameters
 
 In this investigation, you will add a **she-bang line** at the top of your shell script to force the shell script to run in a specified shell when executed. You will also learn how to use **variables**, **positional** and **special parameters** to make your shell scripts more adaptable.
 
@@ -604,7 +604,7 @@ echo \$*: $*
 
 In the next investigation, you will learn to use **command substitution** and **math operations** in your shell scripts.
 
-## Investigation 3: Command Substitution / Math Operations
+## Investigation 3: Command Substitution and Math Operations
 
 In this investigation, you will learn how to use **command substitution** and **math operations** in your shell scripts.
 
