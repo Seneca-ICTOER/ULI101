@@ -6,7 +6,7 @@ slug: /
 description: Landing Page for the ULI101 Course
 ---
 
-## Welcome to ULI101 - Introduction to UNIX/Linux and the Internet
+## Introduction to UNIX/Linux and the Internet
 
 ### Quick Links
 
