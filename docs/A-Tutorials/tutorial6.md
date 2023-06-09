@@ -39,19 +39,15 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
 - [Using sftp Command](https://www.youtube.com/watch?v=QcKYFEgfV-I)
 - [Using the mail Command](https://www.youtube.com/watch?v=Iuf_mLrvh2o)
 
-
 ## Key Concepts
 
-The ssh Linux command is a suite of tools to allow the user to issue Linux commands securely between
-Unix / Linux servers, as well as securely copy and transfer files among Unix/Linux servers.
+The ssh Linux command is a suite of tools to allow the user to issue Linux commands securely between Unix / Linux servers, as well as securely copy and transfer files among Unix/Linux servers.
 
-In this tutorial, you will learn several different methods to securely transfer files from your Matrix Linux account
-to other computers using Linux commands including scp, sftp and mail.
+In this tutorial, you will learn several different methods to securely transfer files from your Matrix Linux account to other computers using Linux commands including scp, sftp and mail.
 
 ### Issuing Commands on Remote Unix/Linux Servers
 
-You can use the **ssh** command to issue Unix/Linux commands on a **remote** server
-from your local computer without logging into a remote server (such as Matrix).
+You can use the **ssh** command to issue Unix/Linux commands on a **remote** server from your local computer without logging into a remote server (such as Matrix).
 
 ![SSH Remote](/img/Ssh-remote.png)
 
@@ -64,7 +60,6 @@ ssh username@matrix.senecacollege.ca ls -l
 ```
 
 You will be prompted for your Matrix account password, then the contents of your home directory in your remote Matrix account will be displayed on your local computer's terminal.
-
 
 ### Secure Copy (scp)
 
@@ -88,13 +83,9 @@ scp local.file username@host:
 scp user@host:file-pathname local-pathname
 ```
 
+The most common **mistake** that students make is forgetting to add the **colon** character ":" after the remote hostname.
 
-The most common **mistake** that students make is forgetting to add
-the **colon** character ":" after the remote hostname.
-
-The user name in the command can be **omitted** if it's the same as on the local host.
-Multiple file and recursive directory copy (i.e. option **-r**) is supported.
-
+The user name in the command can be **omitted** if it's the same as on the local host. Multiple file and recursive directory copy (i.e. option **-r**) is supported.
 
 ### Secure File Transmission Control Protocol (sftp)
 
@@ -114,13 +105,11 @@ When you login via the _sftp_ command, the **sftp prompt** appears. The sftp pro
 
 **Graphical SFTP Applications**
 
-Although it is important to know how to use the **sftp** command for _quizzes, midterm_ and _final exam_,
-there are **graphical sftp applications** that provide an alternative to issuing commands.
+Although it is important to know how to use the **sftp** command for _quizzes, midterm_ and _final exam_, there are **graphical sftp applications** that provide an alternative to issuing commands.
 
 ![Graphical SFTP App](/img/Graphical-sftp-application.png)
 
 If you installed the graphical **Secure Shell Client** application in your Windows computer from performing [TUTORIAL 1 INVESTIGATION 1](./tutorial1.md#investigation-1-accessing-your-matrix-linux-account), you can use this application to transfer files between your computer and your Matrix account by graphically **navigating, selecting** and **dragging** files between computers.
-
 
 ### Sending Emails with File Attachment (mail)
 
@@ -151,14 +140,11 @@ You can use the **mail** command in Matrix to send email messages to other email
 
 Viewing email with file attachment in **Seneca email account**.
 
-
 ## Investigation 1: File Transfer (Secure Copy)
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 8 by midnight to obtain a grade of 2% towards this course**
 
-The **SSH** package on your _home computer_ and on the _Matrix Linux server_
-contain a **suite** (i.e. collection) of secure utilities including **ssh** and **scp**.
-
+The **SSH** package on your _home computer_ and on the _Matrix Linux server_ contain a **suite** (i.e. collection) of secure utilities including **ssh** and **scp**.
 
 In this investigation, you will learn how to use the **scp** command to **securely copy files** between your computer and your Matrix Linux server. This methods is useful because it can be performed in the _MS-Windows, MacOSx_, and _Unix/Linux_ operating systems.
 
@@ -364,20 +350,13 @@ ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-2
 
 In the next investigation, you will use the **sftp** Linux command to transfer (i.e. copy) files between your local computer and the Matrix server.
 
-
 ## Investigation 2: File Transfer (Secure FTP)
 
-The **SSH** package on your _home computer_ and on the _Matrix Linux server_
-contain a **suite** (i.e. collection)of secure utilities including **ssh** and **sftp**.
+The **SSH** package on your _home computer_ and on the _Matrix Linux server_ contain a **suite** (i.e. collection)of secure utilities including **ssh** and **sftp**.
 
+In this investigation, you will learn how to use the **sftp** command to **transfer** files between Unix/Linux servers. This methods is useful because it can be performed in the _MS-Windows, MacOSx,_ and _Unix/Linux_ operating systems.
 
-In this investigation, you will learn how to use the **sftp** command to **transfer** files between
-Unix/Linux servers. This methods is useful because it can be performed in the
-_MS-Windows, MacOSx,_ and _Unix/Linux_ operating systems.
-
-You will also learn how to issue the **ssh** command to run commands on your
-**remote** Matrix server while remaining on your **local**computer.
-
+You will also learn how to issue the **ssh** command to run commands on your **remote** Matrix server while remaining on your **local**computer.
 
 ### Command Line Terminal (CLI)
 
@@ -391,8 +370,7 @@ Let's look at using the **sftp** command on your **local** machine.
 
 ![CMD](/img/Cmd.png)
 
-  3. If you are in MS Windows, open the `NotePad` application to create a text file
-(otherwise: use another text editor like **vi** or **nano**)
+  3. If you are in MS Windows, open the `NotePad` application to create a text file (otherwise: use another text editor like **vi** or **nano**)
 
   4. Enter a few lines of text, and then click on the **File** menu and select **save as** (save as the filename `thefile.txt` in your `local` directory) and then **exit** the Notepad text editor.
 
@@ -529,7 +507,6 @@ ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-3
 
       - In the next investigation, you will learn an alternative way to transfer a file to another computer server by sending an **e-mail message with an attached file**.
 
-
 ## Investigation 3: File Transfer (Email)
 
 The **Matrix** server is also an **email server** that can allow you to **send** emails messages to other email accounts.
@@ -606,16 +583,13 @@ mail -s "email with attachment" yoursenecaid@myseneca.ca < ~/remote/myfile.txt
 
   15. Check your email to see if you received your email message. If you did, what do you notice this time?
 
-  16. After completing this INVESTIGATION, perform the LINUX PRACTICE QUESTIONS at the end of the tutorial.
-
+  16. After completing this INVESTIGATION, perform the _Linux Practice Questions_ section below.
 
 ## Linux Practice Questions
 
 The purpose of this section is to obtain **extra practice** to help with **quizzes**, your **midterm**, and your **final exam**.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-[Week 6 Practice](/files/uli101_week6_practice.docx)
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 6 Practice](/files/uli101_week6_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
@@ -624,18 +598,15 @@ Your instructor may take-up these questions during class. It is up to the studen
   1. Write a Linux command to copy a file in the current directory called **mytext.txt** from your Matrix account to your account called **user1** on the Linux server domain name called **tech.myserver.com** to that user’s home directory.
   2. Write a Linux command similar to the previous question, but rename the file on the remote Linux server to **yourtext.txt**
   3. Write a Linux command to copy a file called **~/project/linux.txt** to the remote server called **linux.techie.org** (your username for this remote server is the same username for your local server).
-
   4. Write a Linux command to connect to the username **saulm** for the server domain name **tux.senecac.on.ca** to transfer files between Linux servers.
   5. Assuming that you are connected to that server in _question #4_. What is the sftp command to display your current working directory on your local server?
   6. Assuming that you are connected to that server in _question #4_. What is the sftp command to view files in your local server? What is the sftp command to view files in your remote server?
   7. Assuming that you are connected to that server in _question #4_. What is the sftp command to download the file answers.txt from the current directory of your remote server?
   8. Assuming that you are connected to that server in _question #4_. What is the sftp command to upload the file questions.txt from your local server to the **~/documents/tests** directory on your remote server?
   9. Assuming that you are connected to that server in _question #4_. What is the sftp command to quit your current session?
-
   10. Write a Linux command to send the attached file **message.txt** to the email address **murray.saul@senecacollege.ca** with the subject line: **Important Message**
   11. Create a **table** listing each Linux command, useful options and command purpose for the following Linux commands: **scp , sftp , mail**.
   12. Create a **table** listing each **sftp command** and it's purpose.
-
 
 ---
 
