@@ -24,7 +24,11 @@ Students will learn the core utilities to work productively in a Linux environme
 
 You will need a **Matrix** account to complete and submit the ULI101 Weekly Tutorials and the Review Tutorials. If you have never logged into Matrix before, check your [MySeneca email](https://myseneca.ca/) for confirmation that your Matrix account was automatically created after you registered for ULI101. This should happen automatically if you are a new Seneca student and this is your first semester.
 
-**Logging into Matrix Linux Account**: After successfully logging into Matrix from the college computers, there are several other ways you can login to Matrix depending on your operating system of choice. Please see the following [tutorial](/A-Tutorials/tutorial1.md#method-1-connecting-to-your-matrix-account-from-your-home-computer) for detailed instructions.
+#### Logging into Matrix Linux Account
+
+After successfully logging into Matrix from the college computers, there are several other ways you can login to Matrix depending on your operating system of choice. Please see the following [tutorial](/A-Tutorials/tutorial1.md#method-1-connecting-to-your-matrix-account-from-your-home-computer) for detailed instructions.
+
+#### Requesting Support - Matrix Account Access
 
 **In case of problems with:**
 
