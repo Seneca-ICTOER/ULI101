@@ -22,7 +22,6 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 **Course Slides:**
 
 - Week 4 Lecture 1 Notes: [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx)
-
 - Week 4 Lecture 2 Notes: [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx)
 
 **Numbering Conversion and Data Representation Definitions:**
@@ -56,10 +55,9 @@ Those binary numbers are combined in a sequence to form a **byte**. Bytes are us
 
 ![Binary Number 1](/img/Binary-number1.png)
 
-IT professionals may need to perform **numbering conversion** to use with
-_programming functions or OS commands to perform common operations on a computer system._
+IT professionals may need to perform **numbering conversion** to use with programming functions or OS commands to perform common operations on a computer system.
 
-IT Professionals that Use Data Representation:
+IT Professionals that use data representation:
 
   - _Network Specialists:_ Building Large Networks via Sub-netting
   - _Programmers:_ Sending information over networks, files
@@ -68,7 +66,7 @@ IT Professionals that Use Data Representation:
 
 ### Numbering Conversion Methods
 
-**Method 1: Binary to Decimal**
+#### Method 1: Binary to Decimal
 
 When converting **binary** numbers to **decimal** numbers, perform the following steps:
 
@@ -83,7 +81,7 @@ When converting **binary** numbers to **decimal** numbers, perform the following
 
 ![Binary to Decimal](/img/Convert-bin-decimal.png)
 
-**Method 2: Decimal to Binary**
+#### Method 2: Decimal to Binary
 
 When converting **decimal** numbers to **binary** numbers, perform the following steps:
 
@@ -97,10 +95,9 @@ When converting **decimal** numbers to **binary** numbers, perform the following
 
 ![Decimal to Binary](/img/Decimal-to-bin.png)
 
+#### Method 3: Octal to Binary and Binary to Octal
 
-**Method 3: Octal to Binary and Binary to Octal**
-
-_Binary to Octal_
+**Binary to Octal**
 
   1. **One octal number** represents **3 binary numbers**, so **starting from right-side**, group binary digits into **groups of 3** (add leading zeros if necessary).
   2. Write **(4)(2)(1)** under each **group of 3 binary numbers**.
@@ -108,7 +105,7 @@ _Binary to Octal_
 
 ![Binary to Octal](/img/Bin-to-octal.png)
 
-_Octal to Binary_
+**Octal to Binary**
 
   1. **One octal number** represents **3 binary numbers**, so space-out the octal numbers to make space for a binary number.
   2. Write **(4)(2)(1)** under each octal number.
@@ -117,9 +114,9 @@ _Octal to Binary_
 ![Octal to Binary](/img/Octal-to-bin.png)
 
 
-**Method 4: Hexadecimal to Binary and Binary to Hexadecimal**
+#### Method 4: Hexadecimal to Binary and Binary to Hexadecimal
 
-_Binary to Hexadecimal_
+**Binary to Hexadecimal**
 
   1. **One hexadecimal number** represents **4 binary numbers**, so starting from right-side, group binary digits into **groups of 4** (add leading zeros if necessary).
   2. Write **(8)(4)(2)(1)** under each group of 4 binary numbers.
@@ -128,7 +125,7 @@ _Binary to Hexadecimal_
 
 ![Binary To Hexidecimal](/img/Bin-to-hex.png)
 
-_Hexadecimal to Binary_
+**Hexadecimal to Binary**
 
   1. **One hexadecimal number** represents **4 binary numbers**, so space-out the hexadecimal numbers to make space for a binary number.
   2. Convert letters **A** to **F** to **10** to **15** (refer to diagram of binary to hexadecimal conversion above)
@@ -137,15 +134,14 @@ _Hexadecimal to Binary_
 
 ![Hexidecimal to Binary](/img/Hex-to-bin.png)
 
-**Method 5: Octal to Hexadecimal and Hexadecimal to Octal**
+#### Method 5: Octal to Hexadecimal and Hexadecimal to Octal
 
 To convert using the method, simply use binary as a "**bridge**".
 
-_Example:_
+Example:
 
-To convert octal to hexadecimal, convert octal to binary, then convert binary to hexadecimal.
-
-To convert hexadecimal to octal, convert hexadecimal to binary, then convert binary to octal.
+- To convert octal to hexadecimal, convert octal to binary, then convert binary to hexadecimal.
+- To convert hexadecimal to octal, convert hexadecimal to binary, then convert binary to octal.
 
 ![Bridge](/img/Octal-hex.png)
 
@@ -157,7 +153,6 @@ Since Unix / Linux operating file systems allow for **multiple user accounts** i
 ![Listing file directory](/img/Listing-file-directory.png)
 
 Detailed directory listing showing permissions for a **directory** and a **regular file**.
-
 
 When **directories** and **regular files** are created, they are assigned to an **owner** (typically the username which is the creator). To _allow_ or _limit_ **access** to those files and directories, those files and directories are assigned to an initial **group** referred to as a "**primary group**".
 
@@ -183,9 +178,9 @@ A symbol dash "-" indicates that the permission has **NOT** been granted.
 The permissions of **newly-created** directories and regular files are automatically assigned via a **user mask** (we will discuss this shortly). In order to change permissions for directories and regular files, you would use the **chmod** command.
 
 
-**Changing File Permissions with "chmod" command:**
+### Changing File Permissions - chmod:
 
-***Symbolic Method:***
+#### Symbolic Method:
 
 The chmod can use **symbols** to _add, remove,_ and _set_ **rwx** permissions for the **user**, **same group members**, and/or **other group members** for a directory or reqular file.
 
@@ -197,7 +192,7 @@ The chmod can use **symbols** to _add, remove,_ and _set_ **rwx** permissions fo
 | `chmod a=rx myfile.txt` | Set read and execute permissions for the file **myfile.txt** |
 
 
-***Octal (Absolute) Method:***
+#### Octal (Absolute) Method:
 
 You can also use **octal numbers** to **set** permissions. This method is a short-cut and may require less typing than using the _symbolic_ method. You can only use this method to set file permissions (as opposed to _add_ or _remove_ permissions.
 
@@ -208,10 +203,9 @@ Since 1 octal digit represents 3 binary digits, one octal digit can represent th
 **NOTE:** You can use the **-R** option to set permissions for directory, subdirectory and directory contents **recursively**.
 
 
-**Setting Permissions for Newly-Created Directories and Regular Files (umask):**
+### Setting Permissions for Newly-Created Directories and Regular Files - umask:
 
 The **umask** command is used to set the permissions of newly-created directories and regular files.
-
 
 Issuing the **umask** command without arguments will display the current umask value. Refer to the diagrams below to set the umask value for directories and regular files. Setting the umask value (for example umask 022) only takes effect for the current shell session unless the umask command is contained in a start-up file (e.g. **.profile**, **.bash_profile**, or **.bashrc**).
 
@@ -223,11 +217,9 @@ Setting **umask** for newly-created **directories** ^.
 
 Setting **umask** for newly-created **regular files** ^
 
-
 ## Investigation 1: Numbering Conversions
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 5 by midnight to obtain a grade of 2% towards this course**
-
 
 For this investigation, we will NOT be logged into our Matrix account, but it is recommended to have an **MS Word document** open to manually perform numbering conversions.
 
@@ -243,8 +235,7 @@ You will now get practice performing numbering conversions.
 
   2. Write the manual conversion either in your MS Word document.
 
-  3. Use a **calculator** to check your work. In MS Windows, you can set the calculator to Programming mode
-by making the selection to **binary**, enter the binary number **10111110** and view the decimal equivalent.
+  3. Use a **calculator** to check your work. In MS Windows, you can set the calculator to Programming mode by making the selection to **binary**, enter the binary number **10111110** and view the decimal equivalent.
 
 ![Calc Check](/img/Calc-check.png)
 
@@ -288,7 +279,6 @@ by making the selection to **binary**, enter the binary number **10111110** and 
 ## Investigation 2: File Permissions
 
 In this investigation, you will get experience using the **chmod** command to **change permissions** for existing files and the using **umask** command to automatically set permissions for newly-created files.
-
 
 **Perform the Following Steps:**
 
@@ -516,23 +506,17 @@ umask
 
    - What happened? Referring to your notes, what do you need to do to make that umask value persistent?
 
-**WARNING:**
+**WARNING:** You should be extremely aware of your permissions since you may perform **marked work** for other courses on your **Matrix** server.
 
-You should be extremely aware of your permissions since you may perform **marked work** for other courses on your **Matrix** server.
+You should NOT set permissions to share your work with **same group** or **other** group members (unless **given specific permissions instructions from your course professors**). If students can have access to your directories and project files, they could **copy** your work and thus make yourself and other student(s) that copied your work to be charged with an **Academic Integrity Violation**.
 
-You should NOT set permissions to share your work with **same group** or **other** group members (unless **given specific permissions instructions from your course professors**). If students can have access to your directories and project files, they could **copy** your work and thus make yourself and other student(s) that copied your work to be charged with **academic dishonesty**.
-
-
-
-Complete the Review Questions sections to get additional practice.
+Complete the _Linux Practice Questions_ sections to get additional practice.
 
 ## Linux Practice Questions
 
 The purpose of this section is to obtain extra practice to help with your quizzes, your midterm, and your final exam.
 
-Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz:
-
-[Week 4 Practice](/files/uli101_week4_practice.docx)
+Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 4 Practice](/files/uli101_week4_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
 
@@ -596,7 +580,6 @@ touch mydir/myfile.txt
 ---
 
 Author: Murray Saul
-
 License: LGPL version 3 Link: https://www.gnu.org/licenses/lgpl.html
 
 ---
