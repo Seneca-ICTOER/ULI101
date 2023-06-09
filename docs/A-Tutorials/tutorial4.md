@@ -38,7 +38,7 @@ description: Tutorial 4 for Students to Learn Data Representation, Numbering Con
 - [chmod](https://ss64.com/bash/chmod.html)
 - [umask](https://ss64.com/bash/umask.html)
 
-**Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Numbering Conversions](https://www.youtube.com/watch?v=4nGgqLIKU9U)
 - [File Permissions](https://www.youtube.com/watch?v=SdgiYoOi0CY)
