@@ -33,7 +33,7 @@ description: Tutorial 6 for Students to Learn File Transfer and Sending Email Me
 - [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html)
 - [mail](https://man.openbsd.org/mail)
 
-**Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Using scp Command](https://www.youtube.com/watch?v=EBvxbuhDKBw)
 - [Using sftp Command](https://www.youtube.com/watch?v=QcKYFEgfV-I)
