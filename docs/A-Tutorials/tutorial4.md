@@ -580,7 +580,6 @@ touch mydir/myfile.txt
 
    - What would be the permissions for the newly created **directory** and **regular file**? (show your work)
 
-
 ---
 
 Author: Murray Saul
