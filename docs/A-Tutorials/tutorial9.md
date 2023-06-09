@@ -37,21 +37,17 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 
 - [Using grep Command with Regular Expressions](https://www.youtube.com/watch?v=-2pwLHcvCsU&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=12)
 
-
 ## Key Concepts
 
 ### Regular Expressions
 
-_A **regular expression** is a combination of two types of characters: **literals** and **special characters**.
-Strings of text can be compared to this pattern to see if there is a match._
+_A **regular expression** is a combination of two types of characters: **literals** and **special characters**. Strings of text can be compared to this pattern to see if there is a match._
 
-This usually refers to text that is contained inside a **file** or text as a result
-of issuing Linux commands using a **Linux pipeline command**.
+This usually refers to text that is contained inside a **file** or text as a result of issuing Linux commands using a **Linux pipeline command**.
 
 ### Literal (Simple) Regular Expressions
 
-The simplest regular expression is a series of letters and numbers, (tabs or spaces).
-A **simple (literal)** regular expression consists of normal characters, which used to match patterns.
+The simplest regular expression is a series of letters and numbers, (tabs or spaces). A **simple (literal)** regular expression consists of normal characters, which used to match patterns.
 
 Although there are many Linux commands that use regular expressions, the **grep** command is a useful command to learn how to display matches of patterns of strings within text files.
 
@@ -65,15 +61,13 @@ grep Linux document.txt
 
 A **simple (literal)** regular expression is a series of letters and numbers (tabs or spaces).
 
-
 ### Complex / Extended Regular Expressions
 
 **Complex Regular Expressions**
 
 The problem with just using **simple (literal)** regular expressions is that only simple or general patterns are matched.
 
-_Complex Regular Expressions_ use symbols to help match text for more precise (complex) patterns.
-The most common complex regular expression symbols are displayed below:
+_Complex Regular Expressions_ use symbols to help match text for more precise (complex) patterns. The most common complex regular expression symbols are displayed below:
 
 **Anchors**: `^` , `$`
 
@@ -109,24 +103,19 @@ Example of using **character class**. ^
 
 Example of matching **zero or more occurrence of preceding character**. ^
 
-
 **Extended Regular Expressions**
 
-_Extended Regular Expressions_ consist of additional special characters to “extend”
-the capability of regular expressions. You must use the **egrep** or **grep -E** commands
-in order to properly use extended regular expressions.
+_Extended Regular Expressions_ consist of additional special characters to “extend” the capability of regular expressions. You must use the **egrep** or **grep -E** commands in order to properly use extended regular expressions.
 
 **Repetition**: `{min,max}`
 
 Allows for more precise repetitions. Using braces, you can specify the **minimum** and/or **maximum** number of repetitions.
 
 **Groups**: `( )`
-Allows you to search for repetition for a **group of characters**, a **word**, or a **phase**.
-You enclose them within brackets **( )** to specify a **group**.
+Allows you to search for repetition for a **group of characters**, a **word**, or a **phase**. You enclose them within brackets **( )** to specify a **group**.
 
 **or Condition**: `|`
-Can be used with **groups** to match a variety of character(s), words or phases.
-The | symbol is used to separate the variety of character(s) within a _group_.
+Can be used with **groups** to match a variety of character(s), words or phases. The | symbol is used to separate the variety of character(s) within a _group_.
 
 Examples of how to use **extended regular expressions** with the **egrep** command are displayed below:
 
@@ -142,14 +131,11 @@ Example of using **groups**. ^
 
 Example of using **or** condition with **groups**. ^
 
-
 ## Investigation 1: Simple & Complex Regular Expressions
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 10 by midnight to obtain a grade of 2% towards this course**
 
-In this investigation, you will learn how to use the **grep** command with **simple and complex regular expressions**
-to help search for _patterns_ contained in text files.
-
+In this investigation, you will learn how to use the **grep** command with **simple and complex regular expressions** to help search for _patterns_ contained in text files.
 
 **Perform the Following Steps:**
 
@@ -223,17 +209,14 @@ grep -w -i "the$" textfile1.txt
 
 ![Regex Output 3](/img/Regexps-3.png)
 
-  10. Issue the following Linux command to anchor the word "**the**"
-**simultaneously** at the beginning and end of the string:
+  10. Issue the following Linux command to anchor the word "**the**" **simultaneously** at the beginning and end of the string:
 
 ```bash
 grep -w -i "^the$" textfile1.txt
 ```
 
    - What do you notice?
-
    - Anchoring patterns at both the beginning and ending of strings can greatly assist for more **precise** search pattern matching.
-
    - We will now be demonstrate the **effectiveness** of combining **anchors** with other complex regular expressions symbols.
 
   11. Issue the following Linux command to match strings that **begin with 3 characters**:
@@ -310,7 +293,6 @@ grep "xx*" textfile1.txt
 ```
 
    - Why did this work? because the pattern indicates one occurrence of the letter "x", followed by **zero or MORE occurrences** of the next letter "x".
-
    - If you combine the complex regular expression symbols ".\*" it will act like zero or more occurrences of any character (i.e. like "\*" did in filename expansion).
 
   19. Issue the following Linux command to match strings begin and end with a number with nothing or anything inbetween:
@@ -321,8 +303,7 @@ grep "^[0-9].*[0-9]$" textfile1.txt
 
    - Using **simultaneous anchors** combined with the ".\*" symbol(s) can help you to refine your search patterns of strings.
 
-  20. Issue the following Linux command to display strings that begin with a capital letter,
-end with a number, and contains a capital X somewhere inbetween:
+  20. Issue the following Linux command to display strings that begin with a capital letter, end with a number, and contains a capital X somewhere inbetween:
 
 ```bash
 grep "^[A-Z].*X.*[0-9]$" textfile1.txt
@@ -345,8 +326,7 @@ mkdir ~/regexps
 cp ~uli101/tutorialfiles/numbers1.dat ~/
 ```
 
-  24. View the contents of the **numbers.dat** file using the **more** command and quickly view the contents of this file.
-You should notice **valid** and **invalid** numbers contained in this file. When finished, exit the more command.
+  24. View the contents of the **numbers.dat** file using the **more** command and quickly view the contents of this file. You should notice **valid** and **invalid** numbers contained in this file. When finished, exit the more command.
 
   25. Issue the following linux pipeline command to display only **whole** numbers (i.e. no + or - sign):
 
@@ -409,19 +389,14 @@ ls | grep "[a-z].*txt$"
 ```
 
    - What did this pipeline display?
-
-
    - Although very useful, **complex** regular expressions do NOT entirely solve our problem of displaying **valid** unsigned and signed numbers (not to mention displaying decimal numbers).
 
 In the next investigation, you will learn how to use **extended** regular expressions that will completely solve this issue.
 You can proceed to INVESTIGATION 2.
 
-
 ## Investigation 2: Extended Regular Expressions
 
-In this investigation, you will learn how to use **extended regular expressions** with the **egrep** command
-to further refine your search patterns.
-
+In this investigation, you will learn how to use **extended regular expressions** with the **egrep** command to further refine your search patterns.
 
 **Perform the Following Steps:**
 
@@ -433,8 +408,7 @@ to further refine your search patterns.
 cp ~uli101/tutorialfiles/numbers2.dat ~/
 ```
 
-  3. View the contents of the **numbers2.dat** file using the **more** command and quickly view the contents of this file.
-You should notice _valid_ and _invalid_ numbers contained in this file. When finished, exit the more command.
+  3. View the contents of the **numbers2.dat** file using the **more** command and quickly view the contents of this file. You should notice _valid_ and _invalid_ numbers contained in this file. When finished, exit the more command.
 
   4. Issue the following Linux command to display **signed** or **unsigned integers**:
 
@@ -448,7 +422,6 @@ grep "^[+-]*[0-9][0-9]*$" numbers2.dat
 ![Ext Regex Output 1](/img/Eregexps-1.png)
 
    - **Weakness** of **complex** regular expressions that do not **limit** the number of **positive** or **negative** signs.
-
    - Using **extended regular expression** symbols to specify **minimum** and **maximum** repetitions: **{min,max}** can solve that problem.
 
   5. Issue the following Linux command (using extended regular expression symbols) to display **signed** or **unsigned** integers:
@@ -458,10 +431,8 @@ grep "^[+-]{0,1}[0-9]{1,}$" numbers2.dat
 ```
 
    - **NOTE: No output will be displayed! Why?**
-
    - This is due to the fact that the **grep command was NOT issued correctly to use extended regular expression symbols.**
    - You would need to issue either **grep -E**, or just issue the **egrep** command. The egrep command works with **all** regular expression symbols, and should be used in the future instead of the older grep command.
-
    - We will use **pipeline commands** to both display stdout to the screen and save to files for confirmation of running these pipeline commands when run a **checking-script** later in this investigation.
 
   6. Issue the following Linux pipeline command using **egrep** instead of _grep_:
@@ -475,7 +446,6 @@ egrep "^[+-]{0,1}[0-9]{1,}$" numbers2.dat | tee better-number1.txt
 ![Ext Regex Output 1](/img/Eregexps-2.png)
 
    - Using **extended** regular expression symbols (such as **repetition**) to refine matches of _signed_ and _unsigned_ integers.
-
    - **NOTE:** With extended regular expressions, the **?** symbol can be used to represent the **{0,1}** repetition symbols and the **+** symbol can be used to represent the **{1,}** repetition symbols
 
   7. Issue the following Linux pipeline command using the repetition shortcuts "+" and "?":
@@ -502,7 +472,6 @@ egrep "^[+-]{0,1}[0-9]{1,}[.]{0,1}[0-9]*$" numbers2.dat | tee better-number3.txt
 
    - If you encounter errors, then view the feedback to make corrections, and then re-run the checking script.
    - If you receive a congratulation message that there are no errors, then proceed with this tutorial.
-
    - You can also use extended regular expression symbols for **grouping**. For example, you can search for repetitions of GROUPS of characters (like a word) as opposed to just a single character or a GROUP of numbers as opposed to a single digit.
 
   10. Issue the following linux pipeline command to copy another data file called **words.dat**:
@@ -511,8 +480,7 @@ egrep "^[+-]{0,1}[0-9]{1,}[.]{0,1}[0-9]*$" numbers2.dat | tee better-number3.txt
 cp ~uli101/tutorialfiles/words.dat ~/
 ```
 
-  11. View the contents of the **words.dat** file using the **more** command and quickly view the contents of this file.
-Within this file, you should notice some lines that contain repetitions of words. When finished, exit the more command.
+  11. View the contents of the **words.dat** file using the **more** command and quickly view the contents of this file. Within this file, you should notice some lines that contain repetitions of words. When finished, exit the more command.
 
   12. Issue the following linux pipeline command to display **two or more occurrences** of the word "the":
 
@@ -521,7 +489,6 @@ egrep -i "(the){2,}" words.dat | tee word-search1.txt more
 ```
 
    - **NOTE: No output is displayed! Why?**
-
    - This is due to the fact that a space should be included at the end of the word "**the**". Usually words are separated by spaces; therefore, there were no matches since there were not occurrences of "thethe" as opposed to "**the the**" (i.e. no space after repetition of the pattern).
 
   13. Reissue the previous pipeline command with the word the followed by a **space** within the brackets:
@@ -542,8 +509,7 @@ egrep -i "(the ){2,}" words.dat | tee word-search2.txt
 egrep -i "(the |and ){2,}" words.dat | tee word-search3.txt
 ```
 
-  15. Issue the following Linux command to check that you correctly issued
-those Linux _pipeline commands_ using the **tee** command to create those text files:
+  15. Issue the following Linux command to check that you correctly issued those Linux _pipeline commands_ using the **tee** command to create those text files:
 
 ```bash
 ~uli101/week9-check-3
@@ -551,7 +517,6 @@ those Linux _pipeline commands_ using the **tee** command to create those text f
 
    - If you encounter errors, then view the feedback to make corrections, and then re-run the checking script.
    - If you receive a congratulation message that there are no errors, then proceed with this tutorial.
-
    - Let's issue a Linux **pipeline** command using the **egrep** command as a **filter** using both **complex** and **extended** regular expressions.
 
   16. Issue the following Linux pipeline command:
@@ -561,14 +526,12 @@ ls | egrep "[a-z]{1,}.*[0-9]"
 ```
 
    - What did this Linux pipeline command display?
-
    - The **grep** and **egrep** Linux commands are NOT the only Linux commands that use regular expressions.
 
 In the next investigation, you will apply regular expressions to a number of Linux commands
 that you already learned in this course.
 
 You can proceed to INVESTIGATION 3
-
 
 ## Investigation 3: Other Commands Using Regular Expressions
 
@@ -584,8 +547,7 @@ In this investigation, you will see commands other than **grep** or **egrep** th
 man ls
 ```
 
-  3. We want to search for an option that can sort the file listing.
-Type the following regular expression below and press **ENTER**:
+  3. We want to search for an option that can sort the file listing. Type the following regular expression below and press **ENTER**:
 
 ```bash
 /sort
@@ -594,7 +556,6 @@ Type the following regular expression below and press **ENTER**:
 ![Other re 1](/img/Other-re-1.png)
 
    - Entering **/sort** in the **man** command can search for the string "**sort**".
-
    - **FYI:** The **grep** and **egrep** Linux commands contain the regular expressions within quotes, but **most** other Linux commands specify regular expressions using **forward slashes** (e.g. **/regular expression**   or   **/regular expression/**).
 
   4. Scroll throughout the man pages for the ls command to view matches for the pattern "**sort**" (You can press **SPACE** or key combination **alt-b** to move forward and backwards one screen respectively).
@@ -615,8 +576,7 @@ cp ~uli101/tutorialfiles/large-file.txt ~/
 less large-file.txt
 ```
 
-  8. We want to search for a pattern **uli101** within this text file.
-Type the following regular expression and press **ENTER**:
+  8. We want to search for a pattern **uli101** within this text file. Type the following regular expression and press **ENTER**:
 
 ```bash
 /uli101
@@ -656,14 +616,11 @@ vi large-file.txt
 ![Other re 3](/img/Other-re-3.png)
 
    - Entering **/uli101** in the **vi** command can search for the string "**uli101**".
-
    - Let's **search** for the **uli101** pattern, and **replace** it in capitals (i.e **ULI101**).
-
    - In vi, to issue a command, you need to enter **LAST LINE** MODE then issue a command.
    - Let's issue a command from **LAST LINE** MODE to search and replace **uli101** to **ULI101**.
 
-  14. Making certain that you are **COMMAND** MODE in vi,
-type the following and press **ENTER**:
+  14. Making certain that you are **COMMAND** MODE in vi, type the following and press **ENTER**:
 
 ```bash
 :%s/uli101/ULI101/g
@@ -684,7 +641,6 @@ type the following and press **ENTER**:
   17. Save changes to your vi editing session and exit by typing the following and pressing ENTER:
 
 `:x`
-
 
 ## Linux Practice Questions
 
@@ -778,7 +734,6 @@ Write a single Linux command to perform the specified tasks for each of the foll
 9. Write a Linux command to display all lines in the file called **~/data.txt** that begins with 2 or more occurrences of the word “the” (upper or lower case).
 10. Write a Linux command to display all lines in the file called **~/data.txt** that begins with 2 or more occurrences of the word “the” or the word “but” (upper or lower case).
 11. Write a Linux command to display all lines in the file called **~/data.txt** that begins with a minimum of 2 occurrences and a maximum of 4 occurrences of the word “the” or the word “but” (upper or lower case).
-
 
 ---
 
