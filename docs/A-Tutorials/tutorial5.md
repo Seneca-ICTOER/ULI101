@@ -40,7 +40,7 @@ description: Tutorial 5 for Students to Learn Redirection
 | [more](http://man7.org/linux/man-pages/man1/more.1.html), [less](http://man7.org/linux/man-pages/man1/less.1.html) | [head](http://man7.org/linux/man-pages/man1/head.1.html), [tail](http://man7.org/linux/man-pages/man1/tail.1.html) | [sort](http://man7.org/linux/man-pages/man1/sort.1.html) | [uniq](http://man7.org/linux/man-pages/man1/uniq.1.html) | [grep](http://linuxcommand.org/lc3_man_pages/grep1.html) | [cut](http://man7.org/linux/man-pages/man1/cut.1.html) | [tr](http://linuxcommand.org/lc3_man_pages/tr1.html) | [wc](http://man7.org/linux/man-pages/man1/wc.1.html) | [tee](http://man7.org/linux/man-pages/man1/tee.1.html) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-**Brauer Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Reading/Writing to Files (echo, stdin, stdout, stderr, >, >>, 2>, cat, more, less, man, date, diff, diff -y, find, wc](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4)
 
