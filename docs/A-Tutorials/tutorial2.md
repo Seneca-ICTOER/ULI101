@@ -121,10 +121,7 @@ You will be creating the following **directory structure** within your home dire
 For example, if your Seneca user ID was **mkhan** then you would display the pathname _/home/your-seneca-id_ as: **/home/mkhan**
 
   1. Login to your matrix account (you should know how to do this from performing [Tutorial 1 INVESTIGATION 1.](./tutorial1.md#investigation-1-accessing-your-matrix-linux-account)
-
-  2. Issue a command to confirm that you are located in your home directory
-(you should know how to do this from performing [Tutorial 1 INVESTIGATION 2](./tutorial1.md#investigation-2-using-the-linux-shell)
-
+  2. Issue a command to confirm that you are located in your home directory (you should know how to do this from performing [Tutorial 1 INVESTIGATION 2](./tutorial1.md#investigation-2-using-the-linux-shell)
   3. Issue the following Linux command: 
 
 ```bash
@@ -132,7 +129,6 @@ mkdir /home/your-seneca-id/uli101xx
 ``` 
 
    - (remember: use your Seneca username instead of "your-seneca-id")
-
    - **NOTE:** You should always confirm that you have created a directory. This can be done by issuing the `ls` command.
 
   4. Issue the following Linux command: 
@@ -195,7 +191,6 @@ cd uli101xx
 ```
 
   11. Issue a Linux command to confirm that your current location is in the _uli101xx_ directory. You should know how to issue this command from a previous tutorial.
-
   12. Issue the following Linux command to create the directories called **notes**, **tutorials** and **samples**:
  
 ```bash
@@ -225,7 +220,6 @@ rm -r uli101xx acp100xx xyz100xx
 ```
 
   17. Issue a Linux command to confirm that the **uli101xx**, **acp100xx** and **xyz100xx** directories have been removed.
-
   18. Issue the following single Linux command to create the entire directory structure:
 
 ```bash
@@ -259,7 +253,6 @@ If all checks pass, then user performed task correctly and can continue.
 ![Script Check 2](/img/Script-check-2.png)
 
 If there is a warning, then feedback is provided to user to correct and re-run checking script.
-
 
 **Perform the Following Steps:**
 
@@ -349,7 +342,6 @@ Output of the **tree** command to confirm movement of **acp100 directory** direc
    - Let's run a checking script to see if you moved and copied the directories correctly.
 
   8. Make certain that your current directory is **your home directory.**
-
   9. Issue the following Linux command run checking script:
 
 ```bash
@@ -366,7 +358,7 @@ In this investigation, we will learn how to **safely remove** directories and th
 
   1. Confirm that you are located in your home directory.
 
-The **rmdir** command is used to remove empty directories.
+        - The **rmdir** command is used to remove empty directories.
 
   2. Issue the following Linux command to remove the empty directory called **tutorials**: 
 
@@ -375,7 +367,6 @@ rmdir uli101xx/tutorials
 ```
 
   3. Issue a command to confirm that you removed the **tutorials** directory.
-
   4. Issue the following Linux command to remove the empty directory called **uli101xx**: 
 
 ```bash
@@ -383,7 +374,6 @@ rmdir uli101xx
 ```
 
    - NOTE: You should get an **error message**, since the **uli101xx** directory is **NOT** empty.
-
    - To remove non-empty directories, you can use the **rm -r** command. The **-r** option stands for recursive, which can travel down the directory paths and their contents.
 
   5. Issue the following Linux command to remove the **uli101xx** directory and its contents: 
@@ -406,7 +396,6 @@ rm -ri xyz100xx
    - Let's run a checking script to confirm that you have correctly removed all of those directories.
 
   8. Issue the **tree** command to confirm that all of those recently created directories have been removed.
-
   9. Issue the following Linux command to run a checking script to confirm removal of those directories:
 
 ```bash
@@ -440,13 +429,11 @@ You will now learn basic editing skills using the **Nano** text editor including
 **Perform the Following Steps:**
 
   1. Make certain that you are located in your home directory.
-
   2. **Create** the following directory structure (displayed on the right side) by issuing a **single Linux command** (You should know how to do this from the previous INVESTIGATION).
 
 ![Directory Structure 10](/img/Directory-structure-10.png)
 
   3. Issue a Linux command to check that you correctly created those directories.
-
   4. Issue the following Linux command to edit a text file called mytext.txt in the linux/practice directory:
 
 ```bash
@@ -472,17 +459,13 @@ nano textedit/practice/mytext.txt
 | **<ctrl\><x\>** |	Save editing changes and exit |
 
   6. Referring to the table above, practice navigating and editing your entered lines for practice.
-
   7. To **save** your editing session, press: `<ctrl>x`
-
   8. You will be prompted to modify your file: type the letter `y` for **yes**.
-
   9. The name of the file will be displayed, Press `ENTER`.to save editing changes for that file name.
 
    - **NOTE:** This prompt for file name allows you to change the name of the file if you wish. By pressing **ENTER**, it will accept the default filename.
 
   10. Perform some more editing operations based on the editing chart above.
-
   11. **Save** your editing session and **exit** your text editor.
 
 ### Part 2: Creating Text Files Using The vi Text Editor
@@ -539,7 +522,6 @@ vi textedit/practice/othertext.txt
    - Once you can get used to working in INPUT and COMMAND mode, it is easier to perform text editing operations in **vi** via _COMMAND_ mode as opposed to nano!
 
   6. Type the following keys to copy the current line: `yy`
-
   7. Type the following key to paste the copied line: `p`
 
       - What did you notice?
@@ -553,17 +535,11 @@ vi textedit/practice/othertext.txt
       - What did you notice?
 
   10. Use the up or down **arrow** keys to move to the second line.
-
   11. Type either the **w** and/or **b** keys to move the cursor to the beginning of the word: **first**
-
   12. Type the **x** keys to remove the word called **first**
-
   13. Type the **i** key to enter INSERT mode.
-
   14. Type the word: **second**
-
   15. Press the **ESC** key to enter COMMAND mode.
-
   16. Repeat steps **11** to **16** to change the words for line number for lines 3 and 4.
 
 ![Vi text editor b](/img/Vi-text-editor-b.png)
@@ -571,7 +547,6 @@ vi textedit/practice/othertext.txt
    - Use a combination of **arrow** keys and the **w** and **b** keys while in COMMAND mode to change the correct words for the **third** and **fourth** lines.
 
   17. Move to the 4th line (i.e. last line).
-
   18. Type the following keys: `dd`
 
       - What did you notice?
@@ -582,7 +557,6 @@ vi textedit/practice/othertext.txt
       - What did you notice?
 
   20. Issue the same command that you performed in **Step #2** to confirm that you had properly edited that file.
-
   21. **Save** and **exit** your vi editing session.
 
 ![Vi text editor 2](/img/Vi-text-editor-2.png)
@@ -596,11 +570,8 @@ vi textedit/practice/othertext.txt
 ```
 
   23. In the tutorial menu, select the first menu item labelled **"USING THE VI TEXT EDITOR"**
-
   24. Read and follow the instructions in the tutorial. Eventually, it will display a **simulated** vi environment and will provide you with **"hands-on"** practice using the vi text editor. As far as this author is aware, there is NO "hands-on" tutorial for the nano text editor in this particular format.
-
   25. When you have completed that section, you will be returned to the main menu. If you want to get extra practice, you can select the menu item labelled "**REVIEW EXERCISE**".
-
   26. When you want to exit the tutorial, select the menu option to exit the tutorial.
 
 It is recommended to try both text editors, and choose the text editor that you feel that is easier to use.
@@ -612,7 +583,6 @@ We conclude this tutorial by learning to **manage**, **view** or **manipulate th
 **Perform the Following Steps:**
 
   1. Make certain that you are located in your home directory.
-
   2. Refer to the following table of **Text File Management Commands**:
 
 | **Linux Command** |	**Purpose** |
@@ -653,7 +623,6 @@ ls -l a.txt b.txt c.txt
 ![Vi Screen 40](/img/Vi-screen-40.png)
 
   6. **Save** and **exit** your editing session.
-
   7. Issue the following Linux command: 
 
 ```bash
@@ -672,7 +641,6 @@ more a.txt
    - What is the advantage of using the more command?
 
   9. Type the letter "`q`" to exit the more command.
-
   10. Issue the following Linux command: 
 
 ```bash
@@ -735,7 +703,6 @@ grep 2 a.txt
 ![End of line image](/img/End-of-line.png)
 
   18. **Save** your editing session and **exit** your text editor.
-
   19. Issue the following Linux command: 
 
 ```bash
@@ -805,7 +772,6 @@ rm aa.txt b.txt a.txt.bk c.txt
 ```
 
   29. Issue the **ls** command to verify that these files have been removed.
-
   30. Complete the **LINUX PRACTICE QUESTIONS** below to get additional practice.
 
 ## Linux Practice Questions
