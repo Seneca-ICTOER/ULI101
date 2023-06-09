@@ -280,6 +280,8 @@ You will now get practice performing numbering conversions.
 
 In this investigation, you will get experience using the **chmod** command to **change permissions** for existing files and the using **umask** command to automatically set permissions for newly-created files.
 
+### Part 1: Changing Directory Permissions
+
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account and issue a command to **confirm** you are located in your **home** directory.
@@ -351,9 +353,12 @@ ls -lR ~/documents
 ```
 
    - What do you noticed happened to the permissions for the regular files contained in those directories. Did those regular file permissions change?
-   - We will now change permissions for regular text file contained in subdirectories of the **documents** directory to: **r w - r - - - - -**
 
-  14. Issue the following Linux commands:
+### Part 2: Changing File Permissions
+
+We will now change permissions for regular text file contained in subdirectories of the **documents** directory to: **r w - r - - - - -**
+
+  1. Issue the following Linux commands:
 
 ```bash
 chmod 640 ~/documents/memos/memo*.txt
@@ -367,50 +372,52 @@ chmod 640 ~/documents/reports/report*.txt
 chmod 640 ~/documents/contracts/contract*.txt
 ```
 
-  15. Issue the **ls -lR** command for the **~/documents** directory to confirm that those regular file permission have changed.
+  2. Issue the **ls -lR** command for the **~/documents** directory to confirm that those regular file permission have changed.
 
       - Let's run a checking script to make certain you correctly set permissions for those directories and files.
 
-  16. Issue the following: 
+  3. Issue the following: 
 
 ```bash
 ~uli101/week4-check-3
 ```
 
-  17. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
+  4. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
 
       - Let's get some practice setting permissions to allow users to make editing changes to regular files.
 
-  18. Issue the following Linux command: 
+  5. Issue the following Linux command: 
 
 ```bash
 chmod ugo-w ~/documents/memos/memo*.txt
 ```
 
-  19. Use the **ls** command to verify that those regular file's permissions have changed.
+  6. Use the **ls** command to verify that those regular file's permissions have changed.
 
-  20. Using the nano or vi text editor, open the regular file **~/documents/memos/memo1.txt** and type in some text and try to save your editing changes.
+  7. Using the nano or vi text editor, open the regular file **~/documents/memos/memo1.txt** and type in some text and try to save your editing changes.
 
       - What happened?
 
-  21. To **abort** your editing session in **vi**: type `:q!` and press **ENTER**.
+  8. To **abort** your editing session in **vi**: type `:q!` and press **ENTER**.
 
       - To **abort** your editing changes in **nano**: type `ctrl-x`
       - type `n` and then press **ENTER** when prompted to save editing changes.
 
-  22. Issue the following Linux command to add write permissions for all files in the **memos** directory for yourself (i.e. user): 
+  9. Issue the following Linux command to add write permissions for all files in the **memos** directory for yourself (i.e. user): 
 
 ```bash
 chmod u+w ~/documents/memos/*
 ```
 
-  23. Repeat steps to edit the file **~/documents/memos/memo1.txt** (as you did in _step \#20_).
+  10. Repeat steps to edit the file **~/documents/memos/memo1.txt** (as you did in _step \#20_).
 
       - Were you able to edit the file and save your editing changes?
 
-  24. Issue a Linux command to view the contents of the **~/documents/memos/memo1.txt** text file that you were able to edit.
+  11. Issue a Linux command to view the contents of the **~/documents/memos/memo1.txt** text file that you were able to edit.
 
-  25. Issue the following Linux command to view permissions for your **home** directory: 
+### Part 3: Working with umask
+
+  1. Issue the following Linux command to view permissions for your **home** directory: 
 
 ```bash
 ls -ld ~
@@ -418,13 +425,13 @@ ls -ld ~
 
    - What does execute permissions mean for same group members and other group members in terms of your **home** directory?
 
-  26. Issue the following Linux command to create a new subdirectory: 
+  2. Issue the following Linux command to create a new subdirectory: 
 
 ```bash
 mkdir ~/shared
 ```
 
-  27. Issue the following Linux command: 
+  3. Issue the following Linux command: 
 
 ```bash
 ls -ld ~/shared
@@ -433,7 +440,7 @@ ls -ld ~/shared
    - What are the permissions for this newly-created directory?
    - Can other users access the directory pathname **~youruserid/shared** ?
 
-  28. Issue the following Linux command (without an argument): 
+  4. Issue the following Linux command (without an argument): 
 
 ```bash
 umask
@@ -441,21 +448,21 @@ umask
 
    - **NOTE:** You should see a **four-digit octal** number. Drop the leading zero on the left to obtain the **default umask value**.
 
-  29. Perform a **mathematical calculation** by taking the **octal number 777** and **subtracting** the default umask value you determined in the previous step. What is the result?
+  5. Perform a **mathematical calculation** by taking the **octal number 777** and **subtracting** the default umask value you determined in the previous step. What is the result?
 
-  30. Convert that octal number result to a **binary number**. What does that represent as newly created directory permissions?
+  6. Convert that octal number result to a **binary number**. What does that represent as newly created directory permissions?
 Does that correspond to the permissions for the newly created **~/shared** directory?
 
-  31. Repeat the calculation (like in step \#28) but with a umask setting of **077** to see how this new umask setting would
+  7. Repeat the calculation (like in step \#4) but with a umask setting of **077** to see how this new umask setting would
 affect permissions of newly-created directories.
 
-  32. Issue the following Linux command: 
+  8. Issue the following Linux command: 
 
 ```bash
 umask 077
 ```
 
-  33. Issue the following Linux command (without arguments): 
+  9. Issue the following Linux command (without arguments): 
 
 ```bash
 umask
@@ -463,13 +470,13 @@ umask
 
    - **NOTE:** You should notice the value **0077**. By dropping the leading zero to the left, that would provide the default **umask value of 077**.
 
-  34. Issue the following Linux command: 
+  10. Issue the following Linux command: 
 
 ```bash
 mkdir ~/shared2
 ```
 
-  35. Issue the following Linux command: 
+  11. Issue the following Linux command: 
 
 ```bash
 ls -ld ~/shared2
@@ -477,18 +484,18 @@ ls -ld ~/shared2
 
    - Do the permissions for this newly created directory match the predicted permissions that you calculated in **step \#30**?
 
-  36. Issue the following Linux command to create an empty regular file called **myfile.txt** in the **~/shared2** directory:
+  12. Issue the following Linux command to create an empty regular file called **myfile.txt** in the **~/shared2** directory:
 
 ```bash
 touch ~/shared2/myfile.txt
 ```
 
-  37. Use the **ls -l** command to view the permissions for this newly created regular file.
+  13. Use the **ls -l** command to view the permissions for this newly created regular file.
 
       - What do you notice about those permissions?
       - Let's run a checking script to make certain you correctly set permissions for those recently-created directories and files.
 
-  38. Issue the following: 
+  14. Issue the following: 
 
 ```bash
 ~uli101/week4-check-4
@@ -496,9 +503,9 @@ touch ~/shared2/myfile.txt
 
    - If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message and then continue with this tutorial.
 
-  39. Logout of your Matrix account, and then log-back into your Matrix account.
+  15. Logout of your Matrix account, and then log-back into your Matrix account.
 
-  40. Issue the following Linux command (without arguments): 
+  16. Issue the following Linux command (without arguments): 
 
 ```bash
 umask
