@@ -1,11 +1,11 @@
 ---
 id: tutorial4
-title: Tutorial 4 - Data Representation and Numbering Conversion and File Permissions
+title: Tutorial 4 - Data Representation, Numbering Conversion, and File Permissions
 sidebar_position: 4
 description: Tutorial 4 for Students to Learn Data Representation, Numbering Conversion, and File Permissions
 ---
 
-# Tutorial 4: Data Representation and Numbering Conversion and File Permissions
+# Tutorial 4: Data Representation, Numbering Conversion, and File Permissions
 
 ## Main Objectives of this Tutorial
 
@@ -76,8 +76,7 @@ When converting **binary** numbers to **decimal** numbers, perform the following
   4. Continually repeat **step \#3** moving leftwards, increasing the power of _2_ by **1** (refer to diagram below).
   5. Add up the results to obtain the decimal value equivalent.
 
-**NOTE:** To convert _octal_ and _hexadecimal_ numbers to **decimal**, replace the number **2**
-(in red in the diagram below) with **8** (for octal) or **16** (for hexadecimal).
+**NOTE:** To convert _octal_ and _hexadecimal_ numbers to **decimal**, replace the number **2** (in red in the diagram below) with **8** (for octal) or **16** (for hexadecimal).
 
 ![Binary to Decimal](/img/Convert-bin-decimal.png)
 
@@ -202,7 +201,6 @@ Since 1 octal digit represents 3 binary digits, one octal digit can represent th
 
 **NOTE:** You can use the **-R** option to set permissions for directory, subdirectory and directory contents **recursively**.
 
-
 ### Setting Permissions for Newly-Created Directories and Regular Files - umask:
 
 The **umask** command is used to set the permissions of newly-created directories and regular files.
@@ -274,7 +272,6 @@ You will now get practice performing numbering conversions.
       - What method (displayed above) will you use? Use a calculator to check your work.
 
   12. When you have performed all of the numbering conversions above, then you can proceed to the next INVESTIGATION.
-
 
 ## Investigation 2: File Permissions
 
@@ -587,6 +584,7 @@ touch mydir/myfile.txt
 ---
 
 Author: Murray Saul
+
 License: LGPL version 3 Link: https://www.gnu.org/licenses/lgpl.html
 
 ---
