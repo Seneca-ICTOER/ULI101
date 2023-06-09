@@ -42,16 +42,18 @@ It's extremely helpful to take a full-desktop screenshot of your screen with the
 
 ### Course Resources
 
-**Free Applications for Remote Access:**
+#### Free Applications for Remote Access:
 
 - [Secure Shell SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe)
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download)
 - [Moba Xterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 
-**Learning Tools**
+#### The Learning Centre
 
-[The Learning Center](http://inside.senecacollege.ca/learningcentres/supported-learning-groups.html) is a resource to assist students that additional course help, english reading / writing support and improving study skills.
+[The Learning Centre](http://inside.senecacollege.ca/learningcentres/supported-learning-groups.html) is a resource to assist students that additional course help, english reading / writing support and improving study skills.
+
+#### Supported Learning Groups (SLGs)
 
 [Supported Learning Groups](https://library.senecacollege.ca/learningcentre/slg) are peer-facilitated study sessions targeted to help students review course material for difficult courses. It is a student-driven, informal study group offered regularly where students can discuss course content, develop learning strategies, predict test items, compare notes and develop organizational tools while learning how to integrate course content and study skills together.
 
