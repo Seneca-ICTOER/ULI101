@@ -51,40 +51,29 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 - [Bash Shell Scripting - Part 1](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5)
 - [Creating and Running a Shell Script](https://www.youtube.com/watch?v=cQepf9fY6cE)
 
-
 ## Key Concepts
 
 A shell script is a **file** that contains **Unix/Linux commands** and **reserved words** to help **automatic** common tasks.
 
 ### Creating & Executing Shell Scripts
 
-It is recommended to **plan** out on a piece of paper the purpose of the shell script.
-Once you have planned your shell script by listing the **sequence of steps (commands)**,
-you need to create a file (using a **text editor**) that will contain your Linux commands.
+It is recommended to **plan** out on a piece of paper the purpose of the shell script. Once you have planned your shell script by listing the **sequence of steps (commands)**, you need to create a file (using a **text editor**) that will contain your Linux commands.
 
-**NOTE:** Avoid using filenames of already existing Linux Commands to avoid confusion.
-It is recommended to include a file extension that describes the type of shell for the shell script.
-
+**NOTE:** Avoid using filenames of already existing Linux Commands to avoid confusion. It is recommended to include a file extension that describes the type of shell for the shell script.
 
 **Using a Shebang Line**
 
-Since Linux shells have evolved over a period of time, using a she-bang line **forces** the shell script
-to run in a **specific shell**, which could prevent errors in case an older shell does not recognize
-newer features from more recent shells.
+Since Linux shells have evolved over a period of time, using a she-bang line **forces** the shell script to run in a **specific shell**, which could prevent errors in case an older shell does not recognize newer features from more recent shells.
 
-The **she-bang** line is a **special comment** at top of your shell script to run your shell script
-in a specific shell.
+The **she-bang** line is a **special comment** at top of your shell script to run your shell script in a specific shell.
 
 ![Shebang](/img/Shebang.png)
 
-**NOTE:** The **shebang line** must appear on the **first line** and at the **beginning** of the shell script,
-otherwise, it will be treated as a regular comment and ignored.
-
+**NOTE:** The **shebang line** must appear on the **first line** and at the **beginning** of the shell script, otherwise, it will be treated as a regular comment and ignored.
 
 **Setting Permissions / Running Shell Scripts**
 
-To run your shell script by name, you need to assign **execute permissions** for the user.
-To run the shell script, you can **execute** the shell script using a relative, absolute, or relative-to-home pathname
+To run your shell script by name, you need to assign **execute permissions** for the user. To run the shell script, you can **execute** the shell script using a relative, absolute, or relative-to-home pathname
 
 _Examples:_
 
@@ -104,15 +93,13 @@ chmod u+x myscript.bash
 ~/myscript.bash
 ```
 
-
 ### Variables / Parameters
 
 **Environment Variables**
 
 Shell **environment variables** shape the working environment whenever you are logged in Common shell. Some of these variables are displayed via Linux commands in the diagram displayed below.
 
-You can issue the pipeline command **set | more**
-to view all variables.
+You can issue the pipeline command **set | more** to view all variables.
 
 Placing a dollar sign "$" prior to the variable name will cause the variable to expand to the value contained in the variable.
 
@@ -120,51 +107,40 @@ Placing a dollar sign "$" prior to the variable name will cause the variable to 
 
 Examples of using **Environment** and **User Defined** variables.
 
-
 **User Defined Variables**
 
 **User-defined** variables are variables that can be used in the shell script for **customized** purposes.
 
 Data can be stored and removed within a variable using an **equal sign** (no spaces on either side of equal sign).
 
-The **read** command can be used to prompt the user to enter data into a variable. The **readonly** command will prevent
-the current value of the variable for the remainder of the execution of a shell script.
-
+The **read** command can be used to prompt the user to enter data into a variable. The **readonly** command will prevent the current value of the variable for the remainder of the execution of a shell script.
 
 **Positional Parameters and Special Parameters**
 
 A **positional parameter** is a variable within a shell program; its value is set from arguments contained in a shell script or using the set command.
 
-Positional parameters are numbered and their values are accessed by using
-a preceding "**\$**" (eg. **\$1**, **\$2**, **\$3**, etc.). The positional parameter **\$0** refers to
-either the **name of shell** where command was issued, or **filename of shell script** being executed.
-If using **positional parameters** greater than **9**, then you need to include number within braces.
+Positional parameters are numbered and their values are accessed by using a preceding "**\$**" (eg. **\$1**, **\$2**, **\$3**, etc.). The positional parameter **\$0** refers to either the **name of shell** where command was issued, or **filename of shell script** being executed. If using **positional parameters** greater than **9**, then you need to include number within braces.
 
 Examples: **echo ${10}, ls ${23}**
 
-The **shift** command can be used with positional parameters to shift positional parameters
-to the left by one or more positions.
+The **shift** command can be used with positional parameters to shift positional parameters to the left by one or more positions.
 
 There are a couple of ways to assign values as positional parameters:
 
   - Use the **set** command with the values as argument after the set command
   - Run a shell script containing arguments
 
-There are a group of **special parameters** that can be used for shell scripting.
-A few of these special parameters and their purpose are displayed below:
-**\$\*** , **“\$\*”** , **"\$@"** , **\$\#** , **\$?**
+There are a group of **special parameters** that can be used for shell scripting. A few of these special parameters and their purpose are displayed below: **\$\*** , **“\$\*”** , **"\$@"** , **\$\#** , **\$?**
 
 ![Positional](/img/Positional.png)
 
 Examples of using **positional** and **special** parameters. ^
 
-
 ### Command Substitution / Math Operations
 
 **Command Substitution:**
 
-_**Command substitution** is a facility that allows a command
-to be run and its output to be pasted back on the command line as arguments to another command_. Reference: https://en.wikipedia.org/wiki/Command_substitution
+_**Command substitution** is a facility that allows a command to be run and its output to be pasted back on the command line as arguments to another command_. Reference: https://en.wikipedia.org/wiki/Command_substitution
 
 _Usage:_
 
@@ -200,11 +176,9 @@ echo "The date is: $(date +'%A %B %d, %Y')"
 
 Example of how a **for loop with command substitution** works.
 
-
 **Math Operations:**
 
-In order to make math operations work, we need to convert numbers
-stored as **text** into **binary** numbers.
+In order to make math operations work, we need to convert numbers stored as **text** into **binary** numbers.
 
 We can do this by using 2 pairs of round brackets **(( ))**.
 
@@ -234,14 +208,11 @@ echo “$product”
 
 Common Math Operator Symbols. ^
 
-
 ### Control Flow Statements
 
-**Control Flow Statements** are used to make your shell scripts
-more **flexible** and can **adapt** to changing situations.
+**Control Flow Statements** are used to make your shell scripts more **flexible** and can **adapt** to changing situations.
 
-In order to use control flow statements, you need to test a condition to get
-**TRUE** (zero value) or **FALSE** (non zero value). This can be done two ways:
+In order to use control flow statements, you need to test a condition to get **TRUE** (zero value) or **FALSE** (non zero value). This can be done two ways:
   - Run a command to get the exit status (**\$?**)
   - Use the **test** command
 
@@ -257,11 +228,9 @@ Examples of using additional comparisons using the test command. ^
 
 You CANNOT use the < or > symbols when using the test command since these are redirection symbols. Instead, you need to use **options** when performing numerical comparisons. Refer to the diagrams to the right **test options** and their purposes.
 
-
 **Logic Statements**
 
-A **logic statement** is used to determine which Linux commands are executed basedon the result of a condition:
-**TRUE** (zero value) or **FALSE** (non-zero value).
+A **logic statement** is used to determine which Linux commands are executed basedon the result of a condition: **TRUE** (zero value) or **FALSE** (non-zero value).
 
 There are several logic statements, but we will just concentrate on the if statement.
 
@@ -278,11 +247,9 @@ Refer to the diagram below for using the **if logic statement** with the **test*
 
 Example of using the **if** logic control-flow statement.
 
-
 **if-else statement:**
 
-Unlike using an _if_ statement, an **if-else** statement take **two different sets of actions**
-based on the results of the test condition.
+Unlike using an _if_ statement, an **if-else** statement take **two different sets of actions** based on the results of the test condition.
 
 _Example:_
 
@@ -299,12 +266,9 @@ fi
 
 Example of how an **if-else** control-flow statement.
 
-
 **Loop Statements**
 
-_A **loop statement** is a series of steps or sequence of statements executed repeatedly
-zero or more times satisfying the given condition is satisfied._
-Reference: https://www.chegg.com/homework-help/definitions/loop-statement-3
+_A **loop statement** is a series of steps or sequence of statements executed repeatedly zero or more times satisfying the given condition is satisfied._ Reference: https://www.chegg.com/homework-help/definitions/loop-statement-3
 
 There are several loops, but we will look at the **for loop** using a **list**.
 
@@ -321,11 +285,9 @@ Refer to the diagram below for an example using the for loop with a list.
 
 Example of using the **for** looping control-flow statement.
 
-
 ## Investigation 1: Creating A Shell Script
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 12 by midnight to obtain a grade of 2% towards this course**
-
 
 In this investigation, you will learn how to create and run a **Bash Shell script**.
 
@@ -382,8 +344,7 @@ echo
 
 ![Hello 1](/img/Hello1.png)
 
-  8. Issue the following linux command to **add**
-execute permissions for your shell script:
+  8. Issue the following linux command to **add** execute permissions for your shell script:
 
 ```bash
 chmod u+x hello
@@ -407,9 +368,7 @@ chmod u+x hello
 
       - In the next investigation, you will learn to create and run shell scripts that use **variables**, **positional** and **special parameters**. You will also learn how to add a **she-bang line** at the top of a shell script to force it to run in a specified shell.
 
-
 Proceed to the next investigation.
-
 
 ## Investigation 2: She-Bang Line / Variables / Parameters
 
@@ -422,15 +381,13 @@ In this investigation, you will add a **she-bang line** at the top of your shell
       - Let's run shell scripts with and without a **she-bang** line at the top of your shell script to demonstrate why using a she-bang line should be included in a shell script to force the shell script to be run in a specific shell.
 
   2. Use a text editor to **edit** the **hello** shell script that you created in the previous investigation.
-
   3. Add the following line to the bottom of the file (**copy** and **paste** to prevent _errors_):
 
 ```bash
 echo "The current shell you are using is: $(ps -o cmd= -p $$|cut -d' ' -f1)"
 ```
 
-   - **FYI:** This command displays the **name** of the _shell_ that the shell script is running in.
-The command within **$( )** uses a technique known as **command substitution**.
+   - **FYI:** This command displays the **name** of the _shell_ that the shell script is running in. The command within **$( )** uses a technique known as **command substitution**.
 
   4. Issue the following Linux command to change to an older shell called the **Bourne Shell**:
 
@@ -451,24 +408,21 @@ sh
 ![Hello 2](/img/Hello2.png)
 
    - **NOTE:** Due to the fact that shells (and their features) have **evolved** over a period of time, an error may occur if you include a **NEWER shell feature** (e.g. _Bash Shell_) but run it in an **OLDER shell** (For example: the _Bourne Shell_).
-
    - You can add a **special comment** called a **she-bang line** at the BEGINNING of the FIRST line of your shell script to **force** it to run in the shell you want (for example: the Bash shell).
 
 ![Shebang 1](/img/She-bang-1.png)
 
   6. Edit your **hello** shell script using a text editor.
-
   7. **Insert** the following line at the **beginning** of the **first** line of your hello file:
 
 ```bash
 #!/bin/bash
 ```
 
-This is referred to as a **she-bang line**. It forces this script to be run in the **Bash Shell**.
-When your Bash Shell script finishes execution, you are returned to your current shell that you are using (which in our case in Matrix, is still the Bash shell).
+   - This is referred to as a **she-bang line**. It forces this script to be run in the **Bash Shell**.
+   - When your Bash Shell script finishes execution, you are returned to your current shell that you are using (which in our case in Matrix, is still the Bash shell).
 
   8. **Save** your editing changes and **exit** your text editor.
-
   9. While in the Bourne shell, issue the following Linux command:
 
 ```bash
@@ -502,7 +456,6 @@ exit
    - **Environment variables** are used to set the environment of the shell or shell scripts Let's include some **ENVIRONMENT variables** in our Bash Shell script.
 
   13. Use a text editor to edit the shell script called **hello.bash**
-
   14. Add the following lines to the bottom of the _hello.bash_ file:
 
 ```bash
@@ -513,7 +466,6 @@ echo
 ```
 
   15. Save your editing changes and exit your text editor.
-
   16. Run your modified Bash shell script by issuing:
 
 ```bash
@@ -532,8 +484,7 @@ echo
 PATH=$PATH:.
 ```
 
-  18. Issue the following Linux command to confirm that the current directory "."
-has been **added** to the end of the **PATH** environment variable:
+  18. Issue the following Linux command to confirm that the current directory "." has been **added** to the end of the **PATH** environment variable:
 
 ```bash
 echo $PATH
@@ -550,11 +501,9 @@ hello.bash
 ![Hello 4](/img/Hello4.png)
 
   20. Exit your Matrix session, and log back into your Matrix session.
-
   21. Re-run the **hello.bash** shell script by just using the name.
 
    - What did you notice?
-
    - The setting of the **PATH** environment variable only worked in the current session only.
    - If you exit the current Matrix session, then the recently changed settings for environment variables will be lost.
    - You will in a future tutorial how to set environment variables in **start-up** files.
@@ -566,11 +515,9 @@ hello.bash
 ```
 
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
    - Unlike **Environment variables** that are used to set the environment of the shell or shell scripts, **User-created** variables are "customized" that the user can set or allow a user to set the variables' values. Let's create a Bash shell script that contain **user-created variables.**
 
   23. Use a text editor to create a Bash shell script called **user-variables.bash**
-
   24. Add the following lines to the beginning of the _user-variables.bash_ file:
 
 ```bash
@@ -581,12 +528,8 @@ echo "Hello $name - You are $age years old"
 ```
 
   25. Save your editing changes and exit your text editor.
-
-  26. Issue the **chmod** command to add **execute permissions**
-for the **user-variables.bash** file.
-
-  27. Issue the following to run the user-variables.bash Bash shell script
-(enter **your Full name** and **your age** when prompted):
+  26. Issue the **chmod** command to add **execute permissions** for the **user-variables.bash** file.
+  27. Issue the following to run the user-variables.bash Bash shell script (enter **your Full name** and **your age** when prompted):
 
 ```bash
 ./user-variables.bash
@@ -597,7 +540,6 @@ for the **user-variables.bash** file.
 ![User variable 1](/img/User-variable1.png)
 
   28. Use a text editor to **modify** your Bash shell script called **user-variables.bash**
-
   29. **Insert** the following lines immediately **below** the **she-bang** line:
 
 ```bash
@@ -606,7 +548,6 @@ readonly age
 ```
 
   30. Save your editing changes and exit your text editor.
-
   31. Issue the following to run the user-variables.bash Bash shell script:
 
 ```bash
@@ -620,7 +561,6 @@ readonly age
    - A **positional parameter** is a special variable within a shell program; its value is set from **arguments** contained in a shell script or using the set command. Let's use **positional parameters** and **special parameters** in a Bash shell script.
 
   32. Use a text editor to create a file called **parameters.bash**
-
   33. Add the following lines to the beginning of this file:
 
 ```bash
@@ -642,7 +582,6 @@ echo \$*: $*
       - Notice how the quoting character "\" is used to display positional parameters like "**$2**" as opposed to the value stored in the second positional parameter.
 
   35. Issue the **chmod** command to add **execute permissions** for the user for the **parameters.bash** file.
-
   36. Issue the following to run the **user-variables.bash** Bash shell script:
 
 ```bash
@@ -665,9 +604,7 @@ echo \$*: $*
 
    - Take some time to view the results and how the _parameters_ have changed when using the **shift** command.
 
-
 In the next investigation, you will learn to use **command substitution** and **math operations** in your shell scripts.
-
 
 ## Investigation 3: Command Substitution / Math Operations
 
@@ -675,8 +612,7 @@ In this investigation, you will learn how to use **command substitution** and **
 
 ### Command Substitution
 
-Command Substitution is a method of running a Linux command that provides **stdout**
-that is used as **argument(s)** for another Linux command.
+Command Substitution is a method of running a Linux command that provides **stdout** that is used as **argument(s)** for another Linux command.
 
 _For example:_
 
@@ -684,16 +620,12 @@ _For example:_
 echo "The current date and time is: $(date)"
 ```
 
-
-Let's create a Bash shell script that uses command substitution that displays
-**text** and values of **environment variables** in a series of **echo** statements.
+Let's create a Bash shell script that uses command substitution that displays **text** and values of **environment variables** in a series of **echo** statements.
 
 **Perform the Following Steps:**
 
   1. Confirm that you are located in your **home** directory in your Matrix account.
-
   2. Use a text editor to create a Bash shell script called **command-substitution.bash**
-
   3. Add the following lines to the beginning of this file:
 
 ```bash
@@ -708,9 +640,7 @@ echo
 ```
 
   4. Save your editing changes and exit your text editor.
-
   5. Issue the **chmod** command to add execute permissions for the **command-substitution.bash** file.
-
   6. Issue the following to run the user-variables.bash Bash shell script:
 
 ```bash
@@ -721,12 +651,9 @@ echo
 
 ![Command Substitution 1](/img/Commandsubstitution1.png)
 
-
 ### Math Operations
 
-Since you do NOT have to declare the **data-type** of a variable (as opposed to compiled program
-such as the C-programming language), numbers would be stored as **text** in variables.
-Therefore, it is important to use the construct `(( ))` to convert numbers (stored as _text_) into **numbers**.
+Since you do NOT have to declare the **data-type** of a variable (as opposed to compiled program such as the C-programming language), numbers would be stored as **text** in variables. Therefore, it is important to use the construct `(( ))` to convert numbers (stored as _text_) into **numbers**.
 
 We will now learn how to use this construct in order to perform math operations for shell scripts.
 
@@ -773,7 +700,6 @@ echo "$((2 ** 3))"
 ```
 
    - **NOTE:** You may notice that **dividing 2** by **3** shows a **zero** result. To perform decimal calculations would require the use the **awk** or **bc** Linux commands (we will **NOT** cover that method to work with _decimal numbers_ in this course).
-
    - You can use the _math construct_ with variables as well.
 
   5. Issue the following Linux commands demonstrating using the _math construct_ with **variables**:
@@ -791,7 +717,6 @@ echo "$((num1 * num2))"
 ```
 
    - What did you notice?
-
    - You can create variables and assign them values in the _math construct_ as well.
 
   6. Issue the following Linux commands demonstrating using the math construct with variables:
@@ -813,7 +738,6 @@ echo "The result is: $result"
 ```
 
   7. Use a text editor to create a Bash shell script called **dog-years.bash**
-
   8. Add the following lines to the beginning of this file:
 
 ```bash
@@ -827,9 +751,7 @@ echo
 ```
 
   9. Save your editing changes and exit your text editor.
-
   10. Issue the **chmod** command to add execute permissions for the user for the **dog-years.bash** file.
-
   11. Issue the following to run the **dog-years.bash** Bash shell script:
 
 ```bash
@@ -848,16 +770,11 @@ echo
 
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
 
-
-In the next investigation, you will use **control-flow statements** to allow your shell scripts
-to perform differently under different situations.
-
+In the next investigation, you will use **control-flow statements** to allow your shell scripts to perform differently under different situations.
 
 ## Investigation 4: Control Flow Statements
 
-In this investigation, you will learn how to use **control-flow statements**
-to make your shell script behave _differently_ under _different situations or conditions_.
-
+In this investigation, you will learn how to use **control-flow statements** to make your shell script behave _differently_ under _different situations or conditions_.
 
 **Perform the Following Steps:**
 
@@ -940,7 +857,6 @@ ls -l 10
 ```
 
    - You should notice a file called "**10**". The incorrectly issued **test** command used **redirection** to create an **empty** file and assigning the exit status variable a _TRUE_ value!
-
    - To prevent problems when issuing the **test** command when comparing numbers, you can use the following **test options**: **-lt** (<), **-le** (<=), **-gt** (\>), **-ge** (\>=;), **-eq** (=), **-ne** (!=)
 
   12. Issue the correct Linux command to **properly** test both values:
@@ -953,10 +869,7 @@ test $number1 -gt $number2
 
       - You should notice that the exit status value is now _FALSE_ which is the correct result.
 
-  14. The **test** command can be substituted by **square brackets \[ \]** which contains the **test** condition
-within the square brackets. You need to have spaces between the brackets and the test condition;
-otherwise, you will get a test error.
-
+  14. The **test** command can be substituted by **square brackets \[ \]** which contains the **test** condition within the square brackets. You need to have spaces between the brackets and the test condition; otherwise, you will get a test error.
   15. To generate a **test error**, copy and paste the following **test** command:
 
 ```bash
@@ -974,7 +887,6 @@ otherwise, you will get a test error.
   17. Issue a command to view the value of the **exit status** of the previously issued **test** command. You should notice that is works properly.
 
       - Now that we have learned how to test conditions, let's learn about **control-flow** statements.
-
       - **LOGIC STATEMENTS** are used to create **different paths** or directions that the shell script will take based on the result of the **test condition**. In this tutorial,we will only focus on the **if** and **if-else** logic statements.
 
   18. Use a text editor like vi or nano to create the text file called **if-1.bash**
@@ -993,9 +905,7 @@ then
 fi
 ```
 
-  20. Save your editing session and exit the text editor
-(eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
+  20. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
   21. Issue the following Linux command to add execute permissions for your shell script:
 
 ```bash
@@ -1029,7 +939,6 @@ fi
 ```
 
   25. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
   26. Issue the following Linux command to add execute permissions for your shell script:
 
 ```bash
@@ -1049,15 +958,11 @@ chmod u+x if-2.bash
   28. Run the **./if-2.bash** Bash shell script again.
 
       - When prompted, make certain that the **first number** is less than or equal to the **second number**. What happens?
-
       - Let's use an **if-else** statement to provide an **alternative** if the first number is less than or equal to the second number.
 
 ![If 2](/img/If-2.png)
 
-  29. Use a text editor like vi or nano to create the text file called **if-3.bash**
-
-(eg. `vi if-3.bash`)
-
+  29. Use a text editor like vi or nano to create the text file called **if-3.bash** (eg. `vi if-3.bash`)
   30. Enter the following lines in your shell script:
 
 ```bash
@@ -1073,7 +978,6 @@ fi
 ```
 
   31. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
   32. Issue the following Linux command to add execute permissions for your shell script:
 
 ```bash
@@ -1091,13 +995,9 @@ chmod u+x if-3.bash
 ![If 3](/img/If-3.png)
 
    - **LOOP STATEMENTS** are a series of steps or sequence of statements executed repeatedly zero or more times satisfying the given condition is satisfied. Reference: https://www.chegg.com/homework-help/definitions/loop-statement-3
-
    - _There are several loops, but we will look at a **for** loop using a **list**._
 
-  34. Use a text editor like vi or nano to create the text file called **for-1.bash**
-
-(eg. `vi for-1.bash`)
-
+  34. Use a text editor like vi or nano to create the text file called **for-1.bash** (eg. `vi for-1.bash`)
   35. Enter the following lines in your shell script:
 
 ```bash
@@ -1111,9 +1011,7 @@ echo "blast-off!"
 echo
 ```
 
-  36. Save your editing session and exit the text editor
-(eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
+  36. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
   37. Issue the following Linux command to add execute permissions for your shell script:
 
 ```bash
@@ -1146,7 +1044,6 @@ echo
 ```
 
   41. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
   42. Issue the following Linux command to add execute permissions for your shell script:
 
 ```bash
@@ -1163,7 +1060,6 @@ chmod u+x for-2.bash
 
    - How does this differ from the previous shell script?
    - You will learn in a couple of weeks more examples of using loop statements.
-
    - Let's run a **checking-script** to confirm that both your **for-1.bash** and **for-2.bash**
 
   44. Issue the following Linux command to run a checking script:
@@ -1172,9 +1068,7 @@ chmod u+x for-2.bash
 ~uli101/week11-check-4 | more
 ```
 
-
    - If you encounter errors, make corrections and **re-run** the checking script until you receive a congratulations message, then you can proceed.
-
 
 ## Linux Practice Questions
 
@@ -1183,7 +1077,6 @@ The purpose of this section is to obtain **extra practice** to help with **quizz
 Here is a link to the MS Word Document of ALL of the questions displayed below but with extra room to answer on the document to simulate a quiz: [Week 11 Practice](/files/uli101_week10_practice.docx)
 
 Your instructor may take-up these questions during class. It is up to the student to attend classes in order to obtain the answers to the following questions. Your instructor will NOT provide these answers in any other form (eg. e-mail, etc).
-
 
 **Review Questions:**
 
@@ -1206,7 +1099,6 @@ Your instructor may take-up these questions during class. It is up to the studen
       - The script will then clear the screen a second time and then display the age of the dog in “_dog years_”.
 
   4. Write a Bash shell script that will clear the screen and then display all **arguments** that were entered after your Bash shell script when it was run. Also have the Bash shell script display the **number of arguments** that were entered after your Bash shell script.
-
 
 **Part B: Walk-Thrus**
 
@@ -1233,7 +1125,6 @@ ROUGH WORK:
 
 OUTPUT:
 
-
 **Walkthru #2:**
 
 **cat walkthru2.bash**
@@ -1256,7 +1147,6 @@ WRITE ROUGH WORK AND OUTPUT FROM ISSUING:
 ROUGH WORK:
 
 OUTPUT:
-
 
 **Walkthru #3:**
 
@@ -1287,7 +1177,6 @@ WRITE ROUGH WORK AND OUTPUT FROM ISSUING:
 ROUGH WORK:
 
 OUTPUT:
-
 
 ---
 
