@@ -108,7 +108,7 @@ Creating subdirectories within your home directory makes it more **efficient** t
 
 A comparison would be rooms in a **house**. If there were no rooms, just one large room in a 3,000 square foot house, it would be "messy" and difficult to locate items. Each **room** in a house is used to for a **specific purpose** to be more productive to perform a task such as a kitchen, bedroom, bathroom, etc.
 
-You will be creating the following **directory structure** within your home directory (refer to diagram on the right side).
+You will be creating the following **directory structure** within your home directory (refer to diagram below).
 
 ![Directory Structure 3](/img/Directory-structure-3.png)
 
