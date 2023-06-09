@@ -153,7 +153,6 @@ You will also learn how to issue the **ssh** command to run commands on your **r
 **Perform the Following Steps:**
 
   1. Determine which operating system that your computer is using.
-
   2. Connect to your Matrix account using the instructions in the table below based on your **current operating system**.
 
 **Newer Version of Windows 10:**
@@ -188,7 +187,6 @@ ssh senecausername@matrix.senecacollege.ca
 ![CMD](/img/Cmd.png)
 
   4. After logging into your Matrix account, issue to the **pwd** command to confirm you are in your home directory.
-
   5. Issue the following Linux command to create the following directory:
 
 ```bash
@@ -196,9 +194,7 @@ mkdir ~/remote
 ```
 
   6. Change to the **~/remote** directory and confirm that you have changed to that directory.
-
   7. Use a text editor to create a text file called **myfile.txt**
-
   8. Enter the following two lines displayed below in your editing session:
 
 ```text
@@ -207,7 +203,6 @@ It is a small file
 ```
 
   9. **Save** editing changes to your _myfile.txt_ file and exit your text editor.
-
   10. Let's run a **shell script** to check that you created the **remote** directory and that you created the **myfile.txt** file (with correct file contents) in that directory.
 
       - Enter the following command: 
@@ -239,9 +234,7 @@ cd local
 ```
 
   15. If you are using MS Windows on your local computer, issue the `dir` command to confirm you are in the local directory; otherwise, use the `pwd` command.
-
   16. If you are in MS Windows, open the **GRAPHICAL** `NotePad` application to create a text file (Otherwise, use the **nano** or **vi** text editor).
-
   17. Enter a few lines of text, and if using **Notepad**, then click on the **File** menu and select **save as** (save as the filename `other.txt` in your `local` directory) and then **exit** the Notepad text editor.
 
       - **NOTE:** if using another text editor, save your editing session and exit the text editor.
@@ -282,11 +275,8 @@ scp yoursenecaid@matrix.senecacollege.ca:remote/myfile.txt .
 ```
 
   24. Issue the `dir` or `ls` command (depending on the OS of your local computer) to confirmed your properly copied that file from Matrix.
-
   25. Use the **Notepad** application (or vi for other OS types) to create a text file called `mytextfile.txt`, type some text and then save in the `local` directory of your computer.
-
   26. Issue the **dir** or **ls** command (depending on your OS) to confirm that your newly-created file exists in your **local** directory.
-
   27. We are going to intentionally make a **mistake** with the **scp** command.
 
       - Issue the following Linux command to copy the **mytextfile.txt** file from your local machine to your remote Matrix server (replace yoursenecaid is YOUR Seneca ID and DO NOT INCLUDE THE : at the end of the command so see what happens):
@@ -335,7 +325,6 @@ ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/remote/differe
 ```
 
    - Were you able to properly copy this file?
-
    - Let's issue a checking script remotely to see that you properly copied that file from your local computer to your remote Linux server to both your **home** directory and **~/remote** directory.
 
   34. Issue the following:
@@ -365,13 +354,11 @@ Let's look at using the **sftp** command on your **local** machine.
 **Perform the Following Steps:**
 
   1. Make certain that you are in a command terminal on your local computer (i.e. do **NOT** log into your Matrix account).
-
   2. Issue a command (depending on your OS) to confirm that you are located in the **local** directory in your home computer.
 
 ![CMD](/img/Cmd.png)
 
   3. If you are in MS Windows, open the `NotePad` application to create a text file (otherwise: use another text editor like **vi** or **nano**)
-
   4. Enter a few lines of text, and then click on the **File** menu and select **save as** (save as the filename `thefile.txt` in your `local` directory) and then **exit** the Notepad text editor.
 
       - If you using another OS, then save-as using the same filename and directory location for the text editor you are using.
@@ -387,7 +374,6 @@ cd ..
 ```
 
   7. If your OS is MS Windows issue the `dir` Windows command to view the contents of that parent directory that you changed to (otherwise, issue the **ls** command for other operating systems).
-
   8. Issue the following command to start an **sftp** session (note: yoursenecaid is YOUR Seneca ID):
 
 ```bash
@@ -442,7 +428,6 @@ cd remote2
 ```
 
   15. Issue the **pwd** _sftp command_ to confirm that you have changed to the _remote2_ directory on your remote server.
-
   16. Issue the following sftp command to change to the **local** directory on your local computer:
 
 ```bash
@@ -450,7 +435,6 @@ lcd local
 ```
 
   17. Issue the **lpwd** _sftp command_ to confirm that you have changed to the _local_ directory on your local computer.
-
   18. Issue the following _sftp command_ to transfer the file called **thefile.txt** to the **~/remote2** directory on your remote server:
 
 ```bash
@@ -492,9 +476,7 @@ get thefile.txt
 ```
 
   26. Issue the **lls** _sftp command_ to confirm that you transferred the file **thefile.txt** to your local computer.
-
   27. Issue the following _sftp command_ to exit the sftp utlilty: `exit`
-
   28. Issue the following Linux command to remotely run a checking script to ensure you created the correct directories and properly transferred those created files:
 
 ```bash
@@ -504,7 +486,6 @@ ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-3
   29. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message.
 
       - **FYI:** To run a checking program to check if you created the **local** and **local2** directories in MS Windows would require running a local-based script (like **PowerShell**). Since this is a Unix/Linux based course, we don't have a PowerShell script, so we will ignore checking for files transferred to your local computer.
-
       - In the next investigation, you will learn an alternative way to transfer a file to another computer server by sending an **e-mail message with an attached file**.
 
 ## Investigation 3: File Transfer (Email)
@@ -516,7 +497,6 @@ In this investigation, you will learn how to **transfer** a file from your Matri
 **Perform the Following Steps:**
 
   1. Make certain that you connect and login to your **Matrix** server and confirm that you are located in your **home** directory.
-
   2. Issue the following Linux command (using your Seneca-ID):
 
 ```bash
@@ -524,7 +504,6 @@ mail yoursenecaid@myseneca.ca
 ```
 
   3. When prompted, enter the **subject line**: `Test Message` and press `ENTER`
-
   4. In the email message **BODY** section, type the following text displayed below (and press **ENTER**):
 
 ```text
@@ -547,7 +526,6 @@ mail -a ~/remote/myfile.txt yoursenecaid@myseneca.ca
 ```
 
   8. When prompted, enter the subject line: `Test Message with Attachment` and press `ENTER`
-
   9. In the email message **BODY** section, type the following text displayed below (and press **ENTER**):
 
 ```text
@@ -555,7 +533,6 @@ This is a test email message with a file attachment
 ```
 
   10. Press `ctrl-d` to send your message.
-
   11. Switch to your Seneca email and check for new email messages.
 
       - Did you receive that email message? Does the email contain a file attachment?
@@ -572,7 +549,6 @@ mail yoursenecaid@myseneca.ca < ~/remote/myfile.txt
   13. Check your email to see if you received your email message. If you did, what do you notice regarding the subject line?
 
       - You should have noticed that there was **NO** customized **subject line**, since you redirected **standard input** (_stdin_) from the file, so there was no way for the user to send a subject line.
-
       - You can use the **-s** option, followed by text (in quotes) to specify a **subject line**.
 
   14. Return to your Linux Bash shell and issue the following Linux command:
@@ -582,7 +558,6 @@ mail -s "email with attachment" yoursenecaid@myseneca.ca < ~/remote/myfile.txt
 ```
 
   15. Check your email to see if you received your email message. If you did, what do you notice this time?
-
   16. After completing this INVESTIGATION, perform the _Linux Practice Questions_ section below.
 
 ## Linux Practice Questions
