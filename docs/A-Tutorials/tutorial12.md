@@ -279,7 +279,6 @@ In this investigation, you will learn more about the **for** loop and learn how 
 **Perform the Following Steps:**
 
   1. Issue a Linux command to confirm you are located in your **advanced** directory in your Matrix account.
-
   2. Issue the following Linux command to view the **~/for-1.bash** file:
 
 ```bash
@@ -351,7 +350,6 @@ done
 ```
 
   12. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
   13. **Add execute permissions** and **run** this Bash shell script.
 
       - What do you notice?
@@ -416,7 +414,6 @@ done
       - Let's use the **\|\|** compound criteria to to NOT accept numbers **outside** of the range **0** to **100**.
 
   25. Use a text editor like vi or nano to edit the text file called **~/if-5.bash** (eg. `vi ~/if-5.bash`)
-
   26. Add the following lines in your shell script IMMEDIATELY AFTER the PREVIOUSLY ADDED error-checking **while** loop statement to **force** the user to enter a valid number (between 1 and 100):
 
 ```bash
@@ -427,7 +424,6 @@ done
 ```
 
   27. Save your editing session and exit the text editor (eg. with vi: press **ESC**, then type **:x** followed by **ENTER**).
-
   28. Run your shell script by issuing:
 
 ```bash
@@ -700,9 +696,7 @@ In this investigation, you will learn how to **customize** your **Bash Linux she
 **Perform the Following Steps:**
 
   1. Issue a Linux command to change to your **home** directory.
-
   2. Issue a Linux command to confirm you are located in the **home** directory.
-
   3. Use the **more** command to view the contents of the **default start-up** file called **/etc/profile**
 
       - This file contains the **default settings** when you open your Bourne shell (eg. if issuing the command **sh**).
@@ -751,7 +745,6 @@ echo -e -n "\e[m"
    - What do you notice?
 
   10. **Exit** your current Bash shell session.
-
   11. **Login** again to your matrix account.
 
    - Did you start-up file customize your Bash shell environment with colours?
@@ -766,7 +759,6 @@ mv ~/.bash_profile.bk ~/.bash_profile
    - If you experience an error message "_No such file or directory_", just ignore.
 
   13. **Exit** your current Bash shell session.
-
   14. **Login** again to your matrix account.
 
       - What did you notice this time?
