@@ -48,11 +48,9 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 ### Pathname Types
 
-As previously mentioned, a **pathname is a fully-specified location of a unique filename** within a file system.
-The concept of a pathname relates to every operating system including: _Unix, Linux, MS-DOS,  MS-Windows, Apple-Macintosh_, etc.
+As previously mentioned, a **pathname is a fully-specified location of a unique filename** within a file system. The concept of a pathname relates to every operating system including: _Unix, Linux, MS-DOS,  MS-Windows, Apple-Macintosh_, etc.
 
-Last week, we used a pathname from our home directory to create and manipulate directories and text files.
-There are **different types of file pathnames** that we can use to access a directory or text file.
+Last week, we used a pathname from our home directory to create and manipulate directories and text files. There are **different types of file pathnames** that we can use to access a directory or text file.
 
 **For Example:**
 
@@ -66,9 +64,7 @@ These types of file pathnames can make it more efficient (i.e. less keystrokes f
 
 An **absolute pathname** is a path to a file or directory always **beginning from the root directory (i.e. / )**.
 
-
 This type of pathname is referred to as **absolute** because the pathname always begins from the **root directory**, regardless the location or your current directory. In other words, this type of pathname requires that you always provide the **FULL** pathname starting with the root directory.
-
 
 Advantages of using Absolute Pathnames:
 
@@ -93,13 +89,11 @@ ls /home/your-user-id/uli101/examples
 
 Directories in red display the FULL path from the root directory to the examples directory (i.e. the absolute pathname: /home/your-user-id/uli101/examples.
 
-
 #### Relative Pathnames
 
 A **relative pathname** is a path to a file or directory that begins from your **current** directory. This is called relative because it is used to locate a specific file relative to your current directory.
 
 **NOTE:** In order to use relative pathnames, it is absolutely necessary that you know the **location** of your **current directory**!
-
 
 _Relative Pathname Symbols:_
 
@@ -132,16 +126,13 @@ ls ./examples
 
 Directories in red display the path from the current directory location (which is **uli101**) to the **examples** directory (i.e. the relative pathname: **uli101/examples** or **./uli101/examples**
 
-
 #### Relative-to-Home Pathnames
 
 A **relative-to-home pathname begins** with the tilde character ( i.e. ~) to represent the user’s home directory.
 
-The tilde character ~ stores the path of the user’s home directory
-(i.e. **~ = /home/current-user-id**)
+The tilde character ~ stores the path of the user’s home directory (i.e. **~ = /home/current-user-id**)
 
 You can immediately place a username after the tilde to represent another user’s home directory (e.g. **~jane = /home/jane**)
-
 
 Examples:
 
@@ -161,14 +152,11 @@ ls ~murray.saul/uli101/notes
 
 Directories in red display the path from another user's home directory location to their **notes** directory (i.e. the relative-to-home pathname: **~jane/uli101/notes**
 
-
 **NOTE:** Deciding which **type of pathname** to use depends on many factors including: **knowledge of current directory**, **knowledge of directory structure**, **currently directory location**, and **type of file management command** that is being used.
-
 
 ### Filename Expansion
 
-When issuing Linux commands, it may be **more efficient** (less typing) to use **filename expansion symbols**
-to match files that share similar characteristics (e.g. same file extension) when issuing Linux commands.
+When issuing Linux commands, it may be **more efficient** (less typing) to use **filename expansion symbols** to match files that share similar characteristics (e.g. same file extension) when issuing Linux commands.
 
 
 Examples:
@@ -209,14 +197,11 @@ There are **3 methods** to make those special characters **act only like text ch
 | Contain special characters within **double-quotes** **NOTE:** Double quotes works for most special characters, but not all special characters (such as $) | **echo "\* hello \*"** |
 | Contain Special character within **single quotes** (Quotes out ALL special characters)	 | **echo '\* hello \*'** |
 
-
 ## Investigation 1: Absolute and Relative and Relative-To-Home Pathnames
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 4 by midnight to obtain a grade of 2% towards this course**
 
-The best way to learn about different types of file pathnames is to use them while issuing
-Linux commands and see which pathnames (or combination of pathnames) is the **most efficient**
-(i.e. requiring the **least number of keystrokes**).
+The best way to learn about different types of file pathnames is to use them while issuing Linux commands and see which pathnames (or combination of pathnames) is the **most efficient** (i.e. requiring the **least number of keystrokes**).
 
 **Perform the Following Steps:**
 
@@ -280,7 +265,6 @@ mkdir -p tutorial3/practice/commands tutorial3/practice/examples tutorial3/notes
   12. Issue a command to verify that the proper directory structure was created.
 
       - **QUESTION:** Which **mkdir** command (pathname type) that you performed in steps **3** , **7** , and **11** required the LEAST number of keystrokes (i.e. characters)?
-
 
 You may think that issuing Linux file management commands are better using **relative** or **relative-to-home** pathnames instead of **absolute** pathnames, but that is not always true.
 
@@ -378,31 +362,23 @@ cp /bin/ls ./ls.bk
 ~uli101/week3-check-2
 ```
 
-  15. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message,
-and proceed to the next INVESTIGATION.
-
+  15. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message, and proceed to the next INVESTIGATION.
 
 ## Investigation 2: Filename Expansion
 
-You will now get practice issuing Linux file management commands using filename expansion symbols.
-We will be using the directory structure that was created in the previous INVESTIGATION.
+You will now get practice issuing Linux file management commands using filename expansion symbols. We will be using the directory structure that was created in the previous INVESTIGATION.
 
-A great way to practice filename expansion, use the touch command to create a lot of empty filenames,
-write the ls Linux commands that use filename expansion, predict the filenames that will be display,
-and finally run the command to check your work.
+A great way to practice filename expansion, use the touch command to create a lot of empty filenames, write the ls Linux commands that use filename expansion, predict the filenames that will be display, and finally run the command to check your work.
 
 **Perform the following steps:**
 
-  1. Issue a Linux command to move to the examples directory
-(i.e. under practice directory as shown in diagram below).
+  1. Issue a Linux command to move to the examples directory (i.e. under practice directory as shown in diagram below).
 
 ![Dir12](/img/Dir12.png)
 
   2. Issue a Linux command to confirmed that you have moved to the examples directory.
 
-  3. Issue the touch command to create the following empty text files in the examples directory: 
-  
-(note _upper_ and _lowercase_ letters)
+  3. Issue the touch command to create the following empty text files in the examples directory: (note _upper_ and _lowercase_ letters)
 
 ```text
 abc.txt
@@ -430,8 +406,7 @@ abcde.txt
 
   5. Issue the ls command to get a listing of files in your examples directory.
 
-The output should look identical to the diagram displayed below.
-You can refer to this listing to see all files so you can then predict the output from Linux commands that use filename expansion symbols.
+The output should look identical to the output displayed below. You can refer to this listing to see all files so you can then predict the output from Linux commands that use filename expansion symbols.
 
 command:
 
@@ -612,14 +587,11 @@ cat [!l][!s]
 
    - View the contents of the contents directory. What did this command do? Does the output look better? If so, why?
 
-
 Proceed to the next INVESTIGATION.
-
 
 ## Investigation 3: Quoting Special Characters
 
-As discussed in the above investigation, there are some special characters that the shell uses to perform an operation
-including the filename expansion symbol: \* 
+As discussed in the above investigation, there are some special characters that the shell uses to perform an operation including the filename expansion symbol: \* 
 
 There is a method make the shell **ignore the purpose of special characters** and treat as **regular text**.
 
@@ -627,8 +599,7 @@ In this investigation, you will learn **three unique methods** to quote special 
 
 **Perform the Following Steps:**
 
-  1. Issue a Linux command to confirmed that you are still in the **commands** directory
-(if not, change to the commands directory and confirm).
+  1. Issue a Linux command to confirmed that you are still in the **commands** directory (if not, change to the commands directory and confirm).
 
 ![Quotation](/img/Quotation.png)
 
@@ -697,8 +668,7 @@ echo "* $USER *"
 
    - What happened? Why?
 
-  10. Let's use quoting special characters for a couple of other commands. Move to the **lesson2** directory.
-Confirm that you are currently located in the lesson2 directory.
+  10. Let's use quoting special characters for a couple of other commands. Move to the **lesson2** directory. Confirm that you are currently located in the lesson2 directory.
 
    - **NOTE:** Although it is NOT RECOMMENDED to create a filename using a special character (remember file naming rules?), we will create an empty file called "\*"
 
@@ -742,8 +712,7 @@ rm '*'
 
   19. Issue the **ls** command to confirm that the file called "\*" has been removed in your current directory. What happened this time?
 
-  20. Complete the Review Questions sections to get additional practice.
-
+  20. Complete the _Linux Practice Questions_ section below to get additional practice.
 
 ## Linux Practice Questions
 
@@ -790,7 +759,6 @@ When answering Linux command questions on this side or the back side of this pag
 ```text
 “This is my message”
 ```
-
 
 ---
 
