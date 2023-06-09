@@ -158,7 +158,6 @@ You will now learn a quick and simple method of connecting to your Matrix accoun
 The **Seneca Student VPN** service must be connected.
 
 2. Determine which **operating system** that your computer is using.
-
 3. Try connecting to your Matrix account using the instructions in the **table** below based on your **current operating system.**
 
   **Windows 10 (or above):**
@@ -195,18 +194,15 @@ ssh senecausername@matrix.senecacollege.ca
 5. Type **yes** and press **ENTER** to share your public key.
 
  - Next, a **dialog box** will appear prompting you for your Matrix account **password** in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password.
-
  - **NOTE:** As you type the password, the text may be **hidden** to prevent others from viewing your password
 
 6. Enter your Seneca password and press **ENTER**
 
     - **NOTE:** If you encounter an **error message,** this can occur for several reasons:
-      
     1. You mis-spelled the **name of the server**
     2. You mis-spelled your Matrix **username** (same username that you connect to my.senecacollege.ca)
     3. You have **CAPS LOCK** on by mistake (your username should be **lowercase** only).
     4. You mis-spelled your **password** (same password that you connect to my.senecacollege.ca)
-
     - If you continue to experience the same problems, click on the following link for IT service desk contact info: [IT service desk](https://students.senecacollege.ca/spaces/190/support/wiki/view/1473/contact-its)
 
 7. If you entered your password correctly, the **Matrix Linux shell** should appear where you can enter Linux commands.
@@ -235,13 +231,11 @@ One advantage of this method is that your are at the college; therefore, **you d
 
 This method would also be useful if you do not have a home (notebook) computer and have access to a Seneca computer lab workstation.
 
-
 **MyApps (AppsAnywhere)** is an application streaming service that lets you install software on any Seneca PC on demand. Any software application on the MyApps menu can be used on computers in classrooms, labs, and the Computing Commons.
 
 Reference: https://inside.senecacollege.ca/its/software/myapps/
 
-You will now use **MyApps** on your Windows workstation in your Seneca lab room to launch an application
-to allow you to connect and login to your Matrix server account.
+You will now use **MyApps** on your Windows workstation in your Seneca lab room to launch an application to allow you to connect and login to your Matrix server account.
 
 ![MyApps Anywhere Main Window](/img/Apps-anywhere-main-window.png "MyApps Anywhere Main Window")
 
@@ -250,14 +244,11 @@ to allow you to connect and login to your Matrix server account.
 **Perform the Following Steps:**
 
   1. Start your workstation in your lab and login to your Seneca Windows account.
-
   2. Make certain that the **MyApps** window is open. This window should have opened shortly after you logged into your Windows workstation. If the application windows is not open, click on the **MyApps** icon on the desktop to launch).
 
       - **NOTE: You may be required to validate in order to use MyApps correctly. If you see near the top of the screen "requires validation", then click on that area to connect to validate.**
 
-
   3. Click on the Search Apps area located in the top right corner of the MyApps window and type the word: ***ssh***
-
   4. Several SSH applications will appear.
 
    - **NOTE:** All of these applications allow you to connect to your Matrix account. We will use the application called **SSH Secure Shell Client** for this practice tutorial.
@@ -295,7 +286,6 @@ Quick Connect Dialog Window
 Dialog Box to Share Public Key on Remote Server
 
   9. Click the **Yes** button to share your public key.
-
   10. Next, a dialog box will appear prompting you for your Matrix account password in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password. As you type the password, the text will be blocked-out or hidden to prevent others from viewing the screen to obtain your password
 
 ![Password Dialog Box](/img/Ssh-password-prompt.png "Password Dialog Box")
@@ -303,13 +293,11 @@ Dialog Box to Share Public Key on Remote Server
 Password Dialog Box
 
   11. Enter your password and click **OK** or press **ENTER**
-
   12. Click **OK** or press **ENTER** at the **Authentication Response** dialog box.
 
 ![Authentication Response Dialog Box](/img/Ssh-authentication-response.png "SSH Authentication Response Dialog Box")
 
    - **NOTE:** If you encounter an **error message,** this can occur for several reasons:
-    
       1. You mis-spelled the **name of the server**
       2. You mis-spelled your Matrix **username** (same username that you connect to ***my.senecacollege.ca***)
       3. You have **CAPS LOCK** on by mistake (your username should be **lowercase** only).
@@ -336,21 +324,15 @@ Matrix Shell Command Line Interface
 ![SSH Settings Dialog Box](/img/Ssh-settings-window.png "SSH Settings Dialog Box")
 
   2. To change the size of your shell window, under the _Global Settings_ section, click **Appearance**
-
   3. Change the _window size_ both horizontal and vertical to larger values.
-
   4. To change the font size, under the _Global Settings_ section, click **Font**
-
   5. Select a larger _font size_ and click **OK**
-
   6. You now should notice that you have customized your SSH shell terminal. You can use the settings screen to also change your background and text colours if you are interested in doing so.
-
   7. To exit your Matrix session, type the following command and press **ENTER**: `exit`
 
       - **NOTE:** You should notice that the colour of the text changes slightly when disconnected and you are unable to issue Linux commands from that window.
 
   8. After you have disconnected from your account, close the SSH Secure Shell Client application window.
-
   9. It is recommended to repeat these steps with connecting to your Matrix account from a Seneca lab workstation until you become comfortable with the process.
 
 In the next investigation, you will learn how to issue Linux commands from the command prompt (referred to as the "shell"), learn how to get help with Linux commands, use command-line editing short cut keys, and run a program to confirm that you connected to your Matrix account in order to get marks for this online tutorial.
