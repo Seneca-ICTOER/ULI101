@@ -294,7 +294,6 @@ In this investigation, you will learn how to create and run a **Bash Shell scrip
 **Perform the Following Steps:**
 
   1. **Login** to your matrix account.
-
   2. Issue a command to **confirm** you are located in your **home** directory.
 
       - We want to create a Bash Shell script to welcome the user by their _username_.
@@ -309,7 +308,6 @@ which hello
    - The output from this command should indicate that the shell did NOT find any directories that contained this filename that could represent a command; therefore, this shell script name CAN be used.
 
   4. Use a **text editor** like **vi** or **nano** to create the text file called **hello**
-
   5. Enter the following three lines in your shell script:
 
 ```bash
@@ -779,7 +777,6 @@ In this investigation, you will learn how to use **control-flow statements** to 
 **Perform the Following Steps:**
 
   1. Confirm that you are located in your **home** directory in your Matrix account.
-
   2. Issue the following Linux commands at the Bash shell prompt to assign values to several variables:
 
 ```bash
@@ -922,9 +919,7 @@ chmod u+x if-1.bash
 
 ![If 1](/img/If-1.png)
 
-  23. Use a text editor like vi or nano to create the text file called **if-2.bash**
-
-(eg. `vi if-2.bash`)
+  23. Use a text editor like vi or nano to create the text file called **if-2.bash** (eg. `vi if-2.bash`)
 
   24. Enter the following lines in your shell script:
 
@@ -1026,10 +1021,7 @@ chmod u+x for-1.bash
 
 ![For 1](/img/For-1.png)
 
-  39. Use a text editor like vi or nano to create the text file called **for-2.bash**
-
-(eg. `vi for-2.bash`)
-
+  39. Use a text editor like vi or nano to create the text file called **for-2.bash** (eg. `vi for-2.bash`)
   40. Enter the following lines in your shell script:
 
 ```bash
