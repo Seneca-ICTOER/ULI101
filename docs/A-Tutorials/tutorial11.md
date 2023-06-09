@@ -46,7 +46,7 @@ description: Tutorial 11 for Students to Learn Shell Scripting
 | [Purpose](https://en.wikipedia.org/wiki/Control_flow) | [test command](https://www.computerhope.com/unix/test.htm) | [if statement](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#:~:text=If%20statements%20(and%2C%20closely%20related,conditions%20that%20we%20may%20set.)) | [if-else statement](https://www.tutorialspoint.com/unix/if-else-statement.htm) | [for loop](https://www.cyberciti.biz/faq/bash-for-loop/#:~:text=A%20'for%20loop'%20is%20a,files%20using%20a%20for%20loop.) |
 | :--- | :--- | :--- | :--- | :--- |
 
-**Instructional YouTube Videos:**
+**Instructional Videos:**
 
 - [Bash Shell Scripting - Part 1](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5)
 - [Creating and Running a Shell Script](https://www.youtube.com/watch?v=cQepf9fY6cE)
