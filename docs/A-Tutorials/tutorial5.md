@@ -11,7 +11,7 @@ description: Tutorial 5 for Students to Learn Redirection
 
   - Understand and use the **cut, tr**, and **wc** Linux commands
   - Define the terms **Standard Input** (_stdin_), **Standard Output** (_stdout_), and **Standard Error** (_stderr_)
-  - Understand and use the **>**, **>>**, **2>**, **2>>** symbols with Linux commands
+  - Understand and use the **\>**, **\>\>**, **2\>**, **2\>\>** symbols with Linux commands
   - Understand the purpose of the the **/dev/null** file and the **Here Document**
   - Define the term **pipeline command** and explain how a pipeline command functions
   - Define the term **filter** and how it relates to pipeline commands
