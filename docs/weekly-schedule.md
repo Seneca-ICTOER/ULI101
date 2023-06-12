@@ -102,7 +102,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Regular expressions basics: | **Week 9 Lecture 1 Notes:** [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx) | [Tutorial9: Regular Expressions](/A-Tutorials/tutorial9.md) |
+| Regular expressions basics: | **Week 9 Lecture 1 Notes:** [PDF](/slides/ULI101-9.1.pdf) \| [PPTX](/slides/ULI101-9.1.pptx) | [Tutorial 9: Regular Expressions](/A-Tutorials/tutorial9.md) |
 | - Literal matching | **Week 9 Lecture 2 Notes:** [PDF](/slides/ULI101-9.2.pdf) \| [PPTX](/slides/ULI101-9.2.pptx) | Tutorial 8 Due Friday @ 11:59pm |
 | - Character classes | **Tutorial:** [Linux Practice 1 - Regular Expressions](/files/uli101_command_practice_9a.docx) | Tutorial 9: Worth 2% (Due Week 10: Friday @ 11:59pm) |
 | - . wildcard | **Tutorial:** [Linux Practice 2 - Regular Expressions](/files/uli101_command_practice_9b.docx) | |
@@ -114,7 +114,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Text Manipulation: | **Week 10 Lecture 1 Notes:** [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx) | [Tutorial10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md) |
+| Text Manipulation: | **Week 10 Lecture 1 Notes:** [PDF](/slides/ULI101-10.1.pdf) \| [PPTX](/slides/ULI101-10.1.pptx) | [Tutorial 10: Sed and Awk Utilities](/A-Tutorials/tutorial10.md) |
 | - Using the sed Utility | **Week 10 Lecture 2 Notes:** [PDF](/slides/ULI101-10.2.pdf) \| [PPTX](/slides/ULI101-10.2.pptx) | Tutorial 9 Due Friday @ 11:59pm |
 | - Using the awk Utility | **Instructional Video:** [Sed](https://youtu.be/npU6S61AIko) | Tutorial 10: Worth 2% (Due Week 11: Friday @ 11:59pm)|
 |  | **Instructional Video:** [Awk](https://youtu.be/OV3XzjDYgJo) | |
@@ -123,7 +123,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Introduction to Shell Scripting: | **Week 11 Lecture 1 Notes:** [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx) | [Tutorial11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md) |
+| Introduction to Shell Scripting: | **Week 11 Lecture 1 Notes:** [PDF](/slides/ULI101-11.1.pdf) \| [PPTX](/slides/ULI101-11.1.pptx) | [Tutorial 11: Shell Scripting (Part 1)](/A-Tutorials/tutorial11.md) |
 | - Shell Variables | **Week 11 Lecture 2 Notes:** [PDF](/slides/ULI101-11.2.pdf) \| [PPTX](/slides/ULI101-11.2.pptx) | Tutorial 10 Due Friday @ 11:59pm |
 | - echo and read commands | **Instructional Video:** [Bash Shell Scripting I](https://www.youtube.com/watch?v=kxEP-KUhOSg&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=5) | Tutorial 11: Worth 2% (Due Week 12: Friday @ 11:59pm) |
 | - Positional Parameters |  |  |
@@ -136,7 +136,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Additional Shell Scripting: | **Week 12 Lecture 1 Notes:** [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx) | [Tutorial12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) |
+| Additional Shell Scripting: | **Week 12 Lecture 1 Notes:** [PDF](/slides/ULI101-12.1.pdf) \| [PPTX](/slides/ULI101-12.1.pptx) | [Tutorial 12: Shell Scripting (Part 2)](/A-Tutorials/tutorial12.md) |
 | - if - elif - else statement | **Instructional Video:** [Bash Shell Scripting II](https://www.youtube.com/watch?v=XVTwbINXnk4&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=6) | Tutorial 11 Due Friday @ 11:59pm |
 | - for loop revisited |  | Tutorial 12: Worth 2% (Due Week 13: Friday @ 11:59pm) |
 | - while loop statement | |  |
