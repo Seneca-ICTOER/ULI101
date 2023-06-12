@@ -103,7 +103,7 @@ In the next investigation, you will learn how to **connect** to and **login** to
 
 There are two basic methods to connecting to your Matrix account.
 
-#### Method 1: Run ssh Command from command prompt:
+#### Method 1: Run ssh Command from Command Prompt
 
   After connecting to the **Seneca Student VPN**, you can open a **command terminal** in **Windows 10 (or above), Mac** or **Linux** computer and issue the following command: 
   
@@ -115,7 +115,7 @@ ssh senecauserid@matrix.senecacollege.ca
 
 Connect to Matrix via **ssh** command
 
-#### Method 2: Run graphical ssh program via MyApps in Seneca computer lab:
+#### Method 2: Run graphical ssh program via MyApps in Seneca computer lab
 
   If you are in a Seneca computer lab, you can use MyApps to run a **graphical SSH application** for your Windows machine. One advantage of using this method is that you are already at Seneca and are NOT required to connect to the student VPN.
 
@@ -154,7 +154,7 @@ The **Seneca Student VPN** service must be connected.
 2. Determine which **operating system** that your computer is using.
 3. Try connecting to your Matrix account using the instructions in the **table** below based on your **current operating system.**
 
-#### Windows 10 (or above):
+#### Connecting from Windows 10 (or above)
 
   - From the start menu, type `cmd` and launch program
   - In the command terminal, enter the following command: 
@@ -163,7 +163,7 @@ The **Seneca Student VPN** service must be connected.
   ssh senecausername@matrix.senecacollege.ca
   ```
 
-#### macOS:
+#### Connecting from macOS
 
   - Click Launchpad icon, type **terminal** and press **ENTER**
   - In the terminal, enter the following command: 
@@ -172,7 +172,7 @@ The **Seneca Student VPN** service must be connected.
   ssh senecausername@matrix.senecacollege.ca
   ```
 
-#### Linux:
+#### Connecting from Linux
 
   - From the menu, choose: **Applications > System Tools > Terminal**
   - In the terminal, enter the following command: 
