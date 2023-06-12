@@ -17,12 +17,12 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | Course introduction | **Week 1 Lecture 1 Notes:** [PDF](/slides/ULI101-1.1.pdf) \| [PPTX](/slides/ULI101-1.1.pptx) | [Tutorial 1 - Using Your Matrix Server Account](/A-Tutorials/tutorial1.md) |
-| Course Resources/Evaluation/Policies | **Week 1 Lecture 2 Notes:** [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) | Tutorial 1: Worth 2% (Due Week 2: Friday @ 11:59pm) |
+| Course Resources, Evaluation, and Policies | **Week 1 Lecture 2 Notes:** [PDF](/slides/ULI101-1.2.pdf) \| [PPTX](/slides/ULI101-1.2.pptx) | Tutorial 1: Worth 2% (Due Week 2: Friday @ 11:59pm) |
 | Unix/Linux Background | **Tutorial:** [Connect to Seneca's Student VPN](https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn) | |
 | Open source philosophy | **Tutorial:** [VIDEO: Connect to Seneca's Student VPN](https://vimeo.com/823145586/0a2be9be6f) |  |
-| Linux GUI and the terminal | **Tutorial:** [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, Mac OSX) |  |
-| The Matrix server | **Tutorial:** [Using a Linux Desktop](/B-ExtraResources/using-linux-desktop.md) |  |
-| Accessing your Matrix Account | **Links to Windows SSH clients:** (Access Matrix from home): [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) |  |
+| Linux GUI and the terminal | **Tutorial:** [HOWTO: Access Your Matrix Account](/B-ExtraResources/howto-access-matrix.md) (Platforms: Windows, Linux, macOS) |  |
+| The Matrix Server | **Tutorial:** [Using a Linux Desktop](/B-ExtraResources/using-linux-desktop.md) |  |
+| Accessing your Matrix Account | **Windows SSH clients:** [SSH/SFTP](https://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe) \| [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) \| [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download) \| [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) |  |
 | Using your Matrix Account |  |  |
 
 ### Week 2
@@ -31,9 +31,9 @@ description: Weekly Schedule for ULI101
 | :--- | :--- | :--- |
 | Unix file system | **Week 2 Lecture 1 Notes:** [PDF](/slides/ULI101-2.1.pdf) \| [PPTX](/slides/ULI101-2.1.pptx) | [Tutorial 2: Unix / Linux File Management](/A-Tutorials/tutorial2.md) |
 | File types and file naming | **Week 2 Lecture 2 Notes:** [PDF](/slides/ULI101-2.2.pdf) \| [PPTX](/slides/ULI101-2.2.pptx) | Tutorial 1 Due Friday @ 11:59pm |
-| Basic file system commands: (pwd,cd,tree,ls,mkdir,rmdir,mv,cp,rm, man) | **Reference Sheet:** [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | Tutorial 2: Worth 2% (Due Week 3: Friday @ 11:59pm) |
+| Basic file system commands: (pwd, cd, tree, ls, mkdir, rmdir, mv, cp, rm, man) | **Reference Sheet:** [Nano Reference Sheet (PDF)](http://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf) | Tutorial 2: Worth 2% (Due Week 3: Friday @ 11:59pm) |
 | Text editing | **Reference Sheet:** [Vi Reference Sheet (PDF)](https://www.smashingmagazine.com/2010/05/vi-editor-linux-terminal-cheat-sheet-pdf/) |  |
-| Common file utilities: (cat,more,less,touch,file,find) | **Instructional Video:** [Linux File System, Basic Navigation: (ls, cd, pwd, tree),Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2) |  |
+| Common file utilities: (cat, more, less, touch, file, find) | **Instructional Video:** [Linux File System, Basic Navigation: (ls, cd, pwd, tree),Absolute and Relative Paths](https://www.youtube.com/watch?v=3wZmZOKLllk&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=2) |  |
 |  | **Instructional Video:** [Basic File Actions (touch, ls -l, cp, cp -r, mv, mkdir, mkdir -p, rm, rmdir, rm -r), Relative-to-home Paths](https://www.youtube.com/watch?v=UfAFAipked0&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=3) |  |
 | | **Instructional Video:** [Reading/Writing to Files: (cat, more, less, man, date, diff, diff -y, find, wc)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | |
 | | **Instructional Video:** [Introduction to Vi](https://youtu.be/munrDI_gm4w) | |
@@ -44,7 +44,7 @@ description: Weekly Schedule for ULI101
 | :--- | :--- | :--- |
 | Absolute and relative pathnames | **Week 3 Lecture 1 Notes:** [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | [Tutorial 3: Advanced File Management and Quoting Special Characters](/A-Tutorials/tutorial3.md) |
 | File name expansion | **Week 3 Lecture 2 Notes:** [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | Tutorial 2 Due Friday @ 11:59pm |
-| Shell basics | **Instructional Video:** [Filename Expansions](https://youtu.be/5FQnehwzwSM) | Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm) |
+| Shell basics | **Instructional Video:** [Filename Expansion](https://youtu.be/5FQnehwzwSM) | Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm) |
 | Command execution in detail | **Instructional Video:** [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
 | Command History | **Instructional Video:** [Quoting Special Characters](https://www.youtube.com/watch?v=mzgfE6-ZtUY) | |
 | Recalling and editing previous commands | |  |
@@ -54,7 +54,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation, Numbering Conversion, and File Permissions](/A-Tutorials/tutorial4.md) |
+| Data Representation: Binary, octal, decimal, and hexadecimal number systems | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation, Numbering Conversion, and File Permissions](/A-Tutorials/tutorial4.md) |
 | Number conversions | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | Tutorial 3 Due Friday @ 11:59pm |
 | Unix file permissions | **Instructional Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | Tutorial 4: Worth 2% (Due Week 5: Friday @ 11:59pm) |
 
@@ -63,8 +63,8 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | stdin, stdout, stderr | **Week 5 Lecture 1 Notes:** [PDF](/slides/ULI101-5.1.pdf) \| [PPTX](/slides/ULI101-5.1.pptx) | [Tutorial 5: Redirection](/A-Tutorials/tutorial5.md) |
-| Simple filter commands: (head,tail,cut,sort,tr,wc) | **Week 5 Lecture 2 Notes:** [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx) | Tutorial 4 Due Friday @ 11:59pm |
-| grep utility Redirection and piping | **Instructional Video:** [Reading/Writing to Files (stdin, stdout, stderr, >, >>, 2>)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | Tutorial 5: Worth 2% (Due Week 6: Friday @ 11:59pm) |
+| Simple filter commands: (head, tail, cut, sort, tr, wc, grep utility) | **Week 5 Lecture 2 Notes:** [PDF](/slides/ULI101-5.2.pdf) \| [PPTX](/slides/ULI101-5.2.pptx) | Tutorial 4 Due Friday @ 11:59pm |
+| Redirection and piping | **Instructional Video:** [Reading/Writing to Files (stdin, stdout, stderr, >, >>, 2>)](https://www.youtube.com/watch?v=ocU34PcYn2U&list=PLU1b1f-2Oe90TuYfifnWulINjMv_Wr16N&index=4) | Tutorial 5: Worth 2% (Due Week 6: Friday @ 11:59pm) |
 | /dev/null file |  | |
 
 ### Week 6
@@ -143,8 +143,8 @@ description: Weekly Schedule for ULI101
 | - Error-Checking with Loops |  |  |
 | - exit and break Statements |  |   |
 | - export Command |  | |
-| - Start-up Files | | |
-| - Further Study | | |
+| Start-up Files | | |
+| Further Study | | |
 
 ### Week 13
 
