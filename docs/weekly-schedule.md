@@ -42,7 +42,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Absolute and relative pathnames | **Week 3 Lecture 1 Notes:** [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | [Tutorial 3: Advanced File Management / Quoting Special Characters](/A-Tutorials/tutorial3.md) |
+| Absolute and relative pathnames | **Week 3 Lecture 1 Notes:** [PDF](/slides/ULI101-3.1.pdf) \| [PPTX](/slides/ULI101-3.1.pptx) | [Tutorial 3: Advanced File Management and Quoting Special Characters](/A-Tutorials/tutorial3.md) |
 | File name expansion | **Week 3 Lecture 2 Notes:** [PDF](/slides/ULI101-3.2.pdf) \| [PPTX](/slides/ULI101-3.2.pptx) | Tutorial 2 Due Friday @ 11:59pm |
 | Shell basics | **Instructional Video:** [Filename Expansions](https://youtu.be/5FQnehwzwSM) | Tutorial 3: Worth 2% (Due Week 4: Friday @ 11:59pm) |
 | Command execution in detail | **Instructional Video:** [Relative, Absolute, and Relative-to-Home Filepaths](https://youtu.be/3quKLqUFGHo) | |
@@ -54,7 +54,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation / Numbering Conversion / File Permissions](/A-Tutorials/tutorial4.md) |
+| Data Representation: (Binary, octal, decimal, and hexadecimal number systems) | **Week 4 Lecture 1 Notes:** [PDF](/slides/ULI101-4.1.pdf) \| [PPTX](/slides/ULI101-4.1.pptx) | [Tutorial 4: Data Representation, Numbering Conversion, and File Permissions](/A-Tutorials/tutorial4.md) |
 | Number conversions | **Week 4 Lecture 2 Notes:** [PDF](/slides/ULI101-4.2.pdf) \| [PPTX](/slides/ULI101-4.2.pptx) | Tutorial 3 Due Friday @ 11:59pm |
 | Unix file permissions | **Instructional Video:** [Permissions, chmod, umask](https://youtu.be/MzQ5kcffvpc) | Tutorial 4: Worth 2% (Due Week 5: Friday @ 11:59pm) |
 
@@ -71,7 +71,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| scp and sftp utilities | **Week 6 Lecture 1 Notes:** [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx) | [Tutorial 6: File Transfer / Sending Email](/A-Tutorials/tutorial6.md) |
+| scp and sftp utilities | **Week 6 Lecture 1 Notes:** [PDF](/slides/ULI101-6.1.pdf) \| [PPTX](/slides/ULI101-6.1.pptx) | [Tutorial 6: File Transfer and Sending Email](/A-Tutorials/tutorial6.md) |
 | Sending email from command line | **Instructional Video:** [SSH, SCP and Other Network Tools](https://youtu.be/-Le-7U8tEOA) | Tutorial 5 Due Friday @ 11:59pm |
 | Command History | | Tutorial 6: Worth 2% (Due Week 8: Friday @ 11:59pm) |
 
@@ -91,7 +91,7 @@ description: Weekly Schedule for ULI101
 
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
-| Filesystem links | **Week 8 Lecture 1 Notes:** [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx) | [Tutorial 8: Linking Files / Managing Process / Aliases and Command History](/A-Tutorials/tutorial8.md) |
+| Filesystem links | **Week 8 Lecture 1 Notes:** [PDF](/slides/ULI101-8.1.pdf) \| [PPTX](/slides/ULI101-8.1.pptx) | [Tutorial 8: Linking Files, Managing Process, Aliases, and Command History](/A-Tutorials/tutorial8.md) |
 | Hard and symbolic links | **Week 8 Lecture 2 Notes:** [PDF](/slides/ULI101-8.2.pdf) \| [PPTX](/slides/ULI101-8.2.pptx) | Tutorial 6 Due Friday @ 11:59pm |
 | Process management | **Instructional Video:** [Changing Resolution in Knoppix](https://www.youtube.com/watch?v=aNKMOyRYWfM&feature=youtu.be) | Tutorial 8: Worth 2% (Due Week 9: Friday @ 11:59pm) |
 | Aliases | **Instructional Video:** [Processes and Jobs](https://youtu.be/q93POTgH-aQ) |  |
