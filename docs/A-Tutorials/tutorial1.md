@@ -30,7 +30,7 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 **Windows SSH client Software:**
 
 - [SSH/SFTP](http://www.sfsu.edu/ftp/win/ssh/SSHSecureShellClient-3.2.9.exe)
-- [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download)
 - [MovaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
 
@@ -60,11 +60,11 @@ description: Tutorial 1 for Students to Access their Matrix accounts and setup a
 
 While attending Seneca College, you will be using many different computer systems. Some of these servers include:
 
-**[learn.senecacollege.ca](https://learn.senecacollege.ca/)**	Learning Content Management System (Link to Resources / Student Grades / Online Quizzes)
+**[learn.senecacollege.ca](https://learn.senecacollege.ca/):**	Learning Content Management System (Student Grades, Online Quizzes/Tests, Link to Resources)
 
-**[wiki.cdot.senecacollege.ca](https://wiki.cdot.senecacollege.ca/wiki/Main_Page)**	Lecture Notes / Tutorials (weekly, review) / Practice Questions / Additional Learning Resources
+**[wiki.cdot.senecacollege.ca](https://wiki.cdot.senecacollege.ca/wiki/Main_Page):**	Lecture Notes, Weekly Tutorials, Review Tutorials, Practice Questions, and Additional Learning Resources
 
-**[matrix.senecacollege.ca](https://matrix.senecacollege.ca/)**	Matrix is our Linux server environment used for "hands-on practice". Each ULI101 student has an account on this server.
+**[matrix.senecacollege.ca](https://matrix.senecacollege.ca/):**	Matrix is our Linux server environment used for "hands-on practice". Each ULI101 student has an account on this server.
 
 Although you need to study concepts throughout this course (slides, etc.), you will also need to get **hands-on practice running Linux commands as well as performing and submitting online tutorials.**
 
@@ -91,15 +91,13 @@ All registered students in this course should have an account on the Matrix serv
 
 All Seneca College students are required to connect to the **Seneca Student VPN** in order to be able to connect to their **Matrix** Linux account when outside of campus as a **network security** measure. The Seneca Student VPN uses multi-factor authentication (MFA) when logging in to verify you are who you say you are.
 
-**Multi-factor authentication** _is an electronic authentication method in which a computer user is granted access to a website or application only after successfully presenting two or more pieces of evidence (or factors) to an authentication mechanism: knowledge (something the user and only the user knows). Reference: https://en.wikipedia.org/wiki/Multi-factor_authentication_
+**Multi-factor authentication** is an electronic authentication method in which a computer user is granted access to a website or application only after successfully presenting two or more pieces of evidence (or factors) to an authentication mechanism: knowledge (something the user and only the user knows). _Reference: https://en.wikipedia.org/wiki/Multi-factor_authentication_
 
 You should have received an e-mail message with instructions on how to set up your smartphone for multi-factor authentication. If you haven't installed it yet, please do so by following the ITS instructions here: https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
 
 In the next investigation, you will learn how to **connect** to and **login** to your Matrix server account from a remote computer such as your **home desktop computer, laptop** or **tablet** computer.
 
 ![Seneca Student VPN](/img/Gp1.png "Seneca Student VPN")
-
-**Seneca Student VPN**
 
 ### Connecting to Your Matrix Account
 
@@ -126,8 +124,6 @@ Connect to Matrix via **ssh** command
 
 ![SSH Graphical Main Window](/img/Ssh-main-window.png "SSH Graphical Main Window")
 
-Connect to Matrix via **graphical** SSH Program
-
 ## Investigation 1: Accessing Your Matrix Linux Account
 
 In this section, you will learn how to access your Matrix Linux account by two different methods:
@@ -147,7 +143,7 @@ You will now learn a quick and simple method of connecting to your Matrix accoun
 
   1. If you want to connect to your Matrix account from home, you MUST first connect to the Seneca Student VPN. Make certain that your **Seneca Student VPN is connected.**
 
-   - **NOTE:** If you haven't set this up, refer to the following link for instructions; https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
+   - **NOTE:** If you haven't set this up, refer to the following link for instructions: https://students.senecacollege.ca/spaces/186/it-services/wiki/view/1025/student-vpn
 
    - You only have to connect to your Seneca student VPN once during the day, or while you are logged into your computer.
 
@@ -158,7 +154,7 @@ The **Seneca Student VPN** service must be connected.
 2. Determine which **operating system** that your computer is using.
 3. Try connecting to your Matrix account using the instructions in the **table** below based on your **current operating system.**
 
-  **Windows 10 (or above):**
+#### Windows 10 (or above):
 
   - From the start menu, type `cmd` and launch program
   - In the command terminal, enter the following command: 
@@ -167,7 +163,7 @@ The **Seneca Student VPN** service must be connected.
   ssh senecausername@matrix.senecacollege.ca
   ```
 
-  **macOS:**
+#### macOS:
 
   - Click Launchpad icon, type **terminal** and press **ENTER**
   - In the terminal, enter the following command: 
@@ -176,7 +172,7 @@ The **Seneca Student VPN** service must be connected.
   ssh senecausername@matrix.senecacollege.ca
   ```
 
-  **Linux:**
+#### Linux:
 
   - From the menu, choose: **Applications > System Tools > Terminal**
   - In the terminal, enter the following command: 
@@ -237,8 +233,6 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
 
 ![MyApps Anywhere Main Window](/img/Apps-anywhere-main-window.png "MyApps Anywhere Main Window")
 
-**MyApps (AppsAnywhere)** Main Window
-
 **Perform the Following Steps:**
 
   1. Start your workstation in your lab and login to your Seneca Windows account.
@@ -261,15 +255,11 @@ You will now use **MyApps** on your Windows workstation in your Seneca lab room 
 
 ![SSH Secure Shell Client Window](/img/Ssh-main-window.png "SSH Secure Shell Client Window")
 
-SSH Client Application Window
-
   6. The main SSH Client window will appear. Click on the **Quick Connect** button.
 
    - **NOTE:** The Connect dialog box allows the user to specify the **server name** and your **account name** to allow you to connect to the server.
 
 ![Quick Connect Dialog Window](/img/Quick-connect-window.png "Quick Connect Dialog Window")
-
-Quick Connect Dialog Window
 
   7. Click on the textbox labelled Hostname and enter the text: ***matrix***
 
@@ -281,14 +271,10 @@ Quick Connect Dialog Window
 
 ![Dialog Box to Share Public Key on Remote Server](/img/Share-public-key.png "Dialog Box to Share Public Key on Remote Server")
 
-Dialog Box to Share Public Key on Remote Server
-
   9. Click the **Yes** button to share your public key.
   10. Next, a dialog box will appear prompting you for your Matrix account password in order to gain entry to your Matrix account. Your Matrix password is identical to your Seneca password. As you type the password, the text will be blocked-out or hidden to prevent others from viewing the screen to obtain your password
 
 ![Password Dialog Box](/img/Ssh-password-prompt.png "Password Dialog Box")
-
-Password Dialog Box
 
   11. Enter your password and click **OK** or press **ENTER**
   12. Click **OK** or press **ENTER** at the **Authentication Response** dialog box.
@@ -310,8 +296,6 @@ Password Dialog Box
     - The **Matrix** server has been configured to allow users to **only interact with the Linux OS by issuing commands.** There are various reasons for this, but the main 2 reasons are to **force students to learn how to issue Linux commands** as well as **limitations to remote access to a graphical Linux server** due to large number of users (students).
 
 ![Matrix Shell Command Line Interface](/img/Ssh-shell-window.png "Matrix Shell Command Line Interface")
-
-Matrix Shell Command Line Interface
 
    - You can **configure** the SSH application to adjust elements such as the **window size** and **text font type** and **text font size.** We will be showing you how to configure your SSH Secure Shell Client, but the other applications can allow you to configure their settings.
 
