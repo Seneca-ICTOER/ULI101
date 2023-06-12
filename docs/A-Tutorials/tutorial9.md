@@ -26,7 +26,7 @@ description: Tutorial 9 for Students to Learn Regular Expressions
 **Regular Expressions:**
 
 - [Definition](https://techterms.com/definition/regular_expression#:~:text=A%20regular%20expression%20(or%20%22regex,wildcards%2C%20and%20ranges%20of%20characters.&text=A%20regular%20expression%20can%20be,%2C%20such%20as%20%22app%22.))
-- [Purpose (WIKI)](https://en.wikipedia.org/wiki/Regular_expression#:~:text=Regular%20expressions%20are%20used%20in,built%2Din%20or%20via%20libraries.)
+- [Purpose (Wikipedia)](https://en.wikipedia.org/wiki/Regular_expression#:~:text=Regular%20expressions%20are%20used%20in,built%2Din%20or%20via%20libraries.)
 
 **Linux Commands:**
 
@@ -61,9 +61,7 @@ grep Linux document.txt
 
 A **simple (literal)** regular expression is a series of letters and numbers (tabs or spaces).
 
-### Complex / Extended Regular Expressions
-
-**Complex Regular Expressions**
+### Complex Regular Expressions
 
 The problem with just using **simple (literal)** regular expressions is that only simple or general patterns are matched.
 
@@ -103,7 +101,7 @@ Example of using **character class**. ^
 
 Example of matching **zero or more occurrence of preceding character**. ^
 
-**Extended Regular Expressions**
+### Extended Regular Expressions
 
 _Extended Regular Expressions_ consist of additional special characters to “extend” the capability of regular expressions. You must use the **egrep** or **grep -E** commands in order to properly use extended regular expressions.
 

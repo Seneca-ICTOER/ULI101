@@ -155,7 +155,7 @@ You will also learn how to issue the **ssh** command to run commands on your **r
   1. Determine which operating system that your computer is using.
   2. Connect to your Matrix account using the instructions in the table below based on your **current operating system**.
 
-**Newer Version of Windows 10:**
+**Using Windows 10 (or above):**
 
   - From the start menu, type **cmd** and launch program
   - In the command terminal, enter the following command: 
@@ -164,7 +164,7 @@ You will also learn how to issue the **ssh** command to run commands on your **r
 ssh senecausername@matrix.senecacollege.ca
 ```
 
-**MacOSX:**
+**Using macOS:**
 
   - Click _Launchpad_ icon, type **terminal** and press **ENTER**
   - In the terminal, enter the following command: 
@@ -173,7 +173,7 @@ ssh senecausername@matrix.senecacollege.ca
 ssh senecausername@matrix.senecacollege.ca
 ```
 
-**Linux:**
+**Using Linux:**
 
   - From the menu, choose: **Applications > System Tools > Terminal**
   - In the terminal, enter the following command: 

@@ -526,7 +526,7 @@ In the next investigation, you will learn to use the **exit** statement to **ter
 
 In this investigation, you will learn to use the **exit** and **break** statements in your shell scripts.
 
-### The exit Statement
+### Part 1: The exit Statement
 
 The **exit** statement is used to terminate a shell script. This statement is very useful when combined with logic in a shell script to display an **error message** if the command was **improperly executed** and **terminate** the running of the shell script.
 
@@ -609,7 +609,7 @@ echo $?
 cat error.txt
 ```
 
-### The break Statement
+### Part 2: The break Statement
 
 The **break** statement is used to **terminate** a **loop** without terminating the running shell script.
 

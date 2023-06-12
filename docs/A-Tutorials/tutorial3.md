@@ -26,7 +26,7 @@ description: Tutorial 3 for Students to Learn Pathnames, Filename Expansion, and
 
 - [Absolute](https://www.cyberciti.biz/faq/understanding-absolute-pathnames/)
 - [Relative](https://www.oreilly.com/library/view/web-design-in/0596009879/ch04s02s02.html)
-- [Relative-to-home](https://stackoverflow.com/questions/24048533/unix-simple-what-is-a-relative-to-home-pathname)
+- [Relative-to-Home](https://stackoverflow.com/questions/24048533/unix-simple-what-is-a-relative-to-home-pathname)
 - [Filename Expansion Symbols](https://docstore.mik.ua/orelly/linux/run/ch04_08.htm#:~:text=Another%20way%20to%20save%20time,is%20sometimes%20called%20%22globbing.%22)
 
 **Quoting Special Characters:**

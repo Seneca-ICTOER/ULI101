@@ -131,9 +131,7 @@ Below are a listing of common **Linux commands** and **keyboard shortcuts** to m
 | **jobs** |	The **jobs** utility displays the **status** of jobs that were started in the current shell environment. _Example:_ jobs   \[1\]+ Stopped vim a   <-- Job \#1 (+ most recent process / background)    \[2\]  Running sleep 200 &  <-- Job \#2    \[3\]  Running sleep 300 &  <-- Job \#3    \[4\]- Running sleep 400 &  <-- Job \#4 (- second recent process / background) |
 | **kill** |	The kill command sends the specified signal to the specified processes or process groups. If no signal is specified, the **TERM** signal is sent. The default action for this signal is to terminate the process. _Examples:_ **kill PID** , **kill -9 PID** , **kill %job-number** , **kill -9 %job-number** |
 
-### Aliases / Command History
-
-**Aliases:**
+### Aliases
 
 An **alias** is a **nickname** to an existing command or group of commands.
 
@@ -165,7 +163,7 @@ unalias alias-name
 
 (removes alias from memory)
 
-**Command History:**
+### Command History
 
 The filename **~/.bash_history** stores recently executed command lines
 

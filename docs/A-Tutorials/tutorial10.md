@@ -42,13 +42,13 @@ description: Tutorial 10 for Students to Learn the Sed and Awk Commands
 
 ### Using the sed Utility
 
-**Usage (Syntax):** 
+#### Usage (Syntax)
 
 ```bash
 sed [-n] 'address instruction' filename
 ```
 
-**How it Works:**
+#### How It Works
 
   - The sed command reads all lines in the input file and will be exposed to the expression (i.e. area contained within quotes) one line at a time.
   - The expression can be within single quotes or double quotes.
@@ -56,7 +56,7 @@ sed [-n] 'address instruction' filename
   - If the line matches the address, then it will perform the instruction.
   - Lines will display be default unless the **–n** option is used to suppress default display
 
-**Address:**
+#### Address
 
   - Can use a line number, to select a specific line (for example: **5**)
   - Can specify a range of line numbers (for example: **5,7**)
@@ -64,7 +64,7 @@ sed [-n] 'address instruction' filename
   - Can specify a regular expression to select all lines that match a pattern (e.g **/^\[0-9\].\*\[0-9\]\$/**)
   - If NO address is present, the instruction will apply to ALL lines
 
-**Instruction:**
+#### Instruction
 
   - **Action** to take for matched line(s)
   - Refer to table below for list of some **common instructions** and their purpose
@@ -78,20 +78,20 @@ sed [-n] 'address instruction' filename
 
 ### Using the awk Utility
 
-**Usage:**
+#### Usage (Syntax)
 
 ```bash
 awk [-F] 'selection-criteria {action}’ file-name
 ```
 
-**How It Works:**
+#### How It Works
 
   - The **awk** command reads all lines in the input file and will be exposed to the expression (contained within quotes) for processing.
   - The **expression** (contained in quotes) represents **selection criteria**, and **action** to execute contained within braces **{}**
   - if selection criteria is matched, then action (between braces) is executed.
   - The **–F** option can be used to specify the default **field delimiter** (separator) character eg. **awk –F”;”** (would indicate a semi-colon delimited input file).
 
-**Selection Criteria**
+#### Selection Criteria
 
   - You can use a regular expression, enclosed within slashes, as a pattern. For example: **/pattern/**
   - The **~** operator tests whether a field or variable matches a regular expression. For example: **$1 ~ /^\[0-9\]/**
@@ -100,7 +100,7 @@ awk [-F] 'selection-criteria {action}’ file-name
   - You can combine any of the patterns using the Boolean operators **\|\|** (OR) and **&&** (AND).
   - You can use built-in variables (like NR or "record number" representing line number) with comparison operators. For example: **NR >=1 && NR <= 5**
 
-**Action (execution):**
+#### Action (execution)
 
   - Action to be executed is contained within braces **{}**
   - The **print** command can be used to display text (fields).
@@ -110,7 +110,7 @@ awk [-F] 'selection-criteria {action}’ file-name
   - Parameters greater than nine requires the value of the parameter to be placed within braces (for example: **${10}**,**${11}**,**${12}**, etc.)
   - You can use built-in **variables** (such as **NR** or "record number" representing line number) eg. **{print NR,$0}** (will print record number, then entire record).
 
-## Investigation 1: Using The sed Utility
+## Investigation 1: Using the sed Utility
 
 **ATTENTION: This online tutorial will be required to be completed by Friday in week 11 by midnight to obtain a grade of 2% towards this course**
 
@@ -250,7 +250,7 @@ ls | sed -n '/txt$/ p' | tee sed-9.txt
 
 In the next investigation, you will learn how to manipulate text using the **awk** utility.
 
-## Investigation 2: Using The AWK Utility
+## Investigation 2: Using the awk Utility
 
 In this investigation, you will learn how to use the awk utility to manipulate text and generate reports.
 

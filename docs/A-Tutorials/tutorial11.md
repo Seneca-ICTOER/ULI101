@@ -93,9 +93,9 @@ chmod u+x myscript.bash
 ~/myscript.bash
 ```
 
-### Variables / Parameters
+### Variables
 
-**Environment Variables**
+#### Environment Variables
 
 Shell **environment variables** shape the working environment whenever you are logged in Common shell. Some of these variables are displayed via Linux commands in the diagram displayed below.
 
@@ -107,7 +107,7 @@ Placing a dollar sign "$" prior to the variable name will cause the variable to 
 
 Examples of using **Environment** and **User Defined** variables.
 
-**User Defined Variables**
+#### User Defined Variables
 
 **User-defined** variables are variables that can be used in the shell script for **customized** purposes.
 
@@ -115,7 +115,7 @@ Data can be stored and removed within a variable using an **equal sign** (no spa
 
 The **read** command can be used to prompt the user to enter data into a variable. The **readonly** command will prevent the current value of the variable for the remainder of the execution of a shell script.
 
-**Positional Parameters and Special Parameters**
+### Positional Parameters
 
 A **positional parameter** is a variable within a shell program; its value is set from arguments contained in a shell script or using the set command.
 
@@ -136,9 +136,7 @@ There are a group of **special parameters** that can be used for shell scripting
 
 Examples of using **positional** and **special** parameters. ^
 
-### Command Substitution / Math Operations
-
-**Command Substitution:**
+### Command Substitution
 
 _**Command substitution** is a facility that allows a command to be run and its output to be pasted back on the command line as arguments to another command_. Reference: https://en.wikipedia.org/wiki/Command_substitution
 
@@ -176,7 +174,7 @@ echo "The date is: $(date +'%A %B %d, %Y')"
 
 Example of how a **for loop with command substitution** works.
 
-**Math Operations:**
+### Math Operations
 
 In order to make math operations work, we need to convert numbers stored as **text** into **binary** numbers.
 
@@ -205,8 +203,6 @@ echo “$product”
 | \*\* | Exponential |
 | ++ | Increment (increase by 1) |
 | -- | Decrement (decrease by 1) |
-
-Common Math Operator Symbols. ^
 
 ### Control Flow Statements
 
