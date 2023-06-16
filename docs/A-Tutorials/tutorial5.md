@@ -735,7 +735,7 @@ When answering Linux command questions, refer to the following Inverted Tree Dia
 
 **Review Questions:**
 
-  1. Write a single Linux command to provide a detailed listing of all files in the **/bin** directory, sending the output to a file called listing.txt in the “**projects**” directory (append output to existing file and use a relative pathname)
+  1. Write a single Linux command to provide a detailed listing of all files in the **/etc** directory, sending the output to a file called listing.txt in the “**projects**” directory (append output to existing file and use a relative pathname)
   2. Write a single Linux command to redirect the stderr from the command: **cat a.txt b.txt c.txt** to a file called **error.txt** contained in the “**assignments**” directory. (overwrite previous file’s contents and use only relative pathnames)
   3. Write a single Linux command: **cat ~/a.txt ~/b.txt ~/c.txt** and redirect stdout to a file called “**good.txt**” to the “**tests**” directory and stderr to a file called “**bad.txt**” to the “**tests**” directory. (overwrite previous contents for both files and use only relative-to-home pathnames).
   4. Write a single Linux command to redirect the stdout from the command: **cat a.txt b.txt c.txt** to a file called **wrong.txt** contained in the “**projects**” directory and throw-out any standard error messages so they don’t appear on the screen (append output to existing file and use only relative pathnames).
