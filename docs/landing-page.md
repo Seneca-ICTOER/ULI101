@@ -40,7 +40,7 @@ If you require technical assistance with the issues above, please click on the f
 
 Phoning may resolve the issue sooner. Be ready to specify the exact error message you received.
 
-You could also email the ITS  Service Desk at: servicedesk@senecacollege.ca
+You could also e-mail the ITS  Service Desk at: servicedesk@senecacollege.ca
 
 It's extremely helpful to take a full-desktop screenshot of your screen with the error message you received. Attach the image to your message when you contact the Service Desk through your MySeneca email.
 
