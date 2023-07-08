@@ -56,7 +56,7 @@ The **ssh** command can be used to run and view commands on **remote computer** 
 _Command Usage:_
 
 ```bash
-ssh username@matrix.senecacollege.ca ls -l
+ssh username@matrix.senecacollege.ca 'ls -l'
 ```
 
 You will be prompted for your Matrix account password, then the contents of your home directory in your remote Matrix account will be displayed on your local computer's terminal.
@@ -256,7 +256,7 @@ scp other.txt yoursenecaid@matrix.senecacollege.ca:
   21. Issue the following command (using your matrix username):
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ls -l other.txt
+ssh yoursenecaid@matrix.senecacollege.ca 'ls -l other.txt'
 ```
 
   22. When prompted, **enter your password** and press **ENTER**.
@@ -290,7 +290,7 @@ scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca
   28. Issue the following command (using your matrix username):
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ls -l mytextfile.txt
+ssh yoursenecaid@matrix.senecacollege.ca 'ls -l mytextfile.txt'
 ```
 
   29. When prompted, enter your password and press ENTER.
@@ -306,7 +306,7 @@ scp mytextfile.txt yoursenecaid@matrix.senecacollege.ca:
   31. Issue the following command to confirm that it was remotely copied to your **home** directory in Matrix:
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/mytextfile.txt
+ssh yoursenecaid@matrix.senecacollege.ca 'ls -l /home/yoursenecaid/mytextfile.txt'
 ```
 
    - Do you see the output for the detailed file listing of **mytextfile.txt**?
@@ -321,7 +321,7 @@ scp other.txt yoursenecaid@matrix.senecacollege.ca:remote/different.txt
   33. Issue the following command to confirm that the file was remotely copied to your **~/remote** directory in Matrix with a different filename:
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/remote/different.txt
+ssh yoursenecaid@matrix.senecacollege.ca 'ls -l /home/yoursenecaid/remote/different.txt'
 ```
 
    - Were you able to properly copy this file?
@@ -330,7 +330,7 @@ ssh yoursenecaid@matrix.senecacollege.ca ls -l /home/yoursenecaid/remote/differe
   34. Issue the following:
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-2
+ssh yoursenecaid@matrix.senecacollege.ca '~uli101/week6-check-2'
 ```
 
    - If you encounter errors, re-run the scp commands to correct and re-run the above command until you receive a congratulations message.
@@ -480,7 +480,7 @@ get thefile.txt
   28. Issue the following Linux command to remotely run a checking script to ensure you created the correct directories and properly transferred those created files:
 
 ```bash
-ssh yoursenecaid@matrix.senecacollege.ca ~uli101/week6-check-3
+ssh yoursenecaid@matrix.senecacollege.ca '~uli101/week6-check-3'
 ```
 
   29. If you encounter errors, make corrections and then re-run the checking script until you receive a congratulations message.
