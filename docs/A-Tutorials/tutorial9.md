@@ -314,7 +314,7 @@ mkdir ~/regexps
   23. First, issue the following Linux command to copy another data file called **numbers1.dat**:
 
 ```bash
-cp ~uli101/tutorialfiles/numbers1.dat ~/
+cp ~uli101/tutorialfiles/numbers1.dat ~/regexps
 ```
 
   24. View the contents of the **numbers.dat** file using the **more** command and quickly view the contents of this file. You should notice **valid** and **invalid** numbers contained in this file. When finished, exit the more command.
