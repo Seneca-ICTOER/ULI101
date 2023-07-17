@@ -13,7 +13,6 @@ description: Landing Page for the ULI101 Course
 | [Weekly Schedule](./weekly-schedule.md) | [MySeneca (Blackboard)](https://my.senecacollege.ca/) | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?termCode=20232&subjectCode=ULI101&schoolCode=SICT) | [Course Policies](/B-ExtraResources/course-policies.md) |
 | :--- | :--- | :--- | :--- |
 
-
 ### What This Course is About
 
 Unix and Linux represent the operating system technology underlying many of the services of the Internet. This subject introduces students to Unix, Linux and the Internet.
