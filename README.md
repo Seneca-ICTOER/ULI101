@@ -34,6 +34,10 @@ The organization of the repo is as follows:
 
 **For the most part, none of the other folders/files should need to be edited aside from the "docs" folder and its contents, and the "static" folder and its contents.**
 
+**Here's a small graphic for the files that you should focus on and edit when needed:**
+
+![Highlighted Files on GitHub](./static/img/github-highlighted_files.png)
+
 ## Modifying the Files
 
 **There are multiple options for these files to be edited. You can pick whichever option(s) you feel most comfortable with:**
