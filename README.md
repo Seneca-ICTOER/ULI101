@@ -42,7 +42,7 @@ The organization of the repo is as follows:
 
 **There are multiple options for these files to be edited. You can pick whichever option(s) you feel most comfortable with:**
 
-### Option 1: Use the GitHub repo page
+### Option 1: Using the GitHub Repo Page
 
 Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/ULI101 . 
 
@@ -64,11 +64,9 @@ Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/
 
 6.	Write a short message describing your changes in the “Commit message” line (good to keep other people using the repo up to date on what you’ve changed) and click the green “Commit changes” button.
 
-
 Awesome!! You’ve successfully made your first edit, move on to the [Check Changes](#check-changes) section to make sure those changes were deployed to the webpage.
 
-
-### Option 2: Use the GitHub Codespace Web Editor
+### Option 2: Using the GitHub Codespace Web Editor
 
 Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/ULI101 . 
 
@@ -93,8 +91,7 @@ Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/
 8.	Wait until all items under the green “Commit & Push” button have successfully been committed and pushed (disappear from below the green button)
 You’ve successfully pushed to the repo from the GitHub Codespace Web Editor!! Move on to the [Check Changes](#check-changes) section to make sure those changes were deployed to the webpage.
 
-
-### Option 3: Use Visual Studio Code
+### Option 3: Using Visual Studio Code
 
 **Prerequisite:**
 
@@ -194,5 +191,6 @@ Here’s some helpful GitHub Markdown resources that will make the transition fr
 -	[Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 -	[GitHub Markdown Cheatsheet](https://github.com/darsaveli/Readme-Markdown-Syntax)
 -	[GitHub Markdown Code Block Cheatsheet](https://github.com/jincheng9/markdown_supported_languages)
+-	[GitHub Markdown Adding Images](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
 -	[Fun Bonus: GitHub Markdown Emoji Cheatsheet](https://gist.github.com/rxaviers/7360908)
 -	[Fun Bonus: GitHub Markdown Emoji Cheatsheet 2](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#table-of-contents)
