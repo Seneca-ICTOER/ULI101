@@ -44,7 +44,7 @@ Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/
 
 1.	Follow the path: docs -> landing-page.md (see screenshot below of result)
 
-<img width="1440" alt="github-repo" src="https://github.com/Seneca-ICTOER/ULI101/assets/65503430/926387ac-6aa3-4097-bc79-6d10eb9283ba">
+
 
 2.	You should see the screen above. Next, click the **Edit** button that looks like a pencil (see circled in red in screenshot above)
 3.	After clicking the **Edit** button, you can make any changes you’d like.
