@@ -44,7 +44,7 @@ Going to the GitHub repo page for this course: https://github.com/Seneca-ICTOER/
 
 1.	Follow the path: docs -> landing-page.md (see screenshot below of result)
 
-
+![GitHub Repo](./static/img/github-repo.png)
 
 2.	You should see the screen above. Next, click the **Edit** button that looks like a pencil (see circled in red in screenshot above)
 3.	After clicking the **Edit** button, you can make any changes you’d like.
