@@ -67,7 +67,13 @@ Since Linux shells have evolved over a period of time, using a she-bang line **f
 
 The **she-bang** line is a **special comment** at top of your shell script to run your shell script in a specific shell.
 
-![Shebang](/img/Shebang.png)
+```bash
+#!/bin/bash
+
+
+
+
+```
 
 **NOTE:** The **shebang line** must appear on the **first line** and at the **beginning** of the shell script, otherwise, it will be treated as a regular comment and ignored.
 
@@ -103,7 +109,58 @@ You can issue the pipeline command **set | more** to view all variables.
 
 Placing a dollar sign "$" prior to the variable name will cause the variable to expand to the value contained in the variable.
 
-![Environment](/img/Environment.png)
+```bash
+echo $PWD
+/home/murray.saul
+```
+
+```bash
+echo $PATH
+/urs/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/murray.saul/bin
+```
+
+```bash
+echo $USER
+murray.saul
+```
+
+```bash
+set | head -5
+ABRT_DEBUG_LOG=/dev/null
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:expand_aliases:extglob:extquote:
+BASH_ALIASES=()
+BASH_ARGC=()
+```
+
+```bash
+echo $name
+
+```
+
+```bash
+name="Murray Saul"
+```
+
+```bash
+echo $name
+Murray Saul
+```
+
+```bash
+name=echo $name
+
+```
+
+```bash
+read -p "Enter full name: " name
+Enter full name: Murray Saul
+```
+
+```bash
+echo $name
+Murray Saul
+```
 
 Examples of using **Environment** and **User Defined** variables.
 
@@ -132,7 +189,62 @@ There are a couple of ways to assign values as positional parameters:
 
 There are a group of **special parameters** that can be used for shell scripting. A few of these special parameters and their purpose are displayed below: **\$\*** , **“\$\*”** , **"\$@"** , **\$\#** , **\$?**
 
-![Positional](/img/Positional.png)
+```bash
+set 10 9 8 7 6 5 4 3 2 1
+```
+
+```bash
+echo $1
+10
+```
+
+```bash
+echo $2
+9
+```
+
+```bash
+echo $10
+100
+```
+
+```bash
+echo ${10}
+1
+```
+
+```bash
+echo $#
+10
+```
+
+```bash
+shift
+```
+
+```bash
+echo $#
+9
+```
+
+```bash
+echo $*
+9 8 7 6 5 4 3 2 1
+```
+
+```bash
+shift 5
+```
+
+```bash
+echo $#
+4
+```
+
+```bash
+echo $*
+4 3 2 1
+```
 
 Examples of using **positional** and **special** parameters. ^
 
@@ -170,9 +282,32 @@ echo "The current hostname is $(hostname)"
 echo "The date is: $(date +'%A %B %d, %Y')"
 ```
 
-![For Command Substitution](/img/For-command-substitution.png)
+Example of how a **for loop with command substitution** works:
 
-Example of how a **for loop with command substitution** works.
+```bash
+ls
+file1 file2 file3 for-command-substitution.bash
+```
+
+```bash
+cat for-command-substitution.bash
+#!/bin/bash
+```
+
+```bash
+for var in $(ls)
+do
+  echo "Filename is: $var"
+done
+```
+
+```bash
+./for-command-substitution.bash
+Filename is: file1
+Filename is: file2
+Filename is: file3
+Filename is: for-command-substitution.bash
+```
 
 ### Math Operations
 
@@ -212,13 +347,109 @@ In order to use control flow statements, you need to test a condition to get **T
   - Run a command to get the exit status (**\$?**)
   - Use the **test** command
 
-Refer to the diagrams below to see how to use the test command.
+Refer to the shell script below to see how to use the test command.
 
-![Test 1](/img/Test-1.png)
+```bash
+num1=5
+```
+
+```bash
+num2=10
+```
+
+```bash
+test $num1 -eq $num2
+```
+
+```bash
+echo $?
+1
+
+```
+
+```bash
+test $num1 -lt $num2
+```
+
+```bash
+echo $?
+0
+
+```
+
+```bash
+test $num1 -ne $num2
+```
+
+```bash
+echo $?
+0
+
+```
+
+```bash
+test $num1 -ge $num2
+```
+
+```bash
+echo $?
+1
+```
 
 Examples of simple comparisons using the test command. ^
 
-![Test 2](/img/Test-2.png)
+```bash
+mkdir mydir
+```
+
+```bash
+test -d mydir
+```
+
+```bash
+echo $?
+0
+```
+
+```bash
+touch myfile.txt
+```
+
+```bash
+test -f myfile.txt
+```
+
+```bash
+echo $?
+0
+```
+
+```bash
+test ! -f myfile.txt
+```
+
+```bash
+echo $?
+1
+```
+
+```bash
+test -s myfile.txt
+```
+
+```bash
+echo $?
+1
+```
+
+```bash
+test ! -s myfile.txt
+```
+
+```bash
+echo $?
+0
+```
 
 Examples of using additional comparisons using the test command. ^
 
@@ -237,9 +468,34 @@ if test condition
 fi
 ```
 
-Refer to the diagram below for using the **if logic statement** with the **test** command.
+Refer to the shell script below for using the **if logic statement** with the **test** command.
 
-![Logic 1](/img/Logic-1.png)
+```bash
+cat if.bash
+#!/bin/bash
+
+read -p "Enter First Number: " num1
+
+read -p "Enter Second Number: " num2
+
+if test $num1 -lt $num2
+then
+  echo "Less Than"
+fi
+```
+
+```bash
+./if.bash
+Enter First Number: 5
+Enter Second Number: 10
+Less Than
+```
+
+```bash
+./if.bash
+Enter First Number: 10
+Enter Second Number: 5
+```
 
 Example of using the **if** logic control-flow statement.
 
@@ -258,9 +514,37 @@ if test condition
 fi
 ```
 
-![Logic 2](/img/Logic-2.png)
+Example of how an **if-else** control-flow statement:
 
-Example of how an **if-else** control-flow statement.
+```bash
+cat if-else.bash
+#!/bin/bash
+
+read -p "Enter First Number: " num1
+
+read -p "Enter Second Number: " num2
+
+if [ $num1 -lt $num2 ]
+then
+  echo "Less Than"
+else
+  echo "Greater Than or Equal To"
+fi
+```
+
+```bash
+./if.bash
+Enter First Number: 3
+Enter Second Number: 5
+Less Than
+```
+
+```bash
+./if.bash
+Enter First Number: 5
+Enter Second Number: 3
+Greater Than or Equal To
+```
 
 **Loop Statements**
 
@@ -275,9 +559,26 @@ do
 done
 ```
 
-Refer to the diagram below for an example using the for loop with a list.
+Refer to the shell script below for an example using the for loop with a list.
 
-![Loop 1](/img/Loop-1.png)
+```bash
+cat for.bash
+#!/bin/bash
+```
+
+```bash
+for x in apples oranges bananas
+do
+  echo "The item is: $x"
+done
+```
+
+```bash
+./for.bash
+The item is: apples
+The item is: oranges
+The item is: bananas
+```
 
 Example of using the **for** looping control-flow statement.
 
@@ -332,11 +633,19 @@ echo
 ./hello
 ```
 
-![No execute](/img/No-execute.png)
+```bash
+> ./hello
+-bash: ./hello: Permission denied
+> 
+```
 
    - You should notice an **ERROR message** indicating you don't have permissions to run the file. To fix this, you need to **add execute permissions** prior to running the shell script.
 
-![Hello 1](/img/Hello1.png)
+```bash
+> ./hello
+Hello YourUserID
+>
+```
 
   8. Issue the following linux command to **add** execute permissions for your shell script:
 
@@ -399,7 +708,14 @@ sh
 
    - You should see that you are currently running the shell script "**sh**" which represents the **Bourne shell**.
 
-![Hello 2](/img/Hello2.png)
+```bash
+> sh
+sh-4.2$ ./hello
+
+Hello murray.saul
+
+The current shell you are using is: sh
+```
 
    - **NOTE:** Due to the fact that shells (and their features) have **evolved** over a period of time, an error may occur if you include a **NEWER shell feature** (e.g. _Bash Shell_) but run it in an **OLDER shell** (For example: the _Bourne Shell_).
    - You can add a **special comment** called a **she-bang line** at the BEGINNING of the FIRST line of your shell script to **force** it to run in the shell you want (for example: the Bash shell).
@@ -425,7 +741,14 @@ sh
 
    - You should notice that the shell name is running in the **Bash shell** (i.e. _/bin/bash_).
 
-![Hello 3](/img/Hello3.png)
+```bash
+> sh
+sh-4.2$ ./hello
+
+Hello murray.saul
+
+The current shell you are using is: /bin/bash
+```
 
    - It is a good idea to rename your shell script to include an **extension** to indicate that it is a **Bash Shell** script.
 
@@ -468,7 +791,16 @@ echo
 
    - Take time to view the output and the values of the environment variables.
 
-![Hello 4-0](/img/Hello4-0.png)
+```bash
+> ./hello.bash
+
+Hello murray.saul
+
+The current shell you are using is: /bin/bash
+
+The current directory location is: /home/murray.saul
+The current user home directory is: /home/murray.saul
+```
 
    - You can modify the PATH variable to include the current directory (i.e. ".") so you can run the command by just script filename (eg. **hello.bash** as opposed to **./hello.bash**)
 
@@ -492,7 +824,17 @@ hello.bash
 
    - Did your Bash shell script run?
 
-![Hello 4](/img/Hello4.png)
+```bash
+> PATH=$PATH:.
+> hello.bash
+
+Hello murray.saul
+
+The current shell you are using is: /bin/bash
+
+The current directory location is: /home/murray.saul
+The current user home directory is: /home/murray.saul
+```
 
   20. Exit your Matrix session, and log back into your Matrix session.
   21. Re-run the **hello.bash** shell script by just using the name.
@@ -531,7 +873,12 @@ echo "Hello $name - You are $age years old"
 
    - What did you notice?
 
-![User variable 1](/img/User-variable1.png)
+```bash
+> ./user-variables.bash
+Enter your Full Name: Murray Saul
+Enter your age (in years): 57
+Hello Murray Saul - You are 57 years old
+```
 
   28. Use a text editor to **modify** your Bash shell script called **user-variables.bash**
   29. **Insert** the following lines immediately **below** the **she-bang** line:
@@ -550,7 +897,13 @@ readonly age
 
    - What do you notice when you try to change the age variable? Why?
 
-![User variable 2](/img/User-variable2.png)
+```bash
+> ./user-variables.bash
+Enter your Full Name: Murray Saul
+Enter your age (in years): 57
+./user-variables.bash: line 5: age: readonly variable
+Hello Murray Saul - You are 25 years old
+```
 
    - A **positional parameter** is a special variable within a shell program; its value is set from **arguments** contained in a shell script or using the set command. Let's use **positional parameters** and **special parameters** in a Bash shell script.
 
@@ -584,7 +937,16 @@ echo \$*: $*
 
    - What happened?
 
-![Parameter 1](/img/Parameter1.png)
+```bash
+> ./parameters.bash 1 2 3 4 5 6 7 8
+$0: ./parameters.bash
+$2: 2
+$3: 3
+$#: 8
+$*: 1 2 3 4 5 6 7 8
+$#: 6
+$*: 3 4 5 6 7 8
+```
 
    - The values for some of the _positional parameters_ and _special parameters_ may NOT be displayed properly since you did NOT provide any **arguments** when running your Bash shell script.
 
@@ -643,7 +1005,15 @@ echo
 
    - Confirm that your shell script displays the correct information for your Matrix account.
 
-![Command Substitution 1](/img/Commandsubstitution1.png)
+```bash
+> ./command-substitution.bash
+
+MY ACCOUNT INFORMATION:
+
+Username: murray.saul
+
+Current Directory: /home/murray.saul
+```
 
 ### Math Operations
 
@@ -740,7 +1110,7 @@ echo
 dogFactor=7
 read -p "Please enter your age (in years): " humanYears
 ((dogYears = humanYears * dogFactor))
-echo "You age in dog-years is: $dogYears"
+echo "Your age in dog-years is: $dogYears"
 echo
 ```
 
@@ -754,7 +1124,12 @@ echo
 
    - Enter your age to see what happens.
 
-![Math ops 1](/img/Mathops1.png)
+```bash
+> ./dog-years.bash
+
+Please enter you age (in years): 57
+Your age in dog-years is: 399
+```
 
   12. Issue the following to run a checking script:
 
@@ -913,7 +1288,10 @@ chmod u+x if-1.bash
 
    - Confirm that the output indicates a correct result.
 
-![If 1](/img/If-1.png)
+```bash
+> ./if-1.bash
+num1 is less than num2
+```
 
   23. Use a text editor like vi or nano to create the text file called **if-2.bash** (eg. `vi if-2.bash`)
 
@@ -944,14 +1322,32 @@ chmod u+x if-2.bash
 
    - When prompted, make certain that the **first number** is greater than the **second number**. What happens?
 
-![If 2](/img/If-2.png)
+```bash
+> ./if-2.bash
+Enter the first number: 2
+Enter the second number: 5
+>
+> ./if-2.bash
+Enter the first number: 5
+Enter the second number: 2
+The first number is greater than the second number.
+```
 
   28. Run the **./if-2.bash** Bash shell script again.
 
       - When prompted, make certain that the **first number** is less than or equal to the **second number**. What happens?
       - Let's use an **if-else** statement to provide an **alternative** if the first number is less than or equal to the second number.
 
-![If 2](/img/If-2.png)
+```bash
+> ./if-2.bash
+Enter the first number: 2
+Enter the second number: 5
+>
+> ./if-2.bash
+Enter the first number: 5
+Enter the second number: 2
+The first number is greater than the second number.
+```
 
   29. Use a text editor like vi or nano to create the text file called **if-3.bash** (eg. `vi if-3.bash`)
   30. Enter the following lines in your shell script:
@@ -983,7 +1379,22 @@ chmod u+x if-3.bash
 
    - Try running the script several times with numbers **different** and **equal** to each other to confirm that the shell script works correctly.
 
-![If 3](/img/If-3.png)
+```bash
+> ./if-3.bash
+Enter the first number: 2
+Enter the second number: 5
+The first number is less than or equal to the second number.
+>
+> ./if-3.bash
+Enter the first number: 5
+Enter the second number: 2
+The first number is greater than the second number.
+>
+> ./if-3.bash
+Enter the first number: 2
+Enter the second number: 2
+The first number is less than or equal to the second number.
+```
 
    - **LOOP STATEMENTS** are a series of steps or sequence of statements executed repeatedly zero or more times satisfying the given condition is satisfied. Reference: https://www.chegg.com/homework-help/definitions/loop-statement-3
    - _There are several loops, but we will look at a **for** loop using a **list**._
@@ -1015,7 +1426,16 @@ chmod u+x for-1.bash
 ./for-1.bash
 ```
 
-![For 1](/img/For-1.png)
+```bash
+> ./for-1.bash
+
+5
+4
+3
+2
+1
+blast-off!
+```
 
   39. Use a text editor like vi or nano to create the text file called **for-2.bash** (eg. `vi for-2.bash`)
   40. Enter the following lines in your shell script:
@@ -1044,7 +1464,22 @@ chmod u+x for-2.bash
 ./for-2.bash 10 9 8 7 6 5 4 3 2 1
 ```
 
-![For 2](/img/For-2.png)
+```bash
+./for-2.bash
+
+blast-off!
+```
+
+```bash
+./for-2.bash 5 4 3 2 1
+
+5
+4
+3
+2
+1
+blast-off!
+```
 
    - How does this differ from the previous shell script?
    - You will learn in a couple of weeks more examples of using loop statements.
