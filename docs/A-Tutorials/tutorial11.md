@@ -564,9 +564,7 @@ Refer to the shell script below for an example using the for loop with a list.
 ```bash
 cat for.bash
 #!/bin/bash
-```
 
-```bash
 for x in apples oranges bananas
 do
   echo "The item is: $x"
