@@ -38,6 +38,10 @@ The organization of the repo is as follows:
 
 ![Highlighted Files on GitHub](./static/img/github-highlighted_files.png)
 
+Unedited version of the file structure from above:
+
+![Highlighted Files on GitHub - UNEDITED](./static/img/github-highlighted_files-unedited.png)
+
 ## Modifying the Files
 
 **There are multiple options for these files to be edited. You can pick whichever option(s) you feel most comfortable with:**
