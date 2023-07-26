@@ -124,7 +124,7 @@ In this investigation, you will learn how to manipulate text using the **sed** u
   4. Issue the following Linux command to copy the data.txt file (**copy and paste** to save time):
 
 ```bash
-cp ~uli101/tutorialfiles/data.txt ~/
+cp ~uli101/tutorialfiles/data.txt ~/sed
 ```
 
   5. Issue the **more** command to quickly view the contents of the **data.txt** file. When finished, exit the more command by pressing the letter `q`
@@ -265,7 +265,7 @@ In this investigation, you will learn how to use the awk utility to manipulate t
   4. Issue the following linux command:
 
 ```bash
-cp ~uli101/tutorialfiles/cars.txt ~/
+cp ~uli101/tutorialfiles/cars.txt ~/awk
 ```
 
   5. Issue the **cat** command to quickly view the contents of the **cars.txt** file.
@@ -361,7 +361,7 @@ awk '$1 ~ /ford/ && $5 > 10000 {print $0}' cars.txt | tee awk-7.txt
   14. Issue the following linux command:
 
 ```bash
-cp ~uli101/tutorialfiles/cars2.txt ~/
+cp ~uli101/tutorialfiles/cars2.txt ~/awk
 ```
 
   15. Issue the **cat** command to quickly view the contents of the **cars2.txt** file.
