@@ -279,16 +279,16 @@ In this investigation, you will learn more about the **for** loop and learn how 
 **Perform the Following Steps:**
 
   1. Issue a Linux command to confirm you are located in your **advanced** directory in your Matrix account.
-  2. Issue the following Linux command to view the **~/for-1.bash** file:
+  2. Issue the following Linux command to view the **./for-1.bash** file:
 
 ```bash
-more ~/for-1.bash
+more ./for-1.bash
 ```
 
    - As you should have noticed from **tutorial 10** that the **for** loop can use a **list**.
    - You can also use the for loop with positional parameters stored as **arguments** from an executed shell script.
    - You can also use the **for** loop with a list using **command substitution**.
-   - Using command sustitution is an effective method to loop within a shell script.
+   - Using command substitution is an effective method to loop within a shell script.
    - Before creating a new shell script, let's learn to use command substitution from the Bash Shell to store arguments as positional parameters and use them for practice.
 
   3. Issue the following linux command to set positional parameters in your current shell:
@@ -375,21 +375,21 @@ done
       - What do you notice? Does the output for this shell script differ from **for-4.bash**? Why?
       - We now want to introduce you to the use of **error-checking.**
 
-  18. Use the **more** command to view the previously-created Bash shell script **~/if-5.bash** (eg. `more ~/if-5.bash`)
+  18. Use the **more** command to view the previously-created Bash shell script **./if-5.bash** (eg. `more ./if-5.bash`)
 
       - Take a few moments to re-familiarize yourself with this shell script
 
   19. Run your shell script by issuing: 
 
 ```bash
-~/if-5.bash
+./if-5.bash
 ```
 
    - When prompted, enter a **letter** instead of a _number_. What happens?
    - Let's edit the **for-5.bash** shell script to perform **error-checking** to force the user to enter a numeric value between **0** and **100**.
    - **NOTE:** The **while** statement can be used with the **test** command (or a simple linux command or a linux pipeline command) for error checking. In our case, we will use a pipeline command with extended regular expressions. In order to loop while the result is TRUE (not FALSE), you can use the negation symbol (!) to set the test condition to the opposite.
 
-  20. Use a text editor like vi or nano to edit the text file called **~/if-5.bash** (eg. `vi ~/if-5.bash`)
+  20. Use a text editor like vi or nano to edit the text file called **./if-5.bash** (eg. `vi ./if-5.bash`)
   21. Add the following lines in your shell script IMMEDIATELY AFTER the read statement to prompt the user for a mark:
 
 ```bash
@@ -413,7 +413,7 @@ done
       - Compound operators like **&&** and **\|\|** can be used with the test command.
       - Let's use the **\|\|** compound criteria to to NOT accept numbers **outside** of the range **0** to **100**.
 
-  25. Use a text editor like vi or nano to edit the text file called **~/if-5.bash** (eg. `vi ~/if-5.bash`)
+  25. Use a text editor like vi or nano to edit the text file called **./if-5.bash** (eg. `vi ./if-5.bash`)
   26. Add the following lines in your shell script IMMEDIATELY AFTER the PREVIOUSLY ADDED error-checking **while** loop statement to **force** the user to enter a valid number (between 1 and 100):
 
 ```bash
@@ -427,7 +427,7 @@ done
   28. Run your shell script by issuing:
 
 ```bash
-~/if-5.bash
+./if-5.bash
 ```
 
   29. When prompted, enter a **letter** instead of a number. What happens?
