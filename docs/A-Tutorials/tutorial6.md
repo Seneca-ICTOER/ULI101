@@ -546,9 +546,9 @@ mail yoursenecaid@myseneca.ca < ~/remote/myfile.txt
    - What happened? Were you prompted for subject and could you enter text in email body?
    - Did you see a file attachment as a separate file, or just text?
 
-  13. Check your email to see if you received your email message. If you did, what do you notice regarding the subject line?
+  13. Check your email to see if you received your email message.
 
-      - You should have noticed that there was **NO** customized **subject line**, since you redirected **standard input** (_stdin_) from the file, so there was no way for the user to send a subject line.
+      - **You won't receive this e-mail.** The mail command won't send messages without a subject line. Because you redirected that text file into mail, you weren't prompted for a subject line and the process silently failed.
       - You can use the **-s** option, followed by text (in quotes) to specify a **subject line**.
 
   14. Return to your Linux Bash shell and issue the following Linux command:
@@ -558,7 +558,32 @@ mail -s "email with attachment" yoursenecaid@myseneca.ca < ~/remote/myfile.txt
 ```
 
   15. Check your email to see if you received your email message. If you did, what do you notice this time?
-  16. After completing this INVESTIGATION, perform the _Linux Practice Questions_ section below.
+
+      - As you've seen, redirecting a text file into mail causes the contents of that file to become the body of your message.
+
+  16. Let's combine all this together. First, create a new text file, ```~/remote/body.txt```, with the following content:
+
+  ```text
+  This is the body text of my e-mail message saved in a text file.
+  ```
+  
+  17. We're now going to combine the following options:
+
+      - -s: Subject line
+      - -a: Attach a file (~/remote/myfile.txt)
+      - Redirect the contents of a file to provide the body of the e-mail message. (~/remote/body.txt)
+      - Supply the destination e-mail address.
+
+
+```bash
+mail -s "Fully non-interactive e-mail with attachment." -a ~/remote/myfile.txt yoursenecaid@myseneca.ca < ~/remote/body.txt
+```
+
+  18. Notice the order of options in the command's syntax. The destination e-mail address **must be the last option *before* the redirect**.
+
+  19. Check your inbox and confirm you've received this last message.
+
+  20. After completing this INVESTIGATION, perform the _Linux Practice Questions_ section below.
 
 ## Linux Practice Questions
 
