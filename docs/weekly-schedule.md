@@ -151,7 +151,7 @@ description: Weekly Schedule for ULI101
 | **Learning Objectives and Tasks** | **References** | **Evaluation** |
 | :--- | :--- | :--- |
 | Interest Topic | **Interest Topic:** [Interest Topic: Graphical Linux via a Virtual Machine (VM)](/B-ExtraResources/interest-topic.md) | **Tutorial 12 Due Friday @ 11:59pm** |
-| Take up Review Questions | **Review Questions:** [Sample ULI101 Review Questions](https://github.com/ULI101/labs/raw/main/uli101_review_sample_questions.docx) | Review Tutorial Due Friday @ 11:59pm |
+| Take up Review Questions | **Review Questions:** [Sample ULI101 Review Questions](/files/uli101_review_sample_questions.docx) | Review Tutorial Due Friday @ 11:59pm |
 
 ### Week 14
 
