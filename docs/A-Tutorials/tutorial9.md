@@ -394,7 +394,7 @@ In this investigation, you will learn how to use **extended regular expressions*
   2. Issue the following Linux command to copy another data file called **numbers2.dat**:
 
 ```bash
-cp ~uli101/tutorialfiles/numbers2.dat ~/
+cp ~uli101/tutorialfiles/numbers2.dat ~/regexps
 ```
 
   3. View the contents of the **numbers2.dat** file using the **more** command and quickly view the contents of this file. You should notice _valid_ and _invalid_ numbers contained in this file. When finished, exit the more command.
